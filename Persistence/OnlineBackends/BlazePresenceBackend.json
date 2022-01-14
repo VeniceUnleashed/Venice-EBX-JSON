@@ -1,0 +1,715 @@
+{
+  "Name": "persistence/onlinebackends/blazepresencebackend",
+  "PartitionGuid": "b959ef36-a163-11df-a36f-dfbb9bcf8ccf",
+  "PrimaryInstanceGuid": "2ad5f6c4-76e6-bdc5-93b4-d1e27da2af7f",
+  "Instances": {
+    "047cd1bb-0573-4082-930d-2c8e9f265fd5": {
+      "$type": "MatchmakingSession",
+      "Mode": 0,
+      "DurationMs": 15000,
+      "Criteria": {
+        "SizeRule": {
+          "Setting": "mode",
+          "Configurations": [
+            {
+              "Platform": 1,
+              "Settings": [
+                "RushLarge",
+                "ConquestSmall",
+                "TeamDeathMatch",
+                "ConquestAssaultSmall",
+                "TankSuperiority",
+                "Domination",
+                "GunMaster",
+                "Scavenger",
+                "CaptureTheFlag",
+                "AirSuperiority"
+              ],
+              "DesiredPlayerCount": 15,
+              "MinPlayerCount": 1,
+              "MaxPlayerCapacity": 24,
+              "MinFitThreshold": "matchAny"
+            },
+            {
+              "Platform": 0,
+              "Settings": [
+                "RushLarge",
+                "ConquestSmall",
+                "TeamDeathMatch",
+                "ConquestAssaultSmall",
+                "TankSuperiority",
+                "Scavenger",
+                "CaptureTheFlag",
+                "AirSuperiority"
+              ],
+              "DesiredPlayerCount": 24,
+              "MinPlayerCount": 1,
+              "MaxPlayerCapacity": 32,
+              "MinFitThreshold": "matchAny"
+            },
+            {
+              "Platform": 0,
+              "Settings": [
+                "ConquestLarge",
+                "ConquestAssaultLarge"
+              ],
+              "DesiredPlayerCount": 48,
+              "MinPlayerCount": 1,
+              "MaxPlayerCapacity": 64,
+              "MinFitThreshold": "matchAny"
+            },
+            {
+              "Platform": 4,
+              "Settings": [
+                "SquadDeathMatch",
+                "Domination",
+                "GunMaster",
+                "TeamDeathMatchC"
+              ],
+              "DesiredPlayerCount": 12,
+              "MinPlayerCount": 1,
+              "MaxPlayerCapacity": 16,
+              "MinFitThreshold": "matchAny"
+            },
+            {
+              "Platform": 4,
+              "Settings": [
+                "SquadRush"
+              ],
+              "DesiredPlayerCount": 8,
+              "MinPlayerCount": 1,
+              "MaxPlayerCapacity": 8,
+              "MinFitThreshold": "matchAny"
+            }
+          ]
+        },
+        "PingSiteRule": {
+          "MinFitThreshold": "quickMatch"
+        },
+        "RankedRule": {
+          "MinFitThreshold": "requireExactMatch"
+        },
+        "GenericRules": [
+          {
+            "Rule": "levelRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "level",
+            "DesiredValues": [],
+            "IgnoreIfDefault": true,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "gameModeRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "mode",
+            "DesiredValues": [
+              {
+                "Value": "RushLarge",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "ConquestSmall",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "TeamDeathMatch",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "ConquestAssaultSmall",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "TankSuperiority",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "Domination",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "GunMaster",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "Scavenger",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "CaptureTheFlag",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "AirSuperiority",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "presetRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "preset",
+            "DesiredValues": [
+              {
+                "Value": "NORMAL",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "modRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "mod",
+            "DesiredValues": [
+              {
+                "Value": "XPACK2",
+                "Platform": 4,
+                "Licenses": [
+                  "xp2"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "XPACK1",
+                "Platform": 4,
+                "Licenses": [
+                  "b2k"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "DEFAULT",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "XPACK3",
+                "Platform": 4,
+                "Licenses": [
+                  "xp3"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "XPACK4",
+                "Platform": 4,
+                "Licenses": [
+                  "xp4"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "XPACK5",
+                "Platform": 4,
+                "Licenses": [
+                  "xp5"
+                ],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": true,
+            "SortValues": true
+          },
+          {
+            "Rule": "premiumRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "premium",
+            "DesiredValues": [
+              {
+                "Value": "true",
+                "Platform": 4,
+                "Licenses": [
+                  "premium"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "false",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          }
+        ],
+        "VirtualizedRule": {
+          "MinFitThreshold": "quickMatch",
+          "VirtualizationMode": 1
+        },
+        "UEDRules": [
+          {
+            "Rule": "skill_Rule",
+            "MinFitThresHold": "matchAny"
+          }
+        ]
+      },
+      "CreateGameParams": {
+        "GameTopology": 3,
+        "PeerMode": 0,
+        "VoipTopology": 0,
+        "Settings": {
+          "OpenToBrowsing": true,
+          "OpenToInvites": true,
+          "OpenToMatchmaking": true,
+          "OpenToJoinByPlayer": true,
+          "HostMigratable": false,
+          "Ranked": true,
+          "AdminOnlyInvites": false,
+          "EnforceSingleGroupJoin": false,
+          "JoinInProgressSupported": true,
+          "AdminInvitesOnlyIgnoreEntryChecks": false,
+          "EnablePersistedGameId": false,
+          "AllowSameTeamId": false
+        },
+        "Attributes": [
+          {
+            "Attribute": "level",
+            "Value": "",
+            "Override": true
+          },
+          {
+            "Attribute": "mode",
+            "Value": "",
+            "Override": true
+          },
+          {
+            "Attribute": "mod",
+            "Value": "DEFAULT",
+            "Override": true
+          }
+        ],
+        "QueueCapacity": 100
+      },
+      "OnNotFound": {
+        "PartitionGuid": "b959ef36-a163-11df-a36f-dfbb9bcf8ccf",
+        "InstanceGuid": "a2d25e48-cd4c-49e7-88b3-88c1a979891a"
+      },
+      "Modifiers": [
+        {
+          "PartitionGuid": "b959ef36-a163-11df-a36f-dfbb9bcf8ccf",
+          "InstanceGuid": "fc86ed85-be81-42ee-b4b9-cb183e991c31"
+        }
+      ]
+    },
+    "2ad5f6c4-76e6-bdc5-93b4-d1e27da2af7f": {
+      "$type": "BlazePresenceBackendData",
+      "Name": "Persistence/OnlineBackends/BlazePresenceBackend",
+      "Requests": [
+        1,
+        2,
+        5,
+        6,
+        18,
+        19,
+        20,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        30,
+        22,
+        40,
+        41,
+        42,
+        43,
+        36,
+        39,
+        45,
+        46,
+        47,
+        48,
+        16,
+        17,
+        3,
+        4,
+        56,
+        50,
+        52,
+        53,
+        54,
+        49,
+        57,
+        51,
+        15,
+        55,
+        58,
+        59,
+        61
+      ],
+      "MatchmakingSessions": [
+        {
+          "PartitionGuid": "b959ef36-a163-11df-a36f-dfbb9bcf8ccf",
+          "InstanceGuid": "047cd1bb-0573-4082-930d-2c8e9f265fd5"
+        },
+        {
+          "PartitionGuid": "b959ef36-a163-11df-a36f-dfbb9bcf8ccf",
+          "InstanceGuid": "f4e06f53-b8f9-4a43-8d8b-a932b7e5bf34"
+        }
+      ],
+      "UseDemanglerService": false
+    },
+    "a2d25e48-cd4c-49e7-88b3-88c1a979891a": {
+      "$type": "MatchmakingSession",
+      "Mode": 1,
+      "DurationMs": 10000,
+      "Criteria": {
+        "SizeRule": {
+          "Setting": "mode",
+          "Configurations": []
+        },
+        "PingSiteRule": {
+          "MinFitThreshold": ""
+        },
+        "RankedRule": {
+          "MinFitThreshold": "requireExactMatch"
+        },
+        "GenericRules": [
+          {
+            "Rule": "levelRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "level",
+            "DesiredValues": [],
+            "IgnoreIfDefault": true,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "gameModeRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "mode",
+            "DesiredValues": [
+              {
+                "Value": "RushLarge",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "ConquestSmall",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "modRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "mod",
+            "DesiredValues": [
+              {
+                "Value": "XPACK2",
+                "Platform": 4,
+                "Licenses": [
+                  "xp2"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "XPACK1",
+                "Platform": 4,
+                "Licenses": [
+                  "b2k"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "DEFAULT",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "XPACK3",
+                "Platform": 4,
+                "Licenses": [
+                  "xp3"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "XPACK4",
+                "Platform": 4,
+                "Licenses": [
+                  "xp4"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "XPACK5",
+                "Platform": 4,
+                "Licenses": [
+                  "xp5"
+                ],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": true,
+            "SortValues": true
+          },
+          {
+            "Rule": "presetRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "preset",
+            "DesiredValues": [
+              {
+                "Value": "NORMAL",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "premiumRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "premium",
+            "DesiredValues": [
+              {
+                "Value": "true",
+                "Platform": 4,
+                "Licenses": [
+                  "premium"
+                ],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "false",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          }
+        ],
+        "VirtualizedRule": {
+          "MinFitThreshold": "",
+          "VirtualizationMode": 2
+        },
+        "UEDRules": []
+      },
+      "CreateGameParams": {
+        "GameTopology": 3,
+        "PeerMode": 0,
+        "VoipTopology": 0,
+        "Settings": {
+          "OpenToBrowsing": true,
+          "OpenToInvites": true,
+          "OpenToMatchmaking": true,
+          "OpenToJoinByPlayer": true,
+          "HostMigratable": false,
+          "Ranked": true,
+          "AdminOnlyInvites": false,
+          "EnforceSingleGroupJoin": false,
+          "JoinInProgressSupported": true,
+          "AdminInvitesOnlyIgnoreEntryChecks": false,
+          "EnablePersistedGameId": false,
+          "AllowSameTeamId": false
+        },
+        "Attributes": [
+          {
+            "Attribute": "level",
+            "Value": "",
+            "Override": true
+          },
+          {
+            "Attribute": "mode",
+            "Value": "",
+            "Override": true
+          },
+          {
+            "Attribute": "mod",
+            "Value": "DEFAULT",
+            "Override": true
+          }
+        ],
+        "QueueCapacity": 100
+      },
+      "OnNotFound": null,
+      "Modifiers": [
+        {
+          "PartitionGuid": "b959ef36-a163-11df-a36f-dfbb9bcf8ccf",
+          "InstanceGuid": "b200656a-ae21-42c5-9b2a-e26e82729dbc"
+        }
+      ]
+    },
+    "b200656a-ae21-42c5-9b2a-e26e82729dbc": {
+      "$type": "MatchmakingPlayerCapacityModifier",
+      "Attribute": "mode"
+    },
+    "f4e06f53-b8f9-4a43-8d8b-a932b7e5bf34": {
+      "$type": "MatchmakingSession",
+      "Mode": 3,
+      "DurationMs": 60000,
+      "Criteria": {
+        "SizeRule": {
+          "Setting": "mode",
+          "Configurations": [
+            {
+              "Platform": 4,
+              "Settings": [
+                "Cooperative"
+              ],
+              "DesiredPlayerCount": 2,
+              "MinPlayerCount": 2,
+              "MaxPlayerCapacity": 2,
+              "MinFitThreshold": "requireExactMatch"
+            }
+          ]
+        },
+        "PingSiteRule": {
+          "MinFitThreshold": ""
+        },
+        "RankedRule": {
+          "MinFitThreshold": "requireExactMatch"
+        },
+        "GenericRules": [
+          {
+            "Rule": "difficultyRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "difficulty",
+            "DesiredValues": [
+              {
+                "Value": "ABSTAIN",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "missionRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "mission",
+            "DesiredValues": [],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "gameModeRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "mode",
+            "DesiredValues": [
+              {
+                "Value": "Cooperative",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          }
+        ],
+        "VirtualizedRule": {
+          "MinFitThreshold": "requireExactMatch",
+          "VirtualizationMode": 2
+        },
+        "UEDRules": []
+      },
+      "CreateGameParams": {
+        "GameTopology": 2,
+        "PeerMode": 0,
+        "VoipTopology": 0,
+        "Settings": {
+          "OpenToBrowsing": false,
+          "OpenToInvites": true,
+          "OpenToMatchmaking": false,
+          "OpenToJoinByPlayer": false,
+          "HostMigratable": false,
+          "Ranked": true,
+          "AdminOnlyInvites": false,
+          "EnforceSingleGroupJoin": false,
+          "JoinInProgressSupported": true,
+          "AdminInvitesOnlyIgnoreEntryChecks": false,
+          "EnablePersistedGameId": false,
+          "AllowSameTeamId": false
+        },
+        "Attributes": [
+          {
+            "Attribute": "difficulty",
+            "Value": "",
+            "Override": true
+          },
+          {
+            "Attribute": "mission",
+            "Value": "",
+            "Override": true
+          },
+          {
+            "Attribute": "mode",
+            "Value": "Cooperative",
+            "Override": false
+          },
+          {
+            "Attribute": "type",
+            "Value": "coop",
+            "Override": false
+          }
+        ],
+        "QueueCapacity": 0
+      },
+      "OnNotFound": null,
+      "Modifiers": []
+    },
+    "fc86ed85-be81-42ee-b4b9-cb183e991c31": {
+      "$type": "MatchmakingPlayerCapacityModifier",
+      "Attribute": "mode"
+    }
+  }
+}

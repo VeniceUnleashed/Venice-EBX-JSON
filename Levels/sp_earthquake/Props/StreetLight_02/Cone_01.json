@@ -1,0 +1,412 @@
+{
+  "Name": "levels/sp_earthquake/props/streetlight_02/cone_01",
+  "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+  "PrimaryInstanceGuid": "c693ce58-7a0d-6c48-afbc-114ab7837e31",
+  "Instances": {
+    "10ba397c-a368-8909-2bf8-7ba30a062ccb": {
+      "$type": "UpdateLinearVelocityData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": null,
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true
+    },
+    "1bc02c73-d0f7-c8a4-69bc-9e2ef29ac53c": {
+      "$type": "SpawnRateData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "1be59bd6-4f87-ccf1-5b6e-8ca82313cdc9"
+      },
+      "Pre": null,
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "SpawnRate": 1.0,
+      "TrailSegmentLength": 5.0,
+      "DistributeOverTime": true,
+      "DistributeOverDistance": false
+    },
+    "1be59bd6-4f87-ccf1-5b6e-8ca82313cdc9": {
+      "$type": "SpawnSpeedData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "d4fdce47-0cd9-4b74-998a-69a6f555fa4c"
+      },
+      "Pre": null,
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "Speed": 0.0001
+    },
+    "21f91bb3-62d1-ba2e-e4f1-9412dadc3bf7": {
+      "$type": "EmitterDocument",
+      "Name": "Levels/SP_Earthquake/Props/StreetLight_02/Cone_01",
+      "RootProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "6855bbb9-11f6-305b-5794-6e7b87e084b2"
+      },
+      "TemplateData": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "c693ce58-7a0d-6c48-afbc-114ab7837e31"
+      }
+    },
+    "2273335a-4c3b-48c8-8d6e-3fdc88db7137": {
+      "$type": "UpdateColorData",
+      "DefaultValues": {
+        "x": 0.117,
+        "y": 0.067,
+        "z": 0.015,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "aa9ef6c2-809d-4b1b-177e-2c9c070a847c"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Color": {
+        "x": 0.117,
+        "y": 0.067,
+        "z": 0.015
+      }
+    },
+    "6855bbb9-11f6-305b-5794-6e7b87e084b2": {
+      "$type": "UpdateAgeData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "1bc02c73-d0f7-c8a4-69bc-9e2ef29ac53c"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Lifetime": 10000.0
+    },
+    "898cfbf3-74e5-4876-bf84-96a860dca1b2": {
+      "$type": "SpawnDirectionData",
+      "DefaultValues": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "daf4f6f0-6a7d-439b-8b99-58085a75c6cd"
+      },
+      "Pre": null,
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "DirectionFromEmitterOrigin": 0.0,
+      "InheritSpeedAndDirectionFromEmitter": false
+    },
+    "aa9ef6c2-809d-4b1b-177e-2c9c070a847c": {
+      "$type": "UpdateTransparencyData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "c9d20e69-f9dc-cc51-c5d2-cef610d9ceda"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "CullThreshold": 0.2
+    },
+    "b189b167-91ca-5615-e524-4e0599b2df74": {
+      "$type": "UpdateClipScaleData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "10ba397c-a368-8909-2bf8-7ba30a062ccb"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Lookup": [
+        32767,
+        32767,
+        32767,
+        32767,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231,
+        31615,
+        31359,
+        31743,
+        31231
+      ]
+    },
+    "c693ce58-7a0d-6c48-afbc-114ab7837e31": {
+      "$type": "EmitterTemplateData",
+      "PointLightIntensity": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      },
+      "PointLightPivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "PointLightColor": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "MaxCount": 1,
+      "Name": "Levels/SP_Earthquake/Props/StreetLight_02/Cone_01",
+      "TimeScale": 1.0,
+      "LifetimeFrameCount": 0,
+      "Lifetime": 0.0,
+      "RootProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "6855bbb9-11f6-305b-5794-6e7b87e084b2"
+      },
+      "VisibleAfterDistance": 0.0,
+      "ZOcclusionLookup": [],
+      "EmittableType": 3,
+      "Mesh": null,
+      "DistanceScaleNearValue": 1.0,
+      "PointLightRadius": 20.0,
+      "VertexPixelLightingBlendFactor": 0.0,
+      "GlobalLocalNormalBlendFactor": 0.0,
+      "SoftParticlesFadeDistanceMultiplier": -0.269,
+      "LightWrapAroundFactor": 0.438,
+      "LightMultiplier": 1.0,
+      "DistanceScaleFarValue": 1.0,
+      "PointLightRandomIntensityMin": 1.0,
+      "MeshCullingDistance": 0.0,
+      "PointLightRandomIntensityMax": 1.0,
+      "MaxSpawnDistance": 0.0,
+      "MinScreenArea": 1.0,
+      "DistanceScaleLength": 0.0,
+      "PointLightMaxClamp": 1.0,
+      "ParticleCullingFactor": 0.8,
+      "PointLightMinClamp": 0.0,
+      "FollowSpawnSource": false,
+      "RepeatParticleSpawning": false,
+      "Emissive": true,
+      "ExclusionVolumeCullEnable": false,
+      "TransparencySunShadowEnable": false,
+      "ForceFullRes": false,
+      "LocalSpace": true,
+      "Opaque": false,
+      "ActAsPointLight": false,
+      "KillParticlesWithEmitter": true,
+      "ForceNiceSorting": false
+    },
+    "c9d20e69-f9dc-cc51-c5d2-cef610d9ceda": {
+      "$type": "UpdateOrientationData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "b189b167-91ca-5615-e524-4e0599b2df74"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true
+    },
+    "d4fdce47-0cd9-4b74-998a-69a6f555fa4c": {
+      "$type": "UpdateTextureCoordsData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "898cfbf3-74e5-4876-bf84-96a860dca1b2"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "TextureInfo1": {
+        "TextureName": "Levels/SP_Earthquake/Props/LightCone/LightCone_01_E_D",
+        "NormalmapName": "Systems/Emitter/DefaultNormalmap",
+        "AnimationFrameCount": 49.0,
+        "AnimationFrameColumnCount": 7.0,
+        "EnableAnimation": false
+      },
+      "TextureBlendValue": 1.0
+    },
+    "daf4f6f0-6a7d-439b-8b99-58085a75c6cd": {
+      "$type": "UpdateSizeData",
+      "DefaultValues": {
+        "x": 6.0,
+        "y": 6.0,
+        "z": 6.0,
+        "w": 6.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "840bcc6a-3856-11e0-9c44-c2a8ac2cf7a7",
+        "InstanceGuid": "2273335a-4c3b-48c8-8d6e-3fdc88db7137"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Pivot": {
+        "x": 0.0,
+        "y": 0.0
+      }
+    }
+  }
+}
