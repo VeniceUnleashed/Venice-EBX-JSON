@@ -1,0 +1,277 @@
+{
+  "Name": "ui/flow/screen/popups/popuplongtext",
+  "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+  "PrimaryInstanceGuid": "e4e2b7fe-2d32-ebeb-08ae-ebf069d37072",
+  "Instances": {
+    "14c676e4-2d19-4d41-abc6-5dc9857c4a0c": {
+      "$type": "WidgetNode",
+      "Name": "TextBox",
+      "ParentGraph": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "e4e2b7fe-2d32-ebeb-08ae-ebf069d37072"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true,
+      "WidgetAsset": {
+        "PartitionGuid": "0735680e-50ac-11e0-b11b-c891f0d7ca51",
+        "InstanceGuid": "29f3d2b7-2226-fb0d-6ca5-1f8c90ae689d"
+      },
+      "FocusIndex": 0,
+      "ZDepthLevel": 0,
+      "VerticalAlign": 1,
+      "HorisontalAlign": 1,
+      "DataBinding": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "bc29d340-e40b-4345-abc0-6e2825c8714e"
+      },
+      "WidgetProperties": [
+        {
+          "Name": "UseEulaFont",
+          "Value": "true"
+        },
+        {
+          "Name": "UseStoreFont",
+          "Value": "false"
+        }
+      ],
+      "InstanceName": "TextBox_01",
+      "Inputs": [],
+      "Outputs": [],
+      "AlwaysInFocus": false
+    },
+    "1a11c05f-8d82-4a2d-b437-df9d7c82a98d": {
+      "$type": "WidgetNode",
+      "Name": "PopupButtonsManager",
+      "ParentGraph": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "e4e2b7fe-2d32-ebeb-08ae-ebf069d37072"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true,
+      "WidgetAsset": {
+        "PartitionGuid": "be33938f-e72c-11df-a7e6-ff0acc0873ff",
+        "InstanceGuid": "7ea7eb85-04e6-e2d6-93eb-6f89c0e20bb9"
+      },
+      "FocusIndex": 0,
+      "ZDepthLevel": 0,
+      "VerticalAlign": 1,
+      "HorisontalAlign": 1,
+      "DataBinding": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "735acca9-4ca7-44d7-8023-284f51eaef43"
+      },
+      "WidgetProperties": [],
+      "InstanceName": "PopupButtonsManager_01",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+          "InstanceGuid": "974c1008-bdfa-42a5-8aef-8dcd12e14cac"
+        }
+      ],
+      "AlwaysInFocus": false
+    },
+    "349f5c20-b785-4337-bf21-fd91c0eb157f": {
+      "$type": "UINodePort",
+      "Name": "Hide",
+      "InstanceName": "TextField_01",
+      "Query": 21,
+      "AllowManualRemove": false
+    },
+    "56fe7476-efe1-490b-a8c4-8b5e385584a0": {
+      "$type": "UINodeConnection",
+      "SourceNode": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "1a11c05f-8d82-4a2d-b437-df9d7c82a98d"
+      },
+      "TargetNode": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "643bcf62-992a-4d5a-a957-c53f41ec4b8f"
+      },
+      "SourcePort": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "974c1008-bdfa-42a5-8aef-8dcd12e14cac"
+      },
+      "TargetPort": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "f29d0b85-21a4-47ce-b45e-c47924c91a23"
+      },
+      "NumScreensToPop": 0
+    },
+    "643bcf62-992a-4d5a-a957-c53f41ec4b8f": {
+      "$type": "InstanceOutputNode",
+      "Name": "PopupButtonReleased",
+      "ParentGraph": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "e4e2b7fe-2d32-ebeb-08ae-ebf069d37072"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true,
+      "In": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "f29d0b85-21a4-47ce-b45e-c47924c91a23"
+      },
+      "Id": 1352178388,
+      "DestroyGraph": true
+    },
+    "735acca9-4ca7-44d7-8023-284f51eaef43": {
+      "$type": "UIDynamicDataBinding",
+      "Bindings": [
+        {
+          "DataName": "Buttons",
+          "DataCategory": {
+            "PartitionGuid": "913ff22b-db66-11df-be8a-e96a1e486726",
+            "InstanceGuid": "379c636d-a987-7477-11d0-458076f632d4"
+          },
+          "DataKey": -1192680079,
+          "UseDirectAccess": false,
+          "UpdateOnInitialize": true
+        }
+      ],
+      "Refresh": true
+    },
+    "761fae16-8571-434e-a8f3-81148900d4c6": {
+      "$type": "WidgetNode",
+      "Name": "Title",
+      "ParentGraph": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "e4e2b7fe-2d32-ebeb-08ae-ebf069d37072"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true,
+      "WidgetAsset": {
+        "PartitionGuid": "c4a61c0a-9013-11df-999a-b460ed5efba1",
+        "InstanceGuid": "992ede9c-36f6-f31e-2140-5c1ec7fcf345"
+      },
+      "FocusIndex": 1,
+      "ZDepthLevel": 0,
+      "VerticalAlign": 1,
+      "HorisontalAlign": 1,
+      "DataBinding": {
+        "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+        "InstanceGuid": "a7ab4dc0-e46d-4fb6-9fab-a90cd8dde430"
+      },
+      "WidgetProperties": [],
+      "InstanceName": "TextField_01",
+      "Inputs": [
+        {
+          "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+          "InstanceGuid": "dfb0b125-26b3-4a26-baa3-00e70de4cf16"
+        },
+        {
+          "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+          "InstanceGuid": "349f5c20-b785-4337-bf21-fd91c0eb157f"
+        }
+      ],
+      "Outputs": [],
+      "AlwaysInFocus": false
+    },
+    "974c1008-bdfa-42a5-8aef-8dcd12e14cac": {
+      "$type": "UINodePort",
+      "Name": "ButtonReleased",
+      "InstanceName": "PopupButtonsManager_01",
+      "Query": 3,
+      "AllowManualRemove": false
+    },
+    "a7ab4dc0-e46d-4fb6-9fab-a90cd8dde430": {
+      "$type": "UITextDataBinding",
+      "StaticText": "",
+      "TextData": {
+        "DataName": "",
+        "DataCategory": {
+          "PartitionGuid": "913ff22b-db66-11df-be8a-e96a1e486726",
+          "InstanceGuid": "379c636d-a987-7477-11d0-458076f632d4"
+        },
+        "DataKey": -1951480908,
+        "UseDirectAccess": false,
+        "UpdateOnInitialize": true
+      },
+      "Visibility": {
+        "DataName": "",
+        "DataCategory": null,
+        "DataKey": 0,
+        "UseDirectAccess": false,
+        "UpdateOnInitialize": true
+      },
+      "Refresh": true,
+      "OverrideDirectAccess": false
+    },
+    "bc29d340-e40b-4345-abc0-6e2825c8714e": {
+      "$type": "UIDynamicDataBinding",
+      "Bindings": [
+        {
+          "DataName": "Text",
+          "DataCategory": {
+            "PartitionGuid": "913ff22b-db66-11df-be8a-e96a1e486726",
+            "InstanceGuid": "379c636d-a987-7477-11d0-458076f632d4"
+          },
+          "DataKey": 201161033,
+          "UseDirectAccess": false,
+          "UpdateOnInitialize": true
+        },
+        {
+          "DataName": "Visible",
+          "DataCategory": null,
+          "DataKey": 0,
+          "UseDirectAccess": false,
+          "UpdateOnInitialize": true
+        }
+      ],
+      "Refresh": true
+    },
+    "dfb0b125-26b3-4a26-baa3-00e70de4cf16": {
+      "$type": "UINodePort",
+      "Name": "Show",
+      "InstanceName": "TextField_01",
+      "Query": 20,
+      "AllowManualRemove": false
+    },
+    "e4e2b7fe-2d32-ebeb-08ae-ebf069d37072": {
+      "$type": "UIScreenAsset",
+      "Name": "UI/Flow/Screen/Popups/PopupLongText",
+      "Nodes": [
+        {
+          "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+          "InstanceGuid": "14c676e4-2d19-4d41-abc6-5dc9857c4a0c"
+        },
+        {
+          "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+          "InstanceGuid": "761fae16-8571-434e-a8f3-81148900d4c6"
+        },
+        {
+          "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+          "InstanceGuid": "1a11c05f-8d82-4a2d-b437-df9d7c82a98d"
+        },
+        {
+          "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+          "InstanceGuid": "643bcf62-992a-4d5a-a957-c53f41ec4b8f"
+        }
+      ],
+      "GlobalNode": null,
+      "Connections": [
+        {
+          "PartitionGuid": "4a63b4e4-53b2-11e0-b483-993afa5a2920",
+          "InstanceGuid": "56fe7476-efe1-490b-a8c4-8b5e385584a0"
+        }
+      ],
+      "AudioEventMappings": {
+        "PartitionGuid": "6a08b142-79de-11df-9746-96335f6d5957",
+        "InstanceGuid": "41b4640b-1973-8469-a254-b1b23e4e6a04"
+      },
+      "BundleAssetName": "",
+      "EventList": [],
+      "Modal": true,
+      "ProtectScreens": false,
+      "IsWin32UIGraphAsset": true,
+      "IsXenonUIGraphAsset": true,
+      "IsPs3UIGraphAsset": true
+    },
+    "f29d0b85-21a4-47ce-b45e-c47924c91a23": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    }
+  }
+}

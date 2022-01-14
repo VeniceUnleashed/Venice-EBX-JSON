@@ -1,0 +1,386 @@
+{
+  "Name": "fx/dlc/xp2/destruction/generic/props/vase/emitters/em_xp2_prop_vase_generic_gray_shard_meshp",
+  "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+  "PrimaryInstanceGuid": "6cd4dbe2-06c2-47de-bbc3-1a2c179b6a55",
+  "Instances": {
+    "0d9b1164-d75b-44dd-bc13-26bda9269e8e": {
+      "$type": "PolynomialData",
+      "EmitterParameter": 0,
+      "Coefficients": {
+        "x": 0.8852456,
+        "y": -1.287512,
+        "z": -0.2886609,
+        "w": 0.9977466
+      },
+      "ScaleValue": 2.0,
+      "MinClamp": 0.0,
+      "MaxClamp": 1.0
+    },
+    "181c8cc7-b04a-4ba3-b8e5-20aff142eebf": {
+      "$type": "RandomEvaluatorData",
+      "EmitterParameter": 0,
+      "Max": 1.0,
+      "Min": 0.2
+    },
+    "22b638cc-d114-452e-8777-9940ce309cf2": {
+      "$type": "RandomXYZEvaluatorData",
+      "EmitterParameter": 0,
+      "MaxX": 1.0,
+      "MinX": -1.0,
+      "MaxY": 1.0,
+      "MinY": 1.0,
+      "MaxZ": 1.0,
+      "MinZ": -1.0
+    },
+    "26aacab4-d0bc-4580-9a40-007bc1ddbed3": {
+      "$type": "UpdateAgeData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "ed92c0bf-956e-4d05-9cdd-e0a195c7c474"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Lifetime": 8.0
+    },
+    "2926f4b5-d7c1-4033-80a0-13cf372f6603": {
+      "$type": "RandomEvaluatorData",
+      "EmitterParameter": 0,
+      "Max": 1.0,
+      "Min": 0.15
+    },
+    "3e6f91ea-e487-409e-9145-ac78f9ec27ce": {
+      "$type": "SpawnSizeData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "c53c8e20-3e36-454a-b78e-e6a3b8458485"
+      },
+      "Pre": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "181c8cc7-b04a-4ba3-b8e5-20aff142eebf"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "Size": 0.8
+    },
+    "4d588bbd-1209-49a0-9d4f-ac7be972aab7": {
+      "$type": "SpawnPositionData",
+      "DefaultValues": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "e5201ef2-03d5-560a-f461-3bf59c70ed4f"
+      },
+      "Pre": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "5f164e08-f06d-43df-94d0-2bf1526fcc4b"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true
+    },
+    "5889b238-5b60-4567-b13c-626ee1675ebb": {
+      "$type": "UpdateRotationData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "a368f298-c824-45a7-b9d6-61f6d3c34a8b"
+      },
+      "Pre": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "0d9b1164-d75b-44dd-bc13-26bda9269e8e"
+      },
+      "EvaluatorInput": 2,
+      "Enable": true
+    },
+    "5f164e08-f06d-43df-94d0-2bf1526fcc4b": {
+      "$type": "BoxEvaluatorData",
+      "EmitterParameter": 5,
+      "Dimensions": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.5
+      },
+      "Pivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "614926ad-8521-4d2d-943a-123665b883f0": {
+      "$type": "SpawnSpeedData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "5889b238-5b60-4567-b13c-626ee1675ebb"
+      },
+      "Pre": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "2926f4b5-d7c1-4033-80a0-13cf372f6603"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "Speed": 6.0
+    },
+    "6cd4dbe2-06c2-47de-bbc3-1a2c179b6a55": {
+      "$type": "EmitterTemplateData",
+      "PointLightIntensity": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      },
+      "PointLightPivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "PointLightColor": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "MaxCount": 20,
+      "Name": "FX/DLC/XP2/Destruction/Generic/Props/Vase/Emitters/Em_XP2_Prop_Vase_generic_Gray_Shard_MeshP",
+      "TimeScale": 1.0,
+      "LifetimeFrameCount": 0,
+      "Lifetime": 0.1,
+      "RootProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "26aacab4-d0bc-4580-9a40-007bc1ddbed3"
+      },
+      "VisibleAfterDistance": 0.0,
+      "ZOcclusionLookup": [],
+      "EmittableType": 6,
+      "Mesh": {
+        "PartitionGuid": "e7a504ae-477c-4579-6e36-919e32f5e8ae",
+        "InstanceGuid": "2be3e2fb-1c3a-d7a0-00f0-20bf698e7689"
+      },
+      "DistanceScaleNearValue": 1.0,
+      "PointLightRadius": 20.0,
+      "VertexPixelLightingBlendFactor": 0.0,
+      "GlobalLocalNormalBlendFactor": 1.0,
+      "SoftParticlesFadeDistanceMultiplier": 0.0,
+      "LightWrapAroundFactor": 0.5,
+      "LightMultiplier": 1.0,
+      "DistanceScaleFarValue": 1.0,
+      "PointLightRandomIntensityMin": 1.0,
+      "MeshCullingDistance": 0.0,
+      "PointLightRandomIntensityMax": 1.0,
+      "MaxSpawnDistance": 75.0,
+      "MinScreenArea": 1.0,
+      "DistanceScaleLength": 0.0,
+      "PointLightMaxClamp": 1.0,
+      "ParticleCullingFactor": 0.8,
+      "PointLightMinClamp": 0.0,
+      "FollowSpawnSource": false,
+      "RepeatParticleSpawning": false,
+      "Emissive": false,
+      "ExclusionVolumeCullEnable": true,
+      "TransparencySunShadowEnable": false,
+      "ForceFullRes": false,
+      "LocalSpace": false,
+      "Opaque": false,
+      "ActAsPointLight": false,
+      "KillParticlesWithEmitter": false,
+      "ForceNiceSorting": false
+    },
+    "a2fa71cd-00a3-4b6b-abe7-83253f7ccbd1": {
+      "$type": "SpawnDirectionData",
+      "DefaultValues": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "614926ad-8521-4d2d-943a-123665b883f0"
+      },
+      "Pre": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "22b638cc-d114-452e-8777-9940ce309cf2"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "DirectionFromEmitterOrigin": 0.0,
+      "InheritSpeedAndDirectionFromEmitter": false
+    },
+    "a368f298-c824-45a7-b9d6-61f6d3c34a8b": {
+      "$type": "SpawnRotationData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "b8b984c7-2ac7-44ac-af5f-6b983601343c"
+      },
+      "Pre": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "d299c247-27a5-4c39-b121-89f4e60f2260"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "Rotation": 1.0
+    },
+    "b2783bd0-1ca3-44d6-a253-2a7b468e631a": {
+      "$type": "RandomEvaluatorData",
+      "EmitterParameter": 0,
+      "Max": 2.0,
+      "Min": 0.5
+    },
+    "b8b984c7-2ac7-44ac-af5f-6b983601343c": {
+      "$type": "SpawnRotationSpeedData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "d398be3e-919d-4bcc-b938-f803d8ac4837"
+      },
+      "Pre": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "b2783bd0-1ca3-44d6-a253-2a7b468e631a"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "RotationSpeed": 1.0
+    },
+    "c53c8e20-3e36-454a-b78e-e6a3b8458485": {
+      "$type": "AirResistanceData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "c8c783be-511d-4ed4-a4fc-eecff144ba40"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "DragFactor": 0.4
+    },
+    "c8c783be-511d-4ed4-a4fc-eecff144ba40": {
+      "$type": "GravityData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "4d588bbd-1209-49a0-9d4f-ac7be972aab7"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Gravity": 10.0
+    },
+    "d299c247-27a5-4c39-b121-89f4e60f2260": {
+      "$type": "RandomEvaluatorData",
+      "EmitterParameter": 0,
+      "Max": 20.0,
+      "Min": -20.0
+    },
+    "d398be3e-919d-4bcc-b938-f803d8ac4837": {
+      "$type": "UpdateSizeData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "3e6f91ea-e487-409e-9145-ac78f9ec27ce"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Pivot": {
+        "x": 0.0,
+        "y": 0.0
+      }
+    },
+    "e5201ef2-03d5-560a-f461-3bf59c70ed4f": {
+      "$type": "UpdateLinearVelocityData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": null,
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true
+    },
+    "ed92c0bf-956e-4d05-9cdd-e0a195c7c474": {
+      "$type": "SpawnRateData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "a2fa71cd-00a3-4b6b-abe7-83253f7ccbd1"
+      },
+      "Pre": null,
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "SpawnRate": 350.0,
+      "TrailSegmentLength": 5.0,
+      "DistributeOverTime": true,
+      "DistributeOverDistance": false
+    },
+    "f9b79b96-53c0-465b-8d6b-139a1d4bf835": {
+      "$type": "EmitterDocument",
+      "Name": "FX/DLC/XP2/Destruction/Generic/Props/Vase/Emitters/Em_XP2_Prop_Vase_generic_Gray_Shard_MeshP",
+      "RootProcessor": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "26aacab4-d0bc-4580-9a40-007bc1ddbed3"
+      },
+      "TemplateData": {
+        "PartitionGuid": "aa3f0420-6367-4d24-9270-d6d1b7ffa661",
+        "InstanceGuid": "6cd4dbe2-06c2-47de-bbc3-1a2c179b6a55"
+      }
+    }
+  }
+}

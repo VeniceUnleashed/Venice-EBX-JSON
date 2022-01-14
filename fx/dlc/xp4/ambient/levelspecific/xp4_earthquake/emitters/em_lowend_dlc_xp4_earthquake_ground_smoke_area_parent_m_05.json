@@ -1,0 +1,582 @@
+{
+  "Name": "fx/dlc/xp4/ambient/levelspecific/xp4_earthquake/emitters/em_lowend_dlc_xp4_earthquake_ground_smoke_area_parent_m_05",
+  "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+  "PrimaryInstanceGuid": "8d0c1e1d-b98c-4e7d-a31b-a45efbadee02",
+  "Instances": {
+    "04210efe-ae3c-490c-a04e-272466638c26": {
+      "$type": "SpawnRateData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "bf14324e-105b-4e36-92bc-5b6b7c4dae57"
+      },
+      "Pre": null,
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "SpawnRate": 0.04,
+      "TrailSegmentLength": 5.0,
+      "DistributeOverTime": true,
+      "DistributeOverDistance": false
+    },
+    "1b682c3f-3ecb-4033-bdbe-3647d92400ec": {
+      "$type": "RandomXYZEvaluatorData",
+      "EmitterParameter": 0,
+      "MaxX": 0.15,
+      "MinX": -0.15,
+      "MaxY": 0.0,
+      "MinY": 0.0,
+      "MaxZ": -1.0,
+      "MinZ": -1.0
+    },
+    "233232e2-a46d-4279-b216-1da36bd063a5": {
+      "$type": "SpawnSpeedData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "96f55a86-a48c-428b-bf73-2dab03a3f7eb"
+      },
+      "Pre": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "d75472af-adf7-4433-b007-e7667d839f10"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "Speed": 5.0
+    },
+    "25cbb1f9-a344-4bbd-af2f-e4d740b27fbd": {
+      "$type": "SpawnPositionData",
+      "DefaultValues": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "233232e2-a46d-4279-b216-1da36bd063a5"
+      },
+      "Pre": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "d614682b-a306-4647-828b-2c9264e54fc7"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true
+    },
+    "2ce7e6be-c131-4401-a929-998830d24737": {
+      "$type": "PolynomialData",
+      "EmitterParameter": 0,
+      "Coefficients": {
+        "x": -0.2745881,
+        "y": -26.41089,
+        "z": 26.62957,
+        "w": -0.06119215
+      },
+      "ScaleValue": 0.7,
+      "MinClamp": 0.0,
+      "MaxClamp": 1.0
+    },
+    "4e4f3c88-a032-49ed-8886-4dfe3cf11a3c": {
+      "$type": "UpdateColorData",
+      "DefaultValues": {
+        "x": 15.0,
+        "y": 0.647,
+        "z": 0.561,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "bbcf0994-564d-40fc-933a-f957645cbe05"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Color": {
+        "x": 15.0,
+        "y": 0.647,
+        "z": 0.561
+      }
+    },
+    "5f524328-d31f-44c4-96df-96768d86c25e": {
+      "$type": "UpdateAgeData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "04210efe-ae3c-490c-a04e-272466638c26"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Lifetime": 1.0
+    },
+    "70aa892e-ac52-591c-5217-df0f1fbff8ac": {
+      "$type": "UpdateLinearVelocityData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": null,
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true
+    },
+    "7524ba68-d1a8-773f-90e0-193efc57b18d": {
+      "$type": "UpdateOrientationData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "ee428ae7-53a1-d3db-f340-990e385418a9"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true
+    },
+    "76b13534-559c-42ab-841f-fb1d8f81d422": {
+      "$type": "RandomEvaluatorData",
+      "EmitterParameter": 0,
+      "Max": 1.0,
+      "Min": 1.0
+    },
+    "8d0c1e1d-b98c-4e7d-a31b-a45efbadee02": {
+      "$type": "EmitterTemplateData",
+      "PointLightIntensity": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      },
+      "PointLightPivot": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "PointLightColor": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "MaxCount": 1,
+      "Name": "FX/DLC/XP4/Ambient/LevelSpecific/XP4_EarthQuake/Emitters/Em_LowEnd_DLC_XP4_EarthQuake_Ground_Smoke_Area_Parent_M_05",
+      "TimeScale": 1.0,
+      "LifetimeFrameCount": 0,
+      "Lifetime": 0.0,
+      "RootProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "5f524328-d31f-44c4-96df-96768d86c25e"
+      },
+      "VisibleAfterDistance": 0.0,
+      "ZOcclusionLookup": [
+        0.22535706,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "EmittableType": 2,
+      "Mesh": null,
+      "DistanceScaleNearValue": 1.0,
+      "PointLightRadius": 20.0,
+      "VertexPixelLightingBlendFactor": 0.0,
+      "GlobalLocalNormalBlendFactor": 1.0,
+      "SoftParticlesFadeDistanceMultiplier": -0.197,
+      "LightWrapAroundFactor": 0.5,
+      "LightMultiplier": 1.0,
+      "DistanceScaleFarValue": 1.0,
+      "PointLightRandomIntensityMin": 1.0,
+      "MeshCullingDistance": 0.0,
+      "PointLightRandomIntensityMax": 1.0,
+      "MaxSpawnDistance": 0.0,
+      "MinScreenArea": 1.0,
+      "DistanceScaleLength": 0.0,
+      "PointLightMaxClamp": 1.0,
+      "ParticleCullingFactor": 1.0,
+      "PointLightMinClamp": 0.0,
+      "FollowSpawnSource": false,
+      "RepeatParticleSpawning": false,
+      "Emissive": false,
+      "ExclusionVolumeCullEnable": false,
+      "TransparencySunShadowEnable": false,
+      "ForceFullRes": false,
+      "LocalSpace": true,
+      "Opaque": false,
+      "ActAsPointLight": false,
+      "KillParticlesWithEmitter": false,
+      "ForceNiceSorting": false
+    },
+    "8eb61f96-d692-45e6-98a2-38287cf42431": {
+      "$type": "EmitterData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "7524ba68-d1a8-773f-90e0-193efc57b18d"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "EmitterAssets": [
+        {
+          "PartitionGuid": "48e765ad-6c39-4157-96ff-e8f298c2ac65",
+          "InstanceGuid": "cdec823a-bbdc-44d3-a34e-8aff2efdeecb"
+        }
+      ]
+    },
+    "96f55a86-a48c-428b-bf73-2dab03a3f7eb": {
+      "$type": "UpdateSizeData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "e983564b-41cd-41e4-9011-06f4942efcd8"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Pivot": {
+        "x": 0.0,
+        "y": 0.0
+      }
+    },
+    "980bd459-964d-4e7f-9cac-0b4acb455d19": {
+      "$type": "EmitterDocument",
+      "Name": "FX/DLC/XP4/Ambient/LevelSpecific/XP4_EarthQuake/Emitters/Em_LowEnd_DLC_XP4_EarthQuake_Ground_Smoke_Area_Parent_M_05",
+      "RootProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "5f524328-d31f-44c4-96df-96768d86c25e"
+      },
+      "TemplateData": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "8d0c1e1d-b98c-4e7d-a31b-a45efbadee02"
+      }
+    },
+    "b6724d58-2fd5-4a92-9f88-cd38281f96f9": {
+      "$type": "GravityData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "4e4f3c88-a032-49ed-8886-4dfe3cf11a3c"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Gravity": -0.2
+    },
+    "bbcf0994-564d-40fc-933a-f957645cbe05": {
+      "$type": "UpdateTextureCoordsData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "c6d158a8-3dc0-425a-8b12-4b7d4b6e1c63"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "TextureInfo1": {
+        "TextureName": "FX/Textures/_Debug/debug_arrow_up",
+        "NormalmapName": "Systems/Emitter/DefaultNormalmap",
+        "AnimationFrameCount": 4.0,
+        "AnimationFrameColumnCount": 2.0,
+        "EnableAnimation": false
+      },
+      "TextureBlendValue": 1.0
+    },
+    "bf14324e-105b-4e36-92bc-5b6b7c4dae57": {
+      "$type": "SpawnDirectionData",
+      "DefaultValues": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0,
+        "w": 0.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "25cbb1f9-a344-4bbd-af2f-e4d740b27fbd"
+      },
+      "Pre": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "1b682c3f-3ecb-4033-bdbe-3647d92400ec"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "DirectionFromEmitterOrigin": 0.0,
+      "InheritSpeedAndDirectionFromEmitter": false
+    },
+    "c6d158a8-3dc0-425a-8b12-4b7d4b6e1c63": {
+      "$type": "UpdateTransparencyData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "8eb61f96-d692-45e6-98a2-38287cf42431"
+      },
+      "Pre": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "2ce7e6be-c131-4401-a929-998830d24737"
+      },
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "CullThreshold": 0.2
+    },
+    "d614682b-a306-4647-828b-2c9264e54fc7": {
+      "$type": "BoxEvaluatorData",
+      "EmitterParameter": 0,
+      "Dimensions": {
+        "x": 3.0,
+        "y": 0.25,
+        "z": 4.0
+      },
+      "Pivot": {
+        "x": 0.0,
+        "y": -1.0,
+        "z": 0.0
+      }
+    },
+    "d75472af-adf7-4433-b007-e7667d839f10": {
+      "$type": "RandomEvaluatorData",
+      "EmitterParameter": 0,
+      "Max": 1.0,
+      "Min": 0.65
+    },
+    "e983564b-41cd-41e4-9011-06f4942efcd8": {
+      "$type": "SpawnSizeData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "b6724d58-2fd5-4a92-9f88-cd38281f96f9"
+      },
+      "Pre": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "76b13534-559c-42ab-841f-fb1d8f81d422"
+      },
+      "EvaluatorInput": 1,
+      "Enable": true,
+      "Size": 0.0
+    },
+    "ee428ae7-53a1-d3db-f340-990e385418a9": {
+      "$type": "UpdateClipScaleData",
+      "DefaultValues": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      },
+      "NextProcessor": {
+        "PartitionGuid": "ecc6d16b-2863-4c84-88a1-d7637f2e19e8",
+        "InstanceGuid": "70aa892e-ac52-591c-5217-df0f1fbff8ac"
+      },
+      "Pre": null,
+      "EvaluatorInput": 2,
+      "Enable": true,
+      "Lookup": [
+        32767,
+        32767,
+        32767,
+        32767,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111,
+        29439,
+        28415,
+        25855,
+        26111
+      ]
+    }
+  }
+}

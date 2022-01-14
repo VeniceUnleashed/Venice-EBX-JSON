@@ -1,0 +1,114 @@
+{
+  "Name": "persistence/onlineservices/serverbrowserservice",
+  "PartitionGuid": "00710b6f-39e3-11e0-b59d-f43575416749",
+  "PrimaryInstanceGuid": "a2246c83-086a-fce3-8660-7dcab9e9cc69",
+  "Instances": {
+    "a2246c83-086a-fce3-8660-7dcab9e9cc69": {
+      "$type": "PresenceServerBrowserServiceData",
+      "Name": "Persistence/OnlineServices/ServerBrowserService",
+      "FilterCriterias": {
+        "SizeRule": {
+          "Setting": "mode",
+          "Configurations": []
+        },
+        "PingSiteRule": {
+          "MinFitThreshold": ""
+        },
+        "RankedRule": {
+          "MinFitThreshold": "requireExactMatch"
+        },
+        "GenericRules": [
+          {
+            "Rule": "levelRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "level",
+            "DesiredValues": [],
+            "IgnoreIfDefault": true,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "gameModeRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "mode",
+            "DesiredValues": [],
+            "IgnoreIfDefault": true,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "modRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "mod",
+            "DesiredValues": [],
+            "IgnoreIfDefault": true,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "presetRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "preset",
+            "DesiredValues": [],
+            "IgnoreIfDefault": true,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "rspPingSiteRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "pingsite",
+            "DesiredValues": [],
+            "IgnoreIfDefault": true,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "matchStateRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "",
+            "DesiredValues": [
+              {
+                "Value": "inactive",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          },
+          {
+            "Rule": "premiumRule",
+            "MinFitThresHold": "requireExactMatch",
+            "Setting": "premium",
+            "DesiredValues": [
+              {
+                "Value": "true",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              },
+              {
+                "Value": "false",
+                "Platform": 4,
+                "Licenses": [],
+                "UseOnlyIfEmpty": false
+              }
+            ],
+            "IgnoreIfDefault": false,
+            "MergeValues": false,
+            "SortValues": false
+          }
+        ],
+        "VirtualizedRule": {
+          "MinFitThreshold": "requireExactMatch",
+          "VirtualizationMode": 2
+        },
+        "UEDRules": []
+      },
+      "ListCapacity": 1000
+    }
+  }
+}

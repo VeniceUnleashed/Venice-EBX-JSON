@@ -1,0 +1,53 @@
+{
+  "Name": "ai/entries/apc_gunner_ai_entry",
+  "PartitionGuid": "0c9c035d-da47-47c3-a1f5-3039c6cb8f68",
+  "PrimaryInstanceGuid": "e47f14d9-c8f0-41d1-9602-418e1112aa7f",
+  "Instances": {
+    "47c3321e-fe0c-4c47-8779-89260b769431": {
+      "$type": "AIAimingConstraintsData",
+      "MinYaw": -180.0,
+      "MaxYaw": 180.0,
+      "MinPitch": -15.0,
+      "MaxPitch": 45.0
+    },
+    "855e84ce-84a7-42dc-9936-47b796edaeb2": {
+      "$type": "TurretData",
+      "PitchP": 0.5,
+      "YawP": 0.3,
+      "FakeShootSpaceMinDistance": 0.0,
+      "FakeShootSpaceMaxDistance": 25.0,
+      "AimingConstraints": {
+        "PartitionGuid": "0c9c035d-da47-47c3-a1f5-3039c6cb8f68",
+        "InstanceGuid": "47c3321e-fe0c-4c47-8779-89260b769431"
+      }
+    },
+    "a76b8b82-3f36-4fe6-a735-50b3a5e43dd0": {
+      "$type": "ArmamentData",
+      "ThreatLength": 0,
+      "TurretData": {
+        "PartitionGuid": "0c9c035d-da47-47c3-a1f5-3039c6cb8f68",
+        "InstanceGuid": "855e84ce-84a7-42dc-9936-47b796edaeb2"
+      },
+      "IsAntiAircraft": false
+    },
+    "e47f14d9-c8f0-41d1-9602-418e1112aa7f": {
+      "$type": "AIEntryData",
+      "Name": "AI/Entries/APC_Gunner_AI_Entry",
+      "EquipmentType": {
+        "PartitionGuid": "b371b107-65dd-4eec-9a74-a6b26fb3b053",
+        "InstanceGuid": "00000000-339d-499a-bc4d-a2a4dc9dfb84"
+      },
+      "Armament": {
+        "PartitionGuid": "0c9c035d-da47-47c3-a1f5-3039c6cb8f68",
+        "InstanceGuid": "a76b8b82-3f36-4fe6-a735-50b3a5e43dd0"
+      },
+      "Mobility": null,
+      "StrengthType": 2,
+      "ReuseTime": 9999.0,
+      "Forbidden": false,
+      "HasExposedSoldier": true,
+      "InterludeOnly": false,
+      "InvalidForAI": false
+    }
+  }
+}

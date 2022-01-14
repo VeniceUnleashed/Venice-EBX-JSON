@@ -1,0 +1,484 @@
+{
+  "Name": "sound/maoism/bullet_impacts/hmg_bullet_impact_water",
+  "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+  "PrimaryInstanceGuid": "64d71d80-3308-11de-b350-e071626152c5",
+  "Instances": {
+    "420e77f9-1672-420a-85ca-8919a85e726e": {
+      "$type": "ReceiveNodeData",
+      "Entries": [
+        {
+          "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+          "InstanceGuid": "b4d32885-f023-4ae3-a8ff-697ccd2ca3b0"
+        }
+      ]
+    },
+    "589f4e94-25db-44ee-a953-2d28d71cac79": {
+      "$type": "NumberGeneratorNodeData",
+      "Trigger": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 2,
+        "IsConnected": true
+      },
+      "Min": 0.9,
+      "Max": 1.1,
+      "Mode": 0,
+      "Y": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 3,
+        "IsConnected": true
+      }
+    },
+    "64d71d80-3308-11de-b350-e071626152c5": {
+      "$type": "SoundPatchAsset",
+      "Name": "Sound/maoism/Bullet_Impacts/HMG_Bullet_Impact_Water",
+      "Scope": {
+        "PartitionGuid": "0ddf7c04-9ea3-11dd-8413-9752fc5e9f27",
+        "InstanceGuid": "b52f34d2-550e-4c78-a31a-e0a0c62c0020"
+      },
+      "Graph": {
+        "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+        "InstanceGuid": "aab867c3-8efe-411d-a7cd-450992243eab"
+      },
+      "Mixer": null,
+      "OutputNodes": [
+        {
+          "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+          "InstanceGuid": "65bcad7e-2430-4b88-a5a0-a66162c17c2c"
+        }
+      ],
+      "Loudness": 87.0,
+      "AILoudness": -1.0,
+      "Radius": 0.5,
+      "DopplerFactor": 0.0,
+      "MasterPitch": 0.7,
+      "MixGroup": {
+        "PartitionGuid": "4705f56e-73e8-11df-b364-a6a8deb4f741",
+        "InstanceGuid": "73fd6043-e6b6-44fe-b716-86f7d9ac2cc6"
+      },
+      "DefaultStopEvent": null,
+      "DefaultStartEvent": {
+        "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+        "InstanceGuid": "fadeb01c-7464-41b1-a7b3-4512074bbc70"
+      },
+      "DefaultForceInitEvent": null,
+      "DefaultEnterScopeEvent": {
+        "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+        "InstanceGuid": "fadeb01c-7464-41b1-a7b3-4512074bbc70"
+      },
+      "IsPersistent": false,
+      "IsLooping": false
+    },
+    "65bcad7e-2430-4b88-a5a0-a66162c17c2c": {
+      "$type": "ConeOutputNodeData",
+      "In": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": true
+      },
+      "BypassHeadroom": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "MinDistance": 2.0,
+      "AttenuationCurve": {
+        "Points": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "K": -1.312546
+          },
+          {
+            "X": 21.971151,
+            "Y": -28.51382,
+            "K": -1.2682613
+          },
+          {
+            "X": 26.924782,
+            "Y": -42.924385,
+            "K": -6.200736
+          },
+          {
+            "X": 31.018574,
+            "Y": -79.45647,
+            "K": -10.2852955
+          }
+        ],
+        "CurveType": 0
+      },
+      "Gain": 0.0,
+      "HFDampingDistance": 0.0,
+      "HFDampingObstruction": 0.65,
+      "HFDampingOcclusion": 1.0,
+      "MainSendPlugin": {
+        "IsValid": true,
+        "VoiceIndex": 0,
+        "PluginIndex": 8
+      },
+      "MainSend": {
+        "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
+        "InstanceGuid": "9384b910-4438-438a-a545-27a827308df0"
+      },
+      "OutputName": "Cone",
+      "TransformSource": 0,
+      "OutputNameHash": 2088844290,
+      "LowPassPlugin": {
+        "IsValid": true,
+        "VoiceIndex": 0,
+        "PluginIndex": 4
+      },
+      "VuPlugin": {
+        "IsValid": true,
+        "VoiceIndex": 0,
+        "PluginIndex": 5
+      },
+      "Solo": false,
+      "EnableHdr": true,
+      "Direction": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "PositionY": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "PositionX": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "PositionZ": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "OuterAngle": {
+        "UnconnectedValue": 360.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "InnerAngle": {
+        "UnconnectedValue": 360.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "OutsideGain": -12.0,
+      "PanSize": 0.5,
+      "CenterLevel": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "LfeLevel": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "HFDampingAngle": 0.0,
+      "ReverbGain": -18.0,
+      "ReverbSend": {
+        "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
+        "InstanceGuid": "d72517d3-3816-421a-aca1-f75078942be9"
+      },
+      "PanPlugin": {
+        "IsValid": true,
+        "VoiceIndex": 0,
+        "PluginIndex": 6
+      },
+      "ReverbSendPlugin": {
+        "IsValid": true,
+        "VoiceIndex": 0,
+        "PluginIndex": 7
+      }
+    },
+    "aab867c3-8efe-411d-a7cd-450992243eab": {
+      "$type": "SoundGraphData",
+      "Nodes": [
+        {
+          "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+          "InstanceGuid": "420e77f9-1672-420a-85ca-8919a85e726e"
+        },
+        {
+          "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+          "InstanceGuid": "589f4e94-25db-44ee-a953-2d28d71cac79"
+        },
+        {
+          "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+          "InstanceGuid": "c7c2b014-a482-418e-a5d1-f0fd5727ec44"
+        },
+        {
+          "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+          "InstanceGuid": "65bcad7e-2430-4b88-a5a0-a66162c17c2c"
+        }
+      ],
+      "PublicParameters": [],
+      "PublicEvents": [
+        {
+          "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+          "InstanceGuid": "fadeb01c-7464-41b1-a7b3-4512074bbc70"
+        }
+      ],
+      "PublicAssetParameters": [],
+      "PublicValueCount": 2,
+      "ValueCount": 4,
+      "Info": {
+        "Voices": [
+          {
+            "Plugins": [
+              {
+                "Id": 1399738417,
+                "EnableAttributeReadMask": 7,
+                "ConnectionIndex": 0,
+                "OutputChannelCount": 1,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 0
+              },
+              {
+                "Id": 1383297072,
+                "EnableAttributeReadMask": 0,
+                "ConnectionIndex": 0,
+                "OutputChannelCount": 1,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 0
+              },
+              {
+                "Id": 1348564272,
+                "EnableAttributeReadMask": 0,
+                "ConnectionIndex": 0,
+                "OutputChannelCount": 1,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 0
+              },
+              {
+                "Id": 1197566256,
+                "EnableAttributeReadMask": 0,
+                "ConnectionIndex": 0,
+                "OutputChannelCount": 1,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 0
+              },
+              {
+                "Id": 1280328240,
+                "EnableAttributeReadMask": 0,
+                "ConnectionIndex": 0,
+                "OutputChannelCount": 1,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 0
+              },
+              {
+                "Id": 1450528048,
+                "EnableAttributeReadMask": 128,
+                "ConnectionIndex": 0,
+                "OutputChannelCount": 1,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 0
+              },
+              {
+                "Id": 1349399089,
+                "EnableAttributeReadMask": 0,
+                "ConnectionIndex": 0,
+                "OutputChannelCount": 4,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 3
+              },
+              {
+                "Id": 1399156272,
+                "EnableAttributeReadMask": 0,
+                "ConnectionIndex": 1,
+                "OutputChannelCount": 4,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 0
+              },
+              {
+                "Id": 1399156272,
+                "EnableAttributeReadMask": 0,
+                "ConnectionIndex": 2,
+                "OutputChannelCount": 4,
+                "ConstructParamsIndex": 0,
+                "ConstructParamCount": 0
+              }
+            ],
+            "ProcessingStage": 0
+          }
+        ],
+        "LinkedPluginAttributes": [],
+        "Connections": [
+          {
+            "ConnectionType": 2,
+            "Parameters": [],
+            "Bus": {
+              "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
+              "InstanceGuid": "d72517d3-3816-421a-aca1-f75078942be9"
+            },
+            "VoiceIndex": 0
+          },
+          {
+            "ConnectionType": 2,
+            "Parameters": [],
+            "Bus": {
+              "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
+              "InstanceGuid": "9384b910-4438-438a-a545-27a827308df0"
+            },
+            "VoiceIndex": 0
+          }
+        ],
+        "ConstructParams": [
+          {
+            "Value": 45.0,
+            "Index": 0
+          },
+          {
+            "Value": 135.0,
+            "Index": 1
+          },
+          {
+            "Value": 2.0,
+            "Index": 2
+          }
+        ],
+        "PluginsParamCount": 52,
+        "PluginCount": 9
+      },
+      "InputParameters": [],
+      "OutputParameters": [],
+      "InputEvents": [
+        {
+          "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+          "InstanceGuid": "fadeb01c-7464-41b1-a7b3-4512074bbc70"
+        }
+      ],
+      "OutputEvents": []
+    },
+    "b4d32885-f023-4ae3-a8ff-697ccd2ca3b0": {
+      "$type": "ReceiveEntry",
+      "Out": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 2,
+        "IsConnected": true
+      },
+      "Source": {
+        "PartitionGuid": "64d71d7f-3308-11de-b350-e071626152c5",
+        "InstanceGuid": "fadeb01c-7464-41b1-a7b3-4512074bbc70"
+      },
+      "Parameter": 0.0,
+      "SavedValue": 0.0
+    },
+    "c7c2b014-a482-418e-a5d1-f0fd5727ec44": {
+      "$type": "SamplerNodeData",
+      "ExternalWave": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Variation": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Offset": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Delay": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Pitch": {
+        "UnconnectedValue": 1.0,
+        "ValueIndex": 3,
+        "IsConnected": true
+      },
+      "Amplitude": {
+        "UnconnectedValue": 1.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "EnableStep": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Buffer": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Trigger": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 2,
+        "IsConnected": true
+      },
+      "Release": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Step": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Output": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": true
+      },
+      "Finished": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Buffered": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Position": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 0,
+        "IsConnected": false
+      },
+      "Wave": {
+        "PartitionGuid": "c5da1ec2-731a-41e7-bd97-89bb405dbc34",
+        "InstanceGuid": "3474ded2-7be5-46e8-96fd-996d9ef6840b"
+      },
+      "BasePitch": 1.0,
+      "Loop": 0,
+      "Plugins": [
+        {
+          "SndPlayer": {
+            "IsValid": true,
+            "VoiceIndex": 0,
+            "PluginIndex": 0
+          },
+          "Resample": {
+            "IsValid": true,
+            "VoiceIndex": 0,
+            "PluginIndex": 1
+          },
+          "Pause": {
+            "IsValid": true,
+            "VoiceIndex": 0,
+            "PluginIndex": 2
+          },
+          "Gain": {
+            "IsValid": true,
+            "VoiceIndex": 0,
+            "PluginIndex": 3
+          }
+        }
+      ],
+      "ShuffleSegments": false
+    },
+    "fadeb01c-7464-41b1-a7b3-4512074bbc70": {
+      "$type": "AudioGraphEvent",
+      "DefaultValue": 0.0,
+      "NameHash": 230748069,
+      "ValueIndex": 1
+    }
+  }
+}

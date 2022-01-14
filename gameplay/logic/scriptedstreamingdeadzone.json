@@ -1,0 +1,731 @@
+{
+  "Name": "gameplay/logic/scriptedstreamingdeadzone",
+  "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+  "PrimaryInstanceGuid": "c3a41e39-e156-4d9d-a9fa-9c50cc61432b",
+  "Instances": {
+    "02c25fbc-6252-4f23-babd-9cbb85b95bf6": {
+      "$type": "InterfaceDescriptorData",
+      "Fields": [
+        {
+          "Value": "Boolean True",
+          "ValueRef": null,
+          "Id": 2662400,
+          "AccessType": 1
+        },
+        {
+          "Value": "",
+          "ValueRef": null,
+          "Id": 1619579871,
+          "AccessType": 0
+        }
+      ],
+      "InputEvents": [
+        {
+          "Id": 641512606
+        },
+        {
+          "Id": -304910761
+        },
+        {
+          "Id": 201149837
+        },
+        {
+          "Id": 218250718
+        },
+        {
+          "Id": -1693956836
+        }
+      ],
+      "OutputEvents": [
+        {
+          "Id": -763641474
+        },
+        {
+          "Id": 569636471
+        },
+        {
+          "Id": 1124922452
+        }
+      ],
+      "InputLinks": [],
+      "OutputLinks": [
+        {
+          "Id": 231534181
+        },
+        {
+          "Id": 909988034
+        }
+      ]
+    },
+    "194b5477-1f09-4a08-be36-1de3f6a0ab04": {
+      "$type": "BoolEntityData",
+      "IndexInBlueprint": 1,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3,
+      "Realm": 1,
+      "DefaultValue": false
+    },
+    "27cc14fb-9b76-47af-aeff-d10da4ecdcd3": {
+      "$type": "AndEntityData",
+      "IndexInBlueprint": 5,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 1,
+      "Realm": 1,
+      "In1": false,
+      "In2": false
+    },
+    "4341c299-ac4b-4f4a-a533-02966269ebcd": {
+      "$type": "BoolEntityData",
+      "IndexInBlueprint": 0,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3,
+      "Realm": 1,
+      "DefaultValue": false
+    },
+    "62499db8-6fce-44eb-ae66-cbcd2812d576": {
+      "$type": "AndEntityData",
+      "IndexInBlueprint": 12,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 1,
+      "Realm": 1,
+      "In1": false,
+      "In2": false
+    },
+    "66af00b1-3fa5-4ccd-837a-7068b1ac52d7": {
+      "$type": "LogicReferenceObjectData",
+      "IndexInBlueprint": 11,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 3,
+      "BlueprintTransform": {
+        "right": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "up": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "forward": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        },
+        "trans": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "Blueprint": {
+        "PartitionGuid": "a660abf3-6a57-11e0-8a9b-adf0dc06c099",
+        "InstanceGuid": "e3811f66-2dab-7465-ba04-e9d2ee3e61a8"
+      },
+      "ObjectVariation": null,
+      "StreamRealm": 0,
+      "CastSunShadowEnable": true,
+      "Excluded": false,
+      "SubRealm": 0
+    },
+    "772e2835-3087-442a-96cc-9d4158b82c69": {
+      "$type": "OrEntityData",
+      "IndexInBlueprint": 2,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 1,
+      "Realm": 1,
+      "In1": false,
+      "In2": false
+    },
+    "8857dd69-a7c8-4bec-af28-ecfa431a6b22": {
+      "$type": "EventSplitterEntityData",
+      "IndexInBlueprint": 7,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3,
+      "Realm": 1,
+      "RunOnce": true
+    },
+    "9a195c28-f319-4311-8456-fd4ea619191d": {
+      "$type": "EventMemoryEntityData",
+      "IndexInBlueprint": 9,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3,
+      "Transform": {
+        "right": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "up": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "forward": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        },
+        "trans": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "Components": [],
+      "Enabled": true,
+      "RuntimeComponentCount": 0,
+      "Realm": 1
+    },
+    "9b3a04e0-cc56-4e24-94ea-f0a875fb5c55": {
+      "$type": "BoolEntityData",
+      "IndexInBlueprint": 4,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3,
+      "Realm": 1,
+      "DefaultValue": false
+    },
+    "9e513010-7d10-4fc4-8776-7b1a2d144789": {
+      "$type": "BoolToEventEntityData",
+      "IndexInBlueprint": 6,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 1,
+      "Realm": 1,
+      "Value": false,
+      "InitalEvent": false
+    },
+    "9ea32fc9-1792-4df9-a5bf-1b3fbbd0ddc4": {
+      "$type": "BoolEntityData",
+      "IndexInBlueprint": 10,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3,
+      "Realm": 1,
+      "DefaultValue": false
+    },
+    "b336984f-d33a-49c3-a31f-20551761e5bd": {
+      "$type": "AndEntityData",
+      "IndexInBlueprint": 8,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 2,
+      "Realm": 1,
+      "In1": false,
+      "In2": false
+    },
+    "c3a41e39-e156-4d9d-a9fa-9c50cc61432b": {
+      "$type": "LogicPrefabBlueprint",
+      "Name": "Gameplay/Logic/ScriptedStreamingDeadZone",
+      "PropertyConnections": [
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "4341c299-ac4b-4f4a-a533-02966269ebcd"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "772e2835-3087-442a-96cc-9d4158b82c69"
+          },
+          "SourceFieldId": 225375086,
+          "TargetFieldId": 193450867
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "194b5477-1f09-4a08-be36-1de3f6a0ab04"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "772e2835-3087-442a-96cc-9d4158b82c69"
+          },
+          "SourceFieldId": 225375086,
+          "TargetFieldId": 193450864
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9b3a04e0-cc56-4e24-94ea-f0a875fb5c55"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "27cc14fb-9b76-47af-aeff-d10da4ecdcd3"
+          },
+          "SourceFieldId": 225375086,
+          "TargetFieldId": 193450867
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "27cc14fb-9b76-47af-aeff-d10da4ecdcd3"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9e513010-7d10-4fc4-8776-7b1a2d144789"
+          },
+          "SourceFieldId": 193453899,
+          "TargetFieldId": 225375086
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "b336984f-d33a-49c3-a31f-20551761e5bd"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "dbf1860c-b4b0-471f-9687-534f4721d9ec"
+          },
+          "SourceFieldId": 193453899,
+          "TargetFieldId": 225375086
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "b336984f-d33a-49c3-a31f-20551761e5bd"
+          },
+          "SourceFieldId": 2662400,
+          "TargetFieldId": 193450867
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9b3a04e0-cc56-4e24-94ea-f0a875fb5c55"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "SourceFieldId": 225375086,
+          "TargetFieldId": 1619579871
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "772e2835-3087-442a-96cc-9d4158b82c69"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "b336984f-d33a-49c3-a31f-20551761e5bd"
+          },
+          "SourceFieldId": 193453899,
+          "TargetFieldId": 193450864
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "194b5477-1f09-4a08-be36-1de3f6a0ab04"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "62499db8-6fce-44eb-ae66-cbcd2812d576"
+          },
+          "SourceFieldId": 225375086,
+          "TargetFieldId": 193450867
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "62499db8-6fce-44eb-ae66-cbcd2812d576"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "27cc14fb-9b76-47af-aeff-d10da4ecdcd3"
+          },
+          "SourceFieldId": 193453899,
+          "TargetFieldId": 193450864
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9ea32fc9-1792-4df9-a5bf-1b3fbbd0ddc4"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "ce8205ea-105c-4b81-a178-41f9a07b173b"
+          },
+          "SourceFieldId": 225375086,
+          "TargetFieldId": 5862146
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "ce8205ea-105c-4b81-a178-41f9a07b173b"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "62499db8-6fce-44eb-ae66-cbcd2812d576"
+          },
+          "SourceFieldId": 193453899,
+          "TargetFieldId": 193450864
+        }
+      ],
+      "LinkConnections": [
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "66af00b1-3fa5-4ccd-837a-7068b1ac52d7"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "SourceFieldId": 231534181,
+          "TargetFieldId": 231534181
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "66af00b1-3fa5-4ccd-837a-7068b1ac52d7"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "SourceFieldId": 909988034,
+          "TargetFieldId": 909988034
+        }
+      ],
+      "EventConnections": [
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9e513010-7d10-4fc4-8776-7b1a2d144789"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "8857dd69-a7c8-4bec-af28-ecfa431a6b22"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 1723395486
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "dbf1860c-b4b0-471f-9687-534f4721d9ec"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": -763641474
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "dbf1860c-b4b0-471f-9687-534f4721d9ec"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "SourceEvent": {
+            "Id": -81881639
+          },
+          "TargetEvent": {
+            "Id": 569636471
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9a195c28-f319-4311-8456-fd4ea619191d"
+          },
+          "SourceEvent": {
+            "Id": 201149837
+          },
+          "TargetEvent": {
+            "Id": 714915618
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "194b5477-1f09-4a08-be36-1de3f6a0ab04"
+          },
+          "SourceEvent": {
+            "Id": 201149837
+          },
+          "TargetEvent": {
+            "Id": -1541066415
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "194b5477-1f09-4a08-be36-1de3f6a0ab04"
+          },
+          "SourceEvent": {
+            "Id": 218250718
+          },
+          "TargetEvent": {
+            "Id": 668205626
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9a195c28-f319-4311-8456-fd4ea619191d"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "SourceEvent": {
+            "Id": -2015345591
+          },
+          "TargetEvent": {
+            "Id": 1124922452
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "8857dd69-a7c8-4bec-af28-ecfa431a6b22"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9a195c28-f319-4311-8456-fd4ea619191d"
+          },
+          "SourceEvent": {
+            "Id": -137490305
+          },
+          "TargetEvent": {
+            "Id": -155654884
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9b3a04e0-cc56-4e24-94ea-f0a875fb5c55"
+          },
+          "SourceEvent": {
+            "Id": 641512606
+          },
+          "TargetEvent": {
+            "Id": -1541066415
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9b3a04e0-cc56-4e24-94ea-f0a875fb5c55"
+          },
+          "SourceEvent": {
+            "Id": -304910761
+          },
+          "TargetEvent": {
+            "Id": 668205626
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9ea32fc9-1792-4df9-a5bf-1b3fbbd0ddc4"
+          },
+          "SourceEvent": {
+            "Id": -1693956836
+          },
+          "TargetEvent": {
+            "Id": -1541066415
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "66af00b1-3fa5-4ccd-837a-7068b1ac52d7"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "4341c299-ac4b-4f4a-a533-02966269ebcd"
+          },
+          "SourceEvent": {
+            "Id": -80368276
+          },
+          "TargetEvent": {
+            "Id": -1541066415
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "66af00b1-3fa5-4ccd-837a-7068b1ac52d7"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "4341c299-ac4b-4f4a-a533-02966269ebcd"
+          },
+          "SourceEvent": {
+            "Id": -70038721
+          },
+          "TargetEvent": {
+            "Id": 668205626
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "194b5477-1f09-4a08-be36-1de3f6a0ab04"
+          },
+          "SourceEvent": {
+            "Id": -1693956836
+          },
+          "TargetEvent": {
+            "Id": -1541066415
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+          },
+          "Target": {
+            "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+            "InstanceGuid": "9ea32fc9-1792-4df9-a5bf-1b3fbbd0ddc4"
+          },
+          "SourceEvent": {
+            "Id": 201149837
+          },
+          "TargetEvent": {
+            "Id": 668205626
+          },
+          "TargetType": 3
+        }
+      ],
+      "Descriptor": {
+        "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+        "InstanceGuid": "02c25fbc-6252-4f23-babd-9cbb85b95bf6"
+      },
+      "NeedNetworkId": false,
+      "InterfaceHasConnections": true,
+      "AlwaysCreateEntityBusClient": false,
+      "AlwaysCreateEntityBusServer": false,
+      "Objects": [
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "4341c299-ac4b-4f4a-a533-02966269ebcd"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "194b5477-1f09-4a08-be36-1de3f6a0ab04"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "772e2835-3087-442a-96cc-9d4158b82c69"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "dbf1860c-b4b0-471f-9687-534f4721d9ec"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "9b3a04e0-cc56-4e24-94ea-f0a875fb5c55"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "27cc14fb-9b76-47af-aeff-d10da4ecdcd3"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "9e513010-7d10-4fc4-8776-7b1a2d144789"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "8857dd69-a7c8-4bec-af28-ecfa431a6b22"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "b336984f-d33a-49c3-a31f-20551761e5bd"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "9a195c28-f319-4311-8456-fd4ea619191d"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "9ea32fc9-1792-4df9-a5bf-1b3fbbd0ddc4"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "66af00b1-3fa5-4ccd-837a-7068b1ac52d7"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "62499db8-6fce-44eb-ae66-cbcd2812d576"
+        },
+        {
+          "PartitionGuid": "2d92e04a-276a-4512-a22d-79173565890b",
+          "InstanceGuid": "ce8205ea-105c-4b81-a178-41f9a07b173b"
+        }
+      ]
+    },
+    "ce8205ea-105c-4b81-a178-41f9a07b173b": {
+      "$type": "NotEntityData",
+      "IndexInBlueprint": 13,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 1,
+      "Realm": 1,
+      "In": false
+    },
+    "dbf1860c-b4b0-471f-9687-534f4721d9ec": {
+      "$type": "BoolToEventEntityData",
+      "IndexInBlueprint": 3,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 1,
+      "Realm": 1,
+      "Value": false,
+      "InitalEvent": false
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "Name": "gameplay/logic/friendlyfire_failcondition_sp_tank",
+  "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+  "PrimaryInstanceGuid": "cc135768-23d3-4745-b560-99a75d57373a",
+  "Instances": {
+    "000eae5a-3ff9-4307-afbf-7a8fcb4b2fc4": {
+      "$type": "FriendlyFireEntityData",
+      "IndexInBlueprint": 3,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 3,
+      "Teams": [],
+      "EnemyCommitmentAllocation": 4.0,
+      "FriendlyCommitmentAllocation": -4.0,
+      "MaxCommitment": 30.0,
+      "FailureThreshold": -4.0,
+      "DecayRate": 0.032
+    },
+    "213def07-1740-41db-858a-94225c9129cf": {
+      "$type": "FriendlyFireEntityData",
+      "IndexInBlueprint": 0,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 3,
+      "Teams": [],
+      "EnemyCommitmentAllocation": 4.0,
+      "FriendlyCommitmentAllocation": -4.0,
+      "MaxCommitment": 30.0,
+      "FailureThreshold": -40.0,
+      "DecayRate": 0.032
+    },
+    "3fef1b13-c087-403e-b443-30a66bb2b6e8": {
+      "$type": "InterfaceDescriptorData",
+      "Fields": [],
+      "InputEvents": [],
+      "OutputEvents": [
+        {
+          "Id": 1019679487
+        }
+      ],
+      "InputLinks": [],
+      "OutputLinks": []
+    },
+    "51594ce4-9c52-403a-b0b8-6718035cef94": {
+      "$type": "MessageEntityData",
+      "IndexInBlueprint": 1,
+      "IsEventConnectionTarget": 0,
+      "IsPropertyConnectionTarget": 3,
+      "MessageSid": "ID_H_ALERT_FAILED_FRIENDLY_FIRE",
+      "AdditionalMessages": [],
+      "MessageType": 4,
+      "DisplayTime": 5.0,
+      "EntryInputAction": 128,
+      "Enabled": true
+    },
+    "797ea123-ccd9-4143-ada0-af10c634cd08": {
+      "$type": "EventGateEntityData",
+      "IndexInBlueprint": 5,
+      "IsEventConnectionTarget": 0,
+      "IsPropertyConnectionTarget": 3,
+      "Realm": 0,
+      "Default": true
+    },
+    "81fd18e6-a824-4c12-a5c5-bc0628a300a5": {
+      "$type": "LogicReferenceObjectData",
+      "IndexInBlueprint": 2,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3,
+      "BlueprintTransform": {
+        "right": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "up": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "forward": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        },
+        "trans": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "Blueprint": {
+        "PartitionGuid": "35dc8542-eaaf-4882-aaa2-4df9ec3e8549",
+        "InstanceGuid": "5c132065-b402-4ccb-a603-05a3c1d30e5d"
+      },
+      "ObjectVariation": null,
+      "StreamRealm": 0,
+      "CastSunShadowEnable": true,
+      "Excluded": false,
+      "SubRealm": 0
+    },
+    "cc135768-23d3-4745-b560-99a75d57373a": {
+      "$type": "LogicPrefabBlueprint",
+      "Name": "Gameplay/Logic/FriendlyFire_FailCondition_SP_TANK",
+      "PropertyConnections": [],
+      "LinkConnections": [],
+      "EventConnections": [
+        {
+          "Source": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "213def07-1740-41db-858a-94225c9129cf"
+          },
+          "Target": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "51594ce4-9c52-403a-b0b8-6718035cef94"
+          },
+          "SourceEvent": {
+            "Id": 1592746791
+          },
+          "TargetEvent": {
+            "Id": 1037321618
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "213def07-1740-41db-858a-94225c9129cf"
+          },
+          "Target": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "3fef1b13-c087-403e-b443-30a66bb2b6e8"
+          },
+          "SourceEvent": {
+            "Id": 1592746791
+          },
+          "TargetEvent": {
+            "Id": 1019679487
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "213def07-1740-41db-858a-94225c9129cf"
+          },
+          "Target": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "81fd18e6-a824-4c12-a5c5-bc0628a300a5"
+          },
+          "SourceEvent": {
+            "Id": 1592746791
+          },
+          "TargetEvent": {
+            "Id": 230748069
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "000eae5a-3ff9-4307-afbf-7a8fcb4b2fc4"
+          },
+          "Target": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "797ea123-ccd9-4143-ada0-af10c634cd08"
+          },
+          "SourceEvent": {
+            "Id": 1592746791
+          },
+          "TargetEvent": {
+            "Id": 5862146
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "797ea123-ccd9-4143-ada0-af10c634cd08"
+          },
+          "Target": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "e5408bd9-778d-4ff3-8921-d275b00782fb"
+          },
+          "SourceEvent": {
+            "Id": 193453899
+          },
+          "TargetEvent": {
+            "Id": 1037321618
+          },
+          "TargetType": 2
+        },
+        {
+          "Source": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "e5408bd9-778d-4ff3-8921-d275b00782fb"
+          },
+          "Target": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "797ea123-ccd9-4143-ada0-af10c634cd08"
+          },
+          "SourceEvent": {
+            "Id": -1411113229
+          },
+          "TargetEvent": {
+            "Id": 212633683
+          },
+          "TargetType": 2
+        },
+        {
+          "Source": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "e5408bd9-778d-4ff3-8921-d275b00782fb"
+          },
+          "Target": {
+            "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+            "InstanceGuid": "797ea123-ccd9-4143-ada0-af10c634cd08"
+          },
+          "SourceEvent": {
+            "Id": -757604857
+          },
+          "TargetEvent": {
+            "Id": 2089008817
+          },
+          "TargetType": 2
+        }
+      ],
+      "Descriptor": {
+        "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+        "InstanceGuid": "3fef1b13-c087-403e-b443-30a66bb2b6e8"
+      },
+      "NeedNetworkId": true,
+      "InterfaceHasConnections": true,
+      "AlwaysCreateEntityBusClient": true,
+      "AlwaysCreateEntityBusServer": true,
+      "Objects": [
+        {
+          "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+          "InstanceGuid": "213def07-1740-41db-858a-94225c9129cf"
+        },
+        {
+          "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+          "InstanceGuid": "51594ce4-9c52-403a-b0b8-6718035cef94"
+        },
+        {
+          "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+          "InstanceGuid": "81fd18e6-a824-4c12-a5c5-bc0628a300a5"
+        },
+        {
+          "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+          "InstanceGuid": "000eae5a-3ff9-4307-afbf-7a8fcb4b2fc4"
+        },
+        {
+          "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+          "InstanceGuid": "e5408bd9-778d-4ff3-8921-d275b00782fb"
+        },
+        {
+          "PartitionGuid": "7b62de3a-b170-4534-8313-9c965415ddee",
+          "InstanceGuid": "797ea123-ccd9-4143-ada0-af10c634cd08"
+        }
+      ]
+    },
+    "e5408bd9-778d-4ff3-8921-d275b00782fb": {
+      "$type": "MessageEntityData",
+      "IndexInBlueprint": 4,
+      "IsEventConnectionTarget": 0,
+      "IsPropertyConnectionTarget": 3,
+      "MessageSid": "ID_H_ALERT_FAILED_FRIENDLY_FIRE",
+      "AdditionalMessages": [],
+      "MessageType": 0,
+      "DisplayTime": 5.0,
+      "EntryInputAction": 128,
+      "Enabled": true
+    }
+  }
+}
