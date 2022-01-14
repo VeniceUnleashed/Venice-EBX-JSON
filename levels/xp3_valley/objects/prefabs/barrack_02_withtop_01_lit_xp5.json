@@ -15,7 +15,7 @@
       "BigWorld": null,
       "FadeWidth": 1.0,
       "ProximityMultiplier": 0.85,
-      "FadeCurve": 1
+      "FadeCurve": "FadeCurveType_SineAmplitude"
     },
     "09a32af8-4652-41f8-b432-7f7b59a43d2f": {
       "$type": "IrReverbEntityData",
@@ -28,7 +28,7 @@
       },
       "Gain": -16.0,
       "Volume": 0.0,
-      "FadeCurve": 0
+      "FadeCurve": "FadeCurveType_LinearAmplitude"
     },
     "0eae00c9-d0c8-444f-90aa-875b34787c1e": {
       "$type": "OBBData",
@@ -68,9 +68,9 @@
       "IndexInBlueprint": 1,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "1ab9bdd0-1a00-42ad-b22f-15ffd4412f84": {
@@ -105,7 +105,7 @@
         "InstanceGuid": "670dd1a0-cf0c-449a-b1c4-5f7def4f1900"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -114,7 +114,7 @@
       "IndexInBlueprint": 4,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 1.0,
       "IncDecValue": 0.125
     },
@@ -150,7 +150,7 @@
         "InstanceGuid": "11def780-ca1c-d8a7-a389-e267d1146509"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -186,7 +186,7 @@
         "InstanceGuid": "670dd1a0-cf0c-449a-b1c4-5f7def4f1900"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -195,9 +195,9 @@
       "IndexInBlueprint": 6,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "50184002-4c12-4720-8314-3fd92fb707e0": {
@@ -207,13 +207,13 @@
           "Value": "",
           "ValueRef": null,
           "Id": -705641458,
-          "AccessType": 0
+          "AccessType": "FieldAccessType_Source"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 407141962,
-          "AccessType": 0
+          "AccessType": "FieldAccessType_Source"
         }
       ],
       "InputEvents": [],
@@ -242,14 +242,14 @@
       },
       "Gain": -16.0,
       "Volume": 0.0,
-      "FadeCurve": 0
+      "FadeCurve": "FadeCurveType_LinearAmplitude"
     },
     "59a10f91-9aa9-496c-a837-57b9e7155e47": {
       "$type": "FloatEntityData",
       "IndexInBlueprint": 5,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 0.0,
       "IncDecValue": 1.0
     },
@@ -468,7 +468,7 @@
           "TargetEvent": {
             "Id": -395651742
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -485,7 +485,7 @@
           "TargetEvent": {
             "Id": -395651742
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -502,7 +502,7 @@
           "TargetEvent": {
             "Id": -395651742
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -519,7 +519,7 @@
           "TargetEvent": {
             "Id": -395651742
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -536,7 +536,7 @@
           "TargetEvent": {
             "Id": 394141903
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -553,7 +553,7 @@
           "TargetEvent": {
             "Id": -1828304424
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -570,7 +570,7 @@
           "TargetEvent": {
             "Id": 1460616217
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -587,7 +587,7 @@
           "TargetEvent": {
             "Id": -274579609
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -604,7 +604,7 @@
           "TargetEvent": {
             "Id": -274579609
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -621,7 +621,7 @@
           "TargetEvent": {
             "Id": -274579609
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -638,7 +638,7 @@
           "TargetEvent": {
             "Id": -274579609
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -655,7 +655,7 @@
           "TargetEvent": {
             "Id": -274579609
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         }
       ],
       "Descriptor": {
@@ -816,7 +816,7 @@
         "InstanceGuid": "11def780-ca1c-d8a7-a389-e267d1146509"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -832,7 +832,7 @@
       "BigWorld": null,
       "FadeWidth": 1.0,
       "ProximityMultiplier": 0.85,
-      "FadeCurve": 1
+      "FadeCurve": "FadeCurveType_SineAmplitude"
     },
     "8876c6ab-d6ca-4a78-a5d4-e0bbac6ea7f8": {
       "$type": "ReferenceObjectData",
@@ -866,7 +866,7 @@
         "InstanceGuid": "1e92550f-b186-41a0-bf3f-d39e15307aae"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -902,7 +902,7 @@
         "InstanceGuid": "11def780-ca1c-d8a7-a389-e267d1146509"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -911,7 +911,7 @@
       "IndexInBlueprint": 2,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 0.0,
       "IncDecValue": 1.0
     },
@@ -1012,7 +1012,7 @@
         "InstanceGuid": "cff8536d-0fe7-400a-9a7d-8b7a9e0b975a"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -1048,7 +1048,7 @@
         "InstanceGuid": "11def780-ca1c-d8a7-a389-e267d1146509"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -1057,9 +1057,9 @@
       "IndexInBlueprint": 16,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "d8abd431-4e74-4b05-9355-ca74f7b271b5": {
@@ -1121,7 +1121,7 @@
       "IndexInBlueprint": 3,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 1.0,
       "IncDecValue": 0.125
     },
@@ -1190,7 +1190,7 @@
         "InstanceGuid": "11def780-ca1c-d8a7-a389-e267d1146509"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     }

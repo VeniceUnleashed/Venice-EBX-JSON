@@ -20,7 +20,7 @@
         "ValueIndex": 10,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "075fcbfb-b193-47a7-bc41-aa7612b983b6": {
       "$type": "ReceiveEntry",
@@ -81,7 +81,7 @@
         "ValueIndex": 12,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "21ee134c-d3e1-4530-b8df-1bc4a11ba2d5": {
       "$type": "LogicalExpressionEntry",
@@ -173,7 +173,7 @@
         "InstanceGuid": "36be52eb-bc70-374c-e667-cc8ce8825c9e"
       },
       "BasePitch": 1.0,
-      "Loop": 1,
+      "Loop": "LtForward",
       "Plugins": [
         {
           "SndPlayer": {
@@ -338,7 +338,7 @@
         "ValueIndex": 26,
         "IsConnected": true
       },
-      "Condition": 5
+      "Condition": "ConditionType_Greater"
     },
     "74595e86-1d58-98bc-54b3-60cd6ead20bf": {
       "$type": "SoundGraphData",
@@ -708,7 +708,7 @@
         ],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -717,7 +717,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 4.0,
@@ -736,7 +736,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 2.0,
@@ -755,7 +755,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 0.0,
@@ -774,19 +774,19 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
@@ -847,7 +847,7 @@
         "ValueIndex": 15,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "76ce9b93-34a2-4a42-b4ec-3fc8430832df": {
       "$type": "SimpleTransformNodeData",
@@ -866,8 +866,8 @@
         "ValueIndex": 23,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "779f6c40-afdb-4a55-bf55-fbf455798f4c": {
       "$type": "LogicalExpressionEntry",
@@ -1022,7 +1022,7 @@
         "InstanceGuid": "86383899-91ea-b74c-aaec-8809227b9df3"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -1223,7 +1223,7 @@
       "MinDistance": 1000.0,
       "AttenuationCurve": {
         "Points": [],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": -6.0,
       "HFDampingDistance": 0.0,
@@ -1239,7 +1239,7 @@
         "InstanceGuid": "8df9c7ba-5e20-462e-b93b-e7746a8c6afa"
       },
       "OutputName": "Direct",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2599500168,
       "LowPassPlugin": {
         "IsValid": true,
@@ -1271,7 +1271,7 @@
         "ValueIndex": 11,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "d7a56b06-601c-4eb6-8213-6606ab52bd79": {
       "$type": "RouteEntry",

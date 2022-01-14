@@ -409,7 +409,7 @@
         "InstanceGuid": "40ce70ca-607d-4f00-8c00-05de08dcd182"
       },
       "CustomWeaponType": null,
-      "Classification": 1,
+      "Classification": "WCPrimary",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -489,16 +489,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 3,
+      "RigidBodyType": "RBTypeRaycast",
       "Mass": 0.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 0,
-      "CollisionLayer": 0,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_Invalid",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -658,7 +658,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint6"
     },
@@ -760,7 +760,7 @@
       "IndexInBlueprint": 12,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "DefaultValue": true
     },
     "1db7a1a7-11ff-aea1-ef63-55957e71173e": {
@@ -1040,10 +1040,10 @@
         "InstanceGuid": "05667bce-02d7-4200-980e-baec96547c3a"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "26dd1ba1-cb69-4ac7-a8cb-4bf99858f150": {
       "$type": "RigidBodyData",
@@ -1052,16 +1052,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 0,
+      "RigidBodyType": "RBTypeCollision",
       "Mass": 5000.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 3,
-      "QualityType": 0,
-      "CollisionLayer": 1,
+      "MotionType": "RigidBodyMotionType_Dynamic",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_VehicleLayer",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -1189,7 +1189,7 @@
         "InstanceGuid": "7e041562-52d9-4a83-a59e-5ede913715b0"
       },
       "LowHealthThreshold": 299.0,
-      "DefaultTeam": 0,
+      "DefaultTeam": "TeamNeutral",
       "MaterialPair": {
         "PartitionGuid": "b50615c2-4743-4919-9a40-a738150debe9",
         "InstanceGuid": "221ad190-bb79-4248-ad52-4e16ff6460ae"
@@ -1287,7 +1287,7 @@
           "z": -50.0
         },
         "Customization": null,
-        "MinimapIcon": 56,
+        "MinimapIcon": "UIHudIcon_TankIFV",
         "Texture": null,
         "VehicleItemHash": 4175379619
       },
@@ -1389,7 +1389,7 @@
       "MaskVolume": null,
       "DestructionMaskVolume": null,
       "MaterialPair": null,
-      "DamageIndicationType": 0,
+      "DamageIndicationType": "DamageIndicationType_GiverPlayer",
       "EmpTime": 0.0,
       "MaxOcclusionRaycastRadius": 2.0,
       "InnerBlastRadius": 2.0,
@@ -1458,7 +1458,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 2,
+      "PhysicsType": "wptStatic",
       "EffectClampVelocity": 0.0,
       "BoneName": ""
     },
@@ -1675,7 +1675,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 1,
+      "PhysicsType": "wptFollow",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint5"
     },
@@ -2363,7 +2363,7 @@
     },
     "56966402-8832-480a-b283-b2be7d704d20": {
       "$type": "AlignmentData",
-      "AlignAction": 128,
+      "AlignAction": "EIAUndefined",
       "StopTolerance": 1.0,
       "Speed": 0.35
     },
@@ -2412,7 +2412,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint3"
     },
@@ -2574,7 +2574,7 @@
       "ForceModifier": 14000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 6,
+      "RotationInput": "EIARoll",
       "WorldSpaceLockEfficiency": 0.0,
       "UseLinearInput": true
     },
@@ -2595,7 +2595,7 @@
       "IndexInBlueprint": 8,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "In1": false,
       "In2": false,
       "In3": false,
@@ -2684,7 +2684,7 @@
       "IndexInBlueprint": 5,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 2,
-      "Action": 0,
+      "Action": "EIAThrottle",
       "Scale": 0.1,
       "Offset": 0.0,
       "Enabled": false
@@ -2919,7 +2919,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint3"
     },
@@ -3143,7 +3143,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 1,
+      "PhysicsType": "wptFollow",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint4"
     },
@@ -3223,7 +3223,7 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 0
+          "LockType": "LockAlways"
         }
       ],
       "LockTime": 3.0,
@@ -3379,7 +3379,7 @@
       "UpCurve": [],
       "DownCurve": [],
       "UpPitchAngle": 10.0,
-      "YawInputAction": 6,
+      "YawInputAction": "EIARoll",
       "LoosePartPhysics": [
         {
           "PartitionGuid": "09b8f89d-cd84-45cf-8b5e-e3d9409077dc",
@@ -3403,7 +3403,7 @@
       "PitchSensitivityZoomed": 0.0,
       "DownPitchAngle": 10.0,
       "AverageFilterFrames": 10,
-      "PitchInputAction": 5,
+      "PitchInputAction": "EIAPitch",
       "YawSensitivityZoomed": 0.0,
       "PitchSensitivityNonZoomed": 0.0,
       "YawSensitivityNonZoomed": 1.0,
@@ -3511,7 +3511,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 2,
+      "PhysicsType": "wptStatic",
       "EffectClampVelocity": 0.0,
       "BoneName": ""
     },
@@ -3637,7 +3637,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 1,
+      "PhysicsType": "wptFollow",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint4"
     },
@@ -3747,7 +3747,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 2,
+      "PhysicsType": "wptStatic",
       "EffectClampVelocity": 0.0,
       "BoneName": ""
     },
@@ -3796,7 +3796,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 1,
+      "PhysicsType": "wptFollow",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint5"
     },
@@ -3942,7 +3942,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "e09deb16-caad-4575-b234-7db7e931a603"
       },
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -4039,7 +4039,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint1"
     },
@@ -4077,7 +4077,7 @@
       "LowHealthWarnSoundEffect": null,
       "LockingWarnSoundEffect": null,
       "LockedWarnSoundEffect": null,
-      "PlayerType": 0
+      "PlayerType": "WPTInflictor"
     },
     "9bc5c432-c92f-fc21-9e6f-04dd4d5857fd": {
       "$type": "HealthStateData",
@@ -4529,7 +4529,7 @@
       "IndexInBlueprint": 7,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 2,
-      "Action": 2,
+      "Action": "EIABrake",
       "Scale": 0.1,
       "Offset": 0.0,
       "Enabled": false
@@ -4872,7 +4872,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -4889,7 +4889,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -4906,7 +4906,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -4923,7 +4923,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -4940,7 +4940,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -4957,7 +4957,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -4974,7 +4974,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -4991,7 +4991,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -5008,7 +5008,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -5025,7 +5025,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -5042,7 +5042,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -5059,7 +5059,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -5076,7 +5076,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -5093,7 +5093,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -5110,7 +5110,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -5127,7 +5127,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5144,7 +5144,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5161,7 +5161,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5178,7 +5178,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5195,7 +5195,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5212,7 +5212,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5229,7 +5229,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5246,7 +5246,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5263,7 +5263,7 @@
           "TargetEvent": {
             "Id": -1036968738
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5280,7 +5280,7 @@
           "TargetEvent": {
             "Id": -274579609
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5297,7 +5297,7 @@
           "TargetEvent": {
             "Id": -1452333337
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5314,7 +5314,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5331,7 +5331,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -5348,7 +5348,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5365,7 +5365,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5382,7 +5382,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5399,7 +5399,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5416,7 +5416,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5433,7 +5433,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         }
       ],
       "Descriptor": {
@@ -5575,7 +5575,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 1,
+      "PhysicsType": "wptFollow",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint2"
     },
@@ -5691,7 +5691,7 @@
       "ForceModifier": 14000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 5,
+      "RotationInput": "EIAPitch",
       "WorldSpaceLockEfficiency": 0.75,
       "UseLinearInput": true
     },
@@ -5732,7 +5732,7 @@
       "IndexInBlueprint": 9,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "In1": false,
       "In2": false,
       "In3": false,
@@ -5793,7 +5793,7 @@
         "PartitionGuid": "e17110dd-c5fb-48bc-8503-ddc44b15dde1",
         "InstanceGuid": "14e97f62-4cce-4d74-975b-8b8627f7f4ca"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "4c000184-baf5-435f-87a2-ddc3ffc6bd12",
         "InstanceGuid": "5e01089f-2e55-446c-9361-821bf37ba845"
@@ -5805,7 +5805,7 @@
       "InputCurves": [],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -5813,8 +5813,8 @@
       "EntryOrderNumber": 0,
       "EnterImpulse": 0.0,
       "EntryRadius": 10.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 2,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSReceive",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -5843,7 +5843,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0
@@ -5988,7 +5988,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 2,
+      "PhysicsType": "wptStatic",
       "EffectClampVelocity": 0.0,
       "BoneName": ""
     },
@@ -6121,7 +6121,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint1"
     },
@@ -6417,7 +6417,7 @@
         "PartitionGuid": "0c9c035d-da47-47c3-a1f5-3039c6cb8f68",
         "InstanceGuid": "e47f14d9-c8f0-41d1-9602-418e1112aa7f"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "0e2ea492-702d-4fe9-af4b-6c5129c8d341",
         "InstanceGuid": "b6748633-1555-4e66-bfc8-2c0a914119a7"
@@ -6429,7 +6429,7 @@
       "InputCurves": [],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -6437,8 +6437,8 @@
       "EntryOrderNumber": 1,
       "EnterImpulse": 0.0,
       "EntryRadius": 1.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 1,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSSendAndReceive",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -6464,7 +6464,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0
@@ -6870,7 +6870,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint6"
     },
@@ -6879,7 +6879,7 @@
       "IndexInBlueprint": 6,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 2,
-      "Action": 4,
+      "Action": "EIAYaw",
       "Scale": 0.01,
       "Offset": 0.0,
       "Enabled": false
@@ -6905,7 +6905,7 @@
         "InstanceGuid": "7b584a06-90d3-4ada-a9a8-5fd5bf5abf69"
       },
       "SecondaryLockingController": null,
-      "WarnLock": 3,
+      "WarnLock": "wtWarnNone",
       "IsHoming": false,
       "IsGuidedWhenZoomed": false,
       "FireOnlyWhenLockedOn": false,
@@ -7220,14 +7220,14 @@
       "UpCurve": [],
       "DownCurve": [],
       "UpPitchAngle": 0.0,
-      "YawInputAction": 6,
+      "YawInputAction": "EIARoll",
       "LoosePartPhysics": [],
       "LeftYawAngle": 0.0,
       "RightYawAngle": 0.0,
       "PitchSensitivityZoomed": 0.0,
       "DownPitchAngle": 0.0,
       "AverageFilterFrames": 10,
-      "PitchInputAction": 5,
+      "PitchInputAction": "EIAPitch",
       "YawSensitivityZoomed": 0.0,
       "PitchSensitivityNonZoomed": 0.0,
       "YawSensitivityNonZoomed": 0.0,
@@ -7344,7 +7344,7 @@
       },
       "InputDelay": 0.0,
       "Speed": -22.0,
-      "InputAction": 0,
+      "InputAction": "EIAThrottle",
       "TriggerImpulse": 1500.0,
       "IsOneShotInput": false
     },
@@ -7437,7 +7437,7 @@
       "Stabilizer": null,
       "Stabilizers": [],
       "ConstantForce": [],
-      "VehicleModeAtReset": 0,
+      "VehicleModeAtReset": "VmIdle",
       "BodyMass": 5000.0,
       "GravityModifier": 1.6,
       "YawMin": -1.0,
@@ -7615,7 +7615,7 @@
         "PartitionGuid": "dcf45a75-fa66-4585-add4-8109182f1f37",
         "InstanceGuid": "d1fc68df-7ac0-4087-a68e-3f16cc569898"
       },
-      "PhysicsType": 1,
+      "PhysicsType": "wptFollow",
       "EffectClampVelocity": 0.0,
       "BoneName": "joint2"
     }

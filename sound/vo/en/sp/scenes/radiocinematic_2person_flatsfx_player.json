@@ -47,7 +47,7 @@
       "MinDistance": 1.0,
       "AttenuationCurve": {
         "Points": [],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.0,
@@ -63,7 +63,7 @@
         "InstanceGuid": "9384b910-4438-438a-a545-27a827308df0"
       },
       "OutputName": "Sfx_transform",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2493215035,
       "LowPassPlugin": {
         "IsValid": true,
@@ -121,7 +121,7 @@
         "ValueIndex": 23,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "0c7c28b9-3d72-416f-911b-3e5220886edb": {
       "$type": "ReceiveEntry",
@@ -168,7 +168,7 @@
         "ValueIndex": 0,
         "IsConnected": true
       },
-      "Filter": 0,
+      "Filter": "FrequencyShiftSsbFilter_None",
       "Plugin": {
         "IsValid": true,
         "VoiceIndex": 2,
@@ -420,7 +420,7 @@
         "ValueIndex": 28,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "4bf67c92-dc4f-43a6-b2cf-213e9e8c9d78": {
       "$type": "GainNodeData",
@@ -666,7 +666,7 @@
         "InstanceGuid": "576b177a-3c95-4427-af05-76c0dc2bd358"
       },
       "BasePitch": 1.0,
-      "Loop": 3,
+      "Loop": "LtInstantRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -794,7 +794,7 @@
       },
       "Wave": null,
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -836,7 +836,7 @@
       "MinDistance": 1000.0,
       "AttenuationCurve": {
         "Points": [],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.0,
@@ -852,7 +852,7 @@
         "InstanceGuid": "b735bfcd-0afb-4210-8ca2-6f9c61989002"
       },
       "OutputName": "Flat",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2088683098,
       "LowPassPlugin": {
         "IsValid": true,
@@ -2090,7 +2090,7 @@
         ],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2099,7 +2099,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2108,73 +2108,73 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 2
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 3
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 2
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 3
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2183,7 +2183,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2192,7 +2192,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 3.0,
@@ -2211,7 +2211,7 @@
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 2.0,
@@ -2230,7 +2230,7 @@
             "VoiceIndex": 5
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 0.0,
@@ -2496,7 +2496,7 @@
         "ValueIndex": 0,
         "IsConnected": true
       },
-      "ChannelMode": 1,
+      "ChannelMode": "LimiterChannelMode_Grouped",
       "Plugin": {
         "IsValid": true,
         "VoiceIndex": 0,

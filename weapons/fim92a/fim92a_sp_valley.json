@@ -169,9 +169,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.4,
         "RateOfFire": 60.0,
         "RateOfFireForBurst": 550.0,
@@ -182,10 +182,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 4.3,
         "ReloadTimeBulletsLeft": -1.0,
-        "FireLogicType": 0,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltSingleFire",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 1,
+        "ReloadType": "rtMagazine",
         "HoldOffReloadUntilZoomRelease": true,
         "ForceReloadActionOnFireTrigger": true,
         "HoldOffReloadUntilFireRelease": true,
@@ -282,7 +282,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -305,8 +305,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -469,8 +469,8 @@
               "InstanceGuid": "822eb303-b676-4bbe-8926-2b11469600d7"
             }
           },
-          "AnimatedFireType": 1,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireSingle",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -1063,7 +1063,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 23,
+      "WeaponClass": "wcAt",
       "AIData": {
         "PartitionGuid": "64b3857a-f082-4398-862d-e20e57d72644",
         "InstanceGuid": "2644d5f3-0805-10b9-25e1-9d3e45c38efc"
@@ -1133,7 +1133,7 @@
           "z": 60.0
         }
       },
-      "AnimBaseSet": 3,
+      "AnimBaseSet": "wabsAT",
       "AnimationData": {
         "PartitionGuid": "b255cb56-74ab-1077-51d3-a0dd819b5c93",
         "InstanceGuid": "b255cb56-74ab-1077-51d3-a0dd819b5c93"
@@ -1145,7 +1145,7 @@
         "PartitionGuid": "64b3857a-f082-4398-862d-e20e57d72644",
         "InstanceGuid": "c520f728-35b0-4f5d-9097-4260b1775929"
       },
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": null,
       "WeaponFloatParam": 1.0,
       "Sockets": [
@@ -1154,7 +1154,7 @@
           "InstanceGuid": "edb95e9d-5e68-4735-b6d2-918b1e596f4c"
         }
       ],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "64b3857a-f082-4398-862d-e20e57d72644",
         "InstanceGuid": "0b8b3547-476e-43bc-85e5-d4da9624a5fe"
@@ -1190,11 +1190,11 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 5
+          "LockType": "LockTypeCount"
         },
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 2
+          "LockType": "LockOnHeat"
         }
       ],
       "LockTime": 2.0,
@@ -1223,7 +1223,7 @@
         "InstanceGuid": "d97b1fb8-95a6-4140-98c2-631b2d484479"
       },
       "SecondaryLockingController": null,
-      "WarnLock": 2,
+      "WarnLock": "wtWarnVehicle",
       "IsHoming": true,
       "IsGuidedWhenZoomed": false,
       "FireOnlyWhenLockedOn": true,
@@ -1284,8 +1284,8 @@
           "InstanceGuid": "2d8c82f5-267b-4e32-a78c-4a8422d2c2af"
         }
       ],
-      "GearSlot": 13,
-      "SocketType": 0,
+      "GearSlot": "GearSlot_NotEquipped",
+      "SocketType": "SocketType_Undefined",
       "UsesDefaultObject": false,
       "Excluded": false,
       "DefaultEnableSocketEntities": false,

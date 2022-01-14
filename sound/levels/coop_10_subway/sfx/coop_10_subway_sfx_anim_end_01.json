@@ -50,7 +50,7 @@
       "MinDistance": 1.0,
       "AttenuationCurve": {
         "Points": [],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.0,
@@ -66,7 +66,7 @@
         "InstanceGuid": "84f7080e-f0bb-45fd-834f-2ae867d17175"
       },
       "OutputName": "Direct",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2599500168,
       "LowPassPlugin": {
         "IsValid": true,
@@ -98,8 +98,8 @@
         "ValueIndex": 19,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "3b5e31a2-2f33-408e-8886-ae3d504b9859": {
       "$type": "SendNodeData",
@@ -409,7 +409,7 @@
         ],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -418,7 +418,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 4.0,
@@ -437,7 +437,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 2.0,
@@ -456,7 +456,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 0.0,
@@ -855,7 +855,7 @@
         "InstanceGuid": "61d5ecf5-40bf-036f-af7b-c044ce0b949f"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {

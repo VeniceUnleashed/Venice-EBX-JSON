@@ -44,7 +44,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 400.0,
       "FadeEnd": 600.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "03060a35-83c2-4ebd-b9ca-dce9d1d22e1c": {
       "$type": "MultiCrossfaderGroup",
@@ -66,7 +66,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 550.0,
       "FadeEnd": 600.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "05304029-b6e8-42f0-bdfe-55dd301b54a8": {
       "$type": "ReceiveEntry",
@@ -128,8 +128,8 @@
         "ValueIndex": 32,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "0a5235e8-5a17-483c-9c0a-b70e52847a8b": {
       "$type": "MultiCrossfaderGroup",
@@ -151,7 +151,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 95.0,
       "FadeEnd": 150.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "0b5680ad-efcf-48ca-9647-20fcc34b3df8": {
       "$type": "DeMuxOutput",
@@ -178,8 +178,8 @@
         "ValueIndex": 37,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "0cafca83-99ed-47eb-b081-3a415e1c8d26": {
       "$type": "SimpleTransformNodeData",
@@ -198,8 +198,8 @@
         "ValueIndex": 39,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "0d851bf5-f6f6-4f20-a991-747ea9bd884c": {
       "$type": "MultiCrossfaderGroup",
@@ -221,7 +221,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 550.0,
       "FadeEnd": 600.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "112d6ecd-7951-4271-a2d3-4aaa5133b635": {
       "$type": "NumberGeneratorNodeData",
@@ -232,7 +232,7 @@
       },
       "Min": 400.0,
       "Max": 1700.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 95,
@@ -265,7 +265,7 @@
             "K": 0.0
           }
         ],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 3.0,
       "HFDampingDistance": 0.0,
@@ -281,7 +281,7 @@
         "InstanceGuid": "fcef9739-f135-4f90-9829-765512ce4a5e"
       },
       "OutputName": "LFE",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 193453418,
       "LowPassPlugin": {
         "IsValid": true,
@@ -375,7 +375,7 @@
       },
       "Wave": null,
       "BasePitch": 1.0,
-      "Loop": 2,
+      "Loop": "LtRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -441,8 +441,8 @@
         "ValueIndex": 33,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "12c097e7-9c37-41b6-9050-b20116e0f27c": {
       "$type": "ConeOutputNodeData",
@@ -485,7 +485,7 @@
             "K": -0.24851818
           }
         ],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.6,
@@ -501,7 +501,7 @@
         "InstanceGuid": "b735bfcd-0afb-4210-8ca2-6f9c61989002"
       },
       "OutputName": "Cone",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2088844290,
       "LowPassPlugin": {
         "IsValid": true,
@@ -594,7 +594,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 550.0,
       "FadeEnd": 600.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "155d55f2-86c2-4843-89de-65a4a7503098": {
       "$type": "ReceiveEntry",
@@ -666,7 +666,7 @@
       },
       "Min": 0.94,
       "Max": 1.02,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 24,
@@ -693,7 +693,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 600.0,
       "FadeEnd": 601.0,
-      "FadeType": 0
+      "FadeType": "FaderType_Linear"
     },
     "20f8dc69-265f-4f18-8acc-24f4056e29dd": {
       "$type": "SoundGraphData",
@@ -2522,7 +2522,7 @@
         ],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2531,7 +2531,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2540,7 +2540,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2549,7 +2549,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2558,7 +2558,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2567,175 +2567,175 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 3
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 2
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 2
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 2
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 5
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 6
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 7
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 2
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 2
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 8
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 8
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 5
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 4
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 5
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 7
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 7
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 7
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 7
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
@@ -2884,7 +2884,7 @@
             "K": -0.24851818
           }
         ],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.3,
@@ -2900,7 +2900,7 @@
         "InstanceGuid": "b735bfcd-0afb-4210-8ca2-6f9c61989002"
       },
       "OutputName": "Flat",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2088683098,
       "LowPassPlugin": {
         "IsValid": true,
@@ -3051,8 +3051,8 @@
         "ValueIndex": 21,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "323e5717-350f-4fe9-8bcb-191d42294e68": {
       "$type": "SimpleTransformNodeData",
@@ -3071,8 +3071,8 @@
         "ValueIndex": 30,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "33d084d5-b50d-49b2-ab9c-291f7d4a7184": {
       "$type": "SamplerNodeData",
@@ -3153,7 +3153,7 @@
       },
       "Wave": null,
       "BasePitch": 1.0,
-      "Loop": 2,
+      "Loop": "LtRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -3244,7 +3244,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 40.0,
       "FadeEnd": 60.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "3ca07da3-933c-4c52-8b91-018c996b18ea": {
       "$type": "SimpleValueSelectorNodeData",
@@ -3338,8 +3338,8 @@
         "ValueIndex": 99,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "42c003ea-6611-4513-a615-aabc1622e364": {
       "$type": "SimpleTransformNodeData",
@@ -3358,8 +3358,8 @@
         "ValueIndex": 34,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "44918062-d936-45d8-8afa-28e623cb7d3c": {
       "$type": "AudioGraphParameter",
@@ -3449,7 +3449,7 @@
         "InstanceGuid": "4624a3a3-b4c1-3639-6645-2b1702b375ad"
       },
       "BasePitch": 1.0,
-      "Loop": 2,
+      "Loop": "LtRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -3607,7 +3607,7 @@
       },
       "Wave": null,
       "BasePitch": 0.8,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -3690,8 +3690,8 @@
         "ValueIndex": 19,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "5d3c8838-26a2-479c-92ef-504c878c42d6": {
       "$type": "SimpleTransformNodeData",
@@ -3710,8 +3710,8 @@
         "ValueIndex": 35,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "5fafc603-c32b-4f9b-979a-85ca3e094eff": {
       "$type": "ReceiveEntry",
@@ -3793,8 +3793,8 @@
         "ValueIndex": 42,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "6202be97-a9ce-4294-a9c3-d0b893e32dd9": {
       "$type": "AudioGraphEvent",
@@ -3844,7 +3844,7 @@
       },
       "Min": 100.0,
       "Max": 350.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 18,
@@ -3868,8 +3868,8 @@
         "ValueIndex": 81,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "6b1eaee8-79a4-4f91-a883-33e87911e4aa": {
       "$type": "ReceiveNodeData",
@@ -4027,8 +4027,8 @@
         "ValueIndex": 91,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "7bac5205-fb56-485d-9f3b-1a9eaa8e1472": {
       "$type": "ReceiveEntry",
@@ -4064,7 +4064,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 25.0,
       "FadeEnd": 65.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "84f7868b-a2cb-4e4d-a696-779335914c83": {
       "$type": "AudioGraphEvent",
@@ -4429,7 +4429,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 100.0,
       "FadeEnd": 200.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "9f5fdd55-944a-429e-8402-cbfe4e31f6f7": {
       "$type": "ReceiveEntry",
@@ -4562,7 +4562,7 @@
       },
       "Wave": null,
       "BasePitch": 0.8,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -4668,7 +4668,7 @@
       },
       "Wave": null,
       "BasePitch": 1.0,
-      "Loop": 2,
+      "Loop": "LtRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -4726,7 +4726,7 @@
       },
       "Min": 400.0,
       "Max": 2000.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 96,
@@ -4759,8 +4759,8 @@
         "ValueIndex": 100,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "b27ef44f-8e90-4c16-9d91-7276d0eaa4ec": {
       "$type": "GainNodeData",
@@ -4802,8 +4802,8 @@
         "ValueIndex": 40,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "b729cf31-294f-4065-8bbc-33a012c2607f": {
       "$type": "MultiCrossfaderNodeData",
@@ -4851,8 +4851,8 @@
         "ValueIndex": 26,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "bba00c75-61f1-4745-8576-2e96249d8517": {
       "$type": "SimpleTransformNodeData",
@@ -4871,8 +4871,8 @@
         "ValueIndex": 90,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "bd4a36b7-ffa4-45a3-b835-ecc992975f50": {
       "$type": "SoundPatchAsset",
@@ -5006,8 +5006,8 @@
         "ValueIndex": 74,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "c6c2976b-36ea-432c-a46b-ba07a335f346": {
       "$type": "ReceiveEntry",
@@ -5111,7 +5111,7 @@
         "InstanceGuid": "6ebf5301-358e-96b3-d720-1cb11e7fd71c"
       },
       "BasePitch": 1.0,
-      "Loop": 2,
+      "Loop": "LtRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -5374,7 +5374,7 @@
         "InstanceGuid": "ff21b705-2888-a45b-c603-820facf9561c"
       },
       "BasePitch": 1.0,
-      "Loop": 3,
+      "Loop": "LtInstantRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -5440,8 +5440,8 @@
         "ValueIndex": 82,
         "IsConnected": true
       },
-      "Operation": 0,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Add",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "d57e4faa-16a3-404d-96c2-da96294733e1": {
       "$type": "ReceiveEntry",
@@ -5568,7 +5568,7 @@
         "InstanceGuid": "44fd64f0-b0d7-efa6-b504-775189c4a5fb"
       },
       "BasePitch": 1.0,
-      "Loop": 2,
+      "Loop": "LtRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -5825,7 +5825,7 @@
       },
       "Min": 0.01,
       "Max": 0.02,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 47,
@@ -5905,7 +5905,7 @@
       },
       "Min": 0.7,
       "Max": 0.88,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 38,
@@ -6027,7 +6027,7 @@
         "InstanceGuid": "816fdca6-6c51-eceb-eb7b-17707e69a88d"
       },
       "BasePitch": 1.0,
-      "Loop": 2,
+      "Loop": "LtRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -6126,8 +6126,8 @@
         "ValueIndex": 104,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "f071867a-14e0-40a3-90b4-86dee6f65cdc": {
       "$type": "AudioGraphParameter",
@@ -6152,8 +6152,8 @@
         "ValueIndex": 23,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "f2434b59-4df7-43b7-88c8-0d2ca34094b5": {
       "$type": "ValueSelectorEntry",
@@ -6195,8 +6195,8 @@
         "ValueIndex": 36,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "f7ba896b-2a60-427d-87a7-bfdfee8b7d6f": {
       "$type": "AudioGraphParameter",
@@ -6221,8 +6221,8 @@
         "ValueIndex": 31,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "ff58486e-366e-484b-a37c-d1c96477a1b1": {
       "$type": "DelayNodeData",

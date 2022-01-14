@@ -20,7 +20,7 @@
         "ValueIndex": 22,
         "IsConnected": true
       },
-      "Condition": 3
+      "Condition": "ConditionType_Equal"
     },
     "06ccb9cd-426c-407a-b970-325f71c83389": {
       "$type": "SimpleTransformNodeData",
@@ -39,8 +39,8 @@
         "ValueIndex": 35,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "0ac0023b-af25-43e2-be00-ee1f43440676": {
       "$type": "FlatOutputNodeData",
@@ -68,7 +68,7 @@
             "K": -0.0072906017
           }
         ],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.0,
@@ -84,7 +84,7 @@
         "InstanceGuid": "b735bfcd-0afb-4210-8ca2-6f9c61989002"
       },
       "OutputName": "Weapon",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 3190562823,
       "LowPassPlugin": {
         "IsValid": true,
@@ -209,8 +209,8 @@
         "ValueIndex": 37,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "34cd2e9e-a69e-4522-a11b-ba79d101fb6e": {
       "$type": "ReceiveEntry",
@@ -360,7 +360,7 @@
             "K": -0.0072906017
           }
         ],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.0,
@@ -376,7 +376,7 @@
         "InstanceGuid": "b735bfcd-0afb-4210-8ca2-6f9c61989002"
       },
       "OutputName": "Target Tracking",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 3879599131,
       "LowPassPlugin": {
         "IsValid": true,
@@ -431,7 +431,7 @@
         "ValueIndex": 31,
         "IsConnected": true
       },
-      "Operator": 0
+      "Operator": "LogicalExpressionOperator_And"
     },
     "6f6714f0-4250-426a-9eed-25e5130415b5": {
       "$type": "SoundGraphData",
@@ -1084,7 +1084,7 @@
         "LinkedPluginAttributes": [],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -1093,7 +1093,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -1102,49 +1102,49 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
@@ -1245,7 +1245,7 @@
         "ValueIndex": 32,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "7d57f6c2-57c7-4a78-b5c7-f28a0710a11f": {
       "$type": "LogicalExpressionEntry",
@@ -1307,7 +1307,7 @@
         "ValueIndex": 19,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "848aef80-e973-4629-ba4a-b85cafffd3b7": {
       "$type": "SoundPatchAsset",
@@ -1452,7 +1452,7 @@
         "InstanceGuid": "01fd5921-4141-50ea-c8b0-fc486afd04fe"
       },
       "BasePitch": 1.0,
-      "Loop": 3,
+      "Loop": "LtInstantRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -1567,7 +1567,7 @@
         "ValueIndex": 24,
         "IsConnected": true
       },
-      "Condition": 5
+      "Condition": "ConditionType_Greater"
     },
     "95be9816-a933-4cc0-b78e-61df9080ff8c": {
       "$type": "ReceiveEntry",
@@ -1630,8 +1630,8 @@
         "ValueIndex": 36,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "99bf65e8-47a4-4297-b0c7-27ac535a33f3": {
       "$type": "PhysicsNodeData",
@@ -1689,7 +1689,7 @@
         "ValueIndex": 0,
         "IsConnected": false
       },
-      "Mode": 0
+      "Mode": "TimerMode_Repeating"
     },
     "a2d8c1ea-7fc8-4a73-9c7d-5f696ff17004": {
       "$type": "NumberGeneratorNodeData",
@@ -1700,7 +1700,7 @@
       },
       "Min": 0.95,
       "Max": 1.15,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 20,
@@ -1747,7 +1747,7 @@
         "ValueIndex": 25,
         "IsConnected": true
       },
-      "Condition": 4
+      "Condition": "ConditionType_Less"
     },
     "bb243150-60e6-4084-9025-44b0471a8a3d": {
       "$type": "AudioGraphEvent",
@@ -1851,7 +1851,7 @@
         "InstanceGuid": "2b1fe7bb-9f93-c071-9a7c-7430429c2cc9"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -2002,7 +2002,7 @@
         "InstanceGuid": "9e5ee672-b787-0817-4095-252e9bdf049b"
       },
       "BasePitch": 0.8,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -2117,7 +2117,7 @@
         "InstanceGuid": "933c36dc-b51a-926f-6b67-9e2768b3dfa3"
       },
       "BasePitch": 1.0,
-      "Loop": 3,
+      "Loop": "LtInstantRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -2199,7 +2199,7 @@
         "ValueIndex": 27,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "e5c7bcb7-0297-4e09-99ee-c3d7985607aa": {
       "$type": "SamplerNodeData",
@@ -2283,7 +2283,7 @@
         "InstanceGuid": "18c534dc-fb95-5dfe-48bb-aeda5b75cdf2"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -2327,7 +2327,7 @@
         "ValueIndex": 23,
         "IsConnected": true
       },
-      "Condition": 3
+      "Condition": "ConditionType_Equal"
     },
     "e93cc5ba-600b-46ef-add1-77cd83b680de": {
       "$type": "SamplerNodeData",
@@ -2411,7 +2411,7 @@
         "InstanceGuid": "cdac56a8-a519-4d0c-9476-41c0a8af06a8"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -2467,7 +2467,7 @@
       },
       "Min": 0.9,
       "Max": 1.1,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 17,

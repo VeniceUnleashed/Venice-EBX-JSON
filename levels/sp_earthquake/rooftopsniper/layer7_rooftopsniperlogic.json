@@ -39,13 +39,13 @@
       "MaxUses": 1,
       "AllowInteractionViaRemoteEntry": true,
       "TestIfOccluded": false,
-      "Blink": 0,
+      "Blink": "BTHold",
       "CapturepointVerticalOffset": 0.0,
       "DelayBetweenUses": 0.0,
-      "TeamId": 0,
-      "InputAction": 14,
+      "TeamId": "TeamNeutral",
+      "InputAction": "EIAProne",
       "HoldToInteractTime": 0.0,
-      "InteractionEntityType": 0,
+      "InteractionEntityType": "IET_None",
       "InteractionSid": "ID_H_INT_SP_EARTHQUAKE_TO_PRONE",
       "InteractingSid": "",
       "FriendlyTextSid": "",
@@ -61,12 +61,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -78,8 +78,8 @@
         },
         "WorldAngle": -0.4715186,
         "WaitTime": 0.0,
-        "EnterPose": 0,
-        "ExitPose": 0,
+        "EnterPose": "AntPoseEnum_Stand",
+        "ExitPose": "AntPoseEnum_Stand",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -90,12 +90,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 2,
-        "SpeedLevelChange": 5,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Combat",
+        "SpeedLevelChange": "AntSpeedLevel_Sprint",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -110,18 +110,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 0,
+        "CoverPose": "AntPoseEnum_Stand",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5707964,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -181,7 +181,7 @@
           "z": -2026.2527
         }
       },
-      "Realm": 0
+      "Realm": "Realm_Client"
     },
     "086875ef-a63c-4162-b2e9-d5ca4f2a86a8": {
       "$type": "CoverWaypointData",
@@ -189,12 +189,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 1,
-        "SpeedLevelChange": 4,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Ready",
+        "SpeedLevelChange": "AntSpeedLevel_Run",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -209,18 +209,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": 4.692271,
         "OffsetLength": 5.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -313,7 +313,7 @@
           "z": -2030.4633
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "1355a08a-f7e4-469d-9b3e-12ea65aff13f": {
       "$type": "CoverWaypointData",
@@ -321,12 +321,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 1,
-        "AttentionStateChange": 2,
-        "SpeedLevelChange": 1,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_Crouch",
+        "AttentionStateChange": "AntAttentionStateEnum_Combat",
+        "SpeedLevelChange": "AntSpeedLevel_Walk",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -341,18 +341,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": 0.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": 4.6776886,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -503,7 +503,7 @@
           "z": -2022.0502
         }
       },
-      "Realm": 0
+      "Realm": "Realm_Client"
     },
     "26ea47b4-7192-47f5-979b-632fe6d7559a": {
       "$type": "StandardMoveWaypointData",
@@ -511,12 +511,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -528,8 +528,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -562,7 +562,7 @@
         }
       },
       "Width": 1.0,
-      "CoverType": 2,
+      "CoverType": "CoverType_Crouch",
       "Slots": [
         {
           "Position": {
@@ -582,12 +582,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -602,18 +602,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": 4.703953,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 0,
-        "EnterStrategy": 2,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_RightCover",
+        "EnterStrategy": "CoverEnterStrategy_SkipEnterDontAlign",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -624,12 +624,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 1,
-        "AttentionStateChange": 2,
-        "SpeedLevelChange": 1,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_Crouch",
+        "AttentionStateChange": "AntAttentionStateEnum_Combat",
+        "SpeedLevelChange": "AntSpeedLevel_Walk",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -644,18 +644,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": 0.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.562227,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -666,12 +666,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 2,
-        "SpeedLevelChange": 5,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Combat",
+        "SpeedLevelChange": "AntSpeedLevel_Sprint",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -686,18 +686,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5707964,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -708,12 +708,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -725,8 +725,8 @@
         },
         "WorldAngle": -0.27935827,
         "WaitTime": 0.0,
-        "EnterPose": 0,
-        "ExitPose": 0,
+        "EnterPose": "AntPoseEnum_Stand",
+        "ExitPose": "AntPoseEnum_Stand",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -822,7 +822,7 @@
           "z": -2008.6193
         }
       },
-      "Team": 2,
+      "Team": "Team2",
       "Priority": 1.0,
       "Enabled": true
     },
@@ -832,12 +832,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 1,
-        "AttentionStateChange": 2,
-        "SpeedLevelChange": 1,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_Crouch",
+        "AttentionStateChange": "AntAttentionStateEnum_Combat",
+        "SpeedLevelChange": "AntSpeedLevel_Walk",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -852,18 +852,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": 0.5,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5707964,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -895,7 +895,7 @@
           "z": -2017.1729
         }
       },
-      "Realm": 0
+      "Realm": "Realm_Client"
     },
     "3dbbf824-c075-4de2-8eee-19a69df05f08": {
       "$type": "OBBData",
@@ -962,7 +962,7 @@
         "InstanceGuid": "926c79d1-a70d-49ce-8f85-a790b887f817"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
       "AirdropTransform": {
@@ -1033,7 +1033,7 @@
       },
       "LocationNameSid": "",
       "LocationTextSid": "",
-      "Team": 2,
+      "Team": "Team2",
       "SpawnProtectionFriendlyKilledCount": 0,
       "SpawnProtectionFriendlyKilledTime": 30.0,
       "RotationRoll": 0.0,
@@ -1063,14 +1063,14 @@
       "OnlySendEventForHumanPlayers": true,
       "Enabled": true,
       "IsDynamicSpawn": false,
-      "PlayerType": 1,
+      "PlayerType": "PlayerSpawnType_AiPlayer",
       "VehicleEntryIndex": 0,
       "Template": {
         "PartitionGuid": "fc739396-3407-40f2-a14c-56d4e61fcf87",
         "InstanceGuid": "4fb216c5-84ca-4b38-ae72-e10c3cf7aee7"
       },
       "HumanTargetPreference": -1.0,
-      "MinimapIcon": 99,
+      "MinimapIcon": "UIHudIcon_Blank",
       "AllowFallbackOnNextAvailabeVehicleEntry": false,
       "CheckMaxPlayersInVehicle": false,
       "AffectMinimapPosition": true,
@@ -1127,7 +1127,7 @@
           "z": -2035.507
         }
       },
-      "Realm": 0
+      "Realm": "Realm_Client"
     },
     "455d9f61-ca60-4dc3-b455-5ccac827167e": {
       "$type": "LocatorEntityData",
@@ -1156,7 +1156,7 @@
           "z": -2059.5999
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "49defa96-474a-4a2f-8bc5-e9f7dc3c947c": {
       "$type": "CoverWaypointData",
@@ -1164,12 +1164,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -1184,18 +1184,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5556792,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -1206,12 +1206,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 2,
-        "SpeedLevelChange": 5,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Combat",
+        "SpeedLevelChange": "AntSpeedLevel_Sprint",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -1226,18 +1226,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 0,
+        "CoverPose": "AntPoseEnum_Stand",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5651546,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 0,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_RightCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -1248,12 +1248,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.65,
         "IsScripted": false
       },
@@ -1265,8 +1265,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -1314,10 +1314,10 @@
       "ShowRadius": 0.0,
       "HideRadius": 0.0,
       "BlinkTime": 5.0,
-      "MarkerType": 0,
-      "VisibleForTeam": 0,
-      "OwnerTeam": 0,
-      "HudIcon": 18,
+      "MarkerType": "MMTMissionObjective",
+      "VisibleForTeam": "TeamNeutral",
+      "OwnerTeam": "TeamNeutral",
+      "HudIcon": "UIHudIcon_ObjectiveAttack",
       "VerticalOffset": 0.0,
       "FocusPointRadius": 80.0,
       "InstantFlagReturnRadius": 0.0,
@@ -1363,7 +1363,7 @@
         }
       },
       "Width": 0.9961,
-      "CoverType": 2,
+      "CoverType": "CoverType_Crouch",
       "Slots": [
         {
           "Position": {
@@ -1383,12 +1383,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -1400,8 +1400,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -1442,13 +1442,13 @@
       "MaxUses": 1,
       "AllowInteractionViaRemoteEntry": true,
       "TestIfOccluded": false,
-      "Blink": 0,
+      "Blink": "BTHold",
       "CapturepointVerticalOffset": 0.0,
       "DelayBetweenUses": 0.0,
-      "TeamId": 0,
-      "InputAction": 15,
+      "TeamId": "TeamNeutral",
+      "InputAction": "EIAReload",
       "HoldToInteractTime": 0.0,
-      "InteractionEntityType": 0,
+      "InteractionEntityType": "IET_None",
       "InteractionSid": "ID_H_INT_SP_EARTHQUAKE_EQUIP_RPG",
       "InteractingSid": "",
       "FriendlyTextSid": "",
@@ -1464,12 +1464,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -1573,7 +1573,7 @@
           "z": -2049.855
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "5d4ed443-33bb-499c-8599-8709dc5eeaad": {
       "$type": "CoverWaypointData",
@@ -1581,12 +1581,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -1601,18 +1601,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": 4.703953,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 2,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_SkipEnterDontAlign",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -1709,7 +1709,7 @@
           "z": -2049.7607
         }
       },
-      "Realm": 0
+      "Realm": "Realm_Client"
     },
     "61c52ce3-157b-4afc-8e10-f108d6d10cad": {
       "$type": "CoverWaypointData",
@@ -1717,12 +1717,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -1737,18 +1737,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 0,
+        "CoverPose": "AntPoseEnum_Stand",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": 4.705911,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 3,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_MediumLeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -1780,7 +1780,7 @@
           "z": -2042.556
         }
       },
-      "Realm": 0
+      "Realm": "Realm_Client"
     },
     "6486ff05-3439-45d8-b5bf-b1331e704d8c": {
       "$type": "GameInteractionEntityData",
@@ -1818,13 +1818,13 @@
       "MaxUses": 1,
       "AllowInteractionViaRemoteEntry": true,
       "TestIfOccluded": false,
-      "Blink": 0,
+      "Blink": "BTHold",
       "CapturepointVerticalOffset": 0.0,
       "DelayBetweenUses": 0.0,
-      "TeamId": 0,
-      "InputAction": 13,
+      "TeamId": "TeamNeutral",
+      "InputAction": "EIAChangePose",
       "HoldToInteractTime": 1.0,
-      "InteractionEntityType": 0,
+      "InteractionEntityType": "IET_None",
       "InteractionSid": "ID_H_INT_SP_EARTHQUAKE_TO_PRONE",
       "InteractingSid": "",
       "FriendlyTextSid": "",
@@ -1840,12 +1840,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -1857,8 +1857,8 @@
         },
         "WorldAngle": -0.40569514,
         "WaitTime": 0.0,
-        "EnterPose": 0,
-        "ExitPose": 0,
+        "EnterPose": "AntPoseEnum_Stand",
+        "ExitPose": "AntPoseEnum_Stand",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -1902,12 +1902,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -1919,8 +1919,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -1931,12 +1931,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -1948,8 +1948,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -1960,12 +1960,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -1977,8 +1977,8 @@
         },
         "WorldAngle": -0.62625957,
         "WaitTime": 0.0,
-        "EnterPose": 0,
-        "ExitPose": 0,
+        "EnterPose": "AntPoseEnum_Stand",
+        "ExitPose": "AntPoseEnum_Stand",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -1989,12 +1989,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2009,18 +2009,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": 4.703953,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 0,
-        "EnterStrategy": 2,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_RightCover",
+        "EnterStrategy": "CoverEnterStrategy_SkipEnterDontAlign",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -2104,12 +2104,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2124,18 +2124,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 0,
+        "CoverPose": "AntPoseEnum_Stand",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5640129,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 0,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_RightCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -2183,10 +2183,10 @@
       "ShowRadius": 0.0,
       "HideRadius": 0.0,
       "BlinkTime": 5.0,
-      "MarkerType": 0,
-      "VisibleForTeam": 0,
-      "OwnerTeam": 0,
-      "HudIcon": 17,
+      "MarkerType": "MMTMissionObjective",
+      "VisibleForTeam": "TeamNeutral",
+      "OwnerTeam": "TeamNeutral",
+      "HudIcon": "UIHudIcon_ObjectiveMoveTo",
       "VerticalOffset": 0.0,
       "FocusPointRadius": 80.0,
       "InstantFlagReturnRadius": 0.0,
@@ -2231,7 +2231,7 @@
           "z": -2003.5582
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "905f1fb2-e8de-46a7-a347-fdbc56346945": {
       "$type": "WaypointsShapeData",
@@ -2312,12 +2312,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2329,8 +2329,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -2341,12 +2341,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2358,8 +2358,8 @@
         },
         "WorldAngle": -0.71650606,
         "WaitTime": 0.0,
-        "EnterPose": 0,
-        "ExitPose": 0,
+        "EnterPose": "AntPoseEnum_Stand",
+        "ExitPose": "AntPoseEnum_Stand",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -2370,12 +2370,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 1,
-        "SpeedLevelChange": 4,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Ready",
+        "SpeedLevelChange": "AntSpeedLevel_Run",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2390,18 +2390,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5212951,
         "OffsetLength": 5.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 0,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_RightCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -2412,12 +2412,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2432,18 +2432,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 0,
+        "CoverPose": "AntPoseEnum_Stand",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5163227,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 0,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_RightCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -2476,7 +2476,7 @@
         }
       },
       "Width": 0.442843,
-      "CoverType": 2,
+      "CoverType": "CoverType_Crouch",
       "Slots": [
         {
           "Position": {
@@ -2570,12 +2570,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2587,8 +2587,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -2919,12 +2919,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2936,8 +2936,8 @@
         },
         "WorldAngle": -0.017702851,
         "WaitTime": 0.0,
-        "EnterPose": 0,
-        "ExitPose": 0,
+        "EnterPose": "AntPoseEnum_Stand",
+        "ExitPose": "AntPoseEnum_Stand",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -2948,12 +2948,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -2968,18 +2968,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 0,
+        "CoverPose": "AntPoseEnum_Stand",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5371175,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -2990,12 +2990,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 1,
-        "SpeedLevelChange": 4,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Ready",
+        "SpeedLevelChange": "AntSpeedLevel_Run",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -3010,18 +3010,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 0,
+        "CoverPose": "AntPoseEnum_Stand",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": 4.686468,
         "OffsetLength": 5.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -3032,12 +3032,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 1,
-        "SpeedLevelChange": 4,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Ready",
+        "SpeedLevelChange": "AntSpeedLevel_Run",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -3118,7 +3118,7 @@
           "z": -2007.0024
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "da2f6ea0-2fe7-4082-84c7-353150f088db": {
       "$type": "WaypointsShapeData",
@@ -3279,12 +3279,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -3296,8 +3296,8 @@
         },
         "WorldAngle": -0.017702851,
         "WaitTime": 0.0,
-        "EnterPose": 0,
-        "ExitPose": 0,
+        "EnterPose": "AntPoseEnum_Stand",
+        "ExitPose": "AntPoseEnum_Stand",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -3341,12 +3341,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 0.5,
         "IsScripted": false
       },
@@ -3361,18 +3361,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 0,
+        "CoverPose": "AntPoseEnum_Stand",
         "WaitTime": -1.0,
-        "PeekOut": 2,
+        "PeekOut": "CoverPeekType_None",
         "WorldAngle": -1.5707964,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -3432,7 +3432,7 @@
       },
       "LevelChoice": 3,
       "ScenarioChoice": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": 0,
       "Actor1Part": 0,
@@ -3512,10 +3512,10 @@
       "ShowRadius": 0.0,
       "HideRadius": 0.0,
       "BlinkTime": 5.0,
-      "MarkerType": 0,
-      "VisibleForTeam": 0,
-      "OwnerTeam": 0,
-      "HudIcon": 17,
+      "MarkerType": "MMTMissionObjective",
+      "VisibleForTeam": "TeamNeutral",
+      "OwnerTeam": "TeamNeutral",
+      "HudIcon": "UIHudIcon_ObjectiveMoveTo",
       "VerticalOffset": 0.0,
       "FocusPointRadius": 80.0,
       "InstantFlagReturnRadius": 0.0,

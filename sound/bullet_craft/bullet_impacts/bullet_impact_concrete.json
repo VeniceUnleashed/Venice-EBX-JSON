@@ -39,7 +39,7 @@
             "K": -10.2852955
           }
         ],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.0,
@@ -55,7 +55,7 @@
         "InstanceGuid": "9384b910-4438-438a-a545-27a827308df0"
       },
       "OutputName": "Cone",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2088844290,
       "LowPassPlugin": {
         "IsValid": true,
@@ -145,8 +145,8 @@
         "ValueIndex": 30,
         "IsConnected": true
       },
-      "Operation": 0,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Add",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "08003df3-e1b7-4059-aad5-7a57f5f12992": {
       "$type": "NumberGeneratorNodeData",
@@ -157,7 +157,7 @@
       },
       "Min": 0.8,
       "Max": 1.6,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 27,
@@ -181,7 +181,7 @@
         "ValueIndex": 35,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "0a326e91-efd1-4ecb-8127-24a810de2365": {
       "$type": "LogicalExpressionNodeData",
@@ -200,7 +200,7 @@
         "ValueIndex": 9,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "0fb211a4-9716-475b-aaa3-ec110951ba82": {
       "$type": "SimpleTransformNodeData",
@@ -219,8 +219,8 @@
         "ValueIndex": 36,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "150f3a8c-a3f0-4c9a-b511-1f3c4098aa59": {
       "$type": "ScaleClampNodeData",
@@ -272,8 +272,8 @@
         "ValueIndex": 32,
         "IsConnected": true
       },
-      "Operation": 1,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Subtract",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "19430f85-dded-46bf-82a5-1989face136c": {
       "$type": "NumberGeneratorNodeData",
@@ -284,7 +284,7 @@
       },
       "Min": 0.1,
       "Max": 0.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 15,
@@ -351,7 +351,7 @@
         "ValueIndex": 26,
         "IsConnected": true
       },
-      "Condition": 7
+      "Condition": "ConditionType_GreaterOrEqual"
     },
     "1ebd0e4a-7d4d-43aa-b981-dbc8d054a995": {
       "$type": "NumberGeneratorNodeData",
@@ -362,7 +362,7 @@
       },
       "Min": 1.0,
       "Max": 1.7,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 16,
@@ -466,8 +466,8 @@
         "ValueIndex": 38,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "30c64860-ee27-427c-9478-523199dbb177": {
       "$type": "PadRumbleNodeData",
@@ -491,7 +491,7 @@
       },
       "Min": 0.8,
       "Max": 1.2,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 5,
@@ -518,7 +518,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 20.0,
       "FadeEnd": 25.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "4062992b-e195-422d-991b-c8bd1d8e13b2": {
       "$type": "ReceiveEntry",
@@ -653,7 +653,7 @@
         "InstanceGuid": "754ee87d-8952-5b0f-92d3-8cf1f761314b"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -700,7 +700,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 5.0,
       "FadeEnd": 15.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "520e1997-61b9-46db-8f74-5ef1078acfa0": {
       "$type": "ReceiveNodeData",
@@ -760,7 +760,7 @@
       },
       "Min": 0.0,
       "Max": 1.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 25,
@@ -784,7 +784,7 @@
         "ValueIndex": 33,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "5cda5d9d-5e70-40bf-a11c-7122271d622b": {
       "$type": "ConditionNodeData",
@@ -864,7 +864,7 @@
       "FadeAmplitude": 1.0,
       "FadeBegin": 2.0,
       "FadeEnd": 5.0,
-      "FadeType": 1
+      "FadeType": "FaderType_Cosine"
     },
     "7ad96d45-5c2f-4d4b-88b4-a576b033175d": {
       "$type": "ScaleClampNodeData",
@@ -978,7 +978,7 @@
       },
       "Wave": null,
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -1022,7 +1022,7 @@
       },
       "Min": 0.4,
       "Max": 1.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 8,
@@ -1046,7 +1046,7 @@
         "ValueIndex": 21,
         "IsConnected": true
       },
-      "Condition": 7
+      "Condition": "ConditionType_GreaterOrEqual"
     },
     "912eaa10-1236-4993-831f-fb43cc703f4c": {
       "$type": "ConditionNodeData",
@@ -1114,7 +1114,7 @@
       },
       "Min": 0.5,
       "Max": 1.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 6,
@@ -1130,7 +1130,7 @@
       },
       "Min": 1.0,
       "Max": 1.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 23,
@@ -1183,8 +1183,8 @@
         "ValueIndex": 18,
         "IsConnected": true
       },
-      "Operation": 0,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Add",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "afcb2a4a-da6c-4175-bd1f-38a0d63467ac": {
       "$type": "SoundGraphData",
@@ -1642,7 +1642,7 @@
         ],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -1651,7 +1651,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -1660,25 +1660,25 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
@@ -1728,8 +1728,8 @@
         "ValueIndex": 4,
         "IsConnected": true
       },
-      "Operation": 0,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Add",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "cb2709ca-5d13-4e9a-a795-c83d4e05838e": {
       "$type": "SamplerNodeData",
@@ -1813,7 +1813,7 @@
         "InstanceGuid": "8d93ba9b-b2c3-443d-b67c-479bbb5808b6"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -1849,7 +1849,7 @@
       },
       "Min": 0.7,
       "Max": 1.2,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 28,
@@ -1873,8 +1873,8 @@
         "ValueIndex": 7,
         "IsConnected": true
       },
-      "Operation": 0,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Add",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "d7a5dbd3-9002-4319-bd5d-f28da5baaf1f": {
       "$type": "SimpleTransformNodeData",
@@ -1893,8 +1893,8 @@
         "ValueIndex": 24,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "df5945b7-c2dd-47aa-bc4b-673f1bf7d2a6": {
       "$type": "NumberGeneratorNodeData",
@@ -1905,7 +1905,7 @@
       },
       "Min": 0.0,
       "Max": 1.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 19,
@@ -1921,7 +1921,7 @@
       },
       "Min": 0.7,
       "Max": 1.2,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 17,
@@ -1945,8 +1945,8 @@
         "ValueIndex": 37,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "f36577c4-2bb9-4a1e-9ea5-e0680f9e9205": {
       "$type": "SamplerNodeData",
@@ -2027,7 +2027,7 @@
       },
       "Wave": null,
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -2063,7 +2063,7 @@
       },
       "Min": 0.0,
       "Max": 0.1,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 29,
@@ -2127,7 +2127,7 @@
       },
       "Min": 0.0,
       "Max": 0.1,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 10,

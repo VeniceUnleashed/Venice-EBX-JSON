@@ -37,9 +37,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -63,11 +63,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 2,
+      "ReadinessOnStart": "RLCombat",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": true
@@ -77,7 +77,7 @@
       "IndexInBlueprint": 4,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "3121ef13-481f-411e-b668-f2bdabff7b2c": {
@@ -112,7 +112,7 @@
         "InstanceGuid": "926c79d1-a70d-49ce-8f85-a790b887f817"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
       "AirdropTransform": {
@@ -183,7 +183,7 @@
       },
       "LocationNameSid": "",
       "LocationTextSid": "",
-      "Team": 2,
+      "Team": "Team2",
       "SpawnProtectionFriendlyKilledCount": 0,
       "SpawnProtectionFriendlyKilledTime": 30.0,
       "RotationRoll": 0.0,
@@ -213,14 +213,14 @@
       "OnlySendEventForHumanPlayers": true,
       "Enabled": true,
       "IsDynamicSpawn": false,
-      "PlayerType": 1,
+      "PlayerType": "PlayerSpawnType_AiPlayer",
       "VehicleEntryIndex": 1,
       "Template": {
         "PartitionGuid": "07b43bea-3b6a-4129-b9fd-fd39d2ffdbed",
         "InstanceGuid": "5656b38a-bab3-452f-8d9c-f7a9fe962b07"
       },
       "HumanTargetPreference": -1.0,
-      "MinimapIcon": 99,
+      "MinimapIcon": "UIHudIcon_Blank",
       "AllowFallbackOnNextAvailabeVehicleEntry": false,
       "CheckMaxPlayersInVehicle": false,
       "AffectMinimapPosition": true,
@@ -234,7 +234,7 @@
       "IsPropertyConnectionTarget": 3,
       "MinDelay": 1.0,
       "MaxDelay": 5.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false
     },
@@ -364,7 +364,7 @@
           "z": 0.21224213
         }
       },
-      "Team": 2,
+      "Team": "Team2",
       "Priority": 1.0,
       "Enabled": true
     },
@@ -395,7 +395,7 @@
           "z": 0.23229338
         }
       },
-      "Team": 2,
+      "Team": "Team2",
       "Priority": 1.0,
       "Enabled": true
     },
@@ -404,7 +404,7 @@
       "IndexInBlueprint": 10,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "7da02be5-1daa-4d47-a021-db328d36d3c1": {
@@ -416,11 +416,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -452,7 +452,7 @@
           "z": 0.0
         }
       },
-      "Team": 2,
+      "Team": "Team2",
       "Priority": 1.0,
       "Enabled": true
     },
@@ -491,12 +491,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 2,
-        "SpeedChangeMovingTowards": 3,
-        "PoseChange": 3,
-        "AttentionStateChange": 5,
-        "SpeedLevelChange": 13,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_Combat",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_Sneak",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_NoChange",
+        "SpeedLevelChange": "AntSpeedLevel_NoChange",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -511,18 +511,18 @@
           "y": 0.0,
           "z": 0.0
         },
-        "CoverPose": 1,
+        "CoverPose": "AntPoseEnum_Crouch",
         "WaitTime": -1.0,
-        "PeekOut": 1,
+        "PeekOut": "CoverPeekType_Over",
         "WorldAngle": 1.5794764,
         "OffsetLength": 2.0,
-        "ExitPose": 3,
+        "ExitPose": "AntPoseEnum_NoChange",
         "ExitAngle": -44.0,
         "DistanceToNextWaypoint": 0.0,
-        "CoverType": 1,
-        "EnterStrategy": 0,
-        "ExitStyle": 0,
-        "PrepareFireType": 7,
+        "CoverType": "AntCoverEnum_LeftCover",
+        "EnterStrategy": "CoverEnterStrategy_EnterNormally",
+        "ExitStyle": "CoverExitStyle_ExitCover",
+        "PrepareFireType": "CoverFireType_NoFire",
         "ForceExitCover": false,
         "UseClientPosition": false
       }
@@ -717,7 +717,7 @@
           "TargetEvent": {
             "Id": 1762125924
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -734,7 +734,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -751,7 +751,7 @@
           "TargetEvent": {
             "Id": 230891742
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -768,7 +768,7 @@
           "TargetEvent": {
             "Id": 1723395486
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -785,7 +785,7 @@
           "TargetEvent": {
             "Id": -836550305
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -802,7 +802,7 @@
           "TargetEvent": {
             "Id": 1485311850
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -819,7 +819,7 @@
           "TargetEvent": {
             "Id": -65989091
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -836,7 +836,7 @@
           "TargetEvent": {
             "Id": 2097059751
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -853,7 +853,7 @@
           "TargetEvent": {
             "Id": 230891742
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -870,7 +870,7 @@
           "TargetEvent": {
             "Id": 230891742
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -887,7 +887,7 @@
           "TargetEvent": {
             "Id": -770075886
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -904,7 +904,7 @@
           "TargetEvent": {
             "Id": -1052882490
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -921,7 +921,7 @@
           "TargetEvent": {
             "Id": -500408195
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -938,7 +938,7 @@
           "TargetEvent": {
             "Id": -1549462641
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -955,7 +955,7 @@
           "TargetEvent": {
             "Id": -770075886
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -972,7 +972,7 @@
           "TargetEvent": {
             "Id": 2089125447
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -989,7 +989,7 @@
           "TargetEvent": {
             "Id": 2089125447
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1006,7 +1006,7 @@
           "TargetEvent": {
             "Id": 2089125447
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1023,7 +1023,7 @@
           "TargetEvent": {
             "Id": 2089125447
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1040,7 +1040,7 @@
           "TargetEvent": {
             "Id": 2089125447
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1057,7 +1057,7 @@
           "TargetEvent": {
             "Id": 2089125447
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1074,7 +1074,7 @@
           "TargetEvent": {
             "Id": -274579609
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1091,7 +1091,7 @@
           "TargetEvent": {
             "Id": 193450864
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1108,7 +1108,7 @@
           "TargetEvent": {
             "Id": 193450867
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         }
       ],
       "Descriptor": {
@@ -1210,7 +1210,7 @@
         "InstanceGuid": "e26020c8-9368-709c-0c31-96bfb25cc0ac"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
       "AirdropTransform": {
@@ -1281,7 +1281,7 @@
       },
       "LocationNameSid": "",
       "LocationTextSid": "",
-      "Team": 2,
+      "Team": "Team2",
       "SpawnProtectionFriendlyKilledCount": 0,
       "SpawnProtectionFriendlyKilledTime": 30.0,
       "RotationRoll": 0.0,
@@ -1335,7 +1335,7 @@
       },
       "TimeUntilAbandoned": 10.0,
       "TimeUntilAbandonedIsDestroyed": 10.0,
-      "EnterRestriction": 1,
+      "EnterRestriction": "EntryEnterRestriction_OnlyPrimaryEntry",
       "BotBailWhenHealthBelow": 100.0,
       "BotBailOutDelay": 0.0,
       "WreckDuration": 0.0,
@@ -1382,7 +1382,7 @@
         "InstanceGuid": "926c79d1-a70d-49ce-8f85-a790b887f817"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
       "AirdropTransform": {
@@ -1453,7 +1453,7 @@
       },
       "LocationNameSid": "",
       "LocationTextSid": "",
-      "Team": 2,
+      "Team": "Team2",
       "SpawnProtectionFriendlyKilledCount": 0,
       "SpawnProtectionFriendlyKilledTime": 30.0,
       "RotationRoll": 0.0,
@@ -1483,14 +1483,14 @@
       "OnlySendEventForHumanPlayers": true,
       "Enabled": true,
       "IsDynamicSpawn": false,
-      "PlayerType": 1,
+      "PlayerType": "PlayerSpawnType_AiPlayer",
       "VehicleEntryIndex": 0,
       "Template": {
         "PartitionGuid": "07b43bea-3b6a-4129-b9fd-fd39d2ffdbed",
         "InstanceGuid": "5656b38a-bab3-452f-8d9c-f7a9fe962b07"
       },
       "HumanTargetPreference": -1.0,
-      "MinimapIcon": 99,
+      "MinimapIcon": "UIHudIcon_Blank",
       "AllowFallbackOnNextAvailabeVehicleEntry": false,
       "CheckMaxPlayersInVehicle": false,
       "AffectMinimapPosition": true,

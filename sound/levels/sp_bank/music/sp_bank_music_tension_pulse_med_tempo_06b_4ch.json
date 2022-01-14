@@ -338,7 +338,7 @@
         ],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -347,7 +347,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 2.0,
@@ -366,7 +366,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [
               {
                 "Value": 0.0,
@@ -385,13 +385,13 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 1
@@ -614,7 +614,7 @@
         "InstanceGuid": "f68f3d0d-a677-3d79-c5e3-c820d733f980"
       },
       "BasePitch": 1.0,
-      "Loop": 1,
+      "Loop": "LtForward",
       "Plugins": [
         {
           "SndPlayer": {
@@ -732,8 +732,8 @@
         "ValueIndex": 10,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "5895d2af-df36-4c67-bbdb-ec305fc2f428": {
       "$type": "AudioGraphEvent",
@@ -758,8 +758,8 @@
         "ValueIndex": 21,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "67e6d70e-ca38-43d5-aaab-afd7379bf178": {
       "$type": "EventSwitcherEntry",
@@ -885,8 +885,8 @@
         "ValueIndex": 9,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "7c3a8775-00a1-4264-aed0-9feea6fb43cb": {
       "$type": "EventSwitcherNodeData",
@@ -986,7 +986,7 @@
       "MinDistance": 1000.0,
       "AttenuationCurve": {
         "Points": [],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 6.0,
       "HFDampingDistance": 0.0,
@@ -1002,7 +1002,7 @@
         "InstanceGuid": "8df9c7ba-5e20-462e-b93b-e7746a8c6afa"
       },
       "OutputName": "Flat",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2088683098,
       "LowPassPlugin": {
         "IsValid": true,
@@ -1198,7 +1198,7 @@
         "ValueIndex": 26,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "f1ecbdee-5ed2-4496-9f33-3a996f6e4c50": {
       "$type": "ScaleClampNodeData",

@@ -71,7 +71,7 @@
         "PartitionGuid": "1e339c9c-7729-11e0-ae35-afbeebd826a2",
         "InstanceGuid": "e05a828d-fd3c-d85b-6a17-0f304b680810"
       },
-      "InitialOwnerTeam": 0,
+      "InitialOwnerTeam": "TeamNeutral",
       "CaptureRadius": 0.0,
       "MaxCaptureMultiplier": 4,
       "AreaValue": 0,
@@ -85,7 +85,7 @@
       "HideRadius": 0.0,
       "AddedMultiplierPerPlayer": 0.34,
       "Modify3DIconVerticalOffset": 0.0,
-      "CapturableType": 0,
+      "CapturableType": "CTDefault",
       "IntruderWarningSID": "Warning a base is under attack!",
       "IsCapturedInUpperSphere": false,
       "DisableWhenLosingControl": false,
@@ -106,7 +106,7 @@
       "IndexInBlueprint": 6,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "A": 0.0,
       "B": 0.0,
       "TriggerOnPropertyChange": true,
@@ -139,7 +139,7 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "513bd7ca-dcf3-4096-b785-6c666f0464c9": {
       "$type": "SpatialPrefabBlueprint",
@@ -392,7 +392,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -409,7 +409,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -426,7 +426,7 @@
           "TargetEvent": {
             "Id": 2099208964
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -443,7 +443,7 @@
           "TargetEvent": {
             "Id": -1433788352
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -460,7 +460,7 @@
           "TargetEvent": {
             "Id": 1347354421
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -477,7 +477,7 @@
           "TargetEvent": {
             "Id": 1723395486
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -494,7 +494,7 @@
           "TargetEvent": {
             "Id": -1688613187
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -511,7 +511,7 @@
           "TargetEvent": {
             "Id": -1688613187
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -528,7 +528,7 @@
           "TargetEvent": {
             "Id": -1688613187
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         }
       ],
       "Descriptor": {
@@ -609,7 +609,7 @@
       "IndexInBlueprint": 3,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "956e5526-45e1-4107-a379-5dc2e0376ec4": {
@@ -617,7 +617,7 @@
       "IndexInBlueprint": 7,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "IntValue": 0,
       "FloatValue": 0.0,
       "BoolValue": false
@@ -651,7 +651,7 @@
       },
       "Blueprint": null,
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
       "AirdropTransform": {
@@ -722,7 +722,7 @@
       },
       "LocationNameSid": "Neutral Spawn",
       "LocationTextSid": "Neutral Spawn",
-      "Team": 0,
+      "Team": "TeamNeutral",
       "SpawnProtectionFriendlyKilledCount": 3,
       "SpawnProtectionFriendlyKilledTime": 30.0,
       "RotationRoll": 0.0,
@@ -752,11 +752,11 @@
       "OnlySendEventForHumanPlayers": true,
       "Enabled": true,
       "IsDynamicSpawn": false,
-      "PlayerType": 0,
+      "PlayerType": "PlayerSpawnType_HumanPlayer",
       "VehicleEntryIndex": 0,
       "Template": null,
       "HumanTargetPreference": -1.0,
-      "MinimapIcon": 99,
+      "MinimapIcon": "UIHudIcon_Blank",
       "AllowFallbackOnNextAvailabeVehicleEntry": false,
       "CheckMaxPlayersInVehicle": false,
       "AffectMinimapPosition": true,
@@ -858,10 +858,10 @@
       "ShowRadius": 0.0,
       "HideRadius": 0.0,
       "BlinkTime": 5.0,
-      "MarkerType": 0,
-      "VisibleForTeam": 0,
-      "OwnerTeam": 0,
-      "HudIcon": 20,
+      "MarkerType": "MMTMissionObjective",
+      "VisibleForTeam": "TeamNeutral",
+      "OwnerTeam": "TeamNeutral",
+      "HudIcon": "UIHudIcon_ObjectiveGeneral",
       "VerticalOffset": 0.0,
       "FocusPointRadius": 50.0,
       "InstantFlagReturnRadius": 0.0,
@@ -886,37 +886,37 @@
           "Value": "",
           "ValueRef": null,
           "Id": 2662400,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": -77167751,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": -1475588377,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 1043301209,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 2025703195,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 1490142753,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         }
       ],
       "InputEvents": [

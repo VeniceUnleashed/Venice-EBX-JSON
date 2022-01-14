@@ -30,7 +30,7 @@
         "ValueIndex": 0,
         "IsConnected": false
       },
-      "Mode": 1
+      "Mode": "TimerMode_SingleShot"
     },
     "0e023fdf-882b-423d-a6b5-d8b1ae5c1b8a": {
       "$type": "ReceiveNodeData",
@@ -170,7 +170,7 @@
         "InstanceGuid": "cfe735a5-0d35-9b78-a180-b85b98a6cc22"
       },
       "BasePitch": 1.0,
-      "Loop": 3,
+      "Loop": "LtInstantRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -261,7 +261,7 @@
       },
       "Min": 0.87,
       "Max": 1.35,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 6,
@@ -294,7 +294,7 @@
             "K": -10.449047
           }
         ],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.7,
@@ -310,7 +310,7 @@
         "InstanceGuid": "b735bfcd-0afb-4210-8ca2-6f9c61989002"
       },
       "OutputName": "Cone",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 2088844290,
       "LowPassPlugin": {
         "IsValid": true,
@@ -594,7 +594,7 @@
         "LinkedPluginAttributes": [],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -603,7 +603,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -612,13 +612,13 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
@@ -686,8 +686,8 @@
         "ValueIndex": 7,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "f1d1dc2a-6796-42d7-b9a3-e11e34506433": {
       "$type": "ReceiveEntry",

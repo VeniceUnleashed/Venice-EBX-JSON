@@ -8,7 +8,7 @@
       "IndexInBlueprint": 249,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "0266a5f1-6942-478d-9cc7-35d299cdcd17": {
@@ -16,7 +16,7 @@
       "IndexInBlueprint": 264,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -29,12 +29,12 @@
       "AdditionalMessages": [
         {
           "MessageSid": "ID_H_MES_SP_TANK_TOGGLE_ZOOM",
-          "EntryInputAction": 11
+          "EntryInputAction": "EIAZoom"
         }
       ],
-      "MessageType": 1,
+      "MessageType": "UIMessageEntityType_Tooltip",
       "DisplayTime": 15.0,
-      "EntryInputAction": 32,
+      "EntryInputAction": "EIASprint",
       "Enabled": true
     },
     "0408db5e-de8f-4e71-85a6-236ac8681c5a": {
@@ -69,10 +69,10 @@
         "InstanceGuid": "65ef4a38-cff2-4840-817d-67d0b377c553"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "0522e0a6-8e88-4b2e-a28b-03fe7d777a76": {
       "$type": "GeometryTriggerEntityData",
@@ -128,7 +128,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -147,12 +147,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": true,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 0,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_OneBurstPerTarget",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": true,
@@ -163,9 +163,9 @@
       "IndexInBlueprint": 491,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "078fd71b-f401-40ce-a1e1-5eb209da7332": {
@@ -173,7 +173,7 @@
       "IndexInBlueprint": 367,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "07bad3f2-cb52-4a54-81a4-aa2a779c6bc8": {
@@ -181,7 +181,7 @@
       "IndexInBlueprint": 458,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "0805c4d8-8573-4658-bd4d-6f6b6b102578": {
@@ -193,11 +193,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -207,8 +207,8 @@
       "IndexInBlueprint": 292,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "StrengthType": 0,
-      "ShootType": 1,
+      "StrengthType": "Infantry",
+      "ShootType": "ShootType_Continuous",
       "CycleTargets": true,
       "RandomTargetOrder": true,
       "PreferAlternativeWeapon": false
@@ -267,7 +267,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -282,7 +282,7 @@
       "IndexInBlueprint": 287,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "0c32701d-c479-4dcd-968a-827d603911da": {
@@ -319,9 +319,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -341,7 +341,7 @@
       "IndexInBlueprint": 390,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -350,7 +350,7 @@
       "IndexInBlueprint": 336,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -359,7 +359,7 @@
       "IndexInBlueprint": 255,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -379,7 +379,7 @@
       "IndexInBlueprint": 475,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "11098a4e-b7d6-42c0-8ed8-dfd8010f2b77": {
@@ -387,7 +387,7 @@
       "IndexInBlueprint": 322,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -397,7 +397,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -407,7 +407,7 @@
       "IndexInBlueprint": 501,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "16518593-135b-41f9-b467-73affda8fa87": {
@@ -415,7 +415,7 @@
       "IndexInBlueprint": 456,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "175dd6f5-df23-4e5d-9d8e-4ea6cb66dea4": {
@@ -423,7 +423,7 @@
       "IndexInBlueprint": 457,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "176819fd-03e0-4aa8-a2fe-5817c4d302e8": {
@@ -432,7 +432,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -442,7 +442,7 @@
       "IndexInBlueprint": 383,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -452,7 +452,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.1,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -462,7 +462,7 @@
       "IndexInBlueprint": 375,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -520,7 +520,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -535,7 +535,7 @@
       "IndexInBlueprint": 381,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -544,7 +544,7 @@
       "IndexInBlueprint": 323,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "EventCount": 2
     },
     "1bec8827-01d9-4da3-afc0-26cf1dd6c386": {
@@ -552,8 +552,8 @@
       "IndexInBlueprint": 294,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "StrengthType": 0,
-      "ShootType": 1,
+      "StrengthType": "Infantry",
+      "ShootType": "ShootType_Continuous",
       "CycleTargets": true,
       "RandomTargetOrder": true,
       "PreferAlternativeWeapon": false
@@ -563,7 +563,7 @@
       "IndexInBlueprint": 272,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "1d4ceab1-0da5-4ba3-ac73-27a68849bc53": {
@@ -571,7 +571,7 @@
       "IndexInBlueprint": 305,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "1d5071a7-89da-420c-8b99-013ccf5d9ce5": {
@@ -579,7 +579,7 @@
       "IndexInBlueprint": 334,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -589,7 +589,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -599,7 +599,7 @@
       "IndexInBlueprint": 384,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -612,11 +612,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -626,7 +626,7 @@
       "IndexInBlueprint": 242,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -634,9 +634,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193456519,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 2626,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/D7092A80-5FB1-4E60-91C4-20D8DBB49FFD_UAV",
       "KeyCount": 2626,
@@ -697,7 +697,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -712,8 +712,8 @@
       "IndexInBlueprint": 416,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
-      "EntryInputActions": 11,
+      "Realm": "Realm_ClientAndServer",
+      "EntryInputActions": "EIAZoom",
       "ValueModifier": 1.0,
       "TrailingValueAtStart": 0.0,
       "AccumulatedValueAtStart": 0.0,
@@ -726,7 +726,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 6.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -758,9 +758,9 @@
           "z": 0.0
         }
       },
-      "BoneToPlace": 5,
-      "Realm": 0,
-      "ModelAnimationTransformType": 0,
+      "BoneToPlace": "GameplayBones_ConnectBone",
+      "Realm": "Realm_Client",
+      "ModelAnimationTransformType": "ModelAnimationTransformType_World",
       "InstanceSeed": 0,
       "DefaultAnimation": "SP_TankShell_Anim",
       "AnimationIndex": 0,
@@ -770,7 +770,7 @@
       },
       "ExternalTime": -1.0,
       "RootMeshBoneName": "Base",
-      "JointWorldTransformUpdateOrder": 0,
+      "JointWorldTransformUpdateOrder": "ModelAnimationUpdateOrder_PostAnimation",
       "ConnectBoneName": "Connect",
       "JointOutputPropertyIds": [
         -1031074154,
@@ -794,8 +794,8 @@
       "IndexInBlueprint": 301,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
-      "EntryInputActions": 35,
+      "Realm": "Realm_ClientAndServer",
+      "EntryInputActions": "EIAInteract",
       "ValueModifier": 1.0,
       "TrailingValueAtStart": 0.0,
       "AccumulatedValueAtStart": 0.0,
@@ -807,7 +807,7 @@
       "IndexInBlueprint": 256,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "26cca68d-7b13-468c-be69-0a64f7bbd5b0": {
@@ -844,9 +844,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -866,8 +866,8 @@
       "IndexInBlueprint": 414,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
-      "EntryInputActions": 11,
+      "Realm": "Realm_ClientAndServer",
+      "EntryInputActions": "EIAZoom",
       "ValueModifier": 1.0,
       "TrailingValueAtStart": 0.0,
       "AccumulatedValueAtStart": 0.0,
@@ -893,7 +893,7 @@
       "IndexInBlueprint": 316,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -902,7 +902,7 @@
       "IndexInBlueprint": 406,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -912,7 +912,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -922,7 +922,7 @@
       "IndexInBlueprint": 382,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -932,7 +932,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -942,7 +942,7 @@
       "IndexInBlueprint": 300,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "2da66639-aa72-44fe-bbe5-870404cee857": {
@@ -979,9 +979,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -1006,7 +1006,7 @@
         3660,
         4566
       ],
-      "InterpolationType": 1,
+      "InterpolationType": "InterpolationType_Linear",
       "Values": [
         1.0,
         0.0,
@@ -1020,7 +1020,7 @@
       "IndexInBlueprint": 241,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "2edc9be4-0682-42a9-9098-126eaf62d1ac": {
@@ -1028,7 +1028,7 @@
       "IndexInBlueprint": 312,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1041,11 +1041,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -1054,9 +1054,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 402521524,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 1508,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/5887C1CD-45CE-42B4-915C-FE8083CA4D9B_FlyInDroneAnimation_vehicleRoot",
       "KeyCount": 377,
@@ -1117,7 +1117,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1132,7 +1132,7 @@
       "IndexInBlueprint": 278,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1148,7 +1148,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 7.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1187,9 +1187,9 @@
       "RunOnce": true,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -1209,14 +1209,14 @@
       "IndexInBlueprint": 359,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "36bd8592-f1f1-424d-a4c6-f7735b3a222d": {
       "$type": "FollowWaypointsEntityData",
       "IndexInBlueprint": 239,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1274,7 +1274,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1290,7 +1290,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1336,9 +1336,9 @@
       "SequenceLength": 4200,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -1350,7 +1350,7 @@
       "IndexInBlueprint": 482,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "3ff4d5b3-5cbc-440e-a123-032764234197": {
@@ -1358,7 +1358,7 @@
       "IndexInBlueprint": 372,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1367,7 +1367,7 @@
       "IndexInBlueprint": 247,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1425,7 +1425,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1439,9 +1439,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 402521524,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/5887C1CD-45CE-42B4-915C-FE8083CA4D9B_FlyInDroneAnimation_vehicleRoot",
       "KeyCount": 377,
@@ -1454,7 +1454,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.1,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1465,7 +1465,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1479,11 +1479,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -1494,7 +1494,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 10.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1504,7 +1504,7 @@
       "IndexInBlueprint": 430,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "4c26305e-3c9b-471c-a837-ff99114ed8f1": {
@@ -1512,7 +1512,7 @@
       "IndexInBlueprint": 257,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1570,7 +1570,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1586,7 +1586,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1600,12 +1600,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": true,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 1,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_Continuous",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": false,
@@ -1665,7 +1665,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1729,7 +1729,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1748,11 +1748,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -1811,7 +1811,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1826,7 +1826,7 @@
       "IndexInBlueprint": 454,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "512a0304-3278-49fb-a2dd-ea9222961670": {
@@ -1834,7 +1834,7 @@
       "IndexInBlueprint": 394,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1843,7 +1843,7 @@
       "IndexInBlueprint": 321,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1932,14 +1932,14 @@
       "IndexInBlueprint": 353,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "52e663e4-3001-41f8-a424-74edd24bf148": {
       "$type": "RandomEventEntityData",
       "IndexInBlueprint": 439,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Probability": 50,
       "RandomizeFirstOnly": false,
       "AutoStart": false
@@ -1949,7 +1949,7 @@
       "IndexInBlueprint": 248,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -1988,7 +1988,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1998,7 +1998,7 @@
       "IndexInBlueprint": 342,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2007,7 +2007,7 @@
       "IndexInBlueprint": 379,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2017,7 +2017,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2027,7 +2027,7 @@
       "IndexInBlueprint": 262,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2036,7 +2036,7 @@
       "IndexInBlueprint": 377,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2045,8 +2045,8 @@
       "IndexInBlueprint": 495,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
-      "UpdatePass": 0,
+      "Realm": "Realm_Client",
+      "UpdatePass": "UpdatePass_PreSim",
       "Multiplier": 1.0,
       "TriggerOnTime": 0.0
     },
@@ -2085,9 +2085,9 @@
           "InstanceGuid": "c019c70d-e270-4eda-9e60-6af03a4fdf22"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -2099,7 +2099,7 @@
       "IndexInBlueprint": 320,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "59ad3d53-8673-4def-ad75-d573de9fe34c": {
@@ -2108,7 +2108,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 25.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2118,7 +2118,7 @@
       "IndexInBlueprint": 391,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2127,7 +2127,7 @@
       "IndexInBlueprint": 253,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2136,7 +2136,7 @@
       "IndexInBlueprint": 263,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2149,12 +2149,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 0,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_OneBurstPerTarget",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": true,
@@ -2165,7 +2165,7 @@
       "IndexInBlueprint": 392,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2174,7 +2174,7 @@
       "IndexInBlueprint": 335,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2183,7 +2183,7 @@
       "IndexInBlueprint": 250,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2192,7 +2192,7 @@
       "IndexInBlueprint": 259,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "611d0a81-4068-4d7c-9db0-4d32e7079bf5": {
@@ -2201,7 +2201,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2238,10 +2238,10 @@
         "InstanceGuid": "65ef4a38-cff2-4840-817d-67d0b377c553"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "62ec2b3e-6c11-4e1a-b34d-a141fb04d4ea": {
       "$type": "DelayEntityData",
@@ -2249,7 +2249,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2259,7 +2259,7 @@
       "IndexInBlueprint": 364,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2268,7 +2268,7 @@
       "IndexInBlueprint": 489,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": true
     },
     "653eda32-c6d4-41df-bdff-96ccb7ede347": {
@@ -2277,7 +2277,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.2,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2287,7 +2287,7 @@
       "IndexInBlueprint": 245,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2296,7 +2296,7 @@
       "IndexInBlueprint": 481,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "673d09b2-4b43-4d74-bf50-d1765566f59b": {
@@ -2304,7 +2304,7 @@
       "IndexInBlueprint": 347,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "698b2de2-4f33-4f8d-addd-44d3c9657654": {
@@ -2316,12 +2316,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": true,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 1,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_Continuous",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": false,
@@ -2332,7 +2332,7 @@
       "IndexInBlueprint": 252,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "69dfc0c1-6248-421c-842f-35ad23de3d37": {
@@ -2340,7 +2340,7 @@
       "IndexInBlueprint": 246,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2353,12 +2353,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": true,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 1,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_Continuous",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": false,
@@ -2369,14 +2369,14 @@
       "IndexInBlueprint": 355,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "6a952e23-2fef-4740-a532-9e1f92cccece": {
       "$type": "EventSplitterEntityData",
       "IndexInBlueprint": 307,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "RunOnce": false
     },
     "6bc7d43c-fe79-41b7-ac14-f0e6cecff306": {
@@ -2385,7 +2385,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 3.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2395,7 +2395,7 @@
       "IndexInBlueprint": 485,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "70521d87-0f51-41c8-8880-97ae3abcb1cf": {
@@ -2403,7 +2403,7 @@
       "IndexInBlueprint": 258,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2418,7 +2418,7 @@
       "IndexInBlueprint": 442,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "7259ba59-3406-4fa8-b21d-5579c3d505fb": {
@@ -2426,7 +2426,7 @@
       "IndexInBlueprint": 380,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2436,7 +2436,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2450,12 +2450,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": true,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 1,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_Continuous",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": false,
@@ -2470,11 +2470,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -2488,7 +2488,7 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false
     },
@@ -2546,7 +2546,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -2560,9 +2560,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 402521524,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 754,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/5887C1CD-45CE-42B4-915C-FE8083CA4D9B_FlyInDroneAnimation_vehicleRoot",
       "KeyCount": 377,
@@ -2575,7 +2575,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 6.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2589,11 +2589,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -2604,7 +2604,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2694,7 +2694,7 @@
       "IndexInBlueprint": 455,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "7d60705b-af1f-41bd-ae26-523abd3d59b7": {
@@ -2702,7 +2702,7 @@
       "IndexInBlueprint": 385,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2711,7 +2711,7 @@
       "IndexInBlueprint": 472,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "7edc5ef4-8a50-40b9-aa6c-6765092095fc": {
@@ -2798,9 +2798,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 402521524,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 377,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/5887C1CD-45CE-42B4-915C-FE8083CA4D9B_FlyInDroneAnimation_vehicleRoot",
       "KeyCount": 377,
@@ -2892,7 +2892,7 @@
       "IndexInBlueprint": 244,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "80b05a20-7d36-4b53-93bb-f05a6b447445": {
@@ -2900,7 +2900,7 @@
       "IndexInBlueprint": 388,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -2909,7 +2909,7 @@
       "IndexInBlueprint": 499,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "8149b1f7-2a7e-4b7a-92b4-e5e6bf2f64c6": {
@@ -2918,7 +2918,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2932,12 +2932,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "StrengthType": 1,
-      "Pose": 0,
-      "ShootType": 0,
+      "StrengthType": "LightArmour",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_OneBurstPerTarget",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": true,
@@ -2952,11 +2952,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -2976,9 +2976,9 @@
           "InstanceGuid": "2e27d37d-111c-437f-8f56-78aa0cc11b20"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -2994,12 +2994,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 0,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_OneBurstPerTarget",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": true,
@@ -3010,7 +3010,7 @@
       "IndexInBlueprint": 286,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "8653aa35-c969-4d81-8b38-29ad9d1e855f": {
@@ -3018,7 +3018,7 @@
       "IndexInBlueprint": 243,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -3028,7 +3028,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3087,7 +3087,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -3102,7 +3102,7 @@
       "IndexInBlueprint": 474,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "8d0dd4f3-adc2-4f66-92c1-7c2f413d451d": {
@@ -3110,7 +3110,7 @@
       "IndexInBlueprint": 371,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -3120,7 +3120,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3130,7 +3130,7 @@
       "IndexInBlueprint": 387,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -3140,7 +3140,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3150,7 +3150,7 @@
       "IndexInBlueprint": 376,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -3159,7 +3159,7 @@
       "IndexInBlueprint": 427,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -3168,7 +3168,7 @@
       "IndexInBlueprint": 295,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "934c9c2d-b147-49ce-b9d3-ccfd8a5765bc": {
@@ -3176,7 +3176,7 @@
       "IndexInBlueprint": 333,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -3185,7 +3185,7 @@
       "IndexInBlueprint": 290,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "93ce4898-8b29-4598-b85f-a694f3a7ead4": {
@@ -3369,7 +3369,7 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "94e98ccd-94ef-4d27-80d3-c809cea3cbaa": {
       "$type": "GeometryTriggerEntityData",
@@ -3425,7 +3425,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -3441,7 +3441,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3463,7 +3463,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3477,12 +3477,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": true,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 1,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_Continuous",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": true,
@@ -3493,7 +3493,7 @@
       "IndexInBlueprint": 488,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "9bafdb63-b645-4ff9-98b0-f0be7d16cee1": {
@@ -3501,7 +3501,7 @@
       "IndexInBlueprint": 469,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "9fc5292f-949d-49ac-9424-8db6361b97b3": {
@@ -3511,7 +3511,7 @@
       "IsPropertyConnectionTarget": 3,
       "MinDelay": 6.0,
       "MaxDelay": 12.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false
     },
@@ -3519,9 +3519,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193456519,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 7878,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/D7092A80-5FB1-4E60-91C4-20D8DBB49FFD_UAV",
       "KeyCount": 2626,
@@ -3533,7 +3533,7 @@
       "IndexInBlueprint": 310,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -3543,7 +3543,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3602,7 +3602,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -3617,7 +3617,7 @@
       "IndexInBlueprint": 386,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -3675,7 +3675,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -3694,11 +3694,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -3709,7 +3709,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3718,9 +3718,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193456519,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 5252,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/D7092A80-5FB1-4E60-91C4-20D8DBB49FFD_UAV",
       "KeyCount": 2626,
@@ -3733,7 +3733,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 18.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3792,7 +3792,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -3807,7 +3807,7 @@
       "IndexInBlueprint": 289,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "aeeefef3-f56f-47b3-a6da-959797e688e1": {
@@ -3819,12 +3819,12 @@
       "AdditionalMessages": [
         {
           "MessageSid": "ID_H_MES_SP_TANK_120_MM_CANNON",
-          "EntryInputAction": 16
+          "EntryInputAction": "EIASelectWeapon1"
         }
       ],
-      "MessageType": 1,
+      "MessageType": "UIMessageEntityType_Tooltip",
       "DisplayTime": 90.0,
-      "EntryInputAction": 17,
+      "EntryInputAction": "EIASelectWeapon2",
       "Enabled": true
     },
     "b12aec59-a444-4447-b81a-78abecff77bd": {
@@ -3839,7 +3839,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3849,7 +3849,7 @@
       "IndexInBlueprint": 479,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "b42fd6b2-98d4-440a-bf23-4610ea913166": {
@@ -3857,7 +3857,7 @@
       "IndexInBlueprint": 346,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "b61bd0b2-9719-479d-a54b-1b4709007a8d": {
@@ -3865,8 +3865,8 @@
       "IndexInBlueprint": 490,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
-      "UpdatePass": 0,
+      "Realm": "Realm_Client",
+      "UpdatePass": "UpdatePass_PreSim",
       "Multiplier": 1.0,
       "TriggerOnTime": 0.0
     },
@@ -3924,7 +3924,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -3939,7 +3939,7 @@
       "IndexInBlueprint": 296,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "b776f522-8b84-4608-9230-aa1a5f2adbf2": {
@@ -3977,7 +3977,7 @@
       "Radius": 5.0,
       "CoolDownTime": 1.0,
       "TriggerOnMaterialOnly": null,
-      "TriggeredBy": 2,
+      "TriggeredBy": "ATPlayers",
       "DisableIfTrackEntityIsLost": true,
       "RandomYaw": false,
       "IndicateHit": false
@@ -3987,7 +3987,7 @@
       "IndexInBlueprint": 373,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -4000,11 +4000,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -4018,12 +4018,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": true,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 0,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_OneBurstPerTarget",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": true,
@@ -4035,7 +4035,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -4055,9 +4055,9 @@
           "InstanceGuid": "c7038074-6d5b-49b3-997a-70f67b2e4415"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -4069,7 +4069,7 @@
       "IndexInBlueprint": 341,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -4078,7 +4078,7 @@
       "IndexInBlueprint": 238,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -4088,7 +4088,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.2,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -4099,7 +4099,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 5.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -4108,9 +4108,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 402521524,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 1885,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/5887C1CD-45CE-42B4-915C-FE8083CA4D9B_FlyInDroneAnimation_vehicleRoot",
       "KeyCount": 377,
@@ -4123,7 +4123,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.1,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -4132,9 +4132,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 402521524,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 1131,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/5887C1CD-45CE-42B4-915C-FE8083CA4D9B_FlyInDroneAnimation_vehicleRoot",
       "KeyCount": 377,
@@ -4146,7 +4146,7 @@
       "IndexInBlueprint": 280,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 10
     },
     "c5a0e02d-d9b5-4fbd-bb76-265aee3005d6": {
@@ -4203,7 +4203,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -4218,7 +4218,7 @@
       "IndexInBlueprint": 365,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "c7038074-6d5b-49b3-997a-70f67b2e4415": {
@@ -4231,7 +4231,7 @@
         10300,
         10600
       ],
-      "InterpolationType": 1,
+      "InterpolationType": "InterpolationType_Linear",
       "Values": [
         1.0,
         0.0,
@@ -4249,11 +4249,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -4312,7 +4312,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -4331,7 +4331,7 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false
     },
@@ -4342,9 +4342,9 @@
       "IsPropertyConnectionTarget": 3,
       "MessageSid": "ID_H_MES_SP_TANK_LASER_DESIGNATE_THE_TARGET",
       "AdditionalMessages": [],
-      "MessageType": 0,
+      "MessageType": "UIMessageEntityType_Message",
       "DisplayTime": 10.0,
-      "EntryInputAction": 128,
+      "EntryInputAction": "EIAUndefined",
       "Enabled": true
     },
     "cbf9c80f-45de-4b25-99b7-17d7ae86bfd4": {
@@ -4354,9 +4354,9 @@
       "IsPropertyConnectionTarget": 3,
       "MessageSid": "ID_H_MES_SP_TANK_LASER_DESIGNATOR",
       "AdditionalMessages": [],
-      "MessageType": 1,
+      "MessageType": "UIMessageEntityType_Tooltip",
       "DisplayTime": 10.0,
-      "EntryInputAction": 35,
+      "EntryInputAction": "EIAInteract",
       "Enabled": true
     },
     "cc4a6a84-7598-42ad-bf2a-32d1dce6a91d": {
@@ -4364,7 +4364,7 @@
       "IndexInBlueprint": 288,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "cc807603-026f-4eea-88e1-cf325461e469": {
@@ -4421,7 +4421,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -4516,7 +4516,7 @@
       "IndexInBlueprint": 311,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -4525,9 +4525,9 @@
       "IndexInBlueprint": 496,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "d0bab9e3-f520-4f15-a5b3-bb8d91871f58": {
@@ -4535,7 +4535,7 @@
       "IndexInBlueprint": 337,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -4544,7 +4544,7 @@
       "IndexInBlueprint": 349,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -4554,7 +4554,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -4598,7 +4598,7 @@
       "IndexInBlueprint": 266,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -4644,9 +4644,9 @@
           "InstanceGuid": "f21ac143-8219-43f2-a71b-32bee3b7da83"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": true,
@@ -4658,7 +4658,7 @@
       "IndexInBlueprint": 389,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -4716,7 +4716,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -4738,7 +4738,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -4747,9 +4747,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193456519,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 10504,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/D7092A80-5FB1-4E60-91C4-20D8DBB49FFD_UAV",
       "KeyCount": 2626,
@@ -4765,11 +4765,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -4779,14 +4779,14 @@
       "IndexInBlueprint": 357,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "de66f265-6a75-4ae1-a3c9-4abdcd81df97": {
       "$type": "WaypointTriggerEntityData",
       "IndexInBlueprint": 362,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "de7515a4-253b-494c-a149-bf79473984bd": {
       "$type": "InputRestrictionEntityData",
@@ -4906,10 +4906,10 @@
         "InstanceGuid": "15b9e036-6625-4da6-a815-f9c733a81677"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "e214f2c8-ffba-4d68-8aa6-e48c494b926e": {
       "$type": "GeometryTriggerEntityData",
@@ -4965,7 +4965,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -6099,11 +6099,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -6113,7 +6113,7 @@
       "IndexInBlueprint": 265,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -6122,7 +6122,7 @@
       "IndexInBlueprint": 393,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -6132,7 +6132,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6142,7 +6142,7 @@
       "IndexInBlueprint": 425,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "ea189b94-062e-4329-bdf9-94c5970caa07": {
@@ -6151,7 +6151,7 @@
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6162,7 +6162,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 4.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6176,7 +6176,7 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false
     },
@@ -6185,7 +6185,7 @@
       "IndexInBlueprint": 251,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -6194,7 +6194,7 @@
       "IndexInBlueprint": 319,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -6204,7 +6204,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.2,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6213,9 +6213,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193456519,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 13130,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/D7092A80-5FB1-4E60-91C4-20D8DBB49FFD_UAV",
       "KeyCount": 2626,
@@ -6231,12 +6231,12 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": true,
-      "StrengthType": 0,
-      "Pose": 0,
-      "ShootType": 1,
+      "StrengthType": "Infantry",
+      "Pose": "PoseType_Current",
+      "ShootType": "ShootType_Continuous",
       "PreferAlternativeWeapon": false,
       "CompleteWhenHumanIsSensed": false,
       "CycleTargets": false,
@@ -6248,7 +6248,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6259,7 +6259,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 26.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6318,7 +6318,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -6333,7 +6333,7 @@
       "IndexInBlueprint": 486,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "f74905fc-93f5-4329-9436-000e4c2e8dd8": {
@@ -6342,7 +6342,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 10.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6352,7 +6352,7 @@
       "IndexInBlueprint": 405,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -6362,7 +6362,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6421,7 +6421,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -6440,11 +6440,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -6454,7 +6454,7 @@
       "IndexInBlueprint": 374,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -6462,9 +6462,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193456519,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Levels/SP_Tank/AnimTrackData/D7092A80-5FB1-4E60-91C4-20D8DBB49FFD_UAV",
       "KeyCount": 2626,
@@ -6476,7 +6476,7 @@
       "IndexInBlueprint": 240,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -6485,7 +6485,7 @@
       "IndexInBlueprint": 350,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -6495,7 +6495,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6506,7 +6506,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 20.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6516,7 +6516,7 @@
       "IndexInBlueprint": 497,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "fee0de52-2c0f-4136-b476-27527ddde4fe": {
@@ -6525,7 +6525,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 10.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -6535,7 +6535,7 @@
       "IndexInBlueprint": 274,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     }
   }

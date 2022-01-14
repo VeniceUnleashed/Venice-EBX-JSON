@@ -8,7 +8,7 @@
       "IndexInBlueprint": 4,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "A": 0.0,
       "B": 0.0,
       "TriggerOnPropertyChange": true,
@@ -109,10 +109,10 @@
       "ShowRadius": 0.0,
       "HideRadius": 0.0,
       "BlinkTime": 5.0,
-      "MarkerType": 0,
-      "VisibleForTeam": 0,
-      "OwnerTeam": 0,
-      "HudIcon": 20,
+      "MarkerType": "MMTMissionObjective",
+      "VisibleForTeam": "TeamNeutral",
+      "OwnerTeam": "TeamNeutral",
+      "HudIcon": "UIHudIcon_ObjectiveGeneral",
       "VerticalOffset": 0.0,
       "FocusPointRadius": 50.0,
       "InstantFlagReturnRadius": 0.0,
@@ -157,7 +157,7 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "847af8bd-973c-422a-8944-debc744a6414": {
       "$type": "ReferenceObjectData",
@@ -191,7 +191,7 @@
         "InstanceGuid": "fd35a71b-2486-3208-9791-4a17f925340b"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -422,7 +422,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -439,7 +439,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -456,7 +456,7 @@
           "TargetEvent": {
             "Id": -1688613187
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -473,7 +473,7 @@
           "TargetEvent": {
             "Id": 1723395486
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -490,7 +490,7 @@
           "TargetEvent": {
             "Id": 2099208964
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -507,7 +507,7 @@
           "TargetEvent": {
             "Id": -1433788352
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         }
       ],
       "Descriptor": {
@@ -568,31 +568,31 @@
           "Value": "",
           "ValueRef": null,
           "Id": 1043301209,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": -1475588377,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": -77167751,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 1490142753,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 2025703195,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         }
       ],
       "InputEvents": [],
@@ -643,7 +643,7 @@
       },
       "Blueprint": null,
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
       "AirdropTransform": {
@@ -714,7 +714,7 @@
       },
       "LocationNameSid": "Neutral Spawn",
       "LocationTextSid": "Neutral Spawn",
-      "Team": 0,
+      "Team": "TeamNeutral",
       "SpawnProtectionFriendlyKilledCount": 3,
       "SpawnProtectionFriendlyKilledTime": 30.0,
       "RotationRoll": 0.0,
@@ -744,11 +744,11 @@
       "OnlySendEventForHumanPlayers": true,
       "Enabled": true,
       "IsDynamicSpawn": false,
-      "PlayerType": 0,
+      "PlayerType": "PlayerSpawnType_HumanPlayer",
       "VehicleEntryIndex": 0,
       "Template": null,
       "HumanTargetPreference": -1.0,
-      "MinimapIcon": 99,
+      "MinimapIcon": "UIHudIcon_Blank",
       "AllowFallbackOnNextAvailabeVehicleEntry": false,
       "CheckMaxPlayersInVehicle": false,
       "AffectMinimapPosition": true,
@@ -760,7 +760,7 @@
       "IndexInBlueprint": 6,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "ccbdc747-af68-40d4-9065-80f2ef980363": {
@@ -813,7 +813,7 @@
         "PartitionGuid": "609d6256-5d43-11e1-a969-e8b3c94fe87b",
         "InstanceGuid": "dcb06f27-fce2-1c7d-9e04-335793af9749"
       },
-      "InitialOwnerTeam": 0,
+      "InitialOwnerTeam": "TeamNeutral",
       "CaptureRadius": 0.0,
       "MaxCaptureMultiplier": 4,
       "AreaValue": 0,
@@ -827,7 +827,7 @@
       "HideRadius": 0.0,
       "AddedMultiplierPerPlayer": 0.34,
       "Modify3DIconVerticalOffset": -2.0,
-      "CapturableType": 0,
+      "CapturableType": "CTDefault",
       "IntruderWarningSID": "Warning a base is under attack!",
       "IsCapturedInUpperSphere": false,
       "DisableWhenLosingControl": false,
@@ -848,7 +848,7 @@
       "IndexInBlueprint": 5,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "IntValue": 0,
       "FloatValue": 0.0,
       "BoolValue": false

@@ -214,9 +214,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.8,
         "RateOfFire": 360.0,
         "RateOfFireForBurst": 360.0,
@@ -227,10 +227,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 3.7,
         "ReloadTimeBulletsLeft": 2.0,
-        "FireLogicType": 1,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltSingleFireWithBoltAction",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 1,
+        "ReloadType": "rtMagazine",
         "HoldOffReloadUntilZoomRelease": true,
         "ForceReloadActionOnFireTrigger": true,
         "HoldOffReloadUntilFireRelease": true,
@@ -371,8 +371,8 @@
               "InstanceGuid": "43ed244c-ab8b-43c5-9972-8efe21845dca"
             }
           },
-          "AnimatedFireType": 1,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireSingle",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -1049,7 +1049,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 39,
+      "WeaponClass": "wcNone",
       "AIData": {
         "PartitionGuid": "b7c6f906-439c-42af-aee4-bde262fe5fb3",
         "InstanceGuid": "b8375e7b-e144-4dd0-98cf-65f1fff98865"
@@ -1173,7 +1173,7 @@
           "z": 88.0
         }
       },
-      "AnimBaseSet": 7,
+      "AnimBaseSet": "wabsSnp",
       "AnimationData": {
         "PartitionGuid": "fc698e25-bc8a-a30c-029f-21242010bf98",
         "InstanceGuid": "fc698e25-bc8a-a30c-029f-21242010bf98"
@@ -1185,7 +1185,7 @@
         "PartitionGuid": "eeec6e85-6a26-4c51-842e-55c5b75de9dc",
         "InstanceGuid": "0783b7e9-7e1b-41b1-b952-88d3a0b167a0"
       },
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": {
         "PartitionGuid": "1d8a5cc3-0e39-402c-852b-f005d3e8dd49",
         "InstanceGuid": "d2f9adeb-acb7-490c-b314-33c8732702b6"
@@ -1201,7 +1201,7 @@
           "InstanceGuid": "62b74480-6a0d-4e2c-9bc8-9a1dc87a06a9"
         }
       ],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "eeec6e85-6a26-4c51-842e-55c5b75de9dc",
         "InstanceGuid": "6dd692aa-0188-4847-9ce5-a7085cbcc6ad"
@@ -1290,8 +1290,8 @@
           "InstanceGuid": "fa407f03-8b43-4f4b-aa23-168d49ec889d"
         }
       ],
-      "GearSlot": 13,
-      "SocketType": 0,
+      "GearSlot": "GearSlot_NotEquipped",
+      "SocketType": "SocketType_Undefined",
       "UsesDefaultObject": false,
       "Excluded": false,
       "DefaultEnableSocketEntities": false,
@@ -1430,7 +1430,7 @@
           "InstanceGuid": "b3fbd26a-616b-4332-aff0-71a7b944806e"
         }
       },
-      "AnimatedFireType": 0
+      "AnimatedFireType": "AnimatedFireAutomatic"
     },
     "b3fbd26a-616b-4332-aff0-71a7b944806e": {
       "$type": "WeaponSpeedData",
@@ -1556,8 +1556,8 @@
           "InstanceGuid": "3b2fcb85-53c8-4904-b1bb-1f17b334e5c8"
         }
       ],
-      "GearSlot": 13,
-      "SocketType": 0,
+      "GearSlot": "GearSlot_NotEquipped",
+      "SocketType": "SocketType_Undefined",
       "UsesDefaultObject": false,
       "Excluded": false,
       "DefaultEnableSocketEntities": false,
@@ -1584,7 +1584,7 @@
           "InstanceGuid": "4789cd2c-3b8e-43cf-a793-88bace7c44ec"
         }
       },
-      "AnimatedFireType": 0
+      "AnimatedFireType": "AnimatedFireAutomatic"
     },
     "dbca5662-169c-4276-bf8b-c535273e730b": {
       "$type": "WeaponZoomModifier",

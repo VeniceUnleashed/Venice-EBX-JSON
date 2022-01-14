@@ -88,7 +88,7 @@
       "IndexInBlueprint": 266,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "IntValue": 0,
       "FloatValue": 0.0,
       "BoolValue": false
@@ -99,7 +99,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.2,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -109,7 +109,7 @@
       "IndexInBlueprint": 218,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": true
     },
     "0eda047d-f160-4330-82af-dca4af31afbb": {
@@ -117,7 +117,7 @@
       "IndexInBlueprint": 207,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "10048b7c-0a28-41f9-a3bc-7d56f1ccb296": {
@@ -147,9 +147,9 @@
           "z": 0.0
         }
       },
-      "BoneToPlace": 3,
-      "Realm": 2,
-      "ModelAnimationTransformType": 0,
+      "BoneToPlace": "GameplayBones_RootBone",
+      "Realm": "Realm_ClientAndServer",
+      "ModelAnimationTransformType": "ModelAnimationTransformType_World",
       "InstanceSeed": 0,
       "DefaultAnimation": "Cars_Anim",
       "AnimationIndex": 0,
@@ -159,7 +159,7 @@
       },
       "ExternalTime": -1.0,
       "RootMeshBoneName": "AITrajectory",
-      "JointWorldTransformUpdateOrder": 1,
+      "JointWorldTransformUpdateOrder": "ModelAnimationUpdateOrder_PreInput",
       "ConnectBoneName": "AITrajectory",
       "JointOutputPropertyIds": [
         -1031074154,
@@ -304,7 +304,7 @@
       "IndexInBlueprint": 219,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "1af8bd86-005e-4717-a65e-5f7ef961759c": {
@@ -681,9 +681,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -726,9 +726,9 @@
           "InstanceGuid": "3aba6d94-51ce-465b-a457-85d7ab8fed2e"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -789,7 +789,7 @@
           "z": 0.0
         }
       },
-      "Include": 4,
+      "Include": "ATAI_Allies",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -804,7 +804,7 @@
       "IndexInBlueprint": 270,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "IntValue": 0,
       "FloatValue": 0.0,
       "BoolValue": false
@@ -818,7 +818,7 @@
         123000,
         125000
       ],
-      "InterpolationType": 1,
+      "InterpolationType": "InterpolationType_Linear",
       "Values": [
         55.0,
         49.5,
@@ -860,9 +860,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 9,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -888,9 +888,9 @@
       "IndexInBlueprint": 264,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        1
+        "MathOp_Subtract"
       ]
     },
     "48a5cf63-fe79-46be-8620-b8887956a723": {
@@ -926,9 +926,9 @@
           "z": 0.0
         }
       },
-      "BoneToPlace": 5,
-      "Realm": 0,
-      "ModelAnimationTransformType": 0,
+      "BoneToPlace": "GameplayBones_ConnectBone",
+      "Realm": "Realm_Client",
+      "ModelAnimationTransformType": "ModelAnimationTransformType_World",
       "InstanceSeed": 0,
       "DefaultAnimation": "WalkieTalkie_Anim",
       "AnimationIndex": 0,
@@ -938,7 +938,7 @@
       },
       "ExternalTime": -1.0,
       "RootMeshBoneName": "Base",
-      "JointWorldTransformUpdateOrder": 0,
+      "JointWorldTransformUpdateOrder": "ModelAnimationUpdateOrder_PostAnimation",
       "ConnectBoneName": "Connect",
       "JointOutputPropertyIds": [
         -1031074154,
@@ -962,7 +962,7 @@
       "IndexInBlueprint": 216,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "55c37178-c207-4f73-97fe-9af21b1e7932": {
@@ -970,7 +970,7 @@
       "IndexInBlueprint": 210,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "EventCount": 2
     },
     "5780c38e-f16e-415e-80eb-6f1b782bd00b": {
@@ -979,7 +979,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 5.57,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1044,7 +1044,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1059,7 +1059,7 @@
       "IndexInBlueprint": 272,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": -1.0,
       "IncDecValue": 1.0
     },
@@ -1119,7 +1119,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 5.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1135,7 +1135,7 @@
       "IndexInBlueprint": 269,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "In": false
     },
     "64cab66c-64c6-4157-9195-cc8bc9bea7f1": {
@@ -1157,7 +1157,7 @@
       "IndexInBlueprint": 249,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "6f376fa1-165d-4638-b498-49c90b2dc75f": {
@@ -1206,7 +1206,7 @@
         "y": 0.0
       },
       "ValuePrefix": "Sound Timeline",
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "FloatValue": 0.0,
       "IntValue": 0,
       "TextScale": 1.0,
@@ -1220,9 +1220,9 @@
       "IndexInBlueprint": 273,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "72b8550b-4267-4147-854d-08c6496e9227": {
@@ -1230,7 +1230,7 @@
       "IndexInBlueprint": 208,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "7493f69b-03ea-4124-aa4e-d0133fc61f3a": {
@@ -1238,7 +1238,7 @@
       "IndexInBlueprint": 230,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 0.0,
       "IncDecValue": 75.05
     },
@@ -1247,7 +1247,7 @@
       "IndexInBlueprint": 228,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "80c9c98c-f49a-4e90-b2fe-5ca7b607f989": {
@@ -1283,9 +1283,9 @@
       "IndexInBlueprint": 268,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        2
+        "MathOp_Multiply"
       ]
     },
     "8901da02-fc0e-4246-9193-0de854d0a969": {
@@ -1342,7 +1342,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1441,9 +1441,9 @@
       "SequenceLength": 150000,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -1461,9 +1461,9 @@
       "IndexInBlueprint": 271,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        2
+        "MathOp_Multiply"
       ]
     },
     "9e544e34-0d9f-449f-87d5-1293aebe6375": {
@@ -1520,7 +1520,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1535,7 +1535,7 @@
       "IndexInBlueprint": 267,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": true
     },
     "a1f84396-cc88-4c72-afef-352eaf19311e": {
@@ -1592,7 +1592,7 @@
           "z": 0.0
         }
       },
-      "Include": 1,
+      "Include": "ATAll",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1607,7 +1607,7 @@
       "IndexInBlueprint": 245,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "aafc5e39-7d45-4b12-a6cc-3cc5a3dba923": {
@@ -1656,7 +1656,7 @@
         "y": 0.0
       },
       "ValuePrefix": "Anim input timeline",
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "FloatValue": 0.0,
       "IntValue": 0,
       "TextScale": 1.0,
@@ -1696,7 +1696,7 @@
       "IndexInBlueprint": 265,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 101.7,
       "IncDecValue": 1.0
     },
@@ -1706,7 +1706,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1743,17 +1743,17 @@
         "InstanceGuid": "62bb87d9-e42b-3e0f-6009-06ff92534b87"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "c74d937e-d747-4830-8158-8be4db70bdc3": {
       "$type": "EventGateEntityData",
       "IndexInBlueprint": 244,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Default": false
     },
     "c7c232c7-d853-46da-851f-dde26b546b38": {
@@ -1841,8 +1841,8 @@
       "IndexInBlueprint": 252,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
-      "EntryInputActions": 7,
+      "Realm": "Realm_ClientAndServer",
+      "EntryInputActions": "EIAFire",
       "ValueModifier": 1.0,
       "TrailingValueAtStart": 0.0,
       "AccumulatedValueAtStart": 0.0,
@@ -1975,7 +1975,7 @@
         "y": 0.0
       },
       "ValuePrefix": "Offset",
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "FloatValue": 0.0,
       "IntValue": 0,
       "TextScale": 1.0,
@@ -1991,9 +1991,9 @@
       "IsPropertyConnectionTarget": 3,
       "MessageSid": "ID_H_MES_SP_VILLA_YOU_WERE_KILLED",
       "AdditionalMessages": [],
-      "MessageType": 4,
+      "MessageType": "UIMessageEntityType_FailState",
       "DisplayTime": 5.0,
-      "EntryInputAction": 128,
+      "EntryInputAction": "EIAUndefined",
       "Enabled": true
     },
     "d0373a37-c0a0-4aa3-97d3-9fc43558c349": {
@@ -2001,7 +2001,7 @@
       "IndexInBlueprint": 261,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Value": false,
       "InitalEvent": false
     },
@@ -2010,7 +2010,7 @@
       "IndexInBlueprint": 234,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "RunOnce": true
     },
     "e032d02d-a754-4ba2-a812-4351dd5d92c0": {
@@ -2018,7 +2018,7 @@
       "IndexInBlueprint": 237,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "e4d950da-1e10-42c4-80c1-453321843ff4": {
@@ -2114,17 +2114,17 @@
         "InstanceGuid": "4c1ca45d-9b0d-af58-9080-ecd842acb105"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "fd48b7a6-bf37-4c49-a975-9b60eed62822": {
       "$type": "BoolEntityData",
       "IndexInBlueprint": 262,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": false
     },
     "fd620114-ac32-4bdb-ba89-8cbffd027225": {
@@ -2159,10 +2159,10 @@
         "InstanceGuid": "5ec93358-09d4-48cc-81fb-30ca105db85f"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     }
   }
 }

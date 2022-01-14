@@ -30,9 +30,9 @@
           "z": 0.0
         }
       },
-      "BoneToPlace": 3,
-      "Realm": 0,
-      "ModelAnimationTransformType": 2,
+      "BoneToPlace": "GameplayBones_RootBone",
+      "Realm": "Realm_Client",
+      "ModelAnimationTransformType": "ModelAnimationTransformType_Local",
       "InstanceSeed": 0,
       "DefaultAnimation": "Props_Door_Enter",
       "AnimationIndex": 0,
@@ -42,7 +42,7 @@
       },
       "ExternalTime": -1.0,
       "RootMeshBoneName": "Base",
-      "JointWorldTransformUpdateOrder": 0,
+      "JointWorldTransformUpdateOrder": "ModelAnimationUpdateOrder_PostAnimation",
       "ConnectBoneName": "Connect",
       "JointOutputPropertyIds": [
         -1031074154,
@@ -71,9 +71,9 @@
       "SequenceLength": 4000,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -84,9 +84,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -747847077,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -148,7 +148,7 @@
       },
       "LevelChoice": 12,
       "ScenarioChoice": 14,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": 7,
       "Actor1Part": 2,
@@ -240,7 +240,7 @@
       },
       "LevelChoice": 12,
       "ScenarioChoice": 9,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": 7,
       "Actor1Part": 3,
@@ -281,9 +281,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -747847077,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -317,7 +317,7 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "75bd3c13-1a9e-456d-a3e6-284a2a4df2a7": {
       "$type": "ModelAnimationEntityData",
@@ -346,9 +346,9 @@
           "z": 0.0
         }
       },
-      "BoneToPlace": 3,
-      "Realm": 0,
-      "ModelAnimationTransformType": 2,
+      "BoneToPlace": "GameplayBones_RootBone",
+      "Realm": "Realm_Client",
+      "ModelAnimationTransformType": "ModelAnimationTransformType_Local",
       "InstanceSeed": 0,
       "DefaultAnimation": "Props_Door_Action",
       "AnimationIndex": 0,
@@ -358,7 +358,7 @@
       },
       "ExternalTime": -1.0,
       "RootMeshBoneName": "Base",
-      "JointWorldTransformUpdateOrder": 0,
+      "JointWorldTransformUpdateOrder": "ModelAnimationUpdateOrder_PostAnimation",
       "ConnectBoneName": "Connect",
       "JointOutputPropertyIds": [
         -1031074154,
@@ -384,19 +384,19 @@
           "Value": "",
           "ValueRef": null,
           "Id": -2132289043,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": -1646061633,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 1771624355,
-          "AccessType": 0
+          "AccessType": "FieldAccessType_Source"
         }
       ],
       "InputEvents": [
@@ -476,7 +476,7 @@
       },
       "LevelChoice": 12,
       "ScenarioChoice": 9,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": 7,
       "Actor1Part": 0,
@@ -631,7 +631,7 @@
           "TargetEvent": {
             "Id": -1659198741
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -648,7 +648,7 @@
           "TargetEvent": {
             "Id": -910201930
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -665,7 +665,7 @@
           "TargetEvent": {
             "Id": 1037701496
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -682,7 +682,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -699,7 +699,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -716,7 +716,7 @@
           "TargetEvent": {
             "Id": 1037701496
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -733,7 +733,7 @@
           "TargetEvent": {
             "Id": -1659198741
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -750,7 +750,7 @@
           "TargetEvent": {
             "Id": 1037701496
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -767,7 +767,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         }
       ],
       "Descriptor": {
@@ -865,7 +865,7 @@
         "InstanceGuid": "6b4e9fc5-bf54-d4fe-28e8-a2da1f1e0e61"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -873,9 +873,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -747847077,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -937,7 +937,7 @@
       },
       "LevelChoice": 12,
       "ScenarioChoice": 9,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": 7,
       "Actor1Part": 1,
@@ -1009,9 +1009,9 @@
           "InstanceGuid": "6d7e2ea3-5946-4040-948c-b617b0bc6fcc"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -1022,9 +1022,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -747847077,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Levels/SP_Finale/Prefabs/anim/AnimTrackData/B03590FA-52B4-47AB-8134-ACC7C5D76E60_DoorEnter",
       "KeyCount": 6,
@@ -1035,9 +1035,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -747847077,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -1225,7 +1225,7 @@
           "z": 0.0
         }
       },
-      "Realm": 0
+      "Realm": "Realm_Client"
     },
     "d93705cb-508c-46be-ba83-08940c91a57f": {
       "$type": "MultipleActorScenarioEntityData",
@@ -1282,7 +1282,7 @@
       },
       "LevelChoice": 12,
       "ScenarioChoice": 14,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": -1,
       "Actor1Part": -1,
@@ -1374,7 +1374,7 @@
       },
       "LevelChoice": 12,
       "ScenarioChoice": 14,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": -1,
       "Actor1Part": -1,
@@ -1415,9 +1415,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -747847077,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,

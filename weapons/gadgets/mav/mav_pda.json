@@ -68,8 +68,8 @@
             "WeaponOffsetModuleData": null,
             "WeaponSpeedModuleData": null
           },
-          "AnimatedFireType": 0,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireAutomatic",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -633,7 +633,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 36,
+      "WeaponClass": "wcReconMav",
       "AIData": {
         "PartitionGuid": "1271f1be-49d5-4599-aad2-0d3bbafb1ef7",
         "InstanceGuid": "d27ff0bd-de1c-76ed-ca47-974a56cc269d"
@@ -703,7 +703,7 @@
           "z": 90.0
         }
       },
-      "AnimBaseSet": 0,
+      "AnimBaseSet": "wabsRif",
       "AnimationData": {
         "PartitionGuid": "1c37f620-a71b-a7dd-795f-9b50b1076e41",
         "InstanceGuid": "1c37f620-a71b-a7dd-795f-9b50b1076e41"
@@ -715,11 +715,11 @@
         "PartitionGuid": "1271f1be-49d5-4599-aad2-0d3bbafb1ef7",
         "InstanceGuid": "a87617e6-d94e-40a6-9ace-5e74242aefd0"
       },
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": null,
       "WeaponFloatParam": 1.0,
       "Sockets": [],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "1271f1be-49d5-4599-aad2-0d3bbafb1ef7",
         "InstanceGuid": "48c438ad-05f5-4aa6-bb6d-873d21044907"
@@ -836,9 +836,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.1,
         "RateOfFire": 550.0,
         "RateOfFireForBurst": 550.0,
@@ -849,10 +849,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 0.75,
         "ReloadTimeBulletsLeft": 0.0,
-        "FireLogicType": 0,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltSingleFire",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 0,
+        "ReloadType": "rtSingleBullet",
         "HoldOffReloadUntilZoomRelease": false,
         "ForceReloadActionOnFireTrigger": false,
         "HoldOffReloadUntilFireRelease": false,
@@ -961,7 +961,7 @@
       "MaxCount": 1,
       "InitMeshHideTime": 0.0,
       "MaterialPair": null,
-      "HitReactionWeaponType": 2,
+      "HitReactionWeaponType": "AntHitReactionWeaponType_AssaultRifle",
       "Explosion": null,
       "SuppressionData": null,
       "AmmunitionType": "",
@@ -1050,7 +1050,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -1073,8 +1073,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,

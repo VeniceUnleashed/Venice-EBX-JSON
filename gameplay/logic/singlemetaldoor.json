@@ -8,16 +8,16 @@
       "IndexInBlueprint": 3,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "10f2f060-f136-43a3-93b6-7d217ec3e69f": {
       "$type": "TransformPartPropertyTrackData",
       "Id": -1573022990,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 10,
       "ResourceName": "Gameplay/Logic/AnimTrackData/54FAC2A9-3EFE-4B74-B74F-D9F8AE3C6898_CloseA",
       "KeyCount": 2,
@@ -50,9 +50,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1573022990,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 8,
       "ResourceName": "Gameplay/Logic/AnimTrackData/54FAC2A9-3EFE-4B74-B74F-D9F8AE3C6898_CloseA",
       "KeyCount": 2,
@@ -240,15 +240,15 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "33f5ab88-6e3e-4bf7-b586-d4abbcbabee3": {
       "$type": "TransformPartPropertyTrackData",
       "Id": -1573022990,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 4,
       "ResourceName": "Gameplay/Logic/AnimTrackData/54FAC2A9-3EFE-4B74-B74F-D9F8AE3C6898_CloseA",
       "KeyCount": 2,
@@ -287,7 +287,7 @@
         "InstanceGuid": "a8b6afeb-083b-4afb-9381-fe2850374394"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -295,9 +295,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 217814160,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 20,
       "ResourceName": "Gameplay/Logic/AnimTrackData/9658860E-25C7-42A3-8C4D-AC0B74FD251C_OpenA",
       "KeyCount": 5,
@@ -308,9 +308,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 217814160,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 15,
       "ResourceName": "Gameplay/Logic/AnimTrackData/9658860E-25C7-42A3-8C4D-AC0B74FD251C_OpenA",
       "KeyCount": 5,
@@ -322,7 +322,7 @@
       "IndexInBlueprint": 2,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": false
     },
     "54fac2a9-3efe-4b74-b74f-d9f8ae3c6898": {
@@ -360,9 +360,9 @@
           "InstanceGuid": "10f2f060-f136-43a3-93b6-7d217ec3e69f"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -439,7 +439,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -456,7 +456,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -473,7 +473,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -490,7 +490,7 @@
           "TargetEvent": {
             "Id": 212633683
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -507,7 +507,7 @@
           "TargetEvent": {
             "Id": 2089008817
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -524,7 +524,7 @@
           "TargetEvent": {
             "Id": -1573023017
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -541,7 +541,7 @@
           "TargetEvent": {
             "Id": 2089008817
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -558,7 +558,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -575,7 +575,7 @@
           "TargetEvent": {
             "Id": 212633683
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -592,7 +592,7 @@
           "TargetEvent": {
             "Id": -1402066096
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -609,7 +609,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -626,7 +626,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -643,7 +643,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -660,7 +660,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -677,7 +677,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         }
       ],
       "Descriptor": {
@@ -728,16 +728,16 @@
       "IndexInBlueprint": 5,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "DefaultValue": false
     },
     "8cf51c0f-3c4e-4bd4-b57b-efa8ef1620cb": {
       "$type": "TransformPartPropertyTrackData",
       "Id": 217814160,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Gameplay/Logic/AnimTrackData/9658860E-25C7-42A3-8C4D-AC0B74FD251C_OpenA",
       "KeyCount": 5,
@@ -813,9 +813,9 @@
           "InstanceGuid": "e1e7d513-50da-4e3e-9cf8-267668d9226f"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -826,9 +826,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 217814160,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 5,
       "ResourceName": "Gameplay/Logic/AnimTrackData/9658860E-25C7-42A3-8C4D-AC0B74FD251C_OpenA",
       "KeyCount": 5,
@@ -839,9 +839,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 217814160,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 25,
       "ResourceName": "Gameplay/Logic/AnimTrackData/9658860E-25C7-42A3-8C4D-AC0B74FD251C_OpenA",
       "KeyCount": 5,
@@ -852,9 +852,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1573022990,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Gameplay/Logic/AnimTrackData/54FAC2A9-3EFE-4B74-B74F-D9F8AE3C6898_CloseA",
       "KeyCount": 2,
@@ -865,9 +865,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 217814160,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 10,
       "ResourceName": "Gameplay/Logic/AnimTrackData/9658860E-25C7-42A3-8C4D-AC0B74FD251C_OpenA",
       "KeyCount": 5,
@@ -878,9 +878,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1573022990,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 2,
       "ResourceName": "Gameplay/Logic/AnimTrackData/54FAC2A9-3EFE-4B74-B74F-D9F8AE3C6898_CloseA",
       "KeyCount": 2,
@@ -891,9 +891,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1573022990,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 6,
       "ResourceName": "Gameplay/Logic/AnimTrackData/54FAC2A9-3EFE-4B74-B74F-D9F8AE3C6898_CloseA",
       "KeyCount": 2,

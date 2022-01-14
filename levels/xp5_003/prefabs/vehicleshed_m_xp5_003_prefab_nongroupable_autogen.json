@@ -14,7 +14,7 @@
       },
       "Gain": -17.0,
       "Volume": 0.0,
-      "FadeCurve": 1
+      "FadeCurve": "FadeCurveType_SineAmplitude"
     },
     "4a5c3b04-eb88-4fa2-822e-953d05e86c15": {
       "$type": "SoundAreaEntityData",
@@ -25,7 +25,7 @@
       "BigWorld": null,
       "FadeWidth": 3.0,
       "ProximityMultiplier": 1.0,
-      "FadeCurve": 2
+      "FadeCurve": "FadeCurveType_LinearDecibel"
     },
     "4dcc5ee8-0af1-0291-ae47-0f18737c3267": {
       "$type": "PrefabBlueprint",
@@ -122,7 +122,7 @@
           "TargetEvent": {
             "Id": -395651742
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -139,7 +139,7 @@
           "TargetEvent": {
             "Id": -395651742
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         }
       ],
       "Descriptor": {
@@ -186,7 +186,7 @@
       "IndexInBlueprint": 4,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 1.0,
       "IncDecValue": 0.2
     },
@@ -195,7 +195,7 @@
       "IndexInBlueprint": 5,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 0.0,
       "IncDecValue": 1.0
     },
@@ -237,9 +237,9 @@
       "IndexInBlueprint": 3,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "ee20bf4e-c6d2-466e-b4aa-764f3d28b87c": {
@@ -277,7 +277,7 @@
         "PartitionGuid": "09a6c0f4-babd-11e1-ab47-d57a9f64930b",
         "InstanceGuid": "1ad6b4c9-9069-852a-2da2-b0e07d224753"
       },
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -288,7 +288,7 @@
           "Value": "",
           "ValueRef": null,
           "Id": 258157264,
-          "AccessType": 0
+          "AccessType": "FieldAccessType_Source"
         }
       ],
       "InputEvents": [],

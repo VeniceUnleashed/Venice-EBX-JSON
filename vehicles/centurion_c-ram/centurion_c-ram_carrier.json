@@ -71,14 +71,14 @@
       "UpCurve": [],
       "DownCurve": [],
       "UpPitchAngle": 0.0,
-      "YawInputAction": 6,
+      "YawInputAction": "EIARoll",
       "LoosePartPhysics": [],
       "LeftYawAngle": 0.0,
       "RightYawAngle": 0.0,
       "PitchSensitivityZoomed": 0.0,
       "DownPitchAngle": 0.0,
       "AverageFilterFrames": 10,
-      "PitchInputAction": 5,
+      "PitchInputAction": "EIAPitch",
       "YawSensitivityZoomed": 0.0,
       "PitchSensitivityNonZoomed": 0.0,
       "YawSensitivityNonZoomed": 0.0,
@@ -263,7 +263,7 @@
       "ForceModifier": 1000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 4,
+      "RotationInput": "EIAYaw",
       "WorldSpaceLockEfficiency": 0.0,
       "UseLinearInput": true
     },
@@ -445,7 +445,7 @@
         "InstanceGuid": "dfc8e5a9-bee9-4fc4-b522-e130dbe92c51"
       },
       "LowHealthThreshold": 50.0,
-      "DefaultTeam": 0,
+      "DefaultTeam": "TeamNeutral",
       "MaterialPair": {
         "PartitionGuid": "b50615c2-4743-4919-9a40-a738150debe9",
         "InstanceGuid": "2175e64b-390e-48c1-9939-46742ab34bd6"
@@ -537,7 +537,7 @@
           "z": -50.0
         },
         "Customization": null,
-        "MinimapIcon": 137,
+        "MinimapIcon": "UIHudIcon_StaticAA",
         "Texture": null,
         "VehicleItemHash": 3860917722
       },
@@ -844,7 +844,7 @@
       "Stabilizer": null,
       "Stabilizers": [],
       "ConstantForce": [],
-      "VehicleModeAtReset": 0,
+      "VehicleModeAtReset": "VmIdle",
       "BodyMass": 5000.0,
       "GravityModifier": 1.0,
       "YawMin": -1.0,
@@ -1113,7 +1113,7 @@
       "ForceModifier": 14000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 6,
+      "RotationInput": "EIARoll",
       "WorldSpaceLockEfficiency": 0.0,
       "UseLinearInput": true
     },
@@ -1209,16 +1209,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 3,
+      "RigidBodyType": "RBTypeRaycast",
       "Mass": 0.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 0,
-      "CollisionLayer": 0,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_Invalid",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -1271,7 +1271,7 @@
       "$type": "UIPartPropertyList",
       "HudPropertyList": [
         {
-          "Identifier": 1,
+          "Identifier": "HCI_RangeMeter",
           "Range": 200.0,
           "Frequency": 6.0,
           "CompensateFreelook": false
@@ -1296,12 +1296,12 @@
       "RadarRange": 1800.0,
       "RadarSensitivity": -1.0,
       "HeatSensitivity": 0.0,
-      "MissileIcon": 99,
-      "CenterIcon": 113,
-      "FriendlyIcon": 99,
-      "EnemyIcon": 87,
-      "LaserPaintedIcon": 99,
-      "NorthIcon": 27,
+      "MissileIcon": "UIHudIcon_Blank",
+      "CenterIcon": "UIHudIcon_SnapOvalArrow",
+      "FriendlyIcon": "UIHudIcon_Blank",
+      "EnemyIcon": "UIHudIcon_HeliTargetEnemy",
+      "LaserPaintedIcon": "UIHudIcon_Blank",
+      "NorthIcon": "UIHudIcon_North",
       "SubScreen": {
         "ScreenPosition": {
           "x": 0.9055,
@@ -1318,9 +1318,9 @@
         "RenderTargetIndex": 0,
         "UseRenderTarget": false
       },
-      "WestIcon": 114,
-      "SouthIcon": 114,
-      "EastIcon": 114,
+      "WestIcon": "UIHudIcon_SquadleaderBg",
+      "SouthIcon": "UIHudIcon_SquadleaderBg",
+      "EastIcon": "UIHudIcon_SquadleaderBg",
       "TrackLaserPaintedObjects": false,
       "TrackOnlyUsedVehicles": true,
       "UseCameraComponentTransform": false
@@ -1364,9 +1364,9 @@
         "y": 0.0,
         "z": 0.0
       },
-      "PropellerType": 1,
+      "PropellerType": "PropellerType_Rotor",
       "RotorConfig": null,
-      "ForceMagnitudeInputType": 0,
+      "ForceMagnitudeInputType": "FMITYaw",
       "DirectionVectorIndex": 0,
       "ForceMagnitudeMultiplier": 2.0,
       "LiftForceSpringConstant": 40000.0,
@@ -1554,10 +1554,10 @@
         "InstanceGuid": "65bc6a87-8fb3-464e-95f0-7cebc8d471f9"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "d25ac095-6fec-401b-b383-4288160d4bba": {
       "$type": "LogicReferenceObjectData",
@@ -1591,10 +1591,10 @@
         "InstanceGuid": "24d48635-63d6-89a6-a1f5-cb5946568796"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "d9db8058-d1a7-4d17-b62e-29494fdcd566": {
       "$type": "ChassisComponentData",
@@ -1763,7 +1763,7 @@
         "PartitionGuid": "08eef37c-837b-40af-9c4d-8349df52a2b5",
         "InstanceGuid": "c3e65506-a715-4270-897a-73583d53aae7"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "0e2ea492-702d-4fe9-af4b-6c5129c8d341",
         "InstanceGuid": "b6748633-1555-4e66-bfc8-2c0a914119a7"
@@ -1784,7 +1784,7 @@
       ],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -1792,8 +1792,8 @@
       "EntryOrderNumber": 0,
       "EnterImpulse": 0.0,
       "EntryRadius": 5.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 0,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSDefault",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -1819,7 +1819,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0
@@ -1923,7 +1923,7 @@
       "ForceModifier": 10000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 7,
+      "RotationInput": "EIAFire",
       "WorldSpaceLockEfficiency": 0.0,
       "UseLinearInput": false
     },
@@ -1977,11 +1977,11 @@
       "InputSuppression": {
         "SuppressVehicleInput": [
           {
-            "ActionToSuppress": 5,
+            "ActionToSuppress": "EIAPitch",
             "SuppressingValue": 0.33
           },
           {
-            "ActionToSuppress": 6,
+            "ActionToSuppress": "EIARoll",
             "SuppressingValue": 0.33
           }
         ]
@@ -2003,8 +2003,8 @@
         "NegativeYLimit": -0.5,
         "PositiveYLimit": 0.5
       },
-      "EnemyTrackerIcon": 87,
-      "OutsideScreenTrackerIcon": 88,
+      "EnemyTrackerIcon": "UIHudIcon_HeliTargetEnemy",
+      "OutsideScreenTrackerIcon": "UIHudIcon_HeliTargetFriendly",
       "RenderTargetData": {
         "PositionOffset": {
           "x": 0.0,
@@ -2015,15 +2015,15 @@
         "ScaleSize": 1.0,
         "UseRenderTarget": false
       },
-      "MissileTrackerIcon": 87,
+      "MissileTrackerIcon": "UIHudIcon_HeliTargetEnemy",
       "IconSize": 50.0,
       "RadarSensitivity": -1.0,
       "HeatSensitivity": 0.0,
-      "FriendlyTrackerIcon": 99,
-      "LaserPaintedVehicleTrackerIcon": 8,
+      "FriendlyTrackerIcon": "UIHudIcon_Blank",
+      "LaserPaintedVehicleTrackerIcon": "UIHudIcon_SquadLeaderTargeted",
       "MaxDistance": 1800.0,
       "DistanceIconShrinkFactor": 1.0,
-      "MissileLockTrackerIcon": 93,
+      "MissileLockTrackerIcon": "UIHudIcon_LaserTarget",
       "TrackOnlyUsedVehicles": true,
       "UseTrackerSignatures": true,
       "EnableEdgePointers": true,
@@ -2051,7 +2051,7 @@
       "ForceModifier": 15000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 5,
+      "RotationInput": "EIAPitch",
       "WorldSpaceLockEfficiency": 0.0,
       "UseLinearInput": true
     },
@@ -2108,7 +2108,7 @@
         "InstanceGuid": "a639a286-b5b3-4ac2-b252-7fd4bde7e250"
       },
       "CustomWeaponType": null,
-      "Classification": 1,
+      "Classification": "WCPrimary",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -2125,16 +2125,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 0,
+      "RigidBodyType": "RBTypeCollision",
       "Mass": 1000.0,
       "Restitution": 0.4,
       "Friction": 1.0,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 1,
-      "CollisionLayer": 1,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Fixed",
+      "CollisionLayer": "RigidBodyCollisionLayer_VehicleLayer",
       "FloatPhysics": null,
       "Constraints": []
     },

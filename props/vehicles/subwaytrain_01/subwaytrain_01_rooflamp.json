@@ -10,16 +10,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 0,
+      "RigidBodyType": "RBTypeCollision",
       "Mass": 0.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 0,
-      "CollisionLayer": 0,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_Invalid",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -68,7 +68,7 @@
       "Radius": 2.0,
       "Intensity": 10.0,
       "AttenuationOffset": 0.01,
-      "EnlightenColorMode": 0,
+      "EnlightenColorMode": "EnlightenColorMode_Multiply",
       "EnlightenEnable": false,
       "Visible": true,
       "SpecularEnable": true,
@@ -211,7 +211,7 @@
       "Radius": 2.0,
       "Intensity": 1.0,
       "AttenuationOffset": 1.0,
-      "EnlightenColorMode": 0,
+      "EnlightenColorMode": "EnlightenColorMode_Multiply",
       "EnlightenEnable": false,
       "Visible": true,
       "SpecularEnable": false,
@@ -255,7 +255,7 @@
           "TargetEvent": {
             "Id": -1952177180
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -272,7 +272,7 @@
           "TargetEvent": {
             "Id": -1952177180
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -289,7 +289,7 @@
           "TargetEvent": {
             "Id": -1952177180
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -306,7 +306,7 @@
           "TargetEvent": {
             "Id": -117303631
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -323,7 +323,7 @@
           "TargetEvent": {
             "Id": -117303631
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -340,7 +340,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -357,7 +357,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -374,7 +374,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -391,7 +391,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -408,7 +408,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         }
       ],
       "Descriptor": null,
@@ -453,7 +453,7 @@
         "InstanceGuid": "95a5da5b-4e96-4e2a-894b-1286e1e19225"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -464,16 +464,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 3,
+      "RigidBodyType": "RBTypeRaycast",
       "Mass": 0.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 0,
-      "CollisionLayer": 0,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_Invalid",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -618,7 +618,7 @@
       "IndexInBlueprint": 4,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "Probability": 25,
       "RandomizeFirstOnly": false,
       "AutoStart": false
@@ -668,7 +668,7 @@
       "Radius": 2.0,
       "Intensity": 10.0,
       "AttenuationOffset": 0.01,
-      "EnlightenColorMode": 0,
+      "EnlightenColorMode": "EnlightenColorMode_Multiply",
       "EnlightenEnable": false,
       "Visible": true,
       "SpecularEnable": true,
@@ -733,9 +733,9 @@
           "InstanceGuid": "d4a23b73-7dd9-48be-a315-5b2cbe98a3ea"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": true,
@@ -756,7 +756,7 @@
         940,
         1000
       ],
-      "InterpolationType": 0,
+      "InterpolationType": "InterpolationType_None",
       "Values": [
         2.0,
         0.0,

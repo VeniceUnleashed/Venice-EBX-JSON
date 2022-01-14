@@ -10,7 +10,7 @@
         0,
         500
       ],
-      "InterpolationType": 1,
+      "InterpolationType": "InterpolationType_Linear",
       "Values": [
         1.0,
         0.0
@@ -31,9 +31,9 @@
           "InstanceGuid": "201189b7-d36a-4923-93ed-8cd0510acfa1"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -77,9 +77,9 @@
       "IndexInBlueprint": 7,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "64fea801-a774-4021-8e79-2ac2d8ea5a6a": {
@@ -88,7 +88,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 10.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -98,7 +98,7 @@
       "IndexInBlueprint": 11,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "InvertFilter": false,
       "ForwardToSpectators": false
     },
@@ -117,9 +117,9 @@
           "InstanceGuid": "c05249a0-86e9-44eb-8402-4081f30079d0"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -142,7 +142,7 @@
       "IndexInBlueprint": 4,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "Default": true
     },
     "c05249a0-86e9-44eb-8402-4081f30079d0": {
@@ -152,7 +152,7 @@
         0,
         500
       ],
-      "InterpolationType": 1,
+      "InterpolationType": "InterpolationType_Linear",
       "Values": [
         0.0,
         1.0
@@ -212,7 +212,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -227,7 +227,7 @@
       "IndexInBlueprint": 9,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "RunOnce": false
     },
     "d8a0affa-ace2-4e74-b0f8-7d8d98f3cfa5": {
@@ -235,7 +235,7 @@
       "IndexInBlueprint": 10,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "InvertFilter": false,
       "ForwardToSpectators": false
     },
@@ -280,9 +280,9 @@
       "IsPropertyConnectionTarget": 3,
       "MessageSid": "ID_H_MES_LOGIC_NOT_USED",
       "AdditionalMessages": [],
-      "MessageType": 5,
+      "MessageType": "UIMessageEntityType_OutOfBounds",
       "DisplayTime": 10.0,
-      "EntryInputAction": 128,
+      "EntryInputAction": "EIAUndefined",
       "Enabled": true
     },
     "f59d8a7b-f2dc-4399-b8c3-b7eebe6c4add": {
@@ -368,7 +368,7 @@
           "TargetEvent": {
             "Id": -1952177180
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -385,7 +385,7 @@
           "TargetEvent": {
             "Id": -117303631
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -402,7 +402,7 @@
           "TargetEvent": {
             "Id": 1424746764
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -419,7 +419,7 @@
           "TargetEvent": {
             "Id": -1258331102
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -436,7 +436,7 @@
           "TargetEvent": {
             "Id": -1258331102
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -453,7 +453,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -470,7 +470,7 @@
           "TargetEvent": {
             "Id": 1723395486
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -487,7 +487,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -504,7 +504,7 @@
           "TargetEvent": {
             "Id": 212633683
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -521,7 +521,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -538,7 +538,7 @@
           "TargetEvent": {
             "Id": -1952177180
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -555,7 +555,7 @@
           "TargetEvent": {
             "Id": -117303631
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -572,7 +572,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -589,7 +589,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -606,7 +606,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -623,7 +623,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -640,7 +640,7 @@
           "TargetEvent": {
             "Id": 2089008817
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -657,7 +657,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -674,7 +674,7 @@
           "TargetEvent": {
             "Id": 441394932
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -691,7 +691,7 @@
           "TargetEvent": {
             "Id": 1723395486
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -708,7 +708,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -725,7 +725,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -742,7 +742,7 @@
           "TargetEvent": {
             "Id": 1037321618
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -759,7 +759,7 @@
           "TargetEvent": {
             "Id": 1037321618
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -776,7 +776,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         }
       ],
       "Descriptor": {
@@ -947,9 +947,9 @@
       "SequenceLength": 500,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": true,
@@ -963,9 +963,9 @@
       "IsPropertyConnectionTarget": 3,
       "MessageSid": "ID_H_MES_LOGIC_NOT_USED",
       "AdditionalMessages": [],
-      "MessageType": 5,
+      "MessageType": "UIMessageEntityType_OutOfBounds",
       "DisplayTime": 0.0,
-      "EntryInputAction": 128,
+      "EntryInputAction": "EIAUndefined",
       "Enabled": true
     }
   }

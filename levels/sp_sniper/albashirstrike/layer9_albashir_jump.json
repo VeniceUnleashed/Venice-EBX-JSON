@@ -7,9 +7,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -629221434,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 4,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Oscillate",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 20,
       "ResourceName": "Levels/SP_Sniper/AnimTrackData/8325C4C1-69F8-4E15-82DC-7B8F73AE0454_movedown",
       "KeyCount": 4,
@@ -20,9 +20,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -629221434,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 4,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Oscillate",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 16,
       "ResourceName": "Levels/SP_Sniper/AnimTrackData/8325C4C1-69F8-4E15-82DC-7B8F73AE0454_movedown",
       "KeyCount": 4,
@@ -40,7 +40,7 @@
       },
       "Gain": 6.0,
       "Volume": 0.0,
-      "FadeCurve": 0
+      "FadeCurve": "FadeCurveType_LinearAmplitude"
     },
     "18fceba3-875b-412d-86ec-90a880c0cf15": {
       "$type": "LoggingEntityData",
@@ -78,7 +78,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "FloatValue": 0.0,
       "Strings": [
         "ALBASHIR_DEBUG: Car got away"
@@ -106,7 +106,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.06,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -115,9 +115,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -629221434,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 4,
       "ResourceName": "Levels/SP_Sniper/AnimTrackData/8325C4C1-69F8-4E15-82DC-7B8F73AE0454_movedown",
       "KeyCount": 4,
@@ -130,7 +130,7 @@
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": true,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -189,7 +189,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -234,7 +234,7 @@
       "Radius": 5.0,
       "CoolDownTime": 1.0,
       "TriggerOnMaterialOnly": null,
-      "TriggeredBy": 1,
+      "TriggeredBy": "ATAll",
       "DisableIfTrackEntityIsLost": true,
       "RandomYaw": true,
       "IndicateHit": false
@@ -244,7 +244,7 @@
       "IndexInBlueprint": 714,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "371c248d-f625-40f3-8d55-66f002dba877": {
@@ -274,7 +274,7 @@
       "IndexInBlueprint": 721,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "OutEvents": 2,
       "AutoIncrement": true
     },
@@ -287,11 +287,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": true,
       "UsePathFinding": false
@@ -330,9 +330,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 1,
       "Pitch": 0.0,
-      "CharacterPose": 2,
+      "CharacterPose": "CPTForceToCroch",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": {
         "PartitionGuid": "122fc693-eca7-11df-bd6e-c1427e3d6cab",
         "InstanceGuid": "4256ddd4-bf48-3a95-340e-1a4e7e4f3162"
@@ -389,7 +389,7 @@
       "IndexInBlueprint": 691,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "57dd59d3-942d-4000-bddb-03268886b268": {
@@ -397,16 +397,16 @@
       "IndexInBlueprint": 700,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "598fef72-ea9a-43af-b3d6-12481a2cd483": {
       "$type": "TransformPartPropertyTrackData",
       "Id": -629221434,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 4,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Oscillate",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 12,
       "ResourceName": "Levels/SP_Sniper/AnimTrackData/8325C4C1-69F8-4E15-82DC-7B8F73AE0454_movedown",
       "KeyCount": 4,
@@ -481,9 +481,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 2,
+      "CharacterPose": "CPTForceToCroch",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -503,7 +503,7 @@
       "IndexInBlueprint": 701,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "6e3c4f61-f6bc-487a-b0ce-41dcbe41759a": {
@@ -714,7 +714,7 @@
       "IndexInBlueprint": 689,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "TimeScale": 1.0,
       "ScaleDownTransitionTime": 0.0,
       "ScaleUpTransitionTime": 0.0
@@ -724,7 +724,7 @@
       "IndexInBlueprint": 693,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "79abb88b-a139-4ac4-8730-5632ce222a9b": {
@@ -734,7 +734,7 @@
         0,
         2976
       ],
-      "InterpolationType": 2,
+      "InterpolationType": "InterpolationType_CatmullRom",
       "Values": [
         1.0,
         1.0
@@ -812,9 +812,9 @@
           "InstanceGuid": "0d68699d-5461-4892-9f9f-a39117083e6a"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -826,16 +826,16 @@
       "IndexInBlueprint": 713,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "8a17e259-a724-402c-8136-1ba3f77da538": {
       "$type": "TransformPartPropertyTrackData",
       "Id": -629221434,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Levels/SP_Sniper/AnimTrackData/8325C4C1-69F8-4E15-82DC-7B8F73AE0454_movedown",
       "KeyCount": 4,
@@ -847,7 +847,7 @@
       "IndexInBlueprint": 723,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "OutEvents": 2,
       "AutoIncrement": true
     },
@@ -936,7 +936,7 @@
       "IndexInBlueprint": 724,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": false
     },
     "93507bf4-9b4f-4cf4-946a-8124e340b359": {
@@ -945,7 +945,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.4,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -954,9 +954,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -629221434,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 4,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Oscillate",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 8,
       "ResourceName": "Levels/SP_Sniper/AnimTrackData/8325C4C1-69F8-4E15-82DC-7B8F73AE0454_movedown",
       "KeyCount": 4,
@@ -1017,7 +1017,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1032,7 +1032,7 @@
       "IndexInBlueprint": 712,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "d1d0b2d3-2af3-4d47-beed-da28106fddf7": {
@@ -1071,7 +1071,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "FloatValue": 0.0,
       "Strings": [
         "ALBASHIR_DEBUG: Car crashed"
@@ -1133,7 +1133,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1152,11 +1152,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": true,
       "UsePathFinding": false
@@ -1170,11 +1170,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": true,
       "UsePathFinding": false
@@ -1184,7 +1184,7 @@
       "IndexInBlueprint": 698,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "f188362b-f2e1-491c-bc1a-0e0bb762dc4d": {
@@ -1223,7 +1223,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "FloatValue": 0.0,
       "Strings": [
         "ALBASHIR_DEBUG: Car under fire!"
@@ -1285,7 +1285,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1310,9 +1310,9 @@
           "InstanceGuid": "79abb88b-a139-4ac4-8730-5632ce222a9b"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 0,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PreSim",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,

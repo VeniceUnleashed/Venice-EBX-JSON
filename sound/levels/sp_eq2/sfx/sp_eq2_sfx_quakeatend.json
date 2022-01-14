@@ -60,7 +60,7 @@
       "MinDistance": 1.0,
       "AttenuationCurve": {
         "Points": [],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.0,
@@ -76,7 +76,7 @@
         "InstanceGuid": "9384b910-4438-438a-a545-27a827308df0"
       },
       "OutputName": "Flat",
-      "TransformSource": 1,
+      "TransformSource": "OutputTransformSource_Listener",
       "OutputNameHash": 2088683098,
       "LowPassPlugin": {
         "IsValid": true,
@@ -271,8 +271,8 @@
         "ValueIndex": 17,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "8c1d9387-bc69-4ae3-ad61-83f7de35deb3": {
       "$type": "ReceiveEntry",
@@ -401,8 +401,8 @@
         "ValueIndex": 13,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "cb87f945-4e54-4862-b359-643161919713": {
       "$type": "AudioGraphEvent",
@@ -686,7 +686,7 @@
         "LinkedPluginAttributes": [],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -695,13 +695,13 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
@@ -828,7 +828,7 @@
         "InstanceGuid": "4a6f126a-486b-85cb-a9b2-c1917c163c26"
       },
       "BasePitch": 1.0,
-      "Loop": 1,
+      "Loop": "LtForward",
       "Plugins": [
         {
           "SndPlayer": {

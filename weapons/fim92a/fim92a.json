@@ -169,9 +169,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.4,
         "RateOfFire": 300.0,
         "RateOfFireForBurst": 550.0,
@@ -182,10 +182,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 3.6,
         "ReloadTimeBulletsLeft": -1.0,
-        "FireLogicType": 0,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltSingleFire",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 1,
+        "ReloadType": "rtMagazine",
         "HoldOffReloadUntilZoomRelease": true,
         "ForceReloadActionOnFireTrigger": true,
         "HoldOffReloadUntilFireRelease": true,
@@ -246,11 +246,11 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 5
+          "LockType": "LockTypeCount"
         },
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 2
+          "LockType": "LockOnHeat"
         }
       ],
       "LockTime": 1.25,
@@ -386,8 +386,8 @@
               "InstanceGuid": "42d96573-3cd4-4f18-8db6-5dc34d7aa100"
             }
           },
-          "AnimatedFireType": 1,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireSingle",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -980,7 +980,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 23,
+      "WeaponClass": "wcAt",
       "AIData": {
         "PartitionGuid": "28c2561d-ec16-11df-ba9e-f3dce5c70cb9",
         "InstanceGuid": "fbe9f3bb-f7ec-e8a2-674d-270a6387dd84"
@@ -1050,7 +1050,7 @@
           "z": 60.0
         }
       },
-      "AnimBaseSet": 3,
+      "AnimBaseSet": "wabsAT",
       "AnimationData": {
         "PartitionGuid": "b255cb56-74ab-1077-51d3-a0dd819b5c93",
         "InstanceGuid": "b255cb56-74ab-1077-51d3-a0dd819b5c93"
@@ -1062,7 +1062,7 @@
         "PartitionGuid": "28c2561d-ec16-11df-ba9e-f3dce5c70cb9",
         "InstanceGuid": "dc19a9a9-cf1e-4ebd-9ac1-bbb965c3cb33"
       },
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": null,
       "WeaponFloatParam": 1.0,
       "Sockets": [
@@ -1071,7 +1071,7 @@
           "InstanceGuid": "d935e0cc-76db-4096-9f07-183e5a632e55"
         }
       ],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "28c2561d-ec16-11df-ba9e-f3dce5c70cb9",
         "InstanceGuid": "9cfc366e-d12b-319d-da31-b2470fed2a71"
@@ -1123,7 +1123,7 @@
         "InstanceGuid": "41810442-ce99-42f8-96c4-fdc50f349dc4"
       },
       "SecondaryLockingController": null,
-      "WarnLock": 2,
+      "WarnLock": "wtWarnVehicle",
       "IsHoming": true,
       "IsGuidedWhenZoomed": false,
       "FireOnlyWhenLockedOn": true,
@@ -1184,8 +1184,8 @@
           "InstanceGuid": "44e596be-6319-4f20-8a8b-5346061a18bb"
         }
       ],
-      "GearSlot": 13,
-      "SocketType": 0,
+      "GearSlot": "GearSlot_NotEquipped",
+      "SocketType": "SocketType_Undefined",
       "UsesDefaultObject": false,
       "Excluded": false,
       "DefaultEnableSocketEntities": false,
@@ -1251,7 +1251,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -1274,8 +1274,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,

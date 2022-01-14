@@ -8,7 +8,7 @@
       "IndexInBlueprint": 6,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "RunOnce": false
     },
     "0da97808-7d2f-40a2-868f-c486ecc9a1fa": {
@@ -16,9 +16,9 @@
       "IndexInBlueprint": 3,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        2
+        "MathOp_Multiply"
       ]
     },
     "2b0ea6bb-732c-48a6-b101-8145e24b3fce": {
@@ -28,7 +28,7 @@
         0,
         795
       ],
-      "InterpolationType": 0,
+      "InterpolationType": "InterpolationType_None",
       "Values": [
         1.0,
         0.0
@@ -49,9 +49,9 @@
           "InstanceGuid": "2b0ea6bb-732c-48a6-b101-8145e24b3fce"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -63,8 +63,8 @@
       "IndexInBlueprint": 1,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
-      "EntryInputActions": 0,
+      "Realm": "Realm_Client",
+      "EntryInputActions": "EIAThrottle",
       "ValueModifier": 1.0,
       "TrailingValueAtStart": 0.0,
       "AccumulatedValueAtStart": 0.0,
@@ -76,7 +76,7 @@
       "IndexInBlueprint": 4,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 0.001,
       "IncDecValue": 1.0
     },
@@ -259,7 +259,7 @@
           "TargetEvent": {
             "Id": -910201930
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -276,7 +276,7 @@
           "TargetEvent": {
             "Id": 1037701496
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -293,7 +293,7 @@
           "TargetEvent": {
             "Id": -1952177180
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -310,7 +310,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -327,7 +327,7 @@
           "TargetEvent": {
             "Id": 1723395486
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -344,7 +344,7 @@
           "TargetEvent": {
             "Id": 1723395486
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -361,7 +361,7 @@
           "TargetEvent": {
             "Id": -117303631
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -378,7 +378,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -395,7 +395,7 @@
           "TargetEvent": {
             "Id": 229946160
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -412,7 +412,7 @@
           "TargetEvent": {
             "Id": -910201930
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -429,7 +429,7 @@
           "TargetEvent": {
             "Id": -559281700
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -446,7 +446,7 @@
           "TargetEvent": {
             "Id": 1037701496
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -463,7 +463,7 @@
           "TargetEvent": {
             "Id": 1244461932
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -480,7 +480,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -497,7 +497,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -514,7 +514,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         }
       ],
       "Descriptor": {
@@ -599,7 +599,7 @@
         500,
         1500
       ],
-      "InterpolationType": 2,
+      "InterpolationType": "InterpolationType_CatmullRom",
       "Values": [
         0.002,
         -0.002
@@ -610,9 +610,9 @@
       "IndexInBlueprint": 14,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        5
+        "MathOp_Max"
       ]
     },
     "6bd35ba9-8a54-44b2-a810-a422560cc2e3": {
@@ -620,9 +620,9 @@
       "IndexInBlueprint": 12,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        0
+        "MathOp_Add"
       ]
     },
     "6e54f35e-eda9-4d92-87ce-3bedf9b9b724": {
@@ -630,7 +630,7 @@
       "IndexInBlueprint": 8,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "DefaultValue": 0.0,
       "IncDecValue": 1.0
     },
@@ -639,9 +639,9 @@
       "IndexInBlueprint": 13,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        5
+        "MathOp_Max"
       ]
     },
     "976e0d1e-cadb-4638-a735-ba9c012c2420": {
@@ -722,7 +722,7 @@
       },
       "LevelChoice": 12,
       "ScenarioChoice": 14,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": 7,
       "Actor1Part": 1,
@@ -814,7 +814,7 @@
       },
       "LevelChoice": 12,
       "ScenarioChoice": 14,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Actor6Part": -1,
       "Actor1": 7,
       "Actor1Part": 0,
@@ -866,9 +866,9 @@
           "InstanceGuid": "50f5d9bb-f7dd-4fd0-889e-ac8919c3b28b"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": true,
@@ -923,7 +923,7 @@
       "IndexInBlueprint": 5,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "RunOnce": false
     },
     "f4421e7f-e376-47dd-beb8-ddde0181d440": {
@@ -931,8 +931,8 @@
       "IndexInBlueprint": 2,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
-      "UpdatePass": 1,
+      "Realm": "Realm_Client",
+      "UpdatePass": "EntityUpdateOrder_Async",
       "StartValue": 0.0,
       "Input": 0.0,
       "MaxValue": 100.0,
@@ -944,9 +944,9 @@
       "IndexInBlueprint": 7,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Operators": [
-        5
+        "MathOp_Max"
       ]
     }
   }

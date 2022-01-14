@@ -40,7 +40,7 @@
       "MaxCount": 0,
       "InitMeshHideTime": 0.0,
       "MaterialPair": null,
-      "HitReactionWeaponType": 2,
+      "HitReactionWeaponType": "AntHitReactionWeaponType_AssaultRifle",
       "Explosion": null,
       "SuppressionData": null,
       "AmmunitionType": "",
@@ -154,8 +154,8 @@
               "InstanceGuid": "da97b890-83de-4ba7-a0c4-2f925007b848"
             }
           },
-          "AnimatedFireType": 2,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireHoldAndRelease",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -719,7 +719,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 39,
+      "WeaponClass": "wcNone",
       "AIData": {
         "PartitionGuid": "6536cc98-c13f-40b4-9a9d-5ddb7f0c176d",
         "InstanceGuid": "6ea18a71-e2f5-4a04-87fa-1d829656a80b"
@@ -789,7 +789,7 @@
           "z": 0.0
         }
       },
-      "AnimBaseSet": 0,
+      "AnimBaseSet": "wabsRif",
       "AnimationData": {
         "PartitionGuid": "1e1fc50e-6690-4a57-fa93-bbab06916833",
         "InstanceGuid": "1e1fc50e-6690-4a57-fa93-bbab06916833"
@@ -801,11 +801,11 @@
         "PartitionGuid": "1b81a779-135f-11e0-b4a8-98c3fd926350",
         "InstanceGuid": "381dc5b8-e42c-4883-b709-02c8922c7b58"
       },
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": null,
       "WeaponFloatParam": 1.0,
       "Sockets": [],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "1b81a779-135f-11e0-b4a8-98c3fd926350",
         "InstanceGuid": "e0cdedb2-f6ef-b1b3-a2bd-28920986d26c"
@@ -1024,9 +1024,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.1,
         "RateOfFire": 60.0,
         "RateOfFireForBurst": 550.0,
@@ -1037,10 +1037,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 3.6,
         "ReloadTimeBulletsLeft": -1.0,
-        "FireLogicType": 2,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltAutomaticFire",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 1,
+        "ReloadType": "rtMagazine",
         "HoldOffReloadUntilZoomRelease": false,
         "ForceReloadActionOnFireTrigger": false,
         "HoldOffReloadUntilFireRelease": false,

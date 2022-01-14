@@ -22,7 +22,7 @@
         "PartitionGuid": "d4238717-5a6c-4c1e-a55f-48e7a0991b79",
         "InstanceGuid": "c76c94e5-260c-4bda-95a4-5b580b2db2cb"
       },
-      "WarnLock": 2,
+      "WarnLock": "wtWarnVehicle",
       "IsHoming": true,
       "IsGuidedWhenZoomed": false,
       "FireOnlyWhenLockedOn": true,
@@ -33,11 +33,11 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 4
+          "LockType": "LockNever"
         },
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 1
+          "LockType": "LockOnRadar"
         }
       ],
       "LockTime": 2.5,
@@ -121,8 +121,8 @@
           "InstanceGuid": "ec040995-9d49-422d-a0e1-987a393727cd"
         }
       ],
-      "GearSlot": 13,
-      "SocketType": 0,
+      "GearSlot": "GearSlot_NotEquipped",
+      "SocketType": "SocketType_Undefined",
       "UsesDefaultObject": false,
       "Excluded": false,
       "DefaultEnableSocketEntities": false,
@@ -302,9 +302,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.4,
         "RateOfFire": 60.0,
         "RateOfFireForBurst": 550.0,
@@ -315,10 +315,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 3.0,
         "ReloadTimeBulletsLeft": -1.0,
-        "FireLogicType": 0,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltSingleFire",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 1,
+        "ReloadType": "rtMagazine",
         "HoldOffReloadUntilZoomRelease": true,
         "ForceReloadActionOnFireTrigger": true,
         "HoldOffReloadUntilFireRelease": true,
@@ -408,11 +408,11 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 4
+          "LockType": "LockNever"
         },
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 4
+          "LockType": "LockNever"
         }
       ],
       "LockTime": 2.5,
@@ -519,8 +519,8 @@
               "InstanceGuid": "0f8ad731-71ae-4b0e-9fc4-f100509ca00e"
             }
           },
-          "AnimatedFireType": 1,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireSingle",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -1113,7 +1113,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 23,
+      "WeaponClass": "wcAt",
       "AIData": {
         "PartitionGuid": "d4238717-5a6c-4c1e-a55f-48e7a0991b79",
         "InstanceGuid": "e924ea7c-ba2e-cbb9-ef9e-4afc48856472"
@@ -1183,7 +1183,7 @@
           "z": 75.0
         }
       },
-      "AnimBaseSet": 3,
+      "AnimBaseSet": "wabsAT",
       "AnimationData": {
         "PartitionGuid": "8cbe6e16-ca0c-894b-f9a7-97af968827c5",
         "InstanceGuid": "8cbe6e16-ca0c-894b-f9a7-97af968827c5"
@@ -1195,7 +1195,7 @@
         "PartitionGuid": "d4238717-5a6c-4c1e-a55f-48e7a0991b79",
         "InstanceGuid": "cfa0a5bb-267e-4c50-9bd4-137e5a53cd95"
       },
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": null,
       "WeaponFloatParam": 1.0,
       "Sockets": [
@@ -1204,7 +1204,7 @@
           "InstanceGuid": "9b58a459-3d55-4400-a50f-f887531549a2"
         }
       ],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "d4238717-5a6c-4c1e-a55f-48e7a0991b79",
         "InstanceGuid": "f82f30eb-9cf7-4d35-8f63-a058f21e24c6"
@@ -1238,7 +1238,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -1261,8 +1261,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,

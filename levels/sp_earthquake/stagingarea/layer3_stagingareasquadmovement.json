@@ -24,7 +24,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "StartValue": 5,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "RunOnce": true
     },
     "576b894c-0577-4b5c-8312-ebdcaf96ef25": {
@@ -127,7 +127,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 5.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -137,7 +137,7 @@
       "IndexInBlueprint": 319,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "5ea2c1e7-1306-498e-b57b-f30688f8a0d1": {
       "$type": "DelayEntityData",
@@ -145,7 +145,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -155,7 +155,7 @@
       "IndexInBlueprint": 333,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 4
     },
     "7943263f-ac2b-44cf-b3b4-cada5641cad8": {
@@ -212,7 +212,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -228,12 +228,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 0,
-        "SpeedLevelChange": 1,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Relaxed",
+        "SpeedLevelChange": "AntSpeedLevel_Walk",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -245,8 +245,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -256,7 +256,7 @@
       "IndexInBlueprint": 312,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "90aefe4d-01fc-472a-9040-2be09422d172": {
@@ -264,7 +264,7 @@
       "IndexInBlueprint": 323,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "96146309-2ebd-498a-8178-6fd95ba27db1": {
@@ -377,7 +377,7 @@
       "IndexInBlueprint": 325,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 5
     },
     "989810c1-a074-4fbd-931a-3ce473459243": {
@@ -389,11 +389,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": {
         "PartitionGuid": "7f4183cf-c7d0-4113-99fc-01f366597ed1",
         "InstanceGuid": "ed364458-95a8-4cfc-9fc4-2c96383d5d2e"
@@ -407,12 +407,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 0,
-        "SpeedLevelChange": 1,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Relaxed",
+        "SpeedLevelChange": "AntSpeedLevel_Walk",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -424,8 +424,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -436,12 +436,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 0,
-        "SpeedLevelChange": 1,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Relaxed",
+        "SpeedLevelChange": "AntSpeedLevel_Walk",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -453,8 +453,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }
@@ -468,11 +468,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": {
         "PartitionGuid": "7f4183cf-c7d0-4113-99fc-01f366597ed1",
         "InstanceGuid": "9c9c5436-d984-420c-a239-02017575390b"
@@ -489,11 +489,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": {
         "PartitionGuid": "7f4183cf-c7d0-4113-99fc-01f366597ed1",
         "InstanceGuid": "7d438c49-d007-49bf-8d14-7b622bc35d11"
@@ -523,7 +523,7 @@
       "IsPropertyConnectionTarget": 3,
       "MinDelay": 7.0,
       "MaxDelay": 9.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false
     },
@@ -553,7 +553,7 @@
       "IndexInBlueprint": 332,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "RandomEventWeight": [
         50.0,
         50.0
@@ -571,11 +571,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": {
         "PartitionGuid": "7f4183cf-c7d0-4113-99fc-01f366597ed1",
         "InstanceGuid": "9bc6a233-c985-4c6b-bf18-43e12cc07ddd"
@@ -588,7 +588,7 @@
       "IndexInBlueprint": 331,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Default": true
     },
     "ed364458-95a8-4cfc-9fc4-2c96383d5d2e": {
@@ -597,12 +597,12 @@
       "WaypointId": 0,
       "UseClientsPosition": false,
       "BaseTask": {
-        "PoseChangeMovingTowards": 3,
-        "AttentionChangeMovingTowards": 5,
-        "SpeedChangeMovingTowards": 13,
-        "PoseChange": 3,
-        "AttentionStateChange": 0,
-        "SpeedLevelChange": 1,
+        "PoseChangeMovingTowards": "AntPoseEnum_NoChange",
+        "AttentionChangeMovingTowards": "AntAttentionStateEnum_NoChange",
+        "SpeedChangeMovingTowards": "AntSpeedLevel_NoChange",
+        "PoseChange": "AntPoseEnum_NoChange",
+        "AttentionStateChange": "AntAttentionStateEnum_Relaxed",
+        "SpeedLevelChange": "AntSpeedLevel_Walk",
         "Radius": 1.0,
         "IsScripted": false
       },
@@ -614,8 +614,8 @@
         },
         "WorldAngle": -44.0,
         "WaitTime": 0.0,
-        "EnterPose": 3,
-        "ExitPose": 3,
+        "EnterPose": "AntPoseEnum_NoChange",
+        "ExitPose": "AntPoseEnum_NoChange",
         "OverrideAngle": false,
         "UseClientPosition": false
       }

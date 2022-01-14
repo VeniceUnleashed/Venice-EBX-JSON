@@ -274,7 +274,7 @@
         }
       ],
       "UpPitchAngle": 25.0,
-      "YawInputAction": 9,
+      "YawInputAction": "EIACameraYaw",
       "LoosePartPhysics": [
         {
           "PartitionGuid": "7563d106-161a-4911-a5c3-8897076cab3d",
@@ -298,7 +298,7 @@
       "PitchSensitivityZoomed": 0.0,
       "DownPitchAngle": 25.0,
       "AverageFilterFrames": 100,
-      "PitchInputAction": 8,
+      "PitchInputAction": "EIACameraPitch",
       "YawSensitivityZoomed": 0.0,
       "PitchSensitivityNonZoomed": 55.0,
       "YawSensitivityNonZoomed": 55.0,
@@ -311,9 +311,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787962,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 2,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/3A5D0B27-9769-427A-A60D-962A60D57C4A_Ammobelt2",
       "KeyCount": 2,
@@ -375,7 +375,7 @@
         "PartitionGuid": "d3863774-0e25-4e64-b0b3-db6067b94b1c",
         "InstanceGuid": "9bc44e78-26f9-42e3-80ba-ce6c9c8c4a3a"
       },
-      "PlayerType": 0
+      "PlayerType": "WPTInflictor"
     },
     "09a71073-c0ee-4267-a407-2f995d232d6f": {
       "$type": "ChildRotationBodyData",
@@ -397,7 +397,7 @@
       "ForceModifier": 250.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 5,
+      "RotationInput": "EIAPitch",
       "WorldSpaceLockEfficiency": 1.0,
       "UseLinearInput": true
     },
@@ -511,7 +511,7 @@
       "IndexInBlueprint": 12,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 2,
-      "Action": 2,
+      "Action": "EIABrake",
       "Scale": 0.0,
       "Offset": 0.0,
       "Enabled": false
@@ -641,7 +641,7 @@
       "IndexInBlueprint": 5,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Value": false,
       "InitalEvent": false
     },
@@ -661,9 +661,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787962,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/3A5D0B27-9769-427A-A60D-962A60D57C4A_Ammobelt2",
       "KeyCount": 2,
@@ -817,8 +817,8 @@
       "Excluded": false,
       "Rotations": [
         {
-          "RotationAxis": 1,
-          "Channel": 1,
+          "RotationAxis": "raY",
+          "Channel": "RotationChannel_Yaw",
           "MaxRotation": 91.0,
           "MinRotation": -89.0,
           "PhaseOffset": 0.0,
@@ -826,8 +826,8 @@
           "InvertRotation": false
         },
         {
-          "RotationAxis": 0,
-          "Channel": 0,
+          "RotationAxis": "raX",
+          "Channel": "RotationChannel_Pitch",
           "MaxRotation": 180.0,
           "MinRotation": -180.0,
           "PhaseOffset": 0.0,
@@ -998,7 +998,7 @@
         "PartitionGuid": "98d05d7f-dfd7-11e1-bfa9-dc780719e49f",
         "InstanceGuid": "92759ad4-3751-4256-bec4-0ecec64c3aca"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "22c6960b-9bf6-d121-b12a-8b04d30bb2cd": {
@@ -1078,8 +1078,8 @@
       "Excluded": false,
       "Rotations": [
         {
-          "RotationAxis": 1,
-          "Channel": 1,
+          "RotationAxis": "raY",
+          "Channel": "RotationChannel_Yaw",
           "MaxRotation": 180.0,
           "MinRotation": -180.0,
           "PhaseOffset": 0.0,
@@ -1087,8 +1087,8 @@
           "InvertRotation": false
         },
         {
-          "RotationAxis": 0,
-          "Channel": 0,
+          "RotationAxis": "raX",
+          "Channel": "RotationChannel_Pitch",
           "MaxRotation": 20.0,
           "MinRotation": -20.0,
           "PhaseOffset": 0.0,
@@ -1132,10 +1132,10 @@
         "InstanceGuid": "5b947e5b-075d-47f4-963c-4f336dde68b9"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "24ee5b86-f7aa-41d9-b0a9-444a1ac1ff01": {
       "$type": "SpottingComponentData",
@@ -1189,16 +1189,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 3,
+      "RigidBodyType": "RBTypeRaycast",
       "Mass": 0.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 0,
-      "CollisionLayer": 0,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_Invalid",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -1290,7 +1290,7 @@
           "Value": "Float32 0.777",
           "ValueRef": null,
           "Id": 1977675559,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         }
       ],
       "InputEvents": [],
@@ -1467,9 +1467,9 @@
           "InstanceGuid": "3eaebc2d-cfb9-40af-85a7-166b526df34c"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -1535,7 +1535,7 @@
         "PartitionGuid": "45b4e697-31af-4bbc-8b2e-aed7684d3859",
         "InstanceGuid": "4ea863e0-5849-4a69-ad33-0b33d250fb95"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "4c000184-baf5-435f-87a2-ddc3ffc6bd12",
         "InstanceGuid": "5e01089f-2e55-446c-9361-821bf37ba845"
@@ -1560,7 +1560,7 @@
       ],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -1568,8 +1568,8 @@
       "EntryOrderNumber": 0,
       "EnterImpulse": 0.0,
       "EntryRadius": 3.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 0,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSDefault",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -1595,7 +1595,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "Humvee_Driver",
       "AntEntryEnumeration": {
         "PartitionGuid": "98d05d7f-dfd7-11e1-bfa9-dc780719e49f",
@@ -1638,9 +1638,9 @@
           "InstanceGuid": "91774f8d-8127-4dbf-9a29-a55ff59359ee"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -1752,9 +1752,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787961,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 10,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/392349B4-66A7-41B2-8C8B-9106839F6F9D_Ammobelt3",
       "KeyCount": 2,
@@ -1870,10 +1870,10 @@
         "InstanceGuid": "05667bce-02d7-4200-980e-baec96547c3a"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "43072c9f-a580-e261-0135-dabbb222a375": {
       "$type": "PartComponentData",
@@ -1982,7 +1982,7 @@
         "InstanceGuid": "fac48b9b-5a37-2b56-6f4d-47c361baeff9"
       },
       "CustomWeaponType": null,
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -2068,9 +2068,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787961,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 6,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/392349B4-66A7-41B2-8C8B-9106839F6F9D_Ammobelt3",
       "KeyCount": 2,
@@ -2283,7 +2283,7 @@
         "PartitionGuid": "25f4f4f6-f546-456a-900e-528d24fc67ad",
         "InstanceGuid": "4a8e3732-9cfa-41de-9135-670edb26dd1c"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "0e2ea492-702d-4fe9-af4b-6c5129c8d341",
         "InstanceGuid": "b6748633-1555-4e66-bfc8-2c0a914119a7"
@@ -2312,7 +2312,7 @@
       ],
       "HudData": {
         "Index": 0,
-        "SeatType": 1,
+        "SeatType": "EST_Gunner",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -2320,8 +2320,8 @@
       "EntryOrderNumber": 1,
       "EnterImpulse": 0.0,
       "EntryRadius": 5.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 0,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSDefault",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -2347,7 +2347,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "",
       "AntEntryEnumeration": {
         "PartitionGuid": "98d05d7f-dfd7-11e1-bfa9-dc780719e49f",
@@ -2532,9 +2532,9 @@
           "InstanceGuid": "d2e3800b-b2dc-4a31-9e79-b303eb5c7dba"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -2683,7 +2683,7 @@
       "ForceModifier": 15000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 5,
+      "RotationInput": "EIAPitch",
       "WorldSpaceLockEfficiency": 1.0,
       "UseLinearInput": true
     },
@@ -2691,9 +2691,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787963,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 2,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/585760D4-A77C-49AB-ACDB-DE491DD447FE_Ammobelt1",
       "KeyCount": 2,
@@ -2704,9 +2704,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787962,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 4,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/3A5D0B27-9769-427A-A60D-962A60D57C4A_Ammobelt2",
       "KeyCount": 2,
@@ -3062,7 +3062,7 @@
         "InstanceGuid": "443ad95e-bdad-471e-a80d-876e3fd35cd4"
       },
       "CustomWeaponType": null,
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -3079,16 +3079,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 0,
+      "RigidBodyType": "RBTypeCollision",
       "Mass": 1500.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 3,
-      "QualityType": 0,
-      "CollisionLayer": 1,
+      "MotionType": "RigidBodyMotionType_Dynamic",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_VehicleLayer",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -3308,10 +3308,10 @@
         "InstanceGuid": "30f1f206-b56a-4060-9c8e-14a0d02cfdfa"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "78a3460d-6858-4cab-b16b-1c6f86ac9cb5": {
       "$type": "VehicleConfigData",
@@ -3363,7 +3363,7 @@
       "Stabilizer": null,
       "Stabilizers": [],
       "ConstantForce": [],
-      "VehicleModeAtReset": 0,
+      "VehicleModeAtReset": "VmIdle",
       "BodyMass": 1500.0,
       "GravityModifier": 1.85,
       "YawMin": -1.0,
@@ -3476,7 +3476,7 @@
       "ForceModifier": 250.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 6,
+      "RotationInput": "EIARoll",
       "WorldSpaceLockEfficiency": 1.0,
       "UseLinearInput": true
     },
@@ -3523,7 +3523,7 @@
         "PartitionGuid": "25f4f4f6-f546-456a-900e-528d24fc67ad",
         "InstanceGuid": "4a8e3732-9cfa-41de-9135-670edb26dd1c"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "0e2ea492-702d-4fe9-af4b-6c5129c8d341",
         "InstanceGuid": "b6748633-1555-4e66-bfc8-2c0a914119a7"
@@ -3552,7 +3552,7 @@
       ],
       "HudData": {
         "Index": 0,
-        "SeatType": 1,
+        "SeatType": "EST_Gunner",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -3560,8 +3560,8 @@
       "EntryOrderNumber": 2,
       "EnterImpulse": 0.0,
       "EntryRadius": 5.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 0,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSDefault",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -3587,7 +3587,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "",
       "AntEntryEnumeration": {
         "PartitionGuid": "98d05d7f-dfd7-11e1-bfa9-dc780719e49f",
@@ -3648,7 +3648,7 @@
         "InstanceGuid": "443ad95e-bdad-471e-a80d-876e3fd35cd4"
       },
       "CustomWeaponType": null,
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -3756,9 +3756,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787961,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 2,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/392349B4-66A7-41B2-8C8B-9106839F6F9D_Ammobelt3",
       "KeyCount": 2,
@@ -3970,7 +3970,7 @@
       "IndexInBlueprint": 4,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "In1": false,
       "In2": false,
       "In3": false,
@@ -4030,7 +4030,7 @@
         "PartitionGuid": "98d05d7f-dfd7-11e1-bfa9-dc780719e49f",
         "InstanceGuid": "92759ad4-3751-4256-bec4-0ecec64c3aca"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "8d07945e-020c-bc04-b0e9-4235cea0cb14": {
@@ -4079,9 +4079,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787962,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 6,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/3A5D0B27-9769-427A-A60D-962A60D57C4A_Ammobelt2",
       "KeyCount": 2,
@@ -4189,7 +4189,7 @@
       "IndexInBlueprint": 8,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "In1": false,
       "In2": false
     },
@@ -4225,18 +4225,18 @@
         "InstanceGuid": "e7533202-4a60-3280-2def-fca653e3c7bf"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "91774f8d-8127-4dbf-9a29-a55ff59359ee": {
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787962,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 10,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/3A5D0B27-9769-427A-A60D-962A60D57C4A_Ammobelt2",
       "KeyCount": 2,
@@ -4446,9 +4446,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787961,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/392349B4-66A7-41B2-8C8B-9106839F6F9D_Ammobelt3",
       "KeyCount": 2,
@@ -4551,9 +4551,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787961,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 4,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/392349B4-66A7-41B2-8C8B-9106839F6F9D_Ammobelt3",
       "KeyCount": 2,
@@ -4751,7 +4751,7 @@
         "InstanceGuid": "bd6d53a4-b8cf-e302-899f-0e1afadf6504"
       },
       "LowHealthThreshold": 50.0,
-      "DefaultTeam": 0,
+      "DefaultTeam": "TeamNeutral",
       "MaterialPair": {
         "PartitionGuid": "b50615c2-4743-4919-9a40-a738150debe9",
         "InstanceGuid": "dc543774-d478-40ed-a7d8-76988eb680ad"
@@ -4846,7 +4846,7 @@
           "z": -50.0
         },
         "Customization": null,
-        "MinimapIcon": 52,
+        "MinimapIcon": "UIHudIcon_Jeep",
         "Texture": null,
         "VehicleItemHash": 1781148930
       },
@@ -4953,9 +4953,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787961,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 8,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/392349B4-66A7-41B2-8C8B-9106839F6F9D_Ammobelt3",
       "KeyCount": 2,
@@ -5148,7 +5148,7 @@
       "IndexInBlueprint": 11,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 2,
-      "Action": 0,
+      "Action": "EIAThrottle",
       "Scale": 0.0,
       "Offset": 0.0,
       "Enabled": false
@@ -5273,11 +5273,11 @@
       "InputSuppression": {
         "SuppressVehicleInput": [
           {
-            "ActionToSuppress": 5,
+            "ActionToSuppress": "EIAPitch",
             "SuppressingValue": 0.3
           },
           {
-            "ActionToSuppress": 6,
+            "ActionToSuppress": "EIARoll",
             "SuppressingValue": 0.3
           }
         ]
@@ -5307,9 +5307,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787963,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 4,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/585760D4-A77C-49AB-ACDB-DE491DD447FE_Ammobelt1",
       "KeyCount": 2,
@@ -5378,9 +5378,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787963,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/585760D4-A77C-49AB-ACDB-DE491DD447FE_Ammobelt1",
       "KeyCount": 2,
@@ -5432,16 +5432,16 @@
         "PartitionGuid": "98d05d7f-dfd7-11e1-bfa9-dc780719e49f",
         "InstanceGuid": "cb702b8e-9589-45b4-9d59-899beb44ac82"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "bb6f8e62-6b6e-4b03-9d57-18abe00c20fa": {
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787963,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 8,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/585760D4-A77C-49AB-ACDB-DE491DD447FE_Ammobelt1",
       "KeyCount": 2,
@@ -5821,7 +5821,7 @@
           "TargetEvent": {
             "Id": 1577401599
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5838,7 +5838,7 @@
           "TargetEvent": {
             "Id": 47785047
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5855,7 +5855,7 @@
           "TargetEvent": {
             "Id": -1952177180
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5872,7 +5872,7 @@
           "TargetEvent": {
             "Id": -117303631
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5889,7 +5889,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5906,7 +5906,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5923,7 +5923,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5940,7 +5940,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5957,7 +5957,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5974,7 +5974,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -5991,7 +5991,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -6008,7 +6008,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -6025,7 +6025,7 @@
           "TargetEvent": {
             "Id": 2034570586
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6042,7 +6042,7 @@
           "TargetEvent": {
             "Id": 1741249821
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6059,7 +6059,7 @@
           "TargetEvent": {
             "Id": -347051402
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6076,7 +6076,7 @@
           "TargetEvent": {
             "Id": -1664633816
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6093,7 +6093,7 @@
           "TargetEvent": {
             "Id": 925174855
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6110,7 +6110,7 @@
           "TargetEvent": {
             "Id": 620124672
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6127,7 +6127,7 @@
           "TargetEvent": {
             "Id": 266537062
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6144,7 +6144,7 @@
           "TargetEvent": {
             "Id": -582083030
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6161,7 +6161,7 @@
           "TargetEvent": {
             "Id": 1617313946
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6178,7 +6178,7 @@
           "TargetEvent": {
             "Id": -1573387912
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6195,7 +6195,7 @@
           "TargetEvent": {
             "Id": 1917394685
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6212,7 +6212,7 @@
           "TargetEvent": {
             "Id": -22205694
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6229,7 +6229,7 @@
           "TargetEvent": {
             "Id": 72578138
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6246,7 +6246,7 @@
           "TargetEvent": {
             "Id": 1789301339
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6263,7 +6263,7 @@
           "TargetEvent": {
             "Id": 1374267181
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6280,7 +6280,7 @@
           "TargetEvent": {
             "Id": -1180081755
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -6297,7 +6297,7 @@
           "TargetEvent": {
             "Id": -1928735100
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6314,7 +6314,7 @@
           "TargetEvent": {
             "Id": 775358998
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6331,7 +6331,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6348,7 +6348,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6365,7 +6365,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6382,7 +6382,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6399,7 +6399,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6416,7 +6416,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6433,7 +6433,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6450,7 +6450,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6467,7 +6467,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6484,7 +6484,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6501,7 +6501,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6518,7 +6518,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6535,7 +6535,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6552,7 +6552,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6569,7 +6569,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6586,7 +6586,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6603,7 +6603,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6620,7 +6620,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6637,7 +6637,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6654,7 +6654,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6671,7 +6671,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6688,7 +6688,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6705,7 +6705,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6722,7 +6722,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6739,7 +6739,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6756,7 +6756,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6773,7 +6773,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6790,7 +6790,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6807,7 +6807,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6824,7 +6824,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6841,7 +6841,7 @@
           "TargetEvent": {
             "Id": 2089430886
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6858,7 +6858,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6875,7 +6875,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6892,7 +6892,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6909,7 +6909,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6926,7 +6926,7 @@
           "TargetEvent": {
             "Id": 2089152613
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -6943,7 +6943,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -6960,7 +6960,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -6977,7 +6977,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -6994,7 +6994,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7011,7 +7011,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7028,7 +7028,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7045,7 +7045,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7062,7 +7062,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7079,7 +7079,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7096,7 +7096,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7113,7 +7113,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7130,7 +7130,7 @@
           "TargetEvent": {
             "Id": -3142077
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -7147,7 +7147,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -7164,7 +7164,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -7181,7 +7181,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -7198,7 +7198,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -7215,7 +7215,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -7232,7 +7232,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -7249,7 +7249,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -7266,7 +7266,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -7283,7 +7283,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         }
       ],
       "Descriptor": {
@@ -7837,9 +7837,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787963,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 10,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/585760D4-A77C-49AB-ACDB-DE491DD447FE_Ammobelt1",
       "KeyCount": 2,
@@ -7862,9 +7862,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787963,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 6,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/585760D4-A77C-49AB-ACDB-DE491DD447FE_Ammobelt1",
       "KeyCount": 2,
@@ -8219,11 +8219,11 @@
       "InputSuppression": {
         "SuppressVehicleInput": [
           {
-            "ActionToSuppress": 5,
+            "ActionToSuppress": "EIAPitch",
             "SuppressingValue": 0.3
           },
           {
-            "ActionToSuppress": 6,
+            "ActionToSuppress": "EIARoll",
             "SuppressingValue": 0.3
           }
         ]
@@ -8257,7 +8257,7 @@
       "ForceModifier": 250.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 6,
+      "RotationInput": "EIARoll",
       "WorldSpaceLockEfficiency": 1.0,
       "UseLinearInput": true
     },
@@ -8372,7 +8372,7 @@
         "PartitionGuid": "98d05d7f-dfd7-11e1-bfa9-dc780719e49f",
         "InstanceGuid": "cb702b8e-9589-45b4-9d59-899beb44ac82"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "ec4b1625-919d-4533-9df3-cd6c68637bd5": {
@@ -8699,9 +8699,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1941787962,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 8,
       "ResourceName": "Vehicles/XP4/HumveeModified/AnimTrackData/3A5D0B27-9769-427A-A60D-962A60D57C4A_Ammobelt2",
       "KeyCount": 2,
@@ -8731,7 +8731,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -8754,8 +8754,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,

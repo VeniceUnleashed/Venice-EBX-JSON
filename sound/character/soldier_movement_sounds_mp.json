@@ -20,7 +20,7 @@
         "ValueIndex": 51,
         "IsConnected": true
       },
-      "Condition": 3
+      "Condition": "ConditionType_Equal"
     },
     "05d0a5fd-05ae-43b0-ad6a-aaff9098f3e8": {
       "$type": "SwitcherNodeData",
@@ -157,7 +157,7 @@
         "ValueIndex": 46,
         "IsConnected": true
       },
-      "Condition": 5
+      "Condition": "ConditionType_Greater"
     },
     "17c9535e-cd60-4e19-ab5e-7d1a93ac3755": {
       "$type": "ReceiveEntry",
@@ -266,8 +266,8 @@
         "ValueIndex": 43,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "33812493-072d-4a06-b578-25f3a6ae5eef": {
       "$type": "AudioGraphEvent",
@@ -298,7 +298,7 @@
       },
       "Min": 0.0,
       "Max": 3.0,
-      "Mode": 0,
+      "Mode": "NumberGeneratorMode_RandomUniform",
       "Y": {
         "UnconnectedValue": 0.0,
         "ValueIndex": 26,
@@ -384,7 +384,7 @@
       },
       "Wave": null,
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -472,7 +472,7 @@
         "ValueIndex": 41,
         "IsConnected": true
       },
-      "Condition": 7
+      "Condition": "ConditionType_GreaterOrEqual"
     },
     "57d2e41b-ba10-4a50-9d1a-8a7bb27107a2": {
       "$type": "ReceiveEntry",
@@ -517,8 +517,8 @@
         "ValueIndex": 27,
         "IsConnected": true
       },
-      "Operation": 2,
-      "AngleUnit": 0
+      "Operation": "SimpleTransformOperation_Multiply",
+      "AngleUnit": "AngleUnit_Radians"
     },
     "6bec5783-7b10-466b-9c05-dc6378079813": {
       "$type": "ScaleClampNodeData",
@@ -580,7 +580,7 @@
         "ValueIndex": 49,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "76ea278f-9eb7-45c3-b257-2e4ff850a1ea": {
       "$type": "SamplerNodeData",
@@ -664,7 +664,7 @@
         "InstanceGuid": "7e3e3140-aecf-b2b0-cff4-7aea34e784c7"
       },
       "BasePitch": 1.0,
-      "Loop": 3,
+      "Loop": "LtInstantRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -873,7 +873,7 @@
         "InstanceGuid": "cb7bb7bf-f886-4055-a582-98211d3d5e44"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -955,7 +955,7 @@
             "K": -2.9672868
           }
         ],
-        "CurveType": 0
+        "CurveType": "AudioCurveType_Spline"
       },
       "Gain": 0.0,
       "HFDampingDistance": 0.95,
@@ -971,7 +971,7 @@
         "InstanceGuid": "b735bfcd-0afb-4210-8ca2-6f9c61989002"
       },
       "OutputName": "Movement",
-      "TransformSource": 0,
+      "TransformSource": "OutputTransformSource_Sound",
       "OutputNameHash": 1609263334,
       "LowPassPlugin": {
         "IsValid": true,
@@ -1162,7 +1162,7 @@
         "InstanceGuid": "60abb27d-9d2c-447f-9afd-d6f61e888b4f"
       },
       "BasePitch": 1.0,
-      "Loop": 2,
+      "Loop": "LtRelease",
       "Plugins": [
         {
           "SndPlayer": {
@@ -2019,7 +2019,7 @@
         ],
         "Connections": [
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2028,7 +2028,7 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 2,
+            "ConnectionType": "SoundGraphPluginConnectionType_Bus",
             "Parameters": [],
             "Bus": {
               "PartitionGuid": "9bb16565-b31f-11de-a183-ed9d5e1a9f15",
@@ -2037,49 +2037,49 @@
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
           },
           {
-            "ConnectionType": 1,
+            "ConnectionType": "SoundGraphPluginConnectionType_Voice",
             "Parameters": [],
             "Bus": null,
             "VoiceIndex": 0
@@ -2315,7 +2315,7 @@
         "InstanceGuid": "ad67c0d2-1d0a-bf8a-5ecc-e2e6c24f4489"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {
@@ -2484,7 +2484,7 @@
         "ValueIndex": 47,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "e91a0550-4c1e-4402-a080-7be493c7eaae": {
       "$type": "ReceiveEntry",
@@ -2517,7 +2517,7 @@
         "ValueIndex": 45,
         "IsConnected": true
       },
-      "Condition": 4
+      "Condition": "ConditionType_Less"
     },
     "ec01efde-0487-4900-a4ed-ed22e49ec633": {
       "$type": "ReceiveEntry",
@@ -2564,7 +2564,7 @@
         "ValueIndex": 30,
         "IsConnected": true
       },
-      "Operator": 1
+      "Operator": "LogicalExpressionOperator_Or"
     },
     "f3a9002e-6564-495e-8046-e4762b332aeb": {
       "$type": "SamplerNodeData",
@@ -2648,7 +2648,7 @@
         "InstanceGuid": "c34864eb-7557-484d-a366-d9f02cdc48c4"
       },
       "BasePitch": 1.0,
-      "Loop": 0,
+      "Loop": "LtNone",
       "Plugins": [
         {
           "SndPlayer": {

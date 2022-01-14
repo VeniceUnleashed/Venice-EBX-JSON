@@ -247,7 +247,7 @@
         "InstanceGuid": "5b4ab4c0-6c2f-4d28-8417-ab65edff852b"
       },
       "LowHealthThreshold": 499.0,
-      "DefaultTeam": 0,
+      "DefaultTeam": "TeamNeutral",
       "MaterialPair": {
         "PartitionGuid": "b50615c2-4743-4919-9a40-a738150debe9",
         "InstanceGuid": "5036cccb-a670-467e-8b82-5e05b3361655"
@@ -348,7 +348,7 @@
           "z": -50.0
         },
         "Customization": null,
-        "MinimapIcon": 53,
+        "MinimapIcon": "UIHudIcon_HeliAttack",
         "Texture": null,
         "VehicleItemHash": 1346963836
       },
@@ -461,16 +461,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 0,
+      "RigidBodyType": "RBTypeCollision",
       "Mass": 5000.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 3,
-      "QualityType": 0,
-      "CollisionLayer": 1,
+      "MotionType": "RigidBodyMotionType_Dynamic",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_VehicleLayer",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -673,7 +673,7 @@
         "PartitionGuid": "8bf42506-2739-4926-8cbb-acc1a53cef0a",
         "InstanceGuid": "dda753e1-6d65-4455-9aba-7c37f2d8bf42"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "f4edd1cd-bd12-4730-9072-c5c83f4c1e9f",
         "InstanceGuid": "c468f4dc-6f78-49e9-8471-aa6fb825b935"
@@ -685,7 +685,7 @@
       "InputCurves": [],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -693,8 +693,8 @@
       "EntryOrderNumber": 0,
       "EnterImpulse": 0.0,
       "EntryRadius": 10.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 2,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSReceive",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -720,7 +720,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "",
       "AntEntryEnumeration": {
         "PartitionGuid": "c34145ac-92a5-464b-a2c4-79b335c35f98",
@@ -1112,7 +1112,7 @@
         "PartitionGuid": "c34145ac-92a5-464b-a2c4-79b335c35f98",
         "InstanceGuid": "cc12ec0e-654f-4a00-a293-b745019b4704"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "2ec86410-6828-44f2-8da2-652aa3f41c40": {
@@ -1243,11 +1243,11 @@
       "InputSuppression": {
         "SuppressVehicleInput": [
           {
-            "ActionToSuppress": 5,
+            "ActionToSuppress": "EIAPitch",
             "SuppressingValue": 0.0
           },
           {
-            "ActionToSuppress": 6,
+            "ActionToSuppress": "EIARoll",
             "SuppressingValue": 0.0
           }
         ]
@@ -1357,7 +1357,7 @@
         "PartitionGuid": "c34145ac-92a5-464b-a2c4-79b335c35f98",
         "InstanceGuid": "76b3158b-dc9c-4ed2-ba70-dba7797803eb"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "3e8076d3-56d1-4658-a412-1f5532607276": {
@@ -1546,7 +1546,7 @@
         "RotationRpm": 0.0,
         "PartIndex": 6
       },
-      "RotationAxis": 0,
+      "RotationAxis": "raX",
       "RotationMultiplier": 0.008,
       "ChangeModelRpm": 10000.0,
       "BlowEffect": null,
@@ -1855,12 +1855,12 @@
         "y": 0.0,
         "z": 0.0
       },
-      "PropellerType": 1,
+      "PropellerType": "PropellerType_Rotor",
       "RotorConfig": {
         "PartitionGuid": "c34145ac-92a5-464b-a2c4-79b335c35f98",
         "InstanceGuid": "949dfdae-b699-4dfc-b4e1-de95fba8ffa6"
       },
-      "ForceMagnitudeInputType": 0,
+      "ForceMagnitudeInputType": "FMITYaw",
       "DirectionVectorIndex": 0,
       "ForceMagnitudeMultiplier": 2.0,
       "LiftForceSpringConstant": 40000.0,
@@ -2140,7 +2140,7 @@
       "MaskVolume": null,
       "DestructionMaskVolume": null,
       "MaterialPair": null,
-      "DamageIndicationType": 0,
+      "DamageIndicationType": "DamageIndicationType_GiverPlayer",
       "EmpTime": 0.0,
       "MaxOcclusionRaycastRadius": 0.5,
       "InnerBlastRadius": 1.0,
@@ -2168,19 +2168,19 @@
       "$type": "UIPartPropertyList",
       "HudPropertyList": [
         {
-          "Identifier": 1,
+          "Identifier": "HCI_RangeMeter",
           "Range": 999.0,
           "Frequency": 6.0,
           "CompensateFreelook": false
         },
         {
-          "Identifier": 2,
+          "Identifier": "HCI_PredictedSight",
           "Range": 999.0,
           "Frequency": 6.0,
           "CompensateFreelook": true
         },
         {
-          "Identifier": 4,
+          "Identifier": "HCI_RadioAltitude",
           "Range": 999.0,
           "Frequency": 6.0,
           "CompensateFreelook": false
@@ -2430,7 +2430,7 @@
       "UpCurve": [],
       "DownCurve": [],
       "UpPitchAngle": 85.0,
-      "YawInputAction": 9,
+      "YawInputAction": "EIACameraYaw",
       "LoosePartPhysics": [
         {
           "PartitionGuid": "c9f184ae-2bdb-4204-9795-70746b508fd8",
@@ -2446,7 +2446,7 @@
       "PitchSensitivityZoomed": 55.0,
       "DownPitchAngle": 45.0,
       "AverageFilterFrames": 10,
-      "PitchInputAction": 8,
+      "PitchInputAction": "EIACameraPitch",
       "YawSensitivityZoomed": 55.0,
       "PitchSensitivityNonZoomed": 0.0,
       "YawSensitivityNonZoomed": 0.0,
@@ -2543,9 +2543,9 @@
         "y": 0.0,
         "z": 0.0
       },
-      "PropellerType": 0,
+      "PropellerType": "PropellerType_Regular",
       "RotorConfig": null,
-      "ForceMagnitudeInputType": 0,
+      "ForceMagnitudeInputType": "FMITYaw",
       "DirectionVectorIndex": 0,
       "ForceMagnitudeMultiplier": 75.0,
       "LiftForceSpringConstant": 0.0,
@@ -3018,7 +3018,7 @@
       "UpCurve": [],
       "DownCurve": [],
       "UpPitchAngle": 85.0,
-      "YawInputAction": 9,
+      "YawInputAction": "EIACameraYaw",
       "LoosePartPhysics": [
         {
           "PartitionGuid": "c9f184ae-2bdb-4204-9795-70746b508fd8",
@@ -3034,7 +3034,7 @@
       "PitchSensitivityZoomed": 55.0,
       "DownPitchAngle": 45.0,
       "AverageFilterFrames": 10,
-      "PitchInputAction": 8,
+      "PitchInputAction": "EIACameraPitch",
       "YawSensitivityZoomed": 55.0,
       "PitchSensitivityNonZoomed": 0.0,
       "YawSensitivityNonZoomed": 0.0,
@@ -3108,7 +3108,7 @@
       "Stabilizer": null,
       "Stabilizers": [],
       "ConstantForce": [],
-      "VehicleModeAtReset": 0,
+      "VehicleModeAtReset": "VmIdle",
       "BodyMass": 5000.0,
       "GravityModifier": 1.0,
       "YawMin": -1.0,
@@ -3614,16 +3614,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 3,
+      "RigidBodyType": "RBTypeRaycast",
       "Mass": 0.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 0,
-      "CollisionLayer": 0,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_Invalid",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -3770,7 +3770,7 @@
         "PartitionGuid": "8bf42506-2739-4926-8cbb-acc1a53cef0a",
         "InstanceGuid": "dda753e1-6d65-4455-9aba-7c37f2d8bf42"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "f4edd1cd-bd12-4730-9072-c5c83f4c1e9f",
         "InstanceGuid": "c468f4dc-6f78-49e9-8471-aa6fb825b935"
@@ -3782,7 +3782,7 @@
       "InputCurves": [],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -3790,8 +3790,8 @@
       "EntryOrderNumber": 1,
       "EnterImpulse": 0.0,
       "EntryRadius": 10.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 2,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSReceive",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -3817,7 +3817,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "",
       "AntEntryEnumeration": {
         "PartitionGuid": "c34145ac-92a5-464b-a2c4-79b335c35f98",
@@ -3888,19 +3888,19 @@
       "$type": "UIPartPropertyList",
       "HudPropertyList": [
         {
-          "Identifier": 1,
+          "Identifier": "HCI_RangeMeter",
           "Range": 999.0,
           "Frequency": 6.0,
           "CompensateFreelook": false
         },
         {
-          "Identifier": 2,
+          "Identifier": "HCI_PredictedSight",
           "Range": 999.0,
           "Frequency": 6.0,
           "CompensateFreelook": true
         },
         {
-          "Identifier": 4,
+          "Identifier": "HCI_RadioAltitude",
           "Range": 999.0,
           "Frequency": 6.0,
           "CompensateFreelook": false
@@ -3999,11 +3999,11 @@
       "InputSuppression": {
         "SuppressVehicleInput": [
           {
-            "ActionToSuppress": 5,
+            "ActionToSuppress": "EIAPitch",
             "SuppressingValue": 0.0
           },
           {
-            "ActionToSuppress": 6,
+            "ActionToSuppress": "EIARoll",
             "SuppressingValue": 0.0
           }
         ]
@@ -4202,7 +4202,7 @@
         "PartitionGuid": "c34145ac-92a5-464b-a2c4-79b335c35f98",
         "InstanceGuid": "76b3158b-dc9c-4ed2-ba70-dba7797803eb"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "fd5ec18b-55e9-4e89-8b83-71ac5f1687cc": {
@@ -4242,7 +4242,7 @@
         "RotationRpm": 0.0,
         "PartIndex": 4
       },
-      "RotationAxis": 1,
+      "RotationAxis": "raY",
       "RotationMultiplier": 0.008,
       "ChangeModelRpm": 10000.0,
       "BlowEffect": null,

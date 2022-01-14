@@ -8,7 +8,7 @@
       "IndexInBlueprint": 678,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "072653fa-a46c-4958-9e60-db36b3311e1c": {
@@ -56,9 +56,9 @@
           "z": 0.0
         }
       },
-      "BoneToPlace": 3,
-      "Realm": 2,
-      "ModelAnimationTransformType": 0,
+      "BoneToPlace": "GameplayBones_RootBone",
+      "Realm": "Realm_ClientAndServer",
+      "ModelAnimationTransformType": "ModelAnimationTransformType_World",
       "InstanceSeed": 0,
       "DefaultAnimation": "Police_Van",
       "AnimationIndex": 0,
@@ -68,7 +68,7 @@
       },
       "ExternalTime": -1.0,
       "RootMeshBoneName": "Base",
-      "JointWorldTransformUpdateOrder": 0,
+      "JointWorldTransformUpdateOrder": "ModelAnimationUpdateOrder_PostAnimation",
       "ConnectBoneName": "AITrajectory",
       "JointOutputPropertyIds": [
         -1031074154,
@@ -91,7 +91,7 @@
       "IndexInBlueprint": 667,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "1cea91ce-951a-40b2-9d3c-5914d5d31803": {
@@ -111,9 +111,9 @@
       "SequenceLength": 5333,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -174,7 +174,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -290,7 +290,7 @@
       "IndexInBlueprint": 673,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "406a42d9-9fe1-4fc6-98c3-1d326cc155ae": {
@@ -298,7 +298,7 @@
       "IndexInBlueprint": 661,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "TypeOfRoute": 0,
+      "TypeOfRoute": "RouteStop",
       "UsePathFinding": false,
       "StartAtGeometricallyClosestWaypoint": false
     },
@@ -311,11 +311,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -363,11 +363,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": false,
       "UsePathFinding": false
@@ -377,7 +377,7 @@
       "IndexInBlueprint": 672,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "7713cd72-2e7d-4f82-bb43-7d66b6dfecae": {
@@ -385,7 +385,7 @@
       "IndexInBlueprint": 675,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "77be84c4-21ed-4f25-b77d-91e2e93feb52": {
@@ -393,7 +393,7 @@
       "IndexInBlueprint": 676,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "DefaultValue": true
     },
     "7aa9bcb6-a924-4220-b0c4-f4f42a6c98ff": {
@@ -431,7 +431,7 @@
       "IndexInBlueprint": 674,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "EventCount": 2
     },
     "9cb106c4-1615-4230-8f8f-e769258733a5": {
@@ -483,7 +483,7 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "b72d02f5-e776-4044-aba6-802b4dda52bc": {
       "$type": "GeometryTriggerEntityData",
@@ -539,7 +539,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -589,7 +589,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true

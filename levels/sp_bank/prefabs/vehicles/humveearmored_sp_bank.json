@@ -391,7 +391,7 @@
       "ForceModifier": 14000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 6,
+      "RotationInput": "EIARoll",
       "WorldSpaceLockEfficiency": 0.0,
       "UseLinearInput": true
     },
@@ -542,16 +542,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 3,
+      "RigidBodyType": "RBTypeRaycast",
       "Mass": 0.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 0,
-      "CollisionLayer": 0,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_Invalid",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -642,7 +642,7 @@
         "PartitionGuid": "b1447f05-8986-4446-8a14-4984c6061266",
         "InstanceGuid": "979dc8f0-51da-4edd-b7e0-0868810276bb"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "2dc198bd-f3b7-421b-8942-e1c8a5c731b5": {
@@ -692,11 +692,11 @@
       "InputSuppression": {
         "SuppressVehicleInput": [
           {
-            "ActionToSuppress": 5,
+            "ActionToSuppress": "EIAPitch",
             "SuppressingValue": 0.4
           },
           {
-            "ActionToSuppress": 6,
+            "ActionToSuppress": "EIARoll",
             "SuppressingValue": 0.4
           }
         ]
@@ -1278,7 +1278,7 @@
       "MaskVolume": null,
       "DestructionMaskVolume": null,
       "MaterialPair": null,
-      "DamageIndicationType": 0,
+      "DamageIndicationType": "DamageIndicationType_GiverPlayer",
       "EmpTime": 0.0,
       "MaxOcclusionRaycastRadius": 0.5,
       "InnerBlastRadius": 1.0,
@@ -1399,7 +1399,7 @@
         "PartitionGuid": "b1447f05-8986-4446-8a14-4984c6061266",
         "InstanceGuid": "979dc8f0-51da-4edd-b7e0-0868810276bb"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "4f3de6bf-1cde-4255-afb6-6459ef225305": {
@@ -1544,7 +1544,7 @@
       "UpCurve": [],
       "DownCurve": [],
       "UpPitchAngle": 25.0,
-      "YawInputAction": 9,
+      "YawInputAction": "EIACameraYaw",
       "LoosePartPhysics": [
         {
           "PartitionGuid": "7563d106-161a-4911-a5c3-8897076cab3d",
@@ -1568,7 +1568,7 @@
       "PitchSensitivityZoomed": 0.0,
       "DownPitchAngle": 25.0,
       "AverageFilterFrames": 100,
-      "PitchInputAction": 8,
+      "PitchInputAction": "EIACameraPitch",
       "YawSensitivityZoomed": 0.0,
       "PitchSensitivityNonZoomed": 55.0,
       "YawSensitivityNonZoomed": 55.0,
@@ -1663,7 +1663,7 @@
       "IndexInBlueprint": 3,
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 2,
-      "Action": 0,
+      "Action": "EIAThrottle",
       "Scale": 0.0,
       "Offset": 0.0,
       "Enabled": false
@@ -2039,7 +2039,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -2056,7 +2056,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -2073,7 +2073,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -2090,7 +2090,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -2107,7 +2107,7 @@
           "TargetEvent": {
             "Id": -846239142
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -2124,7 +2124,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -2141,7 +2141,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -2158,7 +2158,7 @@
           "TargetEvent": {
             "Id": -531213201
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -2175,7 +2175,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -2192,7 +2192,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -2209,7 +2209,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -2226,7 +2226,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -2243,7 +2243,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -2260,7 +2260,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -2277,7 +2277,7 @@
           "TargetEvent": {
             "Id": -148433999
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -2294,7 +2294,7 @@
           "TargetEvent": {
             "Id": -1042848550
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         }
       ],
       "Descriptor": {
@@ -2355,7 +2355,7 @@
         "PartitionGuid": "b1447f05-8986-4446-8a14-4984c6061266",
         "InstanceGuid": "780b7187-5875-4538-91fa-b17064eb008b"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "643add5b-7780-4159-a92c-9cde3e18bac7": {
@@ -2458,14 +2458,14 @@
         }
       ],
       "UpPitchAngle": 0.0,
-      "YawInputAction": 6,
+      "YawInputAction": "EIARoll",
       "LoosePartPhysics": [],
       "LeftYawAngle": 0.0,
       "RightYawAngle": 0.0,
       "PitchSensitivityZoomed": 0.2,
       "DownPitchAngle": 0.0,
       "AverageFilterFrames": 10,
-      "PitchInputAction": 5,
+      "PitchInputAction": "EIAPitch",
       "YawSensitivityZoomed": 0.2,
       "PitchSensitivityNonZoomed": 0.5,
       "YawSensitivityNonZoomed": 0.3,
@@ -2506,10 +2506,10 @@
         "InstanceGuid": "05667bce-02d7-4200-980e-baec96547c3a"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "67d3c001-430f-478c-9a78-062b1e2379ee": {
       "$type": "ChildComponentData",
@@ -2658,7 +2658,7 @@
       "UpCurve": [],
       "DownCurve": [],
       "UpPitchAngle": 25.0,
-      "YawInputAction": 9,
+      "YawInputAction": "EIACameraYaw",
       "LoosePartPhysics": [
         {
           "PartitionGuid": "7563d106-161a-4911-a5c3-8897076cab3d",
@@ -2682,7 +2682,7 @@
       "PitchSensitivityZoomed": 0.0,
       "DownPitchAngle": 25.0,
       "AverageFilterFrames": 100,
-      "PitchInputAction": 8,
+      "PitchInputAction": "EIACameraPitch",
       "YawSensitivityZoomed": 0.0,
       "PitchSensitivityNonZoomed": 55.0,
       "YawSensitivityNonZoomed": 55.0,
@@ -2828,7 +2828,7 @@
         "InstanceGuid": "d57b0e83-6555-4c7b-af77-c426eeb4ef3b"
       },
       "LowHealthThreshold": 50.0,
-      "DefaultTeam": 0,
+      "DefaultTeam": "TeamNeutral",
       "MaterialPair": {
         "PartitionGuid": "b50615c2-4743-4919-9a40-a738150debe9",
         "InstanceGuid": "ecf5bc1d-0b70-4193-9792-1f013f0f9a97"
@@ -2923,7 +2923,7 @@
           "z": -50.0
         },
         "Customization": null,
-        "MinimapIcon": 52,
+        "MinimapIcon": "UIHudIcon_Jeep",
         "Texture": null,
         "VehicleItemHash": 879193604
       },
@@ -3029,7 +3029,7 @@
         "PartitionGuid": "b1447f05-8986-4446-8a14-4984c6061266",
         "InstanceGuid": "780b7187-5875-4538-91fa-b17064eb008b"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "6e66ddf1-69a6-4ff3-b7dc-a60287d10837": {
@@ -3196,7 +3196,7 @@
     "74184475-b63b-48f5-875a-aa21d889c678": {
       "$type": "InputCurveData",
       "AffectedInputs": [
-        4
+        "EIAYaw"
       ],
       "InputModifierCurve": [
         {
@@ -3606,14 +3606,14 @@
         }
       ],
       "UpPitchAngle": 0.0,
-      "YawInputAction": 6,
+      "YawInputAction": "EIARoll",
       "LoosePartPhysics": [],
       "LeftYawAngle": 0.0,
       "RightYawAngle": 0.0,
       "PitchSensitivityZoomed": 0.2,
       "DownPitchAngle": 0.0,
       "AverageFilterFrames": 10,
-      "PitchInputAction": 5,
+      "PitchInputAction": "EIAPitch",
       "YawSensitivityZoomed": 0.2,
       "PitchSensitivityNonZoomed": 0.5,
       "YawSensitivityNonZoomed": 0.3,
@@ -3685,7 +3685,7 @@
         "PartitionGuid": "4d1f2449-72f0-4311-bf08-9fb45bf41b93",
         "InstanceGuid": "e63dcf1f-5240-493d-a25e-4ab8446740b4"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "0e2ea492-702d-4fe9-af4b-6c5129c8d341",
         "InstanceGuid": "b6748633-1555-4e66-bfc8-2c0a914119a7"
@@ -3697,7 +3697,7 @@
       "InputCurves": [],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -3705,8 +3705,8 @@
       "EntryOrderNumber": 3,
       "EnterImpulse": 0.0,
       "EntryRadius": 3.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 0,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSDefault",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -3732,7 +3732,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 11,
+      "AntEntryId": "AntEntryIdEnum_Humvee_PassengerFrontRight",
       "AntEntryID": "Humvee_PassengerFrontRight",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0
@@ -3784,11 +3784,11 @@
       "InputSuppression": {
         "SuppressVehicleInput": [
           {
-            "ActionToSuppress": 5,
+            "ActionToSuppress": "EIAPitch",
             "SuppressingValue": 0.4
           },
           {
-            "ActionToSuppress": 6,
+            "ActionToSuppress": "EIARoll",
             "SuppressingValue": 0.4
           }
         ]
@@ -3890,7 +3890,7 @@
       "ForceModifier": 15000.0,
       "ResetForceModifier": 0.0,
       "ResetForceInputThreshold": 0.0,
-      "RotationInput": 5,
+      "RotationInput": "EIAPitch",
       "WorldSpaceLockEfficiency": 0.0,
       "UseLinearInput": true
     },
@@ -4285,10 +4285,10 @@
         "InstanceGuid": "e7533202-4a60-3280-2def-fca653e3c7bf"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false,
-      "SubRealm": 0
+      "SubRealm": "SubRealm_All"
     },
     "b12f3dbe-8c08-4ae2-9f00-e7cc5cb561d0": {
       "$type": "PartComponentData",
@@ -4799,7 +4799,7 @@
         "PartitionGuid": "25f4f4f6-f546-456a-900e-528d24fc67ad",
         "InstanceGuid": "4a8e3732-9cfa-41de-9135-670edb26dd1c"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "0e2ea492-702d-4fe9-af4b-6c5129c8d341",
         "InstanceGuid": "b6748633-1555-4e66-bfc8-2c0a914119a7"
@@ -4811,7 +4811,7 @@
       "InputCurves": [],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -4819,8 +4819,8 @@
       "EntryOrderNumber": 4,
       "EnterImpulse": 0.0,
       "EntryRadius": 5.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 1,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSSendAndReceive",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -4846,7 +4846,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 1,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Gunner",
       "AntEntryID": "",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0
@@ -5000,7 +5000,7 @@
       "IndexInBlueprint": 6,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 2,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "In1": false,
       "In2": false,
       "In3": false,
@@ -5148,7 +5148,7 @@
       "Stabilizer": null,
       "Stabilizers": [],
       "ConstantForce": [],
-      "VehicleModeAtReset": 0,
+      "VehicleModeAtReset": "VmIdle",
       "BodyMass": 1500.0,
       "GravityModifier": 1.85,
       "YawMin": -1.0,
@@ -5333,7 +5333,7 @@
         "InstanceGuid": "443ad95e-bdad-471e-a80d-876e3fd35cd4"
       },
       "CustomWeaponType": null,
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -5759,7 +5759,7 @@
         "PartitionGuid": "25f4f4f6-f546-456a-900e-528d24fc67ad",
         "InstanceGuid": "4a8e3732-9cfa-41de-9135-670edb26dd1c"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "0e2ea492-702d-4fe9-af4b-6c5129c8d341",
         "InstanceGuid": "b6748633-1555-4e66-bfc8-2c0a914119a7"
@@ -5771,7 +5771,7 @@
       "InputCurves": [],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -5779,8 +5779,8 @@
       "EntryOrderNumber": 1,
       "EnterImpulse": 0.0,
       "EntryRadius": 5.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 1,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSSendAndReceive",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -5806,7 +5806,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 1,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Gunner",
       "AntEntryID": "",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0
@@ -6177,7 +6177,7 @@
         "PartitionGuid": "45b4e697-31af-4bbc-8b2e-aed7684d3859",
         "InstanceGuid": "4ea863e0-5849-4a69-ad33-0b33d250fb95"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "4c000184-baf5-435f-87a2-ddc3ffc6bd12",
         "InstanceGuid": "5e01089f-2e55-446c-9361-821bf37ba845"
@@ -6194,7 +6194,7 @@
       ],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -6202,8 +6202,8 @@
       "EntryOrderNumber": 0,
       "EnterImpulse": 0.0,
       "EntryRadius": 3.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 0,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSDefault",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -6229,7 +6229,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "Humvee_Driver",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0
@@ -6447,16 +6447,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 0,
+      "RigidBodyType": "RBTypeCollision",
       "Mass": 1500.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 3,
-      "QualityType": 0,
-      "CollisionLayer": 1,
+      "MotionType": "RigidBodyMotionType_Dynamic",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_VehicleLayer",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -6511,7 +6511,7 @@
         "PartitionGuid": "4d1f2449-72f0-4311-bf08-9fb45bf41b93",
         "InstanceGuid": "e63dcf1f-5240-493d-a25e-4ab8446740b4"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "0e2ea492-702d-4fe9-af4b-6c5129c8d341",
         "InstanceGuid": "b6748633-1555-4e66-bfc8-2c0a914119a7"
@@ -6523,7 +6523,7 @@
       "InputCurves": [],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -6531,8 +6531,8 @@
       "EntryOrderNumber": 2,
       "EnterImpulse": 0.0,
       "EntryRadius": 3.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 0,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSDefault",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -6558,7 +6558,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 11,
+      "AntEntryId": "AntEntryIdEnum_Humvee_PassengerFrontRight",
       "AntEntryID": "",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0

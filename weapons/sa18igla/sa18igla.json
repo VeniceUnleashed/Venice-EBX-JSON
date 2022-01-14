@@ -73,7 +73,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -96,8 +96,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -186,8 +186,8 @@
               "InstanceGuid": "b2c93677-006a-46ac-bf47-9a18316c496a"
             }
           },
-          "AnimatedFireType": 1,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireSingle",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -751,7 +751,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 23,
+      "WeaponClass": "wcAt",
       "AIData": {
         "PartitionGuid": "b412a569-1413-11e0-a672-e0a480096e27",
         "InstanceGuid": "48617709-d05c-5545-e25e-7364a6c48107"
@@ -821,7 +821,7 @@
           "z": 78.0
         }
       },
-      "AnimBaseSet": 3,
+      "AnimBaseSet": "wabsAT",
       "AnimationData": {
         "PartitionGuid": "22580278-a31d-ad47-9491-59a22ccbd047",
         "InstanceGuid": "22580278-a31d-ad47-9491-59a22ccbd047"
@@ -833,11 +833,11 @@
         "PartitionGuid": "b412a569-1413-11e0-a672-e0a480096e27",
         "InstanceGuid": "b5a266f1-ef67-4dff-b4a6-3d8efebf5693"
       },
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": null,
       "WeaponFloatParam": 1.0,
       "Sockets": [],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "b412a569-1413-11e0-a672-e0a480096e27",
         "InstanceGuid": "07ae0264-aa6c-d1bb-a820-bd5d60326037"
@@ -884,7 +884,7 @@
         "InstanceGuid": "cdc3c3f1-c14a-43d4-b97b-68c286defea8"
       },
       "SecondaryLockingController": null,
-      "WarnLock": 2,
+      "WarnLock": "wtWarnVehicle",
       "IsHoming": true,
       "IsGuidedWhenZoomed": false,
       "FireOnlyWhenLockedOn": true,
@@ -895,11 +895,11 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 5
+          "LockType": "LockTypeCount"
         },
         {
           "OutlineTaggedDistance": 1000.0,
-          "LockType": 2
+          "LockType": "LockOnHeat"
         }
       ],
       "LockTime": 1.25,
@@ -1085,9 +1085,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.4,
         "RateOfFire": 300.0,
         "RateOfFireForBurst": 550.0,
@@ -1098,10 +1098,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 3.6,
         "ReloadTimeBulletsLeft": -1.0,
-        "FireLogicType": 0,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltSingleFire",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 1,
+        "ReloadType": "rtMagazine",
         "HoldOffReloadUntilZoomRelease": true,
         "ForceReloadActionOnFireTrigger": true,
         "HoldOffReloadUntilFireRelease": true,

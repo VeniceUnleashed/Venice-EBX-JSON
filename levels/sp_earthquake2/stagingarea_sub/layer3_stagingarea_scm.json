@@ -38,9 +38,9 @@
       "SequenceLength": 2800,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -52,7 +52,7 @@
       "IndexInBlueprint": 334,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "0181346e-e52b-46d9-bef8-b2a99b8ac0ac": {
@@ -142,9 +142,9 @@
       "IsPropertyConnectionTarget": 3,
       "MessageSid": "ID_H_MES_SP_EARTHQUAKE2_ZOOM_GUN",
       "AdditionalMessages": [],
-      "MessageType": 1,
+      "MessageType": "UIMessageEntityType_Tooltip",
       "DisplayTime": 5.0,
-      "EntryInputAction": 11,
+      "EntryInputAction": "EIAZoom",
       "Enabled": true
     },
     "036e4349-dc3e-43a4-8589-b932afaaf84d": {
@@ -152,7 +152,7 @@
       "IndexInBlueprint": 368,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "05e81f9f-107e-4c26-b824-f284f902a9ab": {
       "$type": "VoiceOverEventEntityData",
@@ -196,9 +196,9 @@
           "z": 0.0
         }
       },
-      "BoneToPlace": 3,
-      "Realm": 0,
-      "ModelAnimationTransformType": 0,
+      "BoneToPlace": "GameplayBones_RootBone",
+      "Realm": "Realm_Client",
+      "ModelAnimationTransformType": "ModelAnimationTransformType_World",
       "InstanceSeed": 0,
       "DefaultAnimation": "MiddleEasternGateBig_Anim",
       "AnimationIndex": 0,
@@ -208,7 +208,7 @@
       },
       "ExternalTime": -1.0,
       "RootMeshBoneName": "Base",
-      "JointWorldTransformUpdateOrder": 0,
+      "JointWorldTransformUpdateOrder": "ModelAnimationUpdateOrder_PostAnimation",
       "ConnectBoneName": "Connect",
       "JointOutputPropertyIds": [],
       "TrajectoryBoneName": "AITrajectory",
@@ -357,7 +357,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -373,7 +373,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 15.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -382,9 +382,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193462601,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 4,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_Two",
       "KeyCount": 1,
@@ -396,7 +396,7 @@
       "IndexInBlueprint": 389,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Probability": 50,
       "RandomizeFirstOnly": false,
       "AutoStart": false
@@ -407,7 +407,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 5.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -494,9 +494,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -517,7 +517,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 14.8,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -587,16 +587,16 @@
       "IndexInBlueprint": 397,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Default": true
     },
     "1f73093d-68a6-478e-9faa-e14778ec2be0": {
       "$type": "TransformPartPropertyTrackData",
       "Id": 193452961,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_One",
       "KeyCount": 1,
@@ -672,7 +672,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -703,7 +703,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 6.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -717,11 +717,11 @@
       "IssueOrderDelay": 1.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": true,
       "UsePathFinding": false
@@ -791,7 +791,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -865,7 +865,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -929,7 +929,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -1004,9 +1004,9 @@
       "SequenceLength": 5000,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 1,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Server",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": true,
@@ -1072,9 +1072,9 @@
       "SequenceLength": 3500,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 1,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Server",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -1598,9 +1598,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193452961,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 5,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_One",
       "KeyCount": 1,
@@ -1616,11 +1616,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": true,
       "UsePathFinding": false
@@ -1631,7 +1631,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 6.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1642,7 +1642,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 10.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": true,
       "RemoveDuplicateEvents": true
@@ -1653,7 +1653,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 3.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1664,7 +1664,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 10.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1675,7 +1675,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1686,7 +1686,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 25.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1715,11 +1715,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": true,
       "UsePathFinding": false
@@ -1729,7 +1729,7 @@
       "IndexInBlueprint": 361,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Probability": 50,
       "RandomizeFirstOnly": false,
       "AutoStart": false
@@ -1740,7 +1740,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1750,7 +1750,7 @@
       "IndexInBlueprint": 323,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "5a15ae45-0b8e-47ae-b0a7-127a34052c3b": {
@@ -1770,9 +1770,9 @@
       "SequenceLength": 2000,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 1,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Server",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -1812,13 +1812,13 @@
       "ObjectiveBriefSid": "ID_H_OBJ_SP_EARTHQUAKE2_SECURE_EXTRACTION",
       "ObjectiveSid": "ID_H_OBJ_SP_EARTHQUAKE2_SECURE_EXTRACTION",
       "HudData": null,
-      "ObjectiveType": 0,
+      "ObjectiveType": "OTPrimary",
       "DisplayTime": 5.0,
       "DelayTime": 0.0,
-      "SquadId": 0,
-      "TeamId": 0,
+      "SquadId": "SquadNone",
+      "TeamId": "TeamNeutral",
       "SuccessSid": "ID_H_OBJ_SP_EARTHQUAKE2_SECURE_EXTRACTION",
-      "Reciever": 0,
+      "Reciever": "MrAll",
       "RetriggerSuccessOnShowObjective": false,
       "Tutorial": false,
       "DisplaySuccess": true
@@ -1829,7 +1829,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 8.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1838,9 +1838,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193462601,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 3,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_Two",
       "KeyCount": 1,
@@ -1852,7 +1852,7 @@
       "IndexInBlueprint": 352,
       "IsEventConnectionTarget": 3,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "64cc90a4-8c70-4f4a-aa6a-60cabd697dbf": {
       "$type": "DelayEntityData",
@@ -1860,7 +1860,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 20.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1886,7 +1886,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 3.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1903,7 +1903,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1918,7 +1918,7 @@
         "y": 0.0,
         "z": 0.0
       },
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Text": "AFTER CAFE ENTER GEOM!",
       "Enabled": true
     },
@@ -1928,7 +1928,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 12.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2001,7 +2001,7 @@
       "IndexInBlueprint": 338,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "70bf460d-b291-42ff-8742-632a8e1b64b4": {
@@ -2010,7 +2010,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2034,9 +2034,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193462601,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 5,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_Two",
       "KeyCount": 1,
@@ -2052,11 +2052,11 @@
       "IssueOrderDelay": 0.0,
       "OnCompleteTimeOut": 0.0,
       "OnFailedTimeOut": 0.0,
-      "ReadinessOnStart": 3,
+      "ReadinessOnStart": "RLNone",
       "Enabled": true,
       "ForbiddenToFire": false,
-      "TypeOfRoute": 0,
-      "CombatMode": 0,
+      "TypeOfRoute": "RouteStop",
+      "CombatMode": "CombatPatrolMode_MustStayOnPath",
       "StartingWaypoint": null,
       "StartAtGeometricallyClosestWaypoint": true,
       "UsePathFinding": false
@@ -2067,7 +2067,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 14.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2078,7 +2078,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": true,
       "RemoveDuplicateEvents": true
@@ -2103,7 +2103,7 @@
       "IndexInBlueprint": 393,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "802c5bdf-7fb9-4e17-b5fb-6acae34f9d49": {
@@ -2111,7 +2111,7 @@
       "IndexInBlueprint": 309,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "80df7901-8bb3-4519-bc7d-7ee6ca9b47bc": {
@@ -2168,7 +2168,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -2243,9 +2243,9 @@
       "SequenceLength": 5000,
       "ExternalTime": 0.0,
       "PropertyTracks": [],
-      "Realm": 1,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Server",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": true,
@@ -2270,9 +2270,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193452961,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 4,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_One",
       "KeyCount": 1,
@@ -2314,7 +2314,7 @@
       "IndexInBlueprint": 332,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 2
     },
     "8d7c47b5-722e-44ae-a798-343413494564": {
@@ -2323,7 +2323,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.35,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2333,16 +2333,16 @@
       "IndexInBlueprint": 418,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "9027f47a-8a14-4426-8704-321ec4f58d3f": {
       "$type": "TransformPartPropertyTrackData",
       "Id": 193462601,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 2,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_Two",
       "KeyCount": 1,
@@ -2355,7 +2355,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 15.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2364,9 +2364,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193452961,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 3,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_One",
       "KeyCount": 1,
@@ -2380,7 +2380,7 @@
       "IsPropertyConnectionTarget": 3,
       "MinDelay": 3.0,
       "MaxDelay": 5.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false
     },
@@ -2389,16 +2389,16 @@
       "IndexInBlueprint": 421,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "9a55b649-813c-41d5-be29-6957e22527e4": {
       "$type": "TransformPartPropertyTrackData",
       "Id": 193462601,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 1,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_Two",
       "KeyCount": 1,
@@ -2411,7 +2411,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2456,9 +2456,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -2478,7 +2478,7 @@
       "IndexInBlueprint": 404,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "a10f16e0-e8e3-4fd3-949a-cae86a9ed2fe": {
@@ -2568,7 +2568,7 @@
       "IsPropertyConnectionTarget": 3,
       "MinDelay": 3.0,
       "MaxDelay": 7.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false
     },
@@ -2577,7 +2577,7 @@
       "IndexInBlueprint": 341,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "DefaultValue": false
     },
     "a998ee2b-b65a-497c-8453-6ee4edd3e64b": {
@@ -2586,7 +2586,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2611,7 +2611,7 @@
       "IndexInBlueprint": 390,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Default": true
     },
     "abdfb179-8663-40cf-83de-4c48fb43a429": {
@@ -2620,7 +2620,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 2.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2630,7 +2630,7 @@
       "IndexInBlueprint": 330,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "b08b206e-a548-4eba-b786-354206a231cd": {
@@ -2639,7 +2639,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 3.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2706,13 +2706,13 @@
       "ObjectiveBriefSid": "",
       "ObjectiveSid": "ID_H_OBJ_SP_EARTHQUAKE2_REACH_OSPREY",
       "HudData": null,
-      "ObjectiveType": 2,
+      "ObjectiveType": "OTChildMisson",
       "DisplayTime": 5.0,
       "DelayTime": 0.0,
-      "SquadId": 0,
-      "TeamId": 0,
+      "SquadId": "SquadNone",
+      "TeamId": "TeamNeutral",
       "SuccessSid": "",
-      "Reciever": 0,
+      "Reciever": "MrAll",
       "RetriggerSuccessOnShowObjective": false,
       "Tutorial": false,
       "DisplaySuccess": true
@@ -2722,7 +2722,7 @@
       "IndexInBlueprint": 339,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "bda6d702-12bb-4361-a47a-92c877c70458": {
@@ -2745,7 +2745,7 @@
       "IndexInBlueprint": 358,
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "Default": true
     },
     "c1710383-ee17-4442-aafd-653ebcff9046": {
@@ -2768,7 +2768,7 @@
       "IndexInBlueprint": 367,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "c399edec-e7d0-4603-b35b-8736f9cb395d": {
@@ -2777,7 +2777,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 17.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2788,7 +2788,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 1.5,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2797,9 +2797,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193452961,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 2,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_One",
       "KeyCount": 1,
@@ -2892,7 +2892,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 3.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2944,13 +2944,13 @@
       "ObjectiveBriefSid": "ID_H_OBJ_SP_EARTHQUAKE2_REACH_EXTRACTION_POINT",
       "ObjectiveSid": "ID_H_OBJ_SP_EARTHQUAKE2_REACH_EXTRACTION_POINT",
       "HudData": null,
-      "ObjectiveType": 2,
+      "ObjectiveType": "OTChildMisson",
       "DisplayTime": 5.0,
       "DelayTime": 0.0,
-      "SquadId": 0,
-      "TeamId": 0,
+      "SquadId": "SquadNone",
+      "TeamId": "TeamNeutral",
       "SuccessSid": "ID_H_OBJ_SP_EARTHQUAKE2_REACH_EXTRACTION_POINT",
-      "Reciever": 0,
+      "Reciever": "MrAll",
       "RetriggerSuccessOnShowObjective": false,
       "Tutorial": false,
       "DisplaySuccess": true
@@ -2961,7 +2961,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 16.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2973,7 +2973,7 @@
       "IsPropertyConnectionTarget": 3,
       "MinDelay": 3.0,
       "MaxDelay": 5.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false
     },
@@ -2981,9 +2981,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193462601,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_Two",
       "KeyCount": 1,
@@ -2994,9 +2994,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 193452961,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 1,
       "ResourceName": "Levels/SP_Earthquake2/AnimTrackData/D8AA84BE-D1FA-4663-A2BE-4DBA14C24AB2_One",
       "KeyCount": 1,
@@ -3008,7 +3008,7 @@
       "IndexInBlueprint": 403,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "EventCount": 3
     },
     "d36eed1e-780c-4eae-aefb-96744d148059": {
@@ -3017,7 +3017,7 @@
       "IsEventConnectionTarget": 0,
       "IsPropertyConnectionTarget": 3,
       "Delay": 5.0,
-      "Realm": 0,
+      "Realm": "Realm_Client",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3056,9 +3056,9 @@
       "RunOnce": false,
       "ActiveWeaponSlot": 0,
       "Pitch": 0.0,
-      "CharacterPose": 1,
+      "CharacterPose": "CPTForceToStand",
       "AmmoToSet": 75,
-      "PoseToCheck": 1,
+      "PoseToCheck": "CPTForceToStand",
       "Weapon": null,
       "HealthToSet": 100,
       "HealthToCheck": 100,
@@ -3079,7 +3079,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 13.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3158,9 +3158,9 @@
           "InstanceGuid": "78002646-8b32-4d78-a757-b179fcd9d04f"
         }
       ],
-      "Realm": 2,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_ClientAndServer",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": false,
@@ -3221,7 +3221,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -3236,7 +3236,7 @@
       "IndexInBlueprint": 399,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "e7116d15-c882-4075-847c-91c2df26e746": {
@@ -3245,7 +3245,7 @@
       "IsEventConnectionTarget": 2,
       "IsPropertyConnectionTarget": 3,
       "Delay": 13.0,
-      "Realm": 2,
+      "Realm": "Realm_ClientAndServer",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -3255,7 +3255,7 @@
       "IndexInBlueprint": 431,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "ec646f01-55f1-4a78-9ed2-8b57e68e84fd": {
@@ -3312,7 +3312,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -3355,13 +3355,13 @@
       "ObjectiveBriefSid": "ID_H_OBJ_SP_EARTHQUAKE2_ENTER_HUMVEE_TURRET",
       "ObjectiveSid": "ID_H_OBJ_SP_EARTHQUAKE2_ENTER_HUMVEE_TURRET",
       "HudData": null,
-      "ObjectiveType": 2,
+      "ObjectiveType": "OTChildMisson",
       "DisplayTime": 5.0,
       "DelayTime": 0.0,
-      "SquadId": 0,
-      "TeamId": 0,
+      "SquadId": "SquadNone",
+      "TeamId": "TeamNeutral",
       "SuccessSid": "ID_H_OBJ_SP_EARTHQUAKE2_ENTER_HUMVEE_TURRET",
-      "Reciever": 0,
+      "Reciever": "MrAll",
       "RetriggerSuccessOnShowObjective": false,
       "Tutorial": false,
       "DisplaySuccess": true
@@ -3386,7 +3386,7 @@
       "IndexInBlueprint": 427,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": true
     },
     "f96ba63f-864c-4abd-a07c-2ccc4ab419b6": {
@@ -3422,13 +3422,13 @@
       "ObjectiveBriefSid": "",
       "ObjectiveSid": "ID_H_OBJ_SP_EARTHQUAKE2_HOLD_OUT_FOR_OSPREY",
       "HudData": null,
-      "ObjectiveType": 2,
+      "ObjectiveType": "OTChildMisson",
       "DisplayTime": 5.0,
       "DelayTime": 0.0,
-      "SquadId": 0,
-      "TeamId": 0,
+      "SquadId": "SquadNone",
+      "TeamId": "TeamNeutral",
       "SuccessSid": "",
-      "Reciever": 0,
+      "Reciever": "MrAll",
       "RetriggerSuccessOnShowObjective": false,
       "Tutorial": false,
       "DisplaySuccess": true
@@ -3487,7 +3487,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,

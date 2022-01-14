@@ -96,9 +96,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.1,
         "RateOfFire": 550.0,
         "RateOfFireForBurst": 550.0,
@@ -109,10 +109,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 3.6,
         "ReloadTimeBulletsLeft": -1.0,
-        "FireLogicType": 2,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltAutomaticFire",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 1,
+        "ReloadType": "rtMagazine",
         "HoldOffReloadUntilZoomRelease": false,
         "ForceReloadActionOnFireTrigger": false,
         "HoldOffReloadUntilFireRelease": false,
@@ -233,8 +233,8 @@
             "WeaponOffsetModuleData": null,
             "WeaponSpeedModuleData": null
           },
-          "AnimatedFireType": 0,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireAutomatic",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -798,7 +798,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 0,
+      "WeaponClass": "wc12gauge",
       "AIData": {
         "PartitionGuid": "89c09914-cef7-11e0-950c-e767313db3e4",
         "InstanceGuid": "c532b951-815d-521a-e6ca-d72e10a78525"
@@ -865,7 +865,7 @@
           "z": 90.0
         }
       },
-      "AnimBaseSet": 0,
+      "AnimBaseSet": "wabsRif",
       "AnimationData": {
         "PartitionGuid": "2c74ed70-2ee6-8383-0231-1b402245bbb9",
         "InstanceGuid": "2c74ed70-2ee6-8383-0231-1b402245bbb9"
@@ -874,11 +874,11 @@
       "ZoomRenderFov": 10.0,
       "StreamGroup1p": null,
       "VoiceOverInfo": null,
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": null,
       "WeaponFloatParam": 1.0,
       "Sockets": [],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "89c09914-cef7-11e0-950c-e767313db3e4",
         "InstanceGuid": "45b52e50-6d8b-1ee7-ffbb-e74811a19ab0"
@@ -954,7 +954,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -977,8 +977,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,

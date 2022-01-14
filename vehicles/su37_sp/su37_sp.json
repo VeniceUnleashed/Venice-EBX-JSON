@@ -61,7 +61,7 @@
         "InstanceGuid": "d33720db-333d-81b7-cd8c-9e3ff558da20"
       },
       "CustomWeaponType": null,
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -514,8 +514,8 @@
         "NegativeYLimit": -0.5,
         "PositiveYLimit": 0.5
       },
-      "EnemyTrackerIcon": 42,
-      "OutsideScreenTrackerIcon": 42,
+      "EnemyTrackerIcon": "UIHudIcon_SelectedSpawnPoint",
+      "OutsideScreenTrackerIcon": "UIHudIcon_SelectedSpawnPoint",
       "RenderTargetData": {
         "PositionOffset": {
           "x": 0.0,
@@ -526,15 +526,15 @@
         "ScaleSize": 1.0,
         "UseRenderTarget": false
       },
-      "MissileTrackerIcon": 43,
+      "MissileTrackerIcon": "UIHudIcon_NonSelectableSpawnPoint",
       "IconSize": 35.0,
       "RadarSensitivity": -1.0,
       "HeatSensitivity": 0.0,
-      "FriendlyTrackerIcon": 113,
-      "LaserPaintedVehicleTrackerIcon": 89,
+      "FriendlyTrackerIcon": "UIHudIcon_SnapOvalArrow",
+      "LaserPaintedVehicleTrackerIcon": "UIHudIcon_ArtilleryTarget",
       "MaxDistance": 1000.0,
       "DistanceIconShrinkFactor": 1.0,
-      "MissileLockTrackerIcon": 8,
+      "MissileLockTrackerIcon": "UIHudIcon_SquadLeaderTargeted",
       "TrackOnlyUsedVehicles": true,
       "UseTrackerSignatures": true,
       "EnableEdgePointers": false,
@@ -770,7 +770,7 @@
         "PartitionGuid": "9c7a9df0-b6fb-43b4-8327-5ad072e158a0",
         "InstanceGuid": "e2d20ea3-8c16-495b-9560-b23af0791a1d"
       },
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -874,7 +874,7 @@
         "InstanceGuid": "86e1b2c6-749c-54d5-6403-b74a1beadfae"
       },
       "CustomWeaponType": null,
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -890,7 +890,7 @@
       "EquipmentType": null,
       "Armament": null,
       "Mobility": null,
-      "StrengthType": 0,
+      "StrengthType": "Infantry",
       "ReuseTime": 0.0,
       "Forbidden": true,
       "HasExposedSoldier": false,
@@ -991,7 +991,7 @@
         "InstanceGuid": "53387e02-8153-4768-a893-501b1f65a337"
       },
       "LowHealthThreshold": 48.0,
-      "DefaultTeam": 2,
+      "DefaultTeam": "Team2",
       "MaterialPair": {
         "PartitionGuid": "b50615c2-4743-4919-9a40-a738150debe9",
         "InstanceGuid": "db41758f-9647-4bd1-b158-255771698466"
@@ -1086,7 +1086,7 @@
           "z": -50.0
         },
         "Customization": null,
-        "MinimapIcon": 60,
+        "MinimapIcon": "UIHudIcon_Jet",
         "Texture": null,
         "VehicleItemHash": 3405651195
       },
@@ -1215,7 +1215,7 @@
       "UpCurve": [],
       "DownCurve": [],
       "UpPitchAngle": 75.0,
-      "YawInputAction": 9,
+      "YawInputAction": "EIACameraYaw",
       "LoosePartPhysics": [
         {
           "PartitionGuid": "0625556d-621a-44a3-92a3-dfa76ecd5753",
@@ -1239,7 +1239,7 @@
       "PitchSensitivityZoomed": 50.0,
       "DownPitchAngle": 35.0,
       "AverageFilterFrames": 10,
-      "PitchInputAction": 8,
+      "PitchInputAction": "EIACameraPitch",
       "YawSensitivityZoomed": 50.0,
       "PitchSensitivityNonZoomed": 0.0,
       "YawSensitivityNonZoomed": 0.0,
@@ -1449,7 +1449,7 @@
     "2fc3b3d5-8887-4287-8771-2bd6d282003b": {
       "$type": "InputCurveData",
       "AffectedInputs": [
-        6
+        "EIARoll"
       ],
       "InputModifierCurve": [
         {
@@ -1557,16 +1557,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 3,
+      "RigidBodyType": "RBTypeRaycast",
       "Mass": 0.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 1,
-      "QualityType": 0,
-      "CollisionLayer": 0,
+      "MotionType": "RigidBodyMotionType_Fixed",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_Invalid",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -1665,13 +1665,13 @@
           "Value": "",
           "ValueRef": null,
           "Id": 922982664,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 875726273,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         }
       ],
       "InputEvents": [
@@ -1748,7 +1748,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -1771,8 +1771,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -1974,7 +1974,7 @@
       "IsNetworkable": true,
       "IsWindow": false,
       "AnimatePhysics": false,
-      "RotationAxis": 1,
+      "RotationAxis": "RAUp",
       "RotationScale": 1.0
     },
     "4492c834-02c1-4557-ad54-710c671b3d9c": {
@@ -2020,7 +2020,7 @@
         "PartitionGuid": "9c7a9df0-b6fb-43b4-8327-5ad072e158a0",
         "InstanceGuid": "2970521a-d7df-e67c-cd53-00127d8272bf"
       },
-      "EntryClass": 0,
+      "EntryClass": "ecPrimary",
       "InputConceptDefinition": {
         "PartitionGuid": "bb0cd60b-9ea8-4ae0-b46a-047b07c7d4f3",
         "InstanceGuid": "b93c94b0-3639-4104-b796-b6209f1cb8c7"
@@ -2041,7 +2041,7 @@
       ],
       "HudData": {
         "Index": 0,
-        "SeatType": 0,
+        "SeatType": "EST_Driver",
         "Frustum": false,
         "Visible": true,
         "MaximizeMiniMapOnEntry": false
@@ -2049,8 +2049,8 @@
       "EntryOrderNumber": 1,
       "EnterImpulse": 0.0,
       "EntryRadius": 5.0,
-      "TriggerEventOnKey": 128,
-      "EntrySpottingSettings": 0,
+      "TriggerEventOnKey": "EIAUndefined",
+      "EntrySpottingSettings": "ESSDefault",
       "PoseConstraints": {
         "StandPose": true,
         "CrouchPose": true,
@@ -2076,7 +2076,7 @@
         "y": 0.1,
         "z": 0.1
       },
-      "AntEntryId": 0,
+      "AntEntryId": "AntEntryIdEnum_Humvee_Driver",
       "AntEntryID": "",
       "AntEntryEnumeration": null,
       "ShieldedTransitionExitTime": 0.0
@@ -2284,7 +2284,7 @@
         "PartitionGuid": "9c7a9df0-b6fb-43b4-8327-5ad072e158a0",
         "InstanceGuid": "e2d20ea3-8c16-495b-9560-b23af0791a1d"
       },
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -2328,7 +2328,7 @@
       "LowHealthWarnSoundEffect": null,
       "LockingWarnSoundEffect": null,
       "LockedWarnSoundEffect": null,
-      "PlayerType": 0
+      "PlayerType": "WPTInflictor"
     },
     "5d69199a-e36a-46d7-976d-ae67465d3c82": {
       "$type": "HealthStateData",
@@ -2395,7 +2395,7 @@
         "InstanceGuid": "38629cab-059a-6c6f-c1a9-e6bb8e2c1452"
       },
       "CustomWeaponType": null,
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -2750,7 +2750,7 @@
       "MaskVolume": null,
       "DestructionMaskVolume": null,
       "MaterialPair": null,
-      "DamageIndicationType": 0,
+      "DamageIndicationType": "DamageIndicationType_GiverPlayer",
       "EmpTime": 0.0,
       "MaxOcclusionRaycastRadius": 0.5,
       "InnerBlastRadius": 1.0,
@@ -3094,11 +3094,11 @@
       "InputSuppression": {
         "SuppressVehicleInput": [
           {
-            "ActionToSuppress": 5,
+            "ActionToSuppress": "EIAPitch",
             "SuppressingValue": 0.0
           },
           {
-            "ActionToSuppress": 6,
+            "ActionToSuppress": "EIARoll",
             "SuppressingValue": 0.0
           }
         ]
@@ -3199,7 +3199,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -3216,7 +3216,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -3233,7 +3233,7 @@
           "TargetEvent": {
             "Id": 1892692101
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -3250,7 +3250,7 @@
           "TargetEvent": {
             "Id": -1745560316
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -3267,7 +3267,7 @@
           "TargetEvent": {
             "Id": -1452333337
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -3284,7 +3284,7 @@
           "TargetEvent": {
             "Id": 1666281711
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -3301,7 +3301,7 @@
           "TargetEvent": {
             "Id": -274579609
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -3318,7 +3318,7 @@
           "TargetEvent": {
             "Id": -1036968738
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -3335,7 +3335,7 @@
           "TargetEvent": {
             "Id": 2086989620
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -3352,7 +3352,7 @@
           "TargetEvent": {
             "Id": -956971519
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -3369,7 +3369,7 @@
           "TargetEvent": {
             "Id": 294160896
           },
-          "TargetType": 1
+          "TargetType": "EventConnectionTargetType_ClientAndServer"
         },
         {
           "Source": {
@@ -3386,7 +3386,7 @@
           "TargetEvent": {
             "Id": -937011271
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -3403,7 +3403,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3420,7 +3420,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3437,7 +3437,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3454,7 +3454,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3471,7 +3471,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3488,7 +3488,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3505,7 +3505,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3522,7 +3522,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3539,7 +3539,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3556,7 +3556,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3573,7 +3573,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3590,7 +3590,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3607,7 +3607,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3624,7 +3624,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3641,7 +3641,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3658,7 +3658,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3675,7 +3675,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3692,7 +3692,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -3709,7 +3709,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3726,7 +3726,7 @@
           "TargetEvent": {
             "Id": 2089401213
           },
-          "TargetType": 2
+          "TargetType": "EventConnectionTargetType_Client"
         },
         {
           "Source": {
@@ -3743,7 +3743,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         }
       ],
       "Descriptor": {
@@ -3862,7 +3862,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -3885,8 +3885,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -4039,7 +4039,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -4062,8 +4062,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -4228,7 +4228,7 @@
       "IsNetworkable": true,
       "IsWindow": false,
       "AnimatePhysics": false,
-      "RotationAxis": 0,
+      "RotationAxis": "RALeft",
       "RotationScale": -1.0
     },
     "8e3046c1-e322-4628-87f0-2985128323e2": {
@@ -4264,7 +4264,7 @@
         "InstanceGuid": "be0eb117-b4d3-49c5-bb26-fd59892a7f6c"
       },
       "SecondaryLockingController": null,
-      "WarnLock": 3,
+      "WarnLock": "wtWarnNone",
       "IsHoming": true,
       "IsGuidedWhenZoomed": false,
       "FireOnlyWhenLockedOn": false,
@@ -5041,7 +5041,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -5064,8 +5064,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -5135,7 +5135,7 @@
     "b6c58a4a-0d00-433f-ba09-27e88009e6bb": {
       "$type": "InputCurveData",
       "AffectedInputs": [
-        5
+        "EIAPitch"
       ],
       "InputModifierCurve": [
         {
@@ -5177,7 +5177,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -5200,8 +5200,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -5363,7 +5363,7 @@
         "PartitionGuid": "9c7a9df0-b6fb-43b4-8327-5ad072e158a0",
         "InstanceGuid": "6bf35ce3-201f-462e-b124-e634ff784c11"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "bd3e5f59-f176-4000-bdbd-945484faf4c3": {
@@ -5373,16 +5373,16 @@
         "y": 1.0,
         "z": 1.0
       },
-      "RigidBodyType": 0,
+      "RigidBodyType": "RBTypeCollision",
       "Mass": 5000.0,
       "Restitution": 0.4,
       "Friction": 0.5,
       "AngularVelocityDamping": -1.0,
       "LinearVelocityDamping": -1.0,
       "InteractionToolkitCollisionVolumeId": 0,
-      "MotionType": 3,
-      "QualityType": 0,
-      "CollisionLayer": 1,
+      "MotionType": "RigidBodyMotionType_Dynamic",
+      "QualityType": "RigidBodyQualityType_Invalid",
+      "CollisionLayer": "RigidBodyCollisionLayer_VehicleLayer",
       "FloatPhysics": null,
       "Constraints": []
     },
@@ -5391,7 +5391,7 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 2
+          "LockType": "LockOnHeat"
         }
       ],
       "LockTime": 3.0,
@@ -5451,7 +5451,7 @@
         "PartitionGuid": "9c7a9df0-b6fb-43b4-8327-5ad072e158a0",
         "InstanceGuid": "f4efff82-e793-442f-8434-f4e8d35e99c0"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "c3531b58-33ac-4f1e-8184-19e3686bbdb0": {
@@ -5459,12 +5459,12 @@
       "RadarRange": 1500.0,
       "RadarSensitivity": -1.0,
       "HeatSensitivity": 1.0,
-      "MissileIcon": 43,
-      "CenterIcon": 60,
-      "FriendlyIcon": 113,
-      "EnemyIcon": 117,
-      "LaserPaintedIcon": 42,
-      "NorthIcon": 27,
+      "MissileIcon": "UIHudIcon_NonSelectableSpawnPoint",
+      "CenterIcon": "UIHudIcon_Jet",
+      "FriendlyIcon": "UIHudIcon_SnapOvalArrow",
+      "EnemyIcon": "UIHudIcon_SpottedPosition",
+      "LaserPaintedIcon": "UIHudIcon_SelectedSpawnPoint",
+      "NorthIcon": "UIHudIcon_North",
       "SubScreen": {
         "ScreenPosition": {
           "x": 0.924,
@@ -5481,9 +5481,9 @@
         "RenderTargetIndex": 0,
         "UseRenderTarget": false
       },
-      "WestIcon": 27,
-      "SouthIcon": 27,
-      "EastIcon": 27,
+      "WestIcon": "UIHudIcon_North",
+      "SouthIcon": "UIHudIcon_North",
+      "EastIcon": "UIHudIcon_North",
       "TrackLaserPaintedObjects": true,
       "TrackOnlyUsedVehicles": true,
       "UseCameraComponentTransform": false
@@ -5529,7 +5529,7 @@
       "IsNetworkable": true,
       "IsWindow": false,
       "AnimatePhysics": false,
-      "RotationAxis": 1,
+      "RotationAxis": "RAUp",
       "RotationScale": 1.0
     },
     "c635ceef-badb-425b-aa5d-9c5292751b8a": {
@@ -5643,7 +5643,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -5666,8 +5666,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -5903,12 +5903,12 @@
       "Stabilizer": null,
       "Stabilizers": [
         {
-          "Property": 0,
+          "Property": "SPPitchAngle",
           "Strength": 0.0,
           "Advanced": false
         },
         {
-          "Property": 2,
+          "Property": "SPRollAngle",
           "Strength": 0.0,
           "Advanced": false
         }
@@ -5920,12 +5920,12 @@
             "y": 0.0,
             "z": 500000.0
           },
-          "Condition": 2,
-          "TypeOfForce": 1,
-          "Space": 0
+          "Condition": "FCCriticalDamaged",
+          "TypeOfForce": "FTTorque",
+          "Space": "STBody"
         }
       ],
-      "VehicleModeAtReset": 0,
+      "VehicleModeAtReset": "VmIdle",
       "BodyMass": 10000.0,
       "GravityModifier": 1.0,
       "YawMin": -1.0,
@@ -6062,7 +6062,7 @@
         "InstanceGuid": "52ef37af-dfd5-4648-8e33-340c0a50bd90"
       },
       "SecondaryLockingController": null,
-      "WarnLock": 2,
+      "WarnLock": "wtWarnVehicle",
       "IsHoming": true,
       "IsGuidedWhenZoomed": false,
       "FireOnlyWhenLockedOn": false,
@@ -6109,7 +6109,7 @@
       "IsNetworkable": true,
       "IsWindow": false,
       "AnimatePhysics": false,
-      "RotationAxis": 0,
+      "RotationAxis": "RALeft",
       "RotationScale": 1.0
     },
     "e4126473-de15-4a18-9ea6-61ed9aba3b05": {
@@ -6280,7 +6280,7 @@
         "PartitionGuid": "9c7a9df0-b6fb-43b4-8327-5ad072e158a0",
         "InstanceGuid": "8e627ffc-b31f-4c63-ba18-67c105a3ae6c"
       },
-      "Classification": 0,
+      "Classification": "WCNone",
       "ExplosionDamageMultiplier": 1.0,
       "ReloadTimeMultiplier": 1.0,
       "DamageMultiplier": 1.0,
@@ -6420,7 +6420,7 @@
       "IsNetworkable": true,
       "IsWindow": false,
       "AnimatePhysics": false,
-      "RotationAxis": 0,
+      "RotationAxis": "RALeft",
       "RotationScale": -1.0
     },
     "ed91ef8f-413f-44f4-9826-8756ca647303": {
@@ -6626,7 +6626,7 @@
         "PartitionGuid": "9c7a9df0-b6fb-43b4-8327-5ad072e158a0",
         "InstanceGuid": "630edd84-51e7-44e0-bff3-92f54c3ffd4c"
       },
-      "PhysicsType": 0,
+      "PhysicsType": "wptNormal",
       "EffectClampVelocity": 0.0
     },
     "f0ac9038-27e8-4814-9058-b7a416a0417e": {
@@ -7038,7 +7038,7 @@
       "IsNetworkable": true,
       "IsWindow": false,
       "AnimatePhysics": false,
-      "RotationAxis": 0,
+      "RotationAxis": "RALeft",
       "RotationScale": -1.0
     }
   }

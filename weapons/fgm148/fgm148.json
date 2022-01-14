@@ -19,7 +19,7 @@
       "MinRange": 0.0,
       "MaxRange": 0.0,
       "OptimalRangePercentage": 0.0,
-      "ReloadBehavior": 0,
+      "ReloadBehavior": "RbInCover",
       "MinExtraReloadTime": 0.0,
       "MaxExtraReloadTime": 0.0,
       "MinBurstCoolDownTime": 1.0,
@@ -42,8 +42,8 @@
       "OuterInaccurateDistance": 10.0,
       "AdditionalMinimumAccuracyAtMinRange": 0.0,
       "GravityModifier": 1.0,
-      "SweepType": 0,
-      "AimOrigin": 0,
+      "SweepType": "SstTargetLost",
+      "AimOrigin": "AoDefault",
       "UseZoom": false,
       "AllowedAgainstImmortals": true,
       "AimWhileReloading": true,
@@ -75,11 +75,11 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 4
+          "LockType": "LockNever"
         },
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 1
+          "LockType": "LockOnRadar"
         }
       ],
       "LockTime": 2.25,
@@ -146,11 +146,11 @@
       "ZoomLevelLock": [
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 4
+          "LockType": "LockNever"
         },
         {
           "OutlineTaggedDistance": 0.0,
-          "LockType": 3
+          "LockType": "LockOnLaserPainted"
         }
       ],
       "LockTime": 1.5,
@@ -257,8 +257,8 @@
               "InstanceGuid": "40ac30ea-edc3-43b6-a5e0-6231f67cf04e"
             }
           },
-          "AnimatedFireType": 1,
-          "AnimatedAimingType": 0,
+          "AnimatedFireType": "AnimatedFireSingle",
+          "AnimatedAimingType": "AnimatedAimingTwoHanded",
           "Mesh3pTransforms": [
             {
               "right": {
@@ -851,7 +851,7 @@
           "AlwaysAimHead": true
         }
       ],
-      "WeaponClass": 23,
+      "WeaponClass": "wcAt",
       "AIData": {
         "PartitionGuid": "f4c6bd34-0d15-11e0-99fe-ea6897c76a7e",
         "InstanceGuid": "21f32a31-676c-5853-b2e1-fc505d6a304e"
@@ -921,7 +921,7 @@
           "z": 75.0
         }
       },
-      "AnimBaseSet": 3,
+      "AnimBaseSet": "wabsAT",
       "AnimationData": {
         "PartitionGuid": "8cbe6e16-ca0c-894b-f9a7-97af968827c5",
         "InstanceGuid": "8cbe6e16-ca0c-894b-f9a7-97af968827c5"
@@ -933,7 +933,7 @@
         "PartitionGuid": "f4c6bd34-0d15-11e0-99fe-ea6897c76a7e",
         "InstanceGuid": "5841f28b-0488-478c-a768-c223cbc16b44"
       },
-      "QuickThrowType": 0,
+      "QuickThrowType": "QttHand",
       "Customization": null,
       "WeaponFloatParam": 1.0,
       "Sockets": [
@@ -942,7 +942,7 @@
           "InstanceGuid": "e1e477e3-6450-4e65-b7ec-8bc526f615e3"
         }
       ],
-      "SwitchWeaponStateInputAction": 15,
+      "SwitchWeaponStateInputAction": "EIAReload",
       "SoldierWeaponBlueprint": {
         "PartitionGuid": "f4c6bd34-0d15-11e0-99fe-ea6897c76a7e",
         "InstanceGuid": "cdcc99b6-5ccd-9e6c-277c-70c570aabb52"
@@ -1161,9 +1161,9 @@
           "MinRecoilFov": 0.0,
           "RecoilFollowsDispersion": true
         },
-        "FireInputAction": 7,
-        "ReloadInputAction": 15,
-        "CycleFireModeInputAction": 34,
+        "FireInputAction": "EIAFire",
+        "ReloadInputAction": "EIAReload",
+        "CycleFireModeInputAction": "EIACycleFireMode",
         "TriggerPullWeight": 0.4,
         "RateOfFire": 60.0,
         "RateOfFireForBurst": 550.0,
@@ -1174,10 +1174,10 @@
         "PreFireDelay": 0.0,
         "ReloadTime": 3.6,
         "ReloadTimeBulletsLeft": -1.0,
-        "FireLogicType": 0,
-        "ReloadLogic": 0,
+        "FireLogicType": "fltSingleFire",
+        "ReloadLogic": "rlWeaponSwitchCancelsUnfinishedReload",
         "AutomaticDelay": 0.0,
-        "ReloadType": 1,
+        "ReloadType": "rtMagazine",
         "HoldOffReloadUntilZoomRelease": true,
         "ForceReloadActionOnFireTrigger": true,
         "HoldOffReloadUntilFireRelease": true,
@@ -1304,8 +1304,8 @@
           "InstanceGuid": "38e60c0c-d896-4cbd-b73f-a2d618aa5042"
         }
       ],
-      "GearSlot": 13,
-      "SocketType": 0,
+      "GearSlot": "GearSlot_NotEquipped",
+      "SocketType": "SocketType_Undefined",
       "UsesDefaultObject": false,
       "Excluded": false,
       "DefaultEnableSocketEntities": false,
@@ -1325,7 +1325,7 @@
         "PartitionGuid": "f4c6bd34-0d15-11e0-99fe-ea6897c76a7e",
         "InstanceGuid": "31745efe-125f-481c-940d-d9f76eb41116"
       },
-      "WarnLock": 2,
+      "WarnLock": "wtWarnVehicle",
       "IsHoming": true,
       "IsGuidedWhenZoomed": false,
       "FireOnlyWhenLockedOn": true,

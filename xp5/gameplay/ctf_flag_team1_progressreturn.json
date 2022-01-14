@@ -9,7 +9,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.1,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -57,10 +57,10 @@
       "ShowRadius": 0.0,
       "HideRadius": 2.0,
       "BlinkTime": 5.0,
-      "MarkerType": 6,
-      "VisibleForTeam": 1,
-      "OwnerTeam": 2,
-      "HudIcon": 18,
+      "MarkerType": "MMTFlag",
+      "VisibleForTeam": "Team1",
+      "OwnerTeam": "Team2",
+      "HudIcon": "UIHudIcon_ObjectiveAttack",
       "VerticalOffset": 1.0,
       "FocusPointRadius": 80.0,
       "InstantFlagReturnRadius": 0.0,
@@ -127,15 +127,15 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "2bb7b89d-8420-4a8d-9901-22b26f7b79cf": {
       "$type": "TransformPartPropertyTrackData",
       "Id": 1041227108,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "XP5/Gameplay/AnimTrackData/6271CBCB-BDA9-4591-9972-F146C324CE51_FlagOffset",
       "KeyCount": 2,
@@ -169,7 +169,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "2d47dc6f-dff7-49d1-990a-a3153132b6d8": {
       "$type": "GameInteractionEntityData",
@@ -207,13 +207,13 @@
       "MaxUses": 0,
       "AllowInteractionViaRemoteEntry": true,
       "TestIfOccluded": false,
-      "Blink": 0,
+      "Blink": "BTHold",
       "CapturepointVerticalOffset": 0.0,
       "DelayBetweenUses": 1.0,
-      "TeamId": 2,
-      "InputAction": 128,
+      "TeamId": "Team2",
+      "InputAction": "EIAUndefined",
       "HoldToInteractTime": 0.0,
-      "InteractionEntityType": 3,
+      "InteractionEntityType": "IET_CTFFlag",
       "InteractionSid": "",
       "InteractingSid": "",
       "FriendlyTextSid": "",
@@ -266,10 +266,10 @@
       "ShowRadius": 0.0,
       "HideRadius": 2.0,
       "BlinkTime": 5.0,
-      "MarkerType": 6,
-      "VisibleForTeam": 2,
-      "OwnerTeam": 2,
-      "HudIcon": 16,
+      "MarkerType": "MMTFlag",
+      "VisibleForTeam": "Team2",
+      "OwnerTeam": "Team2",
+      "HudIcon": "UIHudIcon_ObjectiveDefend",
       "VerticalOffset": 1.0,
       "FocusPointRadius": 80.0,
       "InstantFlagReturnRadius": 20.0,
@@ -322,9 +322,9 @@
           "InstanceGuid": "c29123e9-5e48-4e12-9667-dd264d0302c5"
         }
       ],
-      "Realm": 1,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Server",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": true,
@@ -336,16 +336,16 @@
       "IndexInBlueprint": 8,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "4ad264db-be4c-405b-9119-32a8f59a9493": {
       "$type": "TransformPartPropertyTrackData",
       "Id": -1890714619,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -394,7 +394,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.2,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -426,7 +426,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "5d80109d-ac8d-4f8d-bb60-96953ed3a93d": {
       "$type": "ReferenceObjectData",
@@ -460,7 +460,7 @@
         "InstanceGuid": "56777e8c-9943-451f-a423-7ef21faab97e"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -835,7 +835,7 @@
           "TargetEvent": {
             "Id": 1723395486
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -852,7 +852,7 @@
           "TargetEvent": {
             "Id": 675785748
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -869,7 +869,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -886,7 +886,7 @@
           "TargetEvent": {
             "Id": 1929026011
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -903,7 +903,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -920,7 +920,7 @@
           "TargetEvent": {
             "Id": -117303631
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -937,7 +937,7 @@
           "TargetEvent": {
             "Id": 2089008817
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -954,7 +954,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -971,7 +971,7 @@
           "TargetEvent": {
             "Id": 229946160
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -988,7 +988,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1005,7 +1005,7 @@
           "TargetEvent": {
             "Id": 958670827
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1022,7 +1022,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1039,7 +1039,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1056,7 +1056,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1073,7 +1073,7 @@
           "TargetEvent": {
             "Id": -1952177180
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         },
         {
           "Source": {
@@ -1090,7 +1090,7 @@
           "TargetEvent": {
             "Id": -686199110
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1107,7 +1107,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1124,7 +1124,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1141,7 +1141,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1158,7 +1158,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1175,7 +1175,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1192,7 +1192,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1209,7 +1209,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1226,7 +1226,7 @@
           "TargetEvent": {
             "Id": -1541066415
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1243,7 +1243,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1260,7 +1260,7 @@
           "TargetEvent": {
             "Id": 2015936152
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1277,7 +1277,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1294,7 +1294,7 @@
           "TargetEvent": {
             "Id": -686199110
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1311,7 +1311,7 @@
           "TargetEvent": {
             "Id": -686199110
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1328,7 +1328,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1345,7 +1345,7 @@
           "TargetEvent": {
             "Id": -686199110
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1362,7 +1362,7 @@
           "TargetEvent": {
             "Id": -686199110
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1379,7 +1379,7 @@
           "TargetEvent": {
             "Id": 987334837
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1396,7 +1396,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1413,7 +1413,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1430,7 +1430,7 @@
           "TargetEvent": {
             "Id": 108611394
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1447,7 +1447,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1464,7 +1464,7 @@
           "TargetEvent": {
             "Id": 5862146
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1481,7 +1481,7 @@
           "TargetEvent": {
             "Id": 212633683
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1498,7 +1498,7 @@
           "TargetEvent": {
             "Id": 668205626
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1515,7 +1515,7 @@
           "TargetEvent": {
             "Id": -1724871616
           },
-          "TargetType": 3
+          "TargetType": "EventConnectionTargetType_Server"
         },
         {
           "Source": {
@@ -1532,7 +1532,7 @@
           "TargetEvent": {
             "Id": -117303631
           },
-          "TargetType": 5
+          "TargetType": "EventConnectionTargetType_NetworkedClientAndServer"
         }
       ],
       "Descriptor": {
@@ -1697,9 +1697,9 @@
           "InstanceGuid": "b75136d2-4cb8-4370-8716-08024a679b54"
         }
       ],
-      "Realm": 1,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Server",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": true,
       "Looping": false,
@@ -1711,16 +1711,16 @@
       "IndexInBlueprint": 5,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "RunOnce": false
     },
     "7cf4dd58-ef62-4a0e-b505-f9cbe04e3ad6": {
       "$type": "TransformPartPropertyTrackData",
       "Id": -1890714619,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "XP5/Gameplay/AnimTrackData/410DE00D-DF8D-4171-A0BF-D86E64FC9F58_KeepAliveTransform",
       "KeyCount": 3,
@@ -1732,7 +1732,7 @@
       "IndexInBlueprint": 12,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "DefaultValue": true
     },
     "7f4579b8-9bf0-4771-ba58-f9302d0224af": {
@@ -1762,7 +1762,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "83aec5c5-0b9d-42a2-b463-736e138000d6": {
       "$type": "TransformSelectorEntityData",
@@ -1813,7 +1813,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Selection": false
     },
     "926aed2c-189f-4ac7-9aa0-969503734f42": {
@@ -1865,7 +1865,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Selection": false
     },
     "9b2bc87e-7492-4ee7-9399-8424b7f9942c": {
@@ -1911,13 +1911,13 @@
       "MaxUses": 0,
       "AllowInteractionViaRemoteEntry": true,
       "TestIfOccluded": false,
-      "Blink": 0,
+      "Blink": "BTHold",
       "CapturepointVerticalOffset": 0.0,
       "DelayBetweenUses": 1.0,
-      "TeamId": 1,
-      "InputAction": 128,
+      "TeamId": "Team1",
+      "InputAction": "EIAUndefined",
       "HoldToInteractTime": 0.0,
-      "InteractionEntityType": 3,
+      "InteractionEntityType": "IET_CTFFlag",
       "InteractionSid": "",
       "InteractingSid": "",
       "FriendlyTextSid": "",
@@ -1931,9 +1931,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1041227108,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -1946,7 +1946,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.0,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -1955,9 +1955,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1041227108,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -1968,9 +1968,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1890714619,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -1982,16 +1982,16 @@
       "IndexInBlueprint": 6,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     },
     "c88c4520-4ce1-4351-b476-13f495423419": {
       "$type": "TransformPartPropertyTrackData",
       "Id": 1041227108,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 2,
       "ResourceName": "XP5/Gameplay/AnimTrackData/6271CBCB-BDA9-4591-9972-F146C324CE51_FlagOffset",
       "KeyCount": 2,
@@ -2025,7 +2025,7 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "d792d46a-6047-4f9a-9d01-9b627f2e3e70": {
       "$type": "InterfaceDescriptorData",
@@ -2034,25 +2034,25 @@
           "Value": "",
           "ValueRef": null,
           "Id": 1015636629,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": -230819351,
-          "AccessType": 1
+          "AccessType": "FieldAccessType_Target"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": -1224218045,
-          "AccessType": 0
+          "AccessType": "FieldAccessType_Source"
         },
         {
           "Value": "",
           "ValueRef": null,
           "Id": 1750810138,
-          "AccessType": 0
+          "AccessType": "FieldAccessType_Source"
         }
       ],
       "InputEvents": [
@@ -2091,9 +2091,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1041227108,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -2104,9 +2104,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1890714619,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -2118,16 +2118,16 @@
       "IndexInBlueprint": 18,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "DefaultValue": true
     },
     "e7ca3b67-bca9-442f-af63-7083976df6b1": {
       "$type": "TransformPartPropertyTrackData",
       "Id": 1041227108,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -2183,7 +2183,7 @@
           "z": 0.0
         }
       },
-      "Realm": 1
+      "Realm": "Realm_Server"
     },
     "edb14fbd-8ec9-463c-95e5-ef7980f5e509": {
       "$type": "SyncedTransformEntityData",
@@ -2218,9 +2218,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1890714619,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -2233,7 +2233,7 @@
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
       "Delay": 0.1,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "AutoStart": false,
       "RunOnce": false,
       "RemoveDuplicateEvents": true
@@ -2242,9 +2242,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": -1890714619,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -2256,7 +2256,7 @@
       "IndexInBlueprint": 7,
       "IsEventConnectionTarget": 1,
       "IsPropertyConnectionTarget": 3,
-      "Realm": 1,
+      "Realm": "Realm_Server",
       "Default": true
     }
   }

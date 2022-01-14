@@ -7,9 +7,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1588506620,
       "Times": [],
-      "TransformPart": 3,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "Props/Vehicles/CivilianCar_02/AnimTrackData/DF85388E-CA81-4E0C-B0CA-5E22A7081750_WheelSpinning",
       "KeyCount": 2,
@@ -20,9 +20,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1588506620,
       "Times": [],
-      "TransformPart": 4,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -33,9 +33,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1588506620,
       "Times": [],
-      "TransformPart": 2,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -79,9 +79,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1588506620,
       "Times": [],
-      "TransformPart": 0,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationX",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -142,7 +142,7 @@
           "z": 0.0
         }
       },
-      "Include": 2,
+      "Include": "ATPlayers",
       "InsideAreaEventRepeatTime": 0.0,
       "Radius": 0.0,
       "UseCharacterEntity": false,
@@ -247,7 +247,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         },
         {
           "Source": {
@@ -264,7 +264,7 @@
           "TargetEvent": {
             "Id": 230748069
           },
-          "TargetType": 4
+          "TargetType": "EventConnectionTargetType_NetworkedClient"
         }
       ],
       "Descriptor": null,
@@ -326,9 +326,9 @@
           "z": 0.0
         }
       },
-      "BoneToPlace": 5,
-      "Realm": 0,
-      "ModelAnimationTransformType": 1,
+      "BoneToPlace": "GameplayBones_ConnectBone",
+      "Realm": "Realm_Client",
+      "ModelAnimationTransformType": "ModelAnimationTransformType_Model",
       "InstanceSeed": 0,
       "DefaultAnimation": "CivilianCar_02",
       "AnimationIndex": 0,
@@ -338,7 +338,7 @@
       },
       "ExternalTime": -1.0,
       "RootMeshBoneName": "Base",
-      "JointWorldTransformUpdateOrder": 1,
+      "JointWorldTransformUpdateOrder": "ModelAnimationUpdateOrder_PreInput",
       "ConnectBoneName": "AITrajectory",
       "JointOutputPropertyIds": [
         -1031074154,
@@ -360,9 +360,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1588506620,
       "Times": [],
-      "TransformPart": 1,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_TranslationY",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -373,9 +373,9 @@
       "$type": "TransformPartPropertyTrackData",
       "Id": 1588506620,
       "Times": [],
-      "TransformPart": 5,
-      "PreInfinity": 0,
-      "PostInfinity": 0,
+      "TransformPart": "TransformPart_RotationZ",
+      "PreInfinity": "CurveInfinityType_Constant",
+      "PostInfinity": "CurveInfinityType_Constant",
       "KeyStartIndex": 0,
       "ResourceName": "",
       "KeyCount": 0,
@@ -414,7 +414,7 @@
         "InstanceGuid": "aa303a6d-0764-11de-b482-814e907a5b07"
       },
       "ObjectVariation": null,
-      "StreamRealm": 0,
+      "StreamRealm": "StreamRealm_None",
       "CastSunShadowEnable": true,
       "Excluded": false
     },
@@ -445,7 +445,7 @@
           "z": 0.0
         }
       },
-      "Realm": 2
+      "Realm": "Realm_ClientAndServer"
     },
     "df85388e-ca81-4e0c-b0ca-5e22a7081750": {
       "$type": "SequenceEntityData",
@@ -482,9 +482,9 @@
           "InstanceGuid": "af7b4cea-4ad7-4d6b-a9bd-4f68adf41c4e"
         }
       ],
-      "Realm": 0,
-      "ServerUpdatePass": 0,
-      "ClientUpdatePass": 2,
+      "Realm": "Realm_Client",
+      "ServerUpdatePass": "UpdatePass_PreSim",
+      "ClientUpdatePass": "UpdatePass_PostFrame",
       "CustomSequenceTracks": [],
       "AutoPlayFirstFrame": false,
       "Looping": true,
