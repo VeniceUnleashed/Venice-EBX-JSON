@@ -1,0 +1,682 @@
+{
+  "Name": "gameplay/logic/outofbounds_countdown",
+  "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+  "PrimaryInstanceGuid": "d716f9be-b4d1-5bf8-ab90-d5e5b8741623",
+  "Instances": {
+    "8e2e14da-5799-4e4f-ae8c-c6ddc60b1fe1": {
+      "$type": "BoolEntityData",
+      "Realm": 1,
+      "DefaultValue": false,
+      "IndexInBlueprint": 1,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3
+    },
+    "3cc3e787-f90b-4e2c-a17b-cb915ab01fee": {
+      "$type": "BoolToEventEntityData",
+      "Realm": 1,
+      "Value": false,
+      "InitalEvent": false,
+      "IndexInBlueprint": 0,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 1
+    },
+    "2d6e32c8-c664-4f64-a32b-07247739d83a": {
+      "$type": "CharacterStateTriggerEntityData",
+      "ActiveWeaponSlot": 0,
+      "Pitch": 0.0,
+      "CharacterPose": 1,
+      "AmmoToSet": 75,
+      "PoseToCheck": 1,
+      "Weapon": null,
+      "HealthToSet": 100,
+      "HealthToCheck": 100,
+      "SeatIndex": 0,
+      "ExcludeConnectedVehicles": false,
+      "ContinueToCheckIfHoldingWrongWeapon": false,
+      "StayInVehicleOnMove": false,
+      "CheckHealthGreaterOrEqual": true,
+      "CheckAllWeapons": false,
+      "ShouldCheckSeatIndex": false,
+      "UseExitPointWhenLeavingVehicle": true,
+      "DisablePhysicsWhenLeavingVehicle": false,
+      "UsePitch": false,
+      "Delay": 0.0,
+      "RunOnce": false,
+      "Components": [],
+      "Enabled": true,
+      "RuntimeComponentCount": 0,
+      "Transform": {
+        "right": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "up": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "forward": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        },
+        "trans": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "IndexInBlueprint": 8,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3
+    },
+    "ec475ecb-8988-4081-bd02-c0c7a60bf638": {
+      "$type": "CompareBoolEntityData",
+      "Realm": 1,
+      "Bool": false,
+      "TriggerOnPropertyChange": false,
+      "IndexInBlueprint": 10,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 1
+    },
+    "482f84be-6562-4012-8feb-16248296dbcd": {
+      "$type": "DelayEntityData",
+      "Delay": 5.0,
+      "Realm": 1,
+      "AutoStart": false,
+      "RunOnce": false,
+      "RemoveDuplicateEvents": true,
+      "IndexInBlueprint": 4,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 2
+    },
+    "402dfc6a-d8d0-4bd6-a5ce-36e7d724fc09": {
+      "$type": "EventGateEntityData",
+      "Realm": 1,
+      "Default": true,
+      "IndexInBlueprint": 3,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3
+    },
+    "e90433a1-cb7b-436e-ba6e-2091d70099c9": {
+      "$type": "InterfaceDescriptorData",
+      "InputEvents": [
+        {
+          "Id": 230748069
+        },
+        {
+          "Id": 2089401213
+        }
+      ],
+      "OutputEvents": [
+        {
+          "Id": -910201930
+        },
+        {
+          "Id": -1258331102
+        },
+        {
+          "Id": 1424746764
+        }
+      ],
+      "InputLinks": [],
+      "OutputLinks": [],
+      "Fields": [
+        {
+          "Value": "Float32 5",
+          "ValueRef": null,
+          "Id": 208768368,
+          "AccessType": 1
+        }
+      ]
+    },
+    "d716f9be-b4d1-5bf8-ab90-d5e5b8741623": {
+      "$type": "LogicPrefabBlueprint",
+      "Objects": [
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "8e2e14da-5799-4e4f-ae8c-c6ddc60b1fe1"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "ce32db12-d8e8-461e-842f-8b01ff41435b"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "402dfc6a-d8d0-4bd6-a5ce-36e7d724fc09"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "482f84be-6562-4012-8feb-16248296dbcd"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "6a399bf9-be5d-410a-896d-0dfc3bb1f4c2"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "ddbfb6bd-7902-4866-abfb-7fe252f9a581"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "796efa97-9b89-401a-aba1-ae96da5eaafd"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "2d6e32c8-c664-4f64-a32b-07247739d83a"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "be3dc232-e9d9-47f8-bb39-1652c754903b"
+        },
+        {
+          "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+          "InstanceGuid": "ec475ecb-8988-4081-bd02-c0c7a60bf638"
+        }
+      ],
+      "EventConnections": [
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "482f84be-6562-4012-8feb-16248296dbcd"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "402dfc6a-d8d0-4bd6-a5ce-36e7d724fc09"
+          },
+          "SourceEvent": {
+            "Id": 193453899
+          },
+          "TargetEvent": {
+            "Id": 5862146
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "402dfc6a-d8d0-4bd6-a5ce-36e7d724fc09"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "796efa97-9b89-401a-aba1-ae96da5eaafd"
+          },
+          "SourceEvent": {
+            "Id": 193453899
+          },
+          "TargetEvent": {
+            "Id": 1037321618
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "402dfc6a-d8d0-4bd6-a5ce-36e7d724fc09"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "SourceEvent": {
+            "Id": 193453899
+          },
+          "TargetEvent": {
+            "Id": -910201930
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "6a399bf9-be5d-410a-896d-0dfc3bb1f4c2"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "SourceEvent": {
+            "Id": 1424746764
+          },
+          "TargetEvent": {
+            "Id": 1424746764
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "6a399bf9-be5d-410a-896d-0dfc3bb1f4c2"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "SourceEvent": {
+            "Id": -1258331102
+          },
+          "TargetEvent": {
+            "Id": -1258331102
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ce32db12-d8e8-461e-842f-8b01ff41435b"
+          },
+          "SourceEvent": {
+            "Id": -81881639
+          },
+          "TargetEvent": {
+            "Id": 1037321618
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "402dfc6a-d8d0-4bd6-a5ce-36e7d724fc09"
+          },
+          "SourceEvent": {
+            "Id": -81881639
+          },
+          "TargetEvent": {
+            "Id": 212633683
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "402dfc6a-d8d0-4bd6-a5ce-36e7d724fc09"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 2089008817
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "482f84be-6562-4012-8feb-16248296dbcd"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 5862146
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "6a399bf9-be5d-410a-896d-0dfc3bb1f4c2"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 230748069
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "6a399bf9-be5d-410a-896d-0dfc3bb1f4c2"
+          },
+          "SourceEvent": {
+            "Id": -81881639
+          },
+          "TargetEvent": {
+            "Id": 2089401213
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ddbfb6bd-7902-4866-abfb-7fe252f9a581"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 1037321618
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "8e2e14da-5799-4e4f-ae8c-c6ddc60b1fe1"
+          },
+          "SourceEvent": {
+            "Id": 230748069
+          },
+          "TargetEvent": {
+            "Id": -1541066415
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "8e2e14da-5799-4e4f-ae8c-c6ddc60b1fe1"
+          },
+          "SourceEvent": {
+            "Id": 2089401213
+          },
+          "TargetEvent": {
+            "Id": 668205626
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "2d6e32c8-c664-4f64-a32b-07247739d83a"
+          },
+          "SourceEvent": {
+            "Id": 230748069
+          },
+          "TargetEvent": {
+            "Id": 1688189443
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "2d6e32c8-c664-4f64-a32b-07247739d83a"
+          },
+          "SourceEvent": {
+            "Id": 2089401213
+          },
+          "TargetEvent": {
+            "Id": 375509238
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ec475ecb-8988-4081-bd02-c0c7a60bf638"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "482f84be-6562-4012-8feb-16248296dbcd"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 1303794898
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "be3dc232-e9d9-47f8-bb39-1652c754903b"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ec475ecb-8988-4081-bd02-c0c7a60bf638"
+          },
+          "SourceEvent": {
+            "Id": 1310442701
+          },
+          "TargetEvent": {
+            "Id": 5862146
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ec475ecb-8988-4081-bd02-c0c7a60bf638"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "6a399bf9-be5d-410a-896d-0dfc3bb1f4c2"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 230748069
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ec475ecb-8988-4081-bd02-c0c7a60bf638"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ddbfb6bd-7902-4866-abfb-7fe252f9a581"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 1037321618
+          },
+          "TargetType": 4
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ec475ecb-8988-4081-bd02-c0c7a60bf638"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "402dfc6a-d8d0-4bd6-a5ce-36e7d724fc09"
+          },
+          "SourceEvent": {
+            "Id": -1433512622
+          },
+          "TargetEvent": {
+            "Id": 2089008817
+          },
+          "TargetType": 3
+        }
+      ],
+      "Descriptor": {
+        "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+        "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+      },
+      "NeedNetworkId": true,
+      "InterfaceHasConnections": true,
+      "AlwaysCreateEntityBusClient": true,
+      "AlwaysCreateEntityBusServer": true,
+      "PropertyConnections": [
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "8e2e14da-5799-4e4f-ae8c-c6ddc60b1fe1"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "3cc3e787-f90b-4e2c-a17b-cb915ab01fee"
+          },
+          "SourceFieldId": 225375086,
+          "TargetFieldId": 225375086
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "482f84be-6562-4012-8feb-16248296dbcd"
+          },
+          "SourceFieldId": 208768368,
+          "TargetFieldId": 208768368
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "e90433a1-cb7b-436e-ba6e-2091d70099c9"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ddbfb6bd-7902-4866-abfb-7fe252f9a581"
+          },
+          "SourceFieldId": 208768368,
+          "TargetFieldId": 1925139498
+        },
+        {
+          "Source": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "8e2e14da-5799-4e4f-ae8c-c6ddc60b1fe1"
+          },
+          "Target": {
+            "PartitionGuid": "146cebda-9d96-11e0-a0ba-b3fe51eed938",
+            "InstanceGuid": "ec475ecb-8988-4081-bd02-c0c7a60bf638"
+          },
+          "SourceFieldId": 225375086,
+          "TargetFieldId": 2088812747
+        }
+      ],
+      "LinkConnections": [],
+      "Name": "Gameplay/Logic/OutOfBounds_Countdown"
+    },
+    "6a399bf9-be5d-410a-896d-0dfc3bb1f4c2": {
+      "$type": "LogicReferenceObjectData",
+      "SubRealm": 0,
+      "BlueprintTransform": {
+        "right": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "up": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "forward": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        },
+        "trans": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "Blueprint": {
+        "PartitionGuid": "9def6807-8df7-11e0-bfb3-d5f5ee0cab42",
+        "InstanceGuid": "4c1ca45d-9b0d-af58-9080-ecd842acb105"
+      },
+      "ObjectVariation": null,
+      "StreamRealm": 0,
+      "CastSunShadowEnable": true,
+      "Excluded": false,
+      "IndexInBlueprint": 5,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3
+    },
+    "ce32db12-d8e8-461e-842f-8b01ff41435b": {
+      "$type": "MessageEntityData",
+      "MessageSid": "ID_H_MES_LOGIC_NOT_USED",
+      "AdditionalMessages": [],
+      "MessageType": 5,
+      "DisplayTime": 0.0,
+      "EntryInputAction": 128,
+      "Enabled": true,
+      "IndexInBlueprint": 2,
+      "IsEventConnectionTarget": 0,
+      "IsPropertyConnectionTarget": 3
+    },
+    "ddbfb6bd-7902-4866-abfb-7fe252f9a581": {
+      "$type": "MessageEntityData",
+      "MessageSid": "ID_H_MES_LOGIC_NOT_USED",
+      "AdditionalMessages": [],
+      "MessageType": 5,
+      "DisplayTime": 5.0,
+      "EntryInputAction": 128,
+      "Enabled": true,
+      "IndexInBlueprint": 6,
+      "IsEventConnectionTarget": 0,
+      "IsPropertyConnectionTarget": 2
+    },
+    "796efa97-9b89-401a-aba1-ae96da5eaafd": {
+      "$type": "MessageEntityData",
+      "MessageSid": "ID_H_MES_LOGIC_STAY_IN_THE_AREA_OF_OPERATION",
+      "AdditionalMessages": [],
+      "MessageType": 4,
+      "DisplayTime": 5.0,
+      "EntryInputAction": 128,
+      "Enabled": true,
+      "IndexInBlueprint": 7,
+      "IsEventConnectionTarget": 0,
+      "IsPropertyConnectionTarget": 3
+    },
+    "be3dc232-e9d9-47f8-bb39-1652c754903b": {
+      "$type": "SaveGameLoadedEntityData",
+      "IndexInBlueprint": 9,
+      "IsEventConnectionTarget": 3,
+      "IsPropertyConnectionTarget": 3
+    }
+  }
+}

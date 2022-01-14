@@ -1,0 +1,292 @@
+{
+  "Name": "gameplay/logic/playerfirecheck",
+  "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+  "PrimaryInstanceGuid": "e234940a-bba5-55a5-090d-2bf1e339dd3f",
+  "Instances": {
+    "b7290470-db19-48eb-a0b0-cc3cdeabf9a5": {
+      "$type": "CharacterStateTriggerEntityData",
+      "ActiveWeaponSlot": 0,
+      "Pitch": 0.0,
+      "CharacterPose": 1,
+      "AmmoToSet": 75,
+      "PoseToCheck": 1,
+      "Weapon": {
+        "PartitionGuid": "8ac0c3bc-f09c-11df-87ee-dbdb1600ad3a",
+        "InstanceGuid": "37caa557-26f8-db52-9900-8a7f2c5b448e"
+      },
+      "HealthToSet": 100,
+      "HealthToCheck": 100,
+      "SeatIndex": 0,
+      "ExcludeConnectedVehicles": false,
+      "ContinueToCheckIfHoldingWrongWeapon": false,
+      "StayInVehicleOnMove": false,
+      "CheckHealthGreaterOrEqual": true,
+      "CheckAllWeapons": false,
+      "ShouldCheckSeatIndex": false,
+      "UseExitPointWhenLeavingVehicle": true,
+      "DisablePhysicsWhenLeavingVehicle": false,
+      "UsePitch": false,
+      "Delay": 0.0,
+      "RunOnce": false,
+      "Components": [],
+      "Enabled": true,
+      "RuntimeComponentCount": 0,
+      "Transform": {
+        "right": {
+          "x": 1.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "up": {
+          "x": 0.0,
+          "y": 1.0,
+          "z": 0.0
+        },
+        "forward": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 1.0
+        },
+        "trans": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "IndexInBlueprint": 0,
+      "IsEventConnectionTarget": 1,
+      "IsPropertyConnectionTarget": 3
+    },
+    "606de694-2ea0-4d45-a2f7-0d3a0ff87e86": {
+      "$type": "InterfaceDescriptorData",
+      "InputEvents": [
+        {
+          "Id": -1328321720
+        },
+        {
+          "Id": 931428496
+        }
+      ],
+      "OutputEvents": [
+        {
+          "Id": -1622059917
+        },
+        {
+          "Id": 502743113
+        }
+      ],
+      "InputLinks": [],
+      "OutputLinks": [
+        {
+          "Id": -910201930
+        }
+      ],
+      "Fields": []
+    },
+    "e234940a-bba5-55a5-090d-2bf1e339dd3f": {
+      "$type": "LogicPrefabBlueprint",
+      "Objects": [
+        {
+          "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+          "InstanceGuid": "b7290470-db19-48eb-a0b0-cc3cdeabf9a5"
+        },
+        {
+          "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+          "InstanceGuid": "74a46398-0cec-4087-b21b-f4004a9fcba5"
+        },
+        {
+          "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+          "InstanceGuid": "feaed1c4-538a-4e41-96fc-59327a51b131"
+        }
+      ],
+      "EventConnections": [
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "74a46398-0cec-4087-b21b-f4004a9fcba5"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "b7290470-db19-48eb-a0b0-cc3cdeabf9a5"
+          },
+          "SourceEvent": {
+            "Id": 1975570652
+          },
+          "TargetEvent": {
+            "Id": -912718115
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "b7290470-db19-48eb-a0b0-cc3cdeabf9a5"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+          },
+          "SourceEvent": {
+            "Id": 231995001
+          },
+          "TargetEvent": {
+            "Id": -1622059917
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "74a46398-0cec-4087-b21b-f4004a9fcba5"
+          },
+          "SourceEvent": {
+            "Id": 931428496
+          },
+          "TargetEvent": {
+            "Id": -117303631
+          },
+          "TargetType": 5
+        },
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "74a46398-0cec-4087-b21b-f4004a9fcba5"
+          },
+          "SourceEvent": {
+            "Id": -1328321720
+          },
+          "TargetEvent": {
+            "Id": -1952177180
+          },
+          "TargetType": 5
+        },
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "b7290470-db19-48eb-a0b0-cc3cdeabf9a5"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+          },
+          "SourceEvent": {
+            "Id": 595121690
+          },
+          "TargetEvent": {
+            "Id": 502743113
+          },
+          "TargetType": 3
+        },
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "feaed1c4-538a-4e41-96fc-59327a51b131"
+          },
+          "SourceEvent": {
+            "Id": -1328321720
+          },
+          "TargetEvent": {
+            "Id": -1952177180
+          },
+          "TargetType": 5
+        },
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "feaed1c4-538a-4e41-96fc-59327a51b131"
+          },
+          "SourceEvent": {
+            "Id": 931428496
+          },
+          "TargetEvent": {
+            "Id": -117303631
+          },
+          "TargetType": 5
+        },
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "feaed1c4-538a-4e41-96fc-59327a51b131"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+          },
+          "SourceEvent": {
+            "Id": 1975570652
+          },
+          "TargetEvent": {
+            "Id": 502743113
+          },
+          "TargetType": 3
+        }
+      ],
+      "Descriptor": {
+        "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+        "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+      },
+      "NeedNetworkId": true,
+      "InterfaceHasConnections": true,
+      "AlwaysCreateEntityBusClient": true,
+      "AlwaysCreateEntityBusServer": true,
+      "PropertyConnections": [],
+      "LinkConnections": [
+        {
+          "Source": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "b7290470-db19-48eb-a0b0-cc3cdeabf9a5"
+          },
+          "Target": {
+            "PartitionGuid": "fdfb8549-4035-11e0-9136-93eb2ca9b3e7",
+            "InstanceGuid": "606de694-2ea0-4d45-a2f7-0d3a0ff87e86"
+          },
+          "SourceFieldId": -202711221,
+          "TargetFieldId": -910201930
+        }
+      ],
+      "Name": "Gameplay/Logic/PlayerFireCheck"
+    },
+    "74a46398-0cec-4087-b21b-f4004a9fcba5": {
+      "$type": "PlayerInputTriggerEntityData",
+      "Realm": 2,
+      "EntryInputActions": 7,
+      "ValueModifier": 1.0,
+      "TrailingValueAtStart": 0.0,
+      "AccumulatedValueAtStart": 0.0,
+      "SendTriggerEvents": true,
+      "EnabledFromStart": false,
+      "IndexInBlueprint": 1,
+      "IsEventConnectionTarget": 2,
+      "IsPropertyConnectionTarget": 3
+    },
+    "feaed1c4-538a-4e41-96fc-59327a51b131": {
+      "$type": "PlayerInputTriggerEntityData",
+      "Realm": 2,
+      "EntryInputActions": 30,
+      "ValueModifier": 1.0,
+      "TrailingValueAtStart": 0.0,
+      "AccumulatedValueAtStart": 0.0,
+      "SendTriggerEvents": true,
+      "EnabledFromStart": false,
+      "IndexInBlueprint": 2,
+      "IsEventConnectionTarget": 2,
+      "IsPropertyConnectionTarget": 3
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "Name": "vehicles/common/weapondata/artillery_laserguidedmissile_locking",
+  "PartitionGuid": "ae1e51df-2add-47ff-a20d-fe6b85874eb3",
+  "PrimaryInstanceGuid": "3f69ea40-510f-4f6b-b102-5b8a5fb71b84",
+  "Instances": {
+    "3f69ea40-510f-4f6b-b102-5b8a5fb71b84": {
+      "$type": "DataContainerAsset",
+      "Data": {
+        "PartitionGuid": "ae1e51df-2add-47ff-a20d-fe6b85874eb3",
+        "InstanceGuid": "84bd8e27-7ad6-4a9c-bc26-75c9fd06782c"
+      },
+      "Name": "Vehicles/common/WeaponData/Artillery_LaserGuidedMissile_Locking"
+    },
+    "bdfa9871-b2c1-47ec-9719-d423c223ceb8": {
+      "$type": "LockingControllerData",
+      "ZoomLevelLock": [
+        {
+          "OutlineTaggedDistance": 0.0,
+          "LockType": 1
+        }
+      ],
+      "LockTime": 2.25,
+      "ReleaseTime": 1.0,
+      "ReleaseOnNewTargetTime": 1.5,
+      "SampleRate": 0.06,
+      "HoldStillThreshold": 10.0,
+      "RayLength": 300.0,
+      "AcceptanceAngle": 7.0,
+      "MinimumLockTime": 0.0,
+      "Sensitivity": 8.0,
+      "AngleConstant": 5.0,
+      "DistanceConstant": 0.1,
+      "LockOnWorldSpacePos": false,
+      "LockOnVisibleTargetsOnly": true,
+      "PositionOnly": false,
+      "LockOnEmptyVehicles": true,
+      "IgnoreHeigthLockDistance": false
+    },
+    "9ef248cf-b9fa-4f5b-9a20-826d78eb3c9d": {
+      "$type": "LockingControllerData",
+      "ZoomLevelLock": [
+        {
+          "OutlineTaggedDistance": 0.0,
+          "LockType": 3
+        }
+      ],
+      "LockTime": 1.25,
+      "ReleaseTime": 1.0,
+      "ReleaseOnNewTargetTime": 1.5,
+      "SampleRate": 0.06,
+      "HoldStillThreshold": 10.0,
+      "RayLength": 400.0,
+      "AcceptanceAngle": 7.0,
+      "MinimumLockTime": 0.0,
+      "Sensitivity": 0.0,
+      "AngleConstant": 5.0,
+      "DistanceConstant": 0.1,
+      "LockOnWorldSpacePos": false,
+      "LockOnVisibleTargetsOnly": false,
+      "PositionOnly": false,
+      "LockOnEmptyVehicles": true,
+      "IgnoreHeigthLockDistance": false
+    },
+    "84bd8e27-7ad6-4a9c-bc26-75c9fd06782c": {
+      "$type": "LockingWeaponData",
+      "LockingController": {
+        "PartitionGuid": "ae1e51df-2add-47ff-a20d-fe6b85874eb3",
+        "InstanceGuid": "9ef248cf-b9fa-4f5b-9a20-826d78eb3c9d"
+      },
+      "SecondaryLockingController": {
+        "PartitionGuid": "ae1e51df-2add-47ff-a20d-fe6b85874eb3",
+        "InstanceGuid": "bdfa9871-b2c1-47ec-9719-d423c223ceb8"
+      },
+      "WarnLock": 2,
+      "IsHoming": true,
+      "IsGuidedWhenZoomed": false,
+      "FireOnlyWhenLockedOn": true,
+      "IsGuided": false,
+      "ShowLaserPaintedVehicles": false,
+      "IsAlwaysActive": false
+    }
+  }
+}

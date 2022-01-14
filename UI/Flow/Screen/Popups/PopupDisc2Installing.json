@@ -1,0 +1,485 @@
+{
+  "Name": "ui/flow/screen/popups/popupdisc2installing",
+  "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+  "PrimaryInstanceGuid": "3d603bb8-ac26-0c24-9444-f7bc673e044a",
+  "Instances": {
+    "5d8b379c-ae35-4757-8f72-ad5e590c4b03": {
+      "$type": "ActionNode",
+      "ActionKey": 1446648469,
+      "Params": [],
+      "ActionAsset": null,
+      "In": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "648c1cb7-a1e5-44d1-b50e-1b14692e9d0b"
+      },
+      "Out": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "667a0f55-3ce2-442f-871f-7455cf6ab5d5"
+      },
+      "DataInputs": [],
+      "AppendIncomingParams": false,
+      "Name": "StartHDInstallation",
+      "ParentGraph": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "3d603bb8-ac26-0c24-9444-f7bc673e044a"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true
+    },
+    "1d8ebe4e-e0f6-47c1-b328-6116ae95e32c": {
+      "$type": "ComparisonLogicNode",
+      "In": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "fd701efd-4973-4431-8264-69b1c731367a"
+      },
+      "Outputs": [
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "f86c116d-3e1e-41a5-869e-63d95f4f8a11"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "45023e3e-2c84-4275-8864-199db790c93b"
+        }
+      ],
+      "DataSourceInfo": {
+        "DataName": "",
+        "DataCategory": null,
+        "DataKey": 0,
+        "UseDirectAccess": false,
+        "UpdateOnInitialize": true
+      },
+      "SkipFractionals": false,
+      "Name": "ComparisonLogicNode",
+      "ParentGraph": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "3d603bb8-ac26-0c24-9444-f7bc673e044a"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true
+    },
+    "dadb8194-c49d-45c8-8cbf-7658992bf2a1": {
+      "$type": "InstanceInputNode",
+      "Out": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "8f3a9cd2-ea66-421c-808e-7f338748af67"
+      },
+      "Name": "BeginInstallation",
+      "ParentGraph": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "3d603bb8-ac26-0c24-9444-f7bc673e044a"
+      },
+      "IsRootNode": true,
+      "ParentIsScreen": true
+    },
+    "ac566b19-80c2-4381-b837-a8a8af4f4786": {
+      "$type": "InstanceOutputNode",
+      "In": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "9765fac8-b711-4309-921d-510a3029ccbb"
+      },
+      "Id": 2134798598,
+      "DestroyGraph": true,
+      "Name": "Success",
+      "ParentGraph": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "3d603bb8-ac26-0c24-9444-f7bc673e044a"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true
+    },
+    "6de843bc-88b5-4e61-bc99-3b842fe3b44f": {
+      "$type": "InstanceOutputNode",
+      "In": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "e7ca7f1c-75e7-449b-afc3-6cf1fc70134a"
+      },
+      "Id": 2088662791,
+      "DestroyGraph": true,
+      "Name": "Fail",
+      "ParentGraph": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "3d603bb8-ac26-0c24-9444-f7bc673e044a"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true
+    },
+    "07866a7d-a7a6-4a33-a0f5-d6223d4b691a": {
+      "$type": "UIDynamicDataBinding",
+      "Bindings": [
+        {
+          "DataName": "Title",
+          "DataCategory": {
+            "PartitionGuid": "913ff22b-db66-11df-be8a-e96a1e486726",
+            "InstanceGuid": "379c636d-a987-7477-11d0-458076f632d4"
+          },
+          "DataKey": -1951480908,
+          "UseDirectAccess": false,
+          "UpdateOnInitialize": true
+        },
+        {
+          "DataName": "Text",
+          "DataCategory": {
+            "PartitionGuid": "8c9b81bf-a95f-11e0-b1f5-e77d7452b075",
+            "InstanceGuid": "2c161716-af2d-6bb4-e726-02b879e497f0"
+          },
+          "DataKey": -1710169312,
+          "UseDirectAccess": false,
+          "UpdateOnInitialize": true
+        }
+      ],
+      "Refresh": true
+    },
+    "65095ef0-c7c2-432e-9de0-43af80003cc0": {
+      "$type": "UIDynamicDataBinding",
+      "Bindings": [
+        {
+          "DataName": "Key",
+          "DataCategory": {
+            "PartitionGuid": "8c9b81bf-a95f-11e0-b1f5-e77d7452b075",
+            "InstanceGuid": "2c161716-af2d-6bb4-e726-02b879e497f0"
+          },
+          "DataKey": 795579506,
+          "UseDirectAccess": false,
+          "UpdateOnInitialize": true
+        }
+      ],
+      "Refresh": true
+    },
+    "c7a02296-c888-4cb9-a49e-f85c5b4a5989": {
+      "$type": "UINodeConnection",
+      "SourceNode": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "dadb8194-c49d-45c8-8cbf-7658992bf2a1"
+      },
+      "TargetNode": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "5d8b379c-ae35-4757-8f72-ad5e590c4b03"
+      },
+      "SourcePort": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "8f3a9cd2-ea66-421c-808e-7f338748af67"
+      },
+      "TargetPort": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "648c1cb7-a1e5-44d1-b50e-1b14692e9d0b"
+      },
+      "NumScreensToPop": 0
+    },
+    "f0da0c07-1ac1-483b-ae68-18b760921297": {
+      "$type": "UINodeConnection",
+      "SourceNode": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "9a542114-71b9-4c29-8867-5dcc5a6246b2"
+      },
+      "TargetNode": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "1d8ebe4e-e0f6-47c1-b328-6116ae95e32c"
+      },
+      "SourcePort": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "100318de-4df8-43e2-b98e-3319f372aa05"
+      },
+      "TargetPort": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "fd701efd-4973-4431-8264-69b1c731367a"
+      },
+      "NumScreensToPop": 0
+    },
+    "2a927a26-ebb8-4504-8c48-af9f352d6944": {
+      "$type": "UINodeConnection",
+      "SourceNode": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "1d8ebe4e-e0f6-47c1-b328-6116ae95e32c"
+      },
+      "TargetNode": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "ac566b19-80c2-4381-b837-a8a8af4f4786"
+      },
+      "SourcePort": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "f86c116d-3e1e-41a5-869e-63d95f4f8a11"
+      },
+      "TargetPort": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "9765fac8-b711-4309-921d-510a3029ccbb"
+      },
+      "NumScreensToPop": 0
+    },
+    "d5cfae25-0de2-44e5-9187-939018773b8f": {
+      "$type": "UINodeConnection",
+      "SourceNode": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "1d8ebe4e-e0f6-47c1-b328-6116ae95e32c"
+      },
+      "TargetNode": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "6de843bc-88b5-4e61-bc99-3b842fe3b44f"
+      },
+      "SourcePort": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "45023e3e-2c84-4275-8864-199db790c93b"
+      },
+      "TargetPort": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "e7ca7f1c-75e7-449b-afc3-6cf1fc70134a"
+      },
+      "NumScreensToPop": 0
+    },
+    "6a11ab6f-aba1-405d-bec1-36041020c907": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "9765fac8-b711-4309-921d-510a3029ccbb": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "e7ca7f1c-75e7-449b-afc3-6cf1fc70134a": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "8f3a9cd2-ea66-421c-808e-7f338748af67": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "648c1cb7-a1e5-44d1-b50e-1b14692e9d0b": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "667a0f55-3ce2-442f-871f-7455cf6ab5d5": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "100318de-4df8-43e2-b98e-3319f372aa05": {
+      "$type": "UINodePort",
+      "Name": "KeyChanged",
+      "InstanceName": "ChangeListener_01",
+      "Query": 9,
+      "AllowManualRemove": false
+    },
+    "5950b521-8d7f-4c24-93dd-8f36dfa9220b": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "a8b529da-fb21-45fb-8667-f17d472258e5": {
+      "$type": "UINodePort",
+      "Name": "True",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "d13fad3e-e0fb-416d-a0b2-b469ee9060c7": {
+      "$type": "UINodePort",
+      "Name": "False",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "31b91741-6ba8-4006-9c85-bd2b6f8c28a9": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "bb160e11-522b-438d-9d25-61f04f031920": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "d424b222-b526-4a4e-9e38-4a025464f764": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "fd701efd-4973-4431-8264-69b1c731367a": {
+      "$type": "UINodePort",
+      "Name": "",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": false
+    },
+    "f86c116d-3e1e-41a5-869e-63d95f4f8a11": {
+      "$type": "UINodePort",
+      "Name": "SUCCESS",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": true
+    },
+    "45023e3e-2c84-4275-8864-199db790c93b": {
+      "$type": "UINodePort",
+      "Name": "FAILED",
+      "InstanceName": "",
+      "Query": 0,
+      "AllowManualRemove": true
+    },
+    "3d603bb8-ac26-0c24-9444-f7bc673e044a": {
+      "$type": "UIScreenAsset",
+      "Nodes": [
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "ac566b19-80c2-4381-b837-a8a8af4f4786"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "6de843bc-88b5-4e61-bc99-3b842fe3b44f"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "d47c8070-2141-4006-a06b-96f254d23519"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "dadb8194-c49d-45c8-8cbf-7658992bf2a1"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "5d8b379c-ae35-4757-8f72-ad5e590c4b03"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "9a542114-71b9-4c29-8867-5dcc5a6246b2"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "1d8ebe4e-e0f6-47c1-b328-6116ae95e32c"
+        }
+      ],
+      "GlobalNode": null,
+      "Connections": [
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "c7a02296-c888-4cb9-a49e-f85c5b4a5989"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "f0da0c07-1ac1-483b-ae68-18b760921297"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "2a927a26-ebb8-4504-8c48-af9f352d6944"
+        },
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "d5cfae25-0de2-44e5-9187-939018773b8f"
+        }
+      ],
+      "AudioEventMappings": {
+        "PartitionGuid": "6a08b142-79de-11df-9746-96335f6d5957",
+        "InstanceGuid": "41b4640b-1973-8469-a254-b1b23e4e6a04"
+      },
+      "BundleAssetName": "",
+      "EventList": [],
+      "Modal": false,
+      "ProtectScreens": false,
+      "IsWin32UIGraphAsset": true,
+      "IsXenonUIGraphAsset": true,
+      "IsPs3UIGraphAsset": true,
+      "Name": "UI/Flow/Screen/Popups/PopupDisc2Installing"
+    },
+    "a701c812-4911-47b8-99f9-a8b0f9c4d6f3": {
+      "$type": "UIWidgetPathBinding",
+      "WidgetPathQuery": {
+        "DataName": "",
+        "DataCategory": {
+          "PartitionGuid": "8c9b81bf-a95f-11e0-b1f5-e77d7452b075",
+          "InstanceGuid": "2c161716-af2d-6bb4-e726-02b879e497f0"
+        },
+        "DataKey": -1527823155,
+        "UseDirectAccess": false,
+        "UpdateOnInitialize": true
+      },
+      "Visibility": {
+        "DataName": "",
+        "DataCategory": null,
+        "DataKey": 0,
+        "UseDirectAccess": false,
+        "UpdateOnInitialize": true
+      }
+    },
+    "d47c8070-2141-4006-a06b-96f254d23519": {
+      "$type": "WidgetNode",
+      "WidgetAsset": {
+        "PartitionGuid": "5326dc43-e5cf-11df-938f-855c96d24f62",
+        "InstanceGuid": "9184822e-7681-4e63-ac89-a7406d549b32"
+      },
+      "FocusIndex": 0,
+      "ZDepthLevel": 0,
+      "VerticalAlign": 1,
+      "HorisontalAlign": 1,
+      "DataBinding": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "07866a7d-a7a6-4a33-a0f5-d6223d4b691a"
+      },
+      "WidgetProperties": [],
+      "InstanceName": "PopupGenericWidget_01",
+      "Inputs": [],
+      "Outputs": [],
+      "AlwaysInFocus": false,
+      "Name": "PopupGenericWidget",
+      "ParentGraph": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "3d603bb8-ac26-0c24-9444-f7bc673e044a"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true
+    },
+    "9a542114-71b9-4c29-8867-5dcc5a6246b2": {
+      "$type": "WidgetNode",
+      "WidgetAsset": {
+        "PartitionGuid": "bcb9ea58-5c54-11e0-838e-fa9670addac0",
+        "InstanceGuid": "7dd2ebc2-47d2-eb01-a1fd-557ccf7a7309"
+      },
+      "FocusIndex": 0,
+      "ZDepthLevel": 0,
+      "VerticalAlign": 1,
+      "HorisontalAlign": 1,
+      "DataBinding": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "65095ef0-c7c2-432e-9de0-43af80003cc0"
+      },
+      "WidgetProperties": [],
+      "InstanceName": "ChangeListener_01",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+          "InstanceGuid": "100318de-4df8-43e2-b98e-3319f372aa05"
+        }
+      ],
+      "AlwaysInFocus": false,
+      "Name": "IsInstallationComplete",
+      "ParentGraph": {
+        "PartitionGuid": "8f434d80-a947-11e0-bd81-802f8ca62ecc",
+        "InstanceGuid": "3d603bb8-ac26-0c24-9444-f7bc673e044a"
+      },
+      "IsRootNode": false,
+      "ParentIsScreen": true
+    }
+  }
+}

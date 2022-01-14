@@ -1,0 +1,140 @@
+{
+  "Name": "sound/mixers/fademixer",
+  "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+  "PrimaryInstanceGuid": "71e6d61b-894f-7de8-ec9b-f7ad855a823a",
+  "Instances": {
+    "ccbb976a-6015-4300-be9f-8bd2e9e603c5": {
+      "$type": "AudioGraphParameter",
+      "DefaultValue": 1.0,
+      "NameHash": 3184089288,
+      "ValueIndex": 2
+    },
+    "2857c7f9-2d1c-4792-a79a-c6e9488d4e2b": {
+      "$type": "AudioGraphParameter",
+      "DefaultValue": 1.0,
+      "NameHash": 702114485,
+      "ValueIndex": 3
+    },
+    "71e6d61b-894f-7de8-ec9b-f7ad855a823a": {
+      "$type": "MixerAsset",
+      "Graph": {
+        "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+        "InstanceGuid": "f2a17364-4d41-8943-7525-841c6e06f854"
+      },
+      "Presets": [
+        {
+          "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+          "InstanceGuid": "ad2cb41a-d2e2-cc97-b77d-ba97936e967e"
+        }
+      ],
+      "DefaultPreset": {
+        "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+        "InstanceGuid": "ad2cb41a-d2e2-cc97-b77d-ba97936e967e"
+      },
+      "Name": "Sound/Mixers/FadeMixer"
+    },
+    "f2a17364-4d41-8943-7525-841c6e06f854": {
+      "$type": "MixerGraphData",
+      "Inputs": [
+        {
+          "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+          "InstanceGuid": "ccbb976a-6015-4300-be9f-8bd2e9e603c5"
+        }
+      ],
+      "AccumulateModes": [
+        0
+      ],
+      "Outputs": [
+        {
+          "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+          "InstanceGuid": "2857c7f9-2d1c-4792-a79a-c6e9488d4e2b"
+        }
+      ],
+      "Nodes": [
+        {
+          "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+          "InstanceGuid": "b7fe2c40-7931-4190-8828-3657c173dd8d"
+        },
+        {
+          "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+          "InstanceGuid": "174d7185-14f2-4d7b-bffc-16fb7b57375b"
+        }
+      ],
+      "PublicParameters": [],
+      "PublicEvents": [],
+      "PublicAssetParameters": [],
+      "PublicValueCount": 1,
+      "ValueCount": 4
+    },
+    "f28eb8fc-5710-47d6-90c7-d975cc86e88c": {
+      "$type": "MixerInputEntry",
+      "Out": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 1,
+        "IsConnected": true
+      },
+      "Source": {
+        "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+        "InstanceGuid": "ccbb976a-6015-4300-be9f-8bd2e9e603c5"
+      },
+      "AccumulateMode": 0
+    },
+    "b7fe2c40-7931-4190-8828-3657c173dd8d": {
+      "$type": "MixerInputNodeData",
+      "Entries": [
+        {
+          "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+          "InstanceGuid": "f28eb8fc-5710-47d6-90c7-d975cc86e88c"
+        }
+      ]
+    },
+    "2f17eddf-eb62-4d7b-86ef-cc16221e7993": {
+      "$type": "MixerOutputEntry",
+      "In": {
+        "UnconnectedValue": 0.0,
+        "ValueIndex": 1,
+        "IsConnected": true
+      },
+      "Target": {
+        "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+        "InstanceGuid": "2857c7f9-2d1c-4792-a79a-c6e9488d4e2b"
+      }
+    },
+    "174d7185-14f2-4d7b-bffc-16fb7b57375b": {
+      "$type": "MixerOutputNodeData",
+      "Entries": [
+        {
+          "PartitionGuid": "de5a6831-f70d-11df-8f57-f70a435f8e9a",
+          "InstanceGuid": "2f17eddf-eb62-4d7b-86ef-cc16221e7993"
+        }
+      ]
+    },
+    "ad2cb41a-d2e2-cc97-b77d-ba97936e967e": {
+      "$type": "MixerPreset",
+      "NameHash": 0,
+      "Groups": [
+        {
+          "Group": {
+            "PartitionGuid": "4705f56e-73e8-11df-b364-a6a8deb4f741",
+            "InstanceGuid": "822db9e7-e916-462e-bcfa-3b9ceaf2cb62"
+          },
+          "State": 0,
+          "AttackTime": 0.1,
+          "ReleaseTime": 0.2,
+          "Properties": [
+            {
+              "Property": 0,
+              "Value": 0.0
+            },
+            {
+              "Property": 1,
+              "Value": 1.0
+            }
+          ],
+          "IsDominant": false
+        }
+      ],
+      "Nodes": []
+    }
+  }
+}
